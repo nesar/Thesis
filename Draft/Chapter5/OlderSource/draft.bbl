@@ -1,0 +1,455 @@
+\begin{thebibliography}{}
+\makeatletter
+\relax
+\def\mn@urlcharsother{\let\do\@makeother \do\$\do\&\do\#\do\^\do\_\do\%\do\~}
+\def\mn@doi{\begingroup\mn@urlcharsother \@ifnextchar [ {\mn@doi@}
+  {\mn@doi@[]}}
+\def\mn@doi@[#1]#2{\def\@tempa{#1}\ifx\@tempa\@empty \href
+  {http://dx.doi.org/#2} {doi:#2}\else \href {http://dx.doi.org/#2} {#1}\fi
+  \endgroup}
+\def\mn@eprint#1#2{\mn@eprint@#1:#2::\@nil}
+\def\mn@eprint@arXiv#1{\href {http://arxiv.org/abs/#1} {{\tt arXiv:#1}}}
+\def\mn@eprint@dblp#1{\href {http://dblp.uni-trier.de/rec/bibtex/#1.xml}
+  {dblp:#1}}
+\def\mn@eprint@#1:#2:#3:#4\@nil{\def\@tempa {#1}\def\@tempb {#2}\def\@tempc
+  {#3}\ifx \@tempc \@empty \let \@tempc \@tempb \let \@tempb \@tempa \fi \ifx
+  \@tempb \@empty \def\@tempb {arXiv}\fi \@ifundefined
+  {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
+  mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
+
+\bibitem[\protect\citeauthoryear{Abel, Hahn  \& Kaehler}{Abel
+  et~al.}{2012}]{Abel2012b}
+Abel T.,  Hahn O.,   Kaehler R.,  2012, \mn@doi [MNRAS]
+  {10.1111/j.1365-2966.2012.21754.x}, 427, 61
+
+\bibitem[\protect\citeauthoryear{Albareti et~al.,}{Albareti
+  et~al.}{2016}]{Albareti2016}
+Albareti F.~D.,  et~al., 2016, {The Thirteenth Data Release of the Sloan
+  Digital Sky Survey: First Spectroscopic Data from the SDSS-IV Survey MApping
+  Nearby Galaxies at Apache Point Observatory} (\mn@eprint {arXiv}
+  {1608.02013}), \url {http://arxiv.org/abs/1608.02013}
+
+\bibitem[\protect\citeauthoryear{Angulo, Hahn  \& Abel}{Angulo
+  et~al.}{2013}]{Angulo2013a}
+Angulo R.~E.,  Hahn O.,   Abel T.,  2013, \mn@doi [MNRAS]
+  {10.1093/mnras/stt1246}, 434, 3337
+
+\bibitem[\protect\citeauthoryear{Angulo, Hahn, Ludlow  \& Bonoli}{Angulo
+  et~al.}{2016}]{Angulo2016}
+Angulo R.~E.,  Hahn O.,  Ludlow A.,   Bonoli S.,  2016, {Earth-mass haloes and
+  the emergence of NFW density profiles} (\mn@eprint {arXiv} {1604.03131}),
+  \url {http://arxiv.org/abs/1604.03131}
+
+\bibitem[\protect\citeauthoryear{Aragon-Calvo, Jones, {Van De Weygaert}, M  \&
+  {Der Hulst}}{Aragon-Calvo et~al.}{2007}]{Aragon-Calvo2007}
+Aragon-Calvo M.~A.,  Jones B. J.~T.,  {Van De Weygaert} R.,  M J.,   {Der
+  Hulst} V.,  2007, \mn@doi [A{\&}A] {10.1051/0004-6361:20077880}, 474, 28
+
+\bibitem[\protect\citeauthoryear{Aragon-Calvo, {Van De Weygaert}, Jones,
+  Aragon-Calvo, {Van De Weygaert}  \& Jones}{Aragon-Calvo
+  et~al.}{2010}]{Aragon-Calvo2010}
+Aragon-Calvo M.~A.,  {Van De Weygaert} R.,  Jones B. J.~T.,  Aragon-Calvo
+  M.~A.,  {Van De Weygaert} R.,   Jones B. J.~T.,  2010, \mn@doi [MNRAS]
+  {10.1111/j.1365-2966.2010.17263.x}, 408, 2163
+
+\bibitem[\protect\citeauthoryear{Aragon-Calvo, Neyrinck  \& Silk}{Aragon-Calvo
+  et~al.}{2016}]{Aragon-Calvo2016b}
+Aragon-Calvo M.,  Neyrinck M.,   Silk J.,  2016, preprint (\mn@eprint {arXiv}
+  {1607.07881})
+
+\bibitem[\protect\citeauthoryear{Arnold, Shandarin  \& Zeldovich}{Arnold
+  et~al.}{1982}]{Arnold1982}
+Arnold V.,  Shandarin S.,   Zeldovich I.,  1982, \mn@doi [Geophys. Astrophys.
+  Fluid Dyn.] {10.1080/03091928208209001}, 20, 111
+
+\bibitem[\protect\citeauthoryear{Ascasibar}{Ascasibar}{2010}]{Ascasibar2010}
+Ascasibar Y.,  2010, \mn@doi [Comput. Phys. Commun.]
+  {10.1016/j.cpc.2010.04.011}, 181, 1438
+
+\bibitem[\protect\citeauthoryear{Bagla \& Padmanabhan}{Bagla \&
+  Padmanabhan}{1997}]{Bagla1997}
+Bagla J.,  Padmanabhan T.,  1997, \mn@doi [Pramana] {10.1007/BF02845853}, 49,
+  161
+
+\bibitem[\protect\citeauthoryear{Behroozi, Wechsler  \& Wu}{Behroozi
+  et~al.}{2013}]{Behroozi2013a}
+Behroozi P.~S.,  Wechsler R.~H.,   Wu H.-y.,  2013, \mn@doi [ApJ]
+  {10.1088/0004-637X/762/2/109}, 762, 20pp
+
+\bibitem[\protect\citeauthoryear{Bertschinger}{Bertschinger}{1985}]{Bertschinger1985}
+Bertschinger E.,  1985, \mn@doi [Astrophys. J. Suppl.] {10.1086/191028}, 58, 39
+
+\bibitem[\protect\citeauthoryear{Bertschinger \& Edmund}{Bertschinger \&
+  Edmund}{1998}]{Bertschinger1998}
+Bertschinger E.,  Edmund 1998, \mn@doi [Annu. Rev. Astron. Astrophys.]
+  {10.1146/annurev.astro.36.1.599}, 36, 599
+
+\bibitem[\protect\citeauthoryear{Bertschinger \& Gelb}{Bertschinger \&
+  Gelb}{1991}]{Bertschinger1991}
+Bertschinger E.,  Gelb J.,  1991, \mn@doi [Comput. Phys.] {10.1007/BF02845853},
+  164, 164
+
+\bibitem[\protect\citeauthoryear{Bond, Kofman  \& Pogosyan}{Bond
+  et~al.}{1996}]{Bond1996}
+Bond J.~R.,  Kofman L.,   Pogosyan D.,  1996, \mn@doi [Nature]
+  {10.1017/CBO9781107415324.004}, 380, 603
+
+\bibitem[\protect\citeauthoryear{Bond, Strauss  \& Cen}{Bond
+  et~al.}{2010a}]{Bond2010a}
+Bond N.~A.,  Strauss M.~A.,   Cen R.,  2010a, \mn@doi [MNRAS]
+  {10.1111/j.1365-2966.2010.16823.x}, 406, 1609
+
+\bibitem[\protect\citeauthoryear{Bond, Strauss  \& Cen}{Bond
+  et~al.}{2010b}]{Bond2010b}
+Bond N.~A.,  Strauss M.~A.,   Cen R.,  2010b, \mn@doi [MNRAS]
+  {10.1111/j.1365-2966.2010.17307.x}, 409, 156
+
+\bibitem[\protect\citeauthoryear{Cautun, van~de Weygaert  \& Jones}{Cautun
+  et~al.}{2013}]{Cautun2013}
+Cautun M.,  van~de Weygaert R.,   Jones B. J.~T.,  2013, \mn@doi [MNRAS]
+  {10.1093/mnras/sts416}, 429, 1286
+
+\bibitem[\protect\citeauthoryear{Cautun, {Van De Weygaert}, Jones  \&
+  Frenk}{Cautun et~al.}{2014}]{Cautun2014a}
+Cautun M.,  {Van De Weygaert} R.,  Jones B. J.~T.,   Frenk C.~S.,  2014,
+  \mn@doi [MNRAS] {10.1093/mnras/stu768}, 441, 2923
+
+\bibitem[\protect\citeauthoryear{Davis, Efstathiou, Frenk  \& White}{Davis
+  et~al.}{1985}]{Davis1985}
+Davis M.,  Efstathiou G.,  Frenk C.~S.,   White S. D.~M.,  1985, \mn@doi [ApJ]
+  {10.1086/163168}, 292, 371
+
+\bibitem[\protect\citeauthoryear{Diemand, Kuhlen  \& Madau}{Diemand
+  et~al.}{2006}]{Diemand2006}
+Diemand J.,  Kuhlen M.,   Madau P.,  2006, \mn@doi [ApJ] {10.1086/506377}, 649,
+  1
+
+\bibitem[\protect\citeauthoryear{Eisenstein \& Hu}{Eisenstein \&
+  Hu}{1998}]{Eisenstein1998a}
+Eisenstein D.~J.,  Hu W.,  1998, \mn@doi [ApJ] {10.1086/305424;}, 496, 605
+
+\bibitem[\protect\citeauthoryear{Eisenstein \& Hut}{Eisenstein \&
+  Hut}{1998}]{Eisenstein1998}
+Eisenstein D.~J.,  Hut P.,  1998, \mn@doi [ApJ] {10.1086/305535}, 498, 137
+
+\bibitem[\protect\citeauthoryear{Evrard et~al.,}{Evrard
+  et~al.}{2002}]{Evrard2002}
+Evrard A.~E.,  et~al., 2002, \mn@doi [ApJ] {10.1086/340551}, 573, 7
+
+\bibitem[\protect\citeauthoryear{Falck \& Neyrinck}{Falck \&
+  Neyrinck}{2015}]{Falck2015}
+Falck B.,  Neyrinck M.~C.,  2015, \mn@doi [MNRAS] {10.1093/mnras/stv879}, 450,
+  3239
+
+\bibitem[\protect\citeauthoryear{Falck, Neyrinck  \& Szalay}{Falck
+  et~al.}{2012}]{Falck2012}
+Falck B.~L.,  Neyrinck M.~C.,   Szalay A.~S.,  2012, \mn@doi [ApJ]
+  {10.1088/0004-637X/754/2/126}, 754, 126
+
+\bibitem[\protect\citeauthoryear{{Fillmore, J. A., Goldreich}}{{Fillmore, J.
+  A., Goldreich}}{1984}]{Fillmore1984}
+{Fillmore, J. A., Goldreich} P.,  1984, \mn@doi [ApJ] {10.1086/162070}, 281, 1
+
+\bibitem[\protect\citeauthoryear{Forero-Romero et~al.,}{Forero-Romero
+  et~al.}{2009}]{Forero-Romero2009a}
+Forero-Romero J.~E.,  et~al., 2009, \mn@doi [MNRAS]
+  {10.1111/j.1365-2966.2009.14885.x}, 396, 1815
+
+\bibitem[\protect\citeauthoryear{Frenk, White, Davis  \& Efstathiou}{Frenk
+  et~al.}{1988}]{Frenk1988}
+Frenk C.~S.,  White S. D.~M.,  Davis M.,   Efstathiou G.,  1988, \mn@doi [ApJ]
+  {10.1086/166213}, 327, 507
+
+\bibitem[\protect\citeauthoryear{Gill, Knebe  \& Gibson}{Gill
+  et~al.}{2004}]{Gill2004a}
+Gill S. P.~D.,  Knebe A.,   Gibson B.~K.,  2004, \mn@doi [MNRAS]
+  {10.1111/j.1365-2966.2004.07786.x}, 351, 399
+
+\bibitem[\protect\citeauthoryear{Giocoli, Tormen, Sheth  \& van~den
+  Bosch}{Giocoli et~al.}{2010}]{Giocoli2010a}
+Giocoli C.,  Tormen G.,  Sheth R.~K.,   van~den Bosch F.~C.,  2010, \mn@doi
+  [MNRAS] {10.1111/j.1365-2966.2010.16311.x}, 404, 502
+
+\bibitem[\protect\citeauthoryear{Gottlober, Klypin  \& Kravtsov}{Gottlober
+  et~al.}{1999}]{Gottlober1999}
+Gottlober S.,  Klypin A.,   Kravtsov A.~V.,  1999, \mn@doi [APS Conf. Ser.]
+  {10.1017/CBO9781107415324.004}, 176
+
+\bibitem[\protect\citeauthoryear{Gregory \& Thompson}{Gregory \&
+  Thompson}{1978}]{Gregory1978}
+Gregory S.~A.,  Thompson L.~A.,  1978, \mn@doi [ApJ] {10.1086/156198}, 222, 784
+
+\bibitem[\protect\citeauthoryear{{Gurbatov, S.N., Saichev, A.I.,
+  Shandarin}}{{Gurbatov, S.N., Saichev, A.I., Shandarin}}{1989}]{Gurbatov1989}
+{Gurbatov, S.N., Saichev, A.I., Shandarin} S.~F.,  1989, MNRAS, 236, 385
+
+\bibitem[\protect\citeauthoryear{Habib et~al.,}{Habib
+  et~al.}{2009}]{Habib2009a}
+Habib S.,  et~al., 2009, \mn@doi [J. Phys. Conf. Ser.]
+  {10.1088/1742-6596/180/1/012019}, 180, 2019
+
+\bibitem[\protect\citeauthoryear{Hahn \& Abel}{Hahn \& Abel}{2011}]{Hahn2011a}
+Hahn O.,  Abel T.,  2011, \mn@doi [MNRAS] {10.1111/j.1365-2966.2011.18820.x},
+  415, 2101
+
+\bibitem[\protect\citeauthoryear{Hahn \& Angulo}{Hahn \&
+  Angulo}{2016}]{Hahn2016a}
+Hahn O.,  Angulo R.~E.,  2016, \mn@doi [MNRAS] {10.1093/mnras/stv2304}, 455,
+  1115
+
+\bibitem[\protect\citeauthoryear{Hahn, Carollo, Porciani  \& Dekel}{Hahn
+  et~al.}{2007}]{Hahn2007}
+Hahn O.,  Carollo C.~M.,  Porciani C.,   Dekel A.,  2007, \mn@doi [MNRAS]
+  {10.1111/j.1365-2966.2007.12249.x}, 381, 41
+
+\bibitem[\protect\citeauthoryear{Hahn, Abel  \& Kaehler}{Hahn
+  et~al.}{2013}]{Hahn2013}
+Hahn O.,  Abel T.,   Kaehler R.,  2013, \mn@doi [MNRAS]
+  {10.1093/mnras/stt1061}, 434, 1171
+
+\bibitem[\protect\citeauthoryear{Han, Jing, Wang  \& Wang}{Han
+  et~al.}{2012}]{Han2012a}
+Han J.,  Jing Y.~P.,  Wang H.,   Wang W.,  2012, \mn@doi [MNRAS]
+  {10.1111/j.1365-2966.2012.22111.x}, 427, 2437
+
+\bibitem[\protect\citeauthoryear{Heitmann et~al.,}{Heitmann
+  et~al.}{2015}]{Heitmann2015}
+Heitmann K.,  et~al., 2015, \mn@doi [Astrophys. J. Suppl. Ser.]
+  {10.1088/0067-0049/219/2/34}, 219, 34
+
+\bibitem[\protect\citeauthoryear{Hidding, Shandarin  \& van~de
+  Weygaert}{Hidding et~al.}{2014}]{Hidding2014}
+Hidding J.,  Shandarin S.~F.,   van~de Weygaert R.,  2014, \mn@doi [MNRAS]
+  {10.1093/mnras/stt2142}, 437, 3442
+
+\bibitem[\protect\citeauthoryear{Hoffman, Metuki, Yepes, Gottl, Forero,
+  Libeskind  \& Knebe}{Hoffman et~al.}{2012}]{Hoffman2012a}
+Hoffman Y.,  Metuki O.,  Yepes G.,  Gottl S.,  Forero J.~E.,  Libeskind N.~I.,
+   Knebe A.,  2012, MNRAS, 425, 2049
+
+\bibitem[\protect\citeauthoryear{Jenkins, Frenk, White, Colberg, Cole, Evrard,
+  Couchman  \& Yoshida}{Jenkins et~al.}{2001}]{Jenkins2001}
+Jenkins A.,  Frenk C.~S.,  White S. D.~M.,  Colberg J.~M.,  Cole S.,  Evrard
+  A.~E.,  Couchman H. M.~P.,   Yoshida N.,  2001, \mn@doi [MNRAS]
+  {10.1046/j.1365-8711.2001.04029.x}, 321, 372
+
+\bibitem[\protect\citeauthoryear{Klypin \& Shandarin}{Klypin \&
+  Shandarin}{1983}]{Klypin1983a}
+Klypin A.,  Shandarin S.,  1983, \mn@doi [MNRAS] {10.1093/mnras/204.3.891},
+  204, 891
+
+\bibitem[\protect\citeauthoryear{Klypin, Gottlober, Kravtsov  \&
+  Khokhlov}{Klypin et~al.}{1999}]{Klypin1999}
+Klypin A.,  Gottlober S.,  Kravtsov A.~V.,   Khokhlov A.~M.,  1999, \mn@doi
+  [ApJ] {10.1086/307122}, 516, 530
+
+\bibitem[\protect\citeauthoryear{Knebe et~al.,}{Knebe
+  et~al.}{2011}]{Knebe2011a}
+Knebe A.,  et~al., 2011, \mn@doi [MNRAS] {10.1111/j.1365-2966.2011.18858.x},
+  415, 2293
+
+\bibitem[\protect\citeauthoryear{Knebe et~al.,}{Knebe et~al.}{2013}]{Knebe2013}
+Knebe A.,  et~al., 2013, \mn@doi [MNRAS] {10.1093/mnras/stt1403}, 435, 1618
+
+\bibitem[\protect\citeauthoryear{Knollmann \& Knebe}{Knollmann \&
+  Knebe}{2009}]{Knollmann2009a}
+Knollmann S.~R.,  Knebe A.,  2009, \mn@doi [Astrophys. J. Suppl. Ser.]
+  {10.1088/0067-0049/182/2/608}, 182, 608
+
+\bibitem[\protect\citeauthoryear{Kofman, Pogosyan, Shandarin  \& Melott}{Kofman
+  et~al.}{1992}]{Kofman1992}
+Kofman L.,  Pogosyan D.,  Shandarin S.~F.,   Melott A.~L.,  1992, ApJ, 393, 437
+
+\bibitem[\protect\citeauthoryear{{LSST Science Collaboration} et~al.,}{{LSST
+  Science Collaboration} et~al.}{2009}]{lsst2009}
+{LSST Science Collaboration} et~al., 2009, preprint (\mn@eprint {arXiv}
+  {0912.0201})
+
+\bibitem[\protect\citeauthoryear{Lacey \& Cole}{Lacey \&
+  Cole}{1994}]{Lacey1994}
+Lacey C.,  Cole S.,  1994, \mn@doi [MNRAS] {10.1017/CBO9781107415324.004}, 271,
+  676
+
+\bibitem[\protect\citeauthoryear{Lee \& Yepes}{Lee \& Yepes}{2016}]{Lee2016a}
+Lee J.,  Yepes G.,  2016, \mn@doi [ApJ] {10.3847/0004-637X/832/2/185}, 832, 185
+
+\bibitem[\protect\citeauthoryear{Libeskind, Hoffman, Forero-Romero,
+  Gottl{\"{o}}ber, Knebe, Steinmetz  \& Klypin}{Libeskind
+  et~al.}{2013}]{Libeskind2013}
+Libeskind N.~I.,  Hoffman Y.,  Forero-Romero J.,  Gottl{\"{o}}ber S.,  Knebe
+  A.,  Steinmetz M.,   Klypin A.,  2013, \mn@doi [MNRAS]
+  {10.1093/mnras/sts216}, 428, 2489
+
+\bibitem[\protect\citeauthoryear{Lin, Mestel  \& Shu}{Lin
+  et~al.}{1965}]{Lin1965}
+Lin C.,  Mestel L.,   Shu F.,  1965, \mn@doi [ApJ] {10.1086/148428}, 142, 1431
+
+\bibitem[\protect\citeauthoryear{MacIejewski, Colombi, Springel, Alard  \&
+  Bouchet}{MacIejewski et~al.}{2009}]{Maciejewski2009c}
+MacIejewski M.,  Colombi S.,  Springel V.,  Alard C.,   Bouchet F.~R.,  2009,
+  \mn@doi [MNRAS] {10.1111/j.1365-2966.2009.14825.x}, 396, 1329
+
+\bibitem[\protect\citeauthoryear{Melott \& Shandarin}{Melott \&
+  Shandarin}{1989}]{Melott1989}
+Melott A.~L.,  Shandarin S.~F.,  1989, ApJ, 342, 26
+
+\bibitem[\protect\citeauthoryear{More, Kravtsov, Dalal  \&
+  Gottl{\"{o}}ber}{More et~al.}{2011}]{More2011}
+More S.,  Kravtsov A.~V.,  Dalal N.,   Gottl{\"{o}}ber S.,  2011, \mn@doi
+  [Astrophys. J. Suppl. Ser.] {10.1088/0067-0049/195/1/4}, 195, 4
+
+\bibitem[\protect\citeauthoryear{More, Diemer  \& Kravtsov}{More
+  et~al.}{2015}]{More2015}
+More S.,  Diemer B.,   Kravtsov A.~V.,  2015, \mn@doi [ApJ]
+  {10.1088/0004-637X/810/1/36}, 810, 36
+
+\bibitem[\protect\citeauthoryear{Neyrinck}{Neyrinck}{2016}]{Neyrinck2016}
+Neyrinck M.~C.,  2016, \mn@doi [MNRAS] {10.1093/mnras/stw934}, 460, 816
+
+\bibitem[\protect\citeauthoryear{Neyrinck, Gnedin  \& Hamilton}{Neyrinck
+  et~al.}{2005}]{Neyrinck2005}
+Neyrinck M.~C.,  Gnedin N.~Y.,   Hamilton A. J.~S.,  2005, \mn@doi [MNRAS]
+  {10.1017/CBO9781107415324.004}, 53, 1222
+
+\bibitem[\protect\citeauthoryear{Onions et~al.,}{Onions
+  et~al.}{2012}]{Onions2012}
+Onions J.,  et~al., 2012, \mn@doi [MNRAS] {10.1111/j.1365-2966.2012.20947.x},
+  423, 1200
+
+\bibitem[\protect\citeauthoryear{Pahwa et~al.,}{Pahwa et~al.}{2016}]{Pahwa2016}
+Pahwa I.,  et~al., 2016, \mn@doi [MNRAS] {10.1093/mnras/stv2930}, 457, 695
+
+\bibitem[\protect\citeauthoryear{Planelles \& Quilis}{Planelles \&
+  Quilis}{2010}]{Planelles2010}
+Planelles S.,  Quilis V.,  2010, \mn@doi [A{\&}A]
+  {10.1051/0004-6361/201014214}, A94, 16
+
+\bibitem[\protect\citeauthoryear{Press \& Schechter}{Press \&
+  Schechter}{1974}]{Press1974}
+Press W.~H.,  Schechter P.,  1974, \mn@doi [ApJ] {10.1086/152650}, 187, 425
+
+\bibitem[\protect\citeauthoryear{Ramachandra \& Shandarin}{Ramachandra \&
+  Shandarin}{2015}]{Ramachandra2015}
+Ramachandra N.~S.,  Shandarin S.~F.,  2015, \mn@doi [MNRAS]
+  {10.1093/mnras/stv1389}, 452, 1643
+
+\bibitem[\protect\citeauthoryear{Ramachandra \& Shandarin}{Ramachandra \&
+  Shandarin}{2017}]{Ramachandra2017}
+Ramachandra N.~S.,  Shandarin S.~F.,  2017, \mn@doi [MNRAS]
+  {10.1093/mnras/stx183}, 1762, 1748
+
+\bibitem[\protect\citeauthoryear{Rasera, Alimi, Courtin, Roy, Corasaniti, Fuzfa
+   \& Boucher}{Rasera et~al.}{2010}]{Rasera2010}
+Rasera Y.,  Alimi J.~M.,  Courtin J.,  Roy F.,  Corasaniti P.~S.,  Fuzfa A.,
+  Boucher V.,  2010, \mn@doi [AIP Conf. Proc.] {10.1063/1.3462610}, 1241, 1134
+
+\bibitem[\protect\citeauthoryear{Shandarin}{Shandarin}{1983a}]{Shandarin1983}
+Shandarin S.~F.,  1983a, {Evolution of Potential Perturbations after Decoupling
+  (The Adiabatic Scenario)}.
+Springer Netherlands, Dordrecht, pp 171--178,
+  \mn@doi{10.1007/978-94-009-7939-0_9}
+
+\bibitem[\protect\citeauthoryear{Shandarin}{Shandarin}{1983b}]{Shandarin1983a}
+Shandarin S.~F.,  1983b, \mn@doi [Pis'ma Astron Zh.]
+  {10.1017/CBO9781107415324.004}, 53, 195
+
+\bibitem[\protect\citeauthoryear{Shandarin \& Medvedev}{Shandarin \&
+  Medvedev}{2014}]{Shandarin2014a}
+Shandarin S.,  Medvedev M.,  2014, preprint (\mn@eprint {arXiv} {1409.7634})
+
+\bibitem[\protect\citeauthoryear{Shandarin \& Medvedev}{Shandarin \&
+  Medvedev}{2016}]{Shandarin2016}
+Shandarin S.~F.,  Medvedev M.~V.,  2016, {The features of the Cosmic Web
+  unveiled by the flip-flop field} (\mn@eprint {arXiv} {1609.08554})
+
+\bibitem[\protect\citeauthoryear{Shandarin \& Zeldovich}{Shandarin \&
+  Zeldovich}{1989}]{Shandarin1989}
+Shandarin S.~F.,  Zeldovich Y.~B.,  1989, Rev. Mod. Phys., 61, 185
+
+\bibitem[\protect\citeauthoryear{Shandarin, Habib  \& Heitmann}{Shandarin
+  et~al.}{2010}]{Shandarin2010b}
+Shandarin S.,  Habib S.,   Heitmann K.,  2010, \mn@doi [Phys. Rev. D]
+  {10.1103/PhysRevD.81.103006}, 81, 1
+
+\bibitem[\protect\citeauthoryear{Shandarin, Habib  \& Heitmann}{Shandarin
+  et~al.}{2012}]{Shandarin2012}
+Shandarin S.,  Habib S.,   Heitmann K.,  2012, \mn@doi [Phys. Rev. D]
+  {10.1103/PhysRevD.85.083005}, 85, 1
+
+\bibitem[\protect\citeauthoryear{Skory, Turk, Norman  \& Coil}{Skory
+  et~al.}{2010}]{Skory2010}
+Skory S.,  Turk M.~J.,  Norman M.~L.,   Coil A.~L.,  2010, \mn@doi [Astrophys.
+  J. Suppl. Ser.] {10.1088/0067-0049/191/1/43}, 191, 43
+
+\bibitem[\protect\citeauthoryear{Sousbie, Pichon, Colombi, Novikov  \&
+  Pogosyan}{Sousbie et~al.}{2008}]{Sousbie2008a}
+Sousbie T.,  Pichon C.,  Colombi S.,  Novikov D.,   Pogosyan D.,  2008, \mn@doi
+  [MNRAS] {10.1111/j.1365-2966.2007.12685.x}, 383, 1655
+
+\bibitem[\protect\citeauthoryear{Springel}{Springel}{2005}]{Springel2005}
+Springel V.,  2005, \mn@doi [MNRAS] {10.1111/j.1365-2966.2005.09655.x}, 364,
+  1105
+
+\bibitem[\protect\citeauthoryear{Springel, Yoshida  \& White}{Springel
+  et~al.}{2001a}]{Springel2001}
+Springel V.,  Yoshida N.,   White S.~D.,  2001a, \mn@doi [New Astron.]
+  {10.1016/S1384-1076(01)00042-2}, 6, 79
+
+\bibitem[\protect\citeauthoryear{Springel, White, Tormen  \&
+  Kauffmann}{Springel et~al.}{2001b}]{Springel2001a}
+Springel V.,  White S.,  Tormen G.,   Kauffmann G.,  2001b, \mn@doi [MNRAS]
+  {10.1046/j.1365-8711.2001.04912.x}, 328, 726
+
+\bibitem[\protect\citeauthoryear{Sutter \& Ricker}{Sutter \&
+  Ricker}{2010}]{Sutter2010a}
+Sutter P.~M.,  Ricker P.~M.,  2010, \mn@doi [ApJ]
+  {10.1088/0004-637X/723/2/1308}, 723, 1308
+
+\bibitem[\protect\citeauthoryear{Tweed, Devriendt, Blaizot, Colombi  \&
+  Slyz}{Tweed et~al.}{2009}]{Tweed2009}
+Tweed D.,  Devriendt J.,  Blaizot J.,  Colombi S.,   Slyz A.,  2009, \mn@doi
+  [A{\&}A] {10.1051/0004-6361/200911787}, 506, 647
+
+\bibitem[\protect\citeauthoryear{Vogelsberger \& White}{Vogelsberger \&
+  White}{2011}]{Vogelsberger2011}
+Vogelsberger M.,  White S. D.~M.,  2011, MNRAS, 413, 1419
+
+\bibitem[\protect\citeauthoryear{Vogelsberger et~al.,}{Vogelsberger
+  et~al.}{2014}]{Vogelsberger2014}
+Vogelsberger M.,  et~al., 2014, MNRAS, 444, 1518
+
+\bibitem[\protect\citeauthoryear{Weinberg, Hernquist  \& Katz}{Weinberg
+  et~al.}{1997}]{Weinberg1997}
+Weinberg D.~H.,  Hernquist L.,   Katz N.,  1997, \mn@doi [ApJ]
+  {10.1086/303683}, 477, 8
+
+\bibitem[\protect\citeauthoryear{Zeldovich}{Zeldovich}{1970}]{Zeldovich1970}
+Zeldovich Y.~B.,  1970, \mn@doi [A{\&}A] {10.1088/1751-8113/44/8/085201}, 5, 84
+
+\bibitem[\protect\citeauthoryear{Zeldovich, Einasto  \& Shandarin}{Zeldovich
+  et~al.}{1982}]{Zeldovich1982}
+Zeldovich Y.~B.,  Einasto J.,   Shandarin S.~F.,  1982, \mn@doi [Nature]
+  {10.1038/300407a0}, 300, 407
+
+\bibitem[\protect\citeauthoryear{de Lapparent, Geller  \& Huchra}{de~Lapparent
+  et~al.}{1986}]{DeLapparent1986}
+de Lapparent V.,  Geller M.~J.,   Huchra J.~P.,  1986, \mn@doi [ApJ]
+  {10.1086/184625}, 302, L1
+
+\bibitem[\protect\citeauthoryear{van Kampen}{van Kampen}{1995}]{vanKampen1995}
+van Kampen E.,  1995, \mn@doi [MNRAS] {10.1017/CBO9781107415324.004}, 273, 295
+
+\bibitem[\protect\citeauthoryear{van~de Weygaert \& Bond}{van~de Weygaert \&
+  Bond}{2008}]{Weygaert2008}
+van~de Weygaert R.,  Bond J.,  2008, in Plionis M.,  L{\'{o}}pez-Cruz O.,
+  Hughes D.,  eds,  Lecture Notes in Physics, Berlin Springer Verlag Vol. 740,
+  A Pan-Chromatic View Clust. Galaxies Large-Scale Struct.. p.~24,
+  \mn@doi{10.1007/978-1-4020-6941-3_11}
+
+\bibitem[\protect\citeauthoryear{van~de Weygaert \& Schaap}{van~de Weygaert \&
+  Schaap}{2009}]{Weygaert2009a}
+van~de Weygaert R.,  Schaap W.,  2009, \mn@doi [Lect. Notes Phys.]
+  {10.1007/978-3-540-44767-2_11}, 665, 291
+
+\makeatother
+\end{thebibliography}

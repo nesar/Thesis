@@ -1,0 +1,71 @@
+The authors would like to thank the referee for the detailed comments on the manuscript MN-16-2903-MJ, and the editor for helping with the submission. The changes in the draft are highlighted. 
+
+Reply to editors:
+
+The abstract is reduced to one paragraph. 
+
+
+Reply to referee:
+
+1) In the 2nd paragraph of the abstract, I would recommend to include a sentence explicitly stating the key condition of the proposed halo identification method that the 3rd eigenvalue λ 3 > 0, imposing the convexity mentioned. For the introduction of a technical method it is often good to have key issues explicitly mentioned.
+
+Response: Abstract is edited.
+
+
+2) While the manuscript certainly discusses the issue of the convexity requirement directly bearing on the issue of implicitly excluding subhalos, it may be good to already address or mention this issue early on (even abstract). It is an important issue that should be clear from the onset.
+
+Response: Text added in abstract and introduction. 
+
+
+3) Likewise, it would be good to emphasize that while the effect of smoothing is assesses and quantified, basically the proposed technique is a single-scale technique (as is indeed clarified later in the discussion session when suggesting a multi-scale extension of the method).
+
+Response: Last paragraph of introduction is edited to discuss the technique in more detail.  
+
+
+4) pg. 1, 2nd column: the reference Bertschinger 1998 is stated as ”Bertschinger & Edmund”, likely as a result of how the reference is included in the bibtex file.
+
+Response: Reference corrected
+
+
+5) pg. 1, 2nd column: when mentioning modern state-of-the-art simulations like Illustris, one should also mention the Eagle simulation (Schaye et al. 2015).
+
+Response: New reference added. 
+
+
+16) many sections/subsections still start with notes like ’‘New section” or sth. similar. These should be removed from the final manuscript.
+
+Response: Comments such as 'New section' are removed. 
+
+
+7) pg. 3, sect. 2.1, 2nd paragraph: when mentioning cosmological work on uniform ellipsoid evolution, it would be good to refer to the work by Icke 1973, as well as the work by Eisenstein & Loeb 1995.
+
+Response: New references added.
+
+
+8) pg. 5, sect. 4.1, 3rd paragraph: when mentioning eigenvalues of Hessians of density, a reference to Aragon-Calvo et al. 2007 would be appropriate.
+
+Response: New references added.
+
+
+9) pg. 5, set. 4.1, point (i): the fact that the eigenvalues of the deformation tensor are negative in voids does not only relate to the Zeldovich formalism: it is simply a basic result of the continuity equation.
+
+Response: New text is added to emphasize this. 
+
+
+10) pg. 10, sect. 6, 1st paragraph: it is not clearly specified what is meant by percentage.
+
+Repsonse: The percentages are defined clearly.
+
+
+11) pg. 12, 2nd column, sect. 6.1, 2nd paragraph, 4th line: “of” is forgotten, ie. ”a large fraction of the AHF-”.
+
+Response: The typo is corrected.
+
+
+12) pg. 14, sect. 8, point (i): I do not agree with the designation of the ”spherical collapse model” as a mere toy model. It is far more than that, it has been guiding and alowing a major share of insight into crucial issues of structure formation, in that it is the only analytically tractable fully nonlinear model that we have. A more appropriate word might e.g. be ”reference model”.
+
+Response: 'Toy model' is changed to 'reference model'.
+
+
+Other changes:
+Caption of Table 1 is corrected. 

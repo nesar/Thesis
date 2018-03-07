@@ -1,0 +1,282 @@
+%% LyX 2.0.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[12pt,english]{kuthesis}
+
+\usepackage{amssymb}
+\usepackage{amsmath}   % Added by Nesar - amsmath creates some issues
+\usepackage{amstext}
+
+
+\usepackage{mathptmx}
+\renewcommand{\sfdefault}{lmss}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{esint}   %- Commented by Nesar - check conflict with amsmath
+\usepackage[authoryear]{natbib}
+
+% Following packages added by Nesar
+%\usepackage{amsmath}
+\usepackage{epsf}
+%\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{wrapfig}
+\usepackage{listings}
+\usepackage{float}
+%\usepackage{esint}
+\usepackage{natbib}
+\usepackage{ifthen}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{bm}
+
+
+% ----------HIGHLIGHTING -------
+\usepackage{xcolor}
+\usepackage[normalem]{ulem} % use normalem to protect \emph
+\newcommand\hl{\bgroup\markoverwith
+  {\textcolor{yellow}{\rule[-.5ex]{2pt}{2.5ex}}}\ULon}
+
+\newcommand\rhl{\bgroup\markoverwith
+  {\textcolor{orange}{\rule[-.5ex]{2pt}{2.5ex}}}\ULon}
+  
+ \newcommand\ghl{\bgroup\markoverwith
+  {\textcolor{green}{\rule[-.5ex]{2pt}{2.5ex}}}\ULon} 
+%-------------------------------------------------------------------------
+
+%\newcommand{\bmath}[1]{\ensuremath{\boldmath{#1}}\xspace}
+
+\doublespacing
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\providecommand{\LyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+
+
+%used to align decimals in tables according to APA style
+\usepackage{dcolumn}
+\usepackage{booktabs}
+
+% Set the title and author info
+\title{Please Read the Abstract}
+\author{Nesar Ramachandra}
+
+
+\dept{Department of People who read Abstracts}
+\degreetitle{Doctor of Philosophy}
+\papertype{Dissertation} %capitalization is important here
+\committee{Sergei Shandarin}{Hume Feldman}{Barbary Anthony-Twarog}{Mikhail Medvedev}{Suzanne Shontz}
+%AT Most 5 members allowed, last here is blank on purpose to demonstrate
+%flexibility
+
+%% These settings are now in the kuthesis.cls file, but users are free
+% to customize. listings has great documentation online
+%% When listings are used, break lines
+%\lstset{
+ %    breaklines=true,  % sets automatic line breaking
+ %    breakindent=2em,
+ %    breakatwhitespace=true,  % sets if automatic breaks should
+ %   breakautoindent=true
+%}
+
+%% The following is OPTIONAL. Remove all 3 of the next 3 lines
+%% to leave dates blank. If dates are included, then both dates 
+%% must be included.
+\@printd@testrue
+\datedefended{October 02, 2012}
+\dateapproved{October 03, 2012}
+
+\@ifundefined{showcaptionsetup}{}{%
+ \PassOptionsToPackage{caption=false}{subfig}}
+\usepackage{subfig}
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+\begin{romanpages}
+
+\maketitle
+\begin{abstract}
+Version 2.1, May 20, 2013. This was a minor update that slightly changed
+kuthesis.cls. First, the Graduate School no longer exists, so we rephrase
+the front matter to refer to Graduate Faculty. Second, the page numbering
+after the front matter begins at arabic number 1. This was an oversight
+in the previous edition, it was never intended, but users found easy
+``work arounds'' and we were not aware of it.
+
+Version 2, October 2, 2012. This is a minor update to allow insertion
+of dates in the document preamble.
+
+If you are reading the pdf, this document is produced from ``thesis-ku.tex''
+using the \LaTeX{} class kuthesis.cls and other common packages that
+are almost surely installed in a working \LaTeX{} system. We suggest
+you try to compile this document in your system (as a test), and after
+that use it as a template for your project.
+
+\textbf{Look here.} The \LaTeX{} class ``kuthesis.cls'' extends
+the base class called ``report''. If you have a report document
+already, migration into this format will be easy, since we inherit
+everything from ``report'' and then customize a few things. 
+
+\textbf{How To Use? }This is a basic \LaTeX{} usage question. You
+need a ``\LaTeX{} distribution'' such as TexLive or MikTex. You
+need to run the file thesis-ku.tex through the \LaTeX{} processing
+system. At the current time, the preferred output format is pdf from
+the ``pdflatex'' program, but it is probably safe to try other programs
+as well. On most \LaTeX{} systems, your latex processor will look
+in several places for ``kuthesis.cls'' while it processes thesis-ku.tex.
+Usually, you don't need to install formally that file, since--on most
+systems--the \LaTeX{} program will look in the current working directory
+for syle files. If so, then this document will ``just work'' for
+you. If you want to use kuthesis.cls for several documents, you need
+to either copy it into every document directory, or install ``kuthesis.cls''
+in a place where your \LaTeX{} system will find it, and then run the
+\LaTeX{} re-configurator to make the system notice. In my system,
+\LaTeX{} is set up to look in /usr/share/texmf/tex/latex, /usr/local/share/texmf/tex/latex,
+as well as in my home directory and the current working directory.
+I copy kuthesis.sty into /usr/local/share/texmf/tex/latex, run the
+re-configurator program ``texhash,'' and it is ready to go. 
+
+\textbf{Does it work with Lyx?} Yes, as a matter of fact, I'm preparing
+this document in \LyX{} right now. (\LyX{} is a GUI \LaTeX{} document
+editor, available for free at \url{http://www.lyx.org}.) \LyX{} will
+open the document, but it will warn that the layout file ``kuthesis.layout''
+is unavailable. Unfortunately, the only fix for that is to install
+the customized layout file, which is provided with this document in
+the stylefiles directory. Copy the kuthesis.layout file into the one
+of the folders where \LyX{} looks for layout configurations. I did
+not install that in the system-wide \LyX{} layout folder, but rather
+in my personal user configuration folder. I suggest you so the same,
+at least while you are testing this. On Linux, that is in the user
+HOME under .lyx/layouts. (For me, that's ``/home/pauljohn/.lyx/layouts.''
+On other OS, here's how you can find out where to put the layout.
+Run \LyX{}, in the top menu choose Tools/Preferences. Change something
+trivial, close. That will force \LyX{} to create a user folder somewhere
+in your personal HOME directories. In MS Windows 7, I just tested
+this. I searched for the word ``layouts'' and found my \LyX{} preference
+folder is ``C:\textbackslash{}Users\textbackslash{}pauljohn\textbackslash{}AppData\textbackslash{}Roaming\textbackslash{}lyx202\textbackslash{}layouts''. 
+
+\textbf{Note.} To customize this document, you have to edit the document
+preamble to put in your name, title, degree name, department, and
+advisors. If you don't do that, you won't get the right title page.
+To be explicit, in this document, the following values are currently
+set in the preamble:
+
+\begin{minipage}[t]{1\columnwidth}%
+\inputencoding{latin9}\begin{lstlisting}
+\title{Please Read the Abstract} 
+\author{Abstract Writer} 
+\dept{Department of People who read Abstracts} 
+\degreetitle{Doctor of Philosophy} 
+\papertype{Dissertation} %capitalization is important here 
+\committee{MEMBER 1}{MEMBER 2}{MEMBER 3}{MEMBER 4}{}
+\end{lstlisting}
+\inputencoding{utf8}%
+\end{minipage}
+
+\textbf{Note please.} Replace ``Member 1'' with a name, of course.
+You can have at most 5 committee members, but you can have fewer.
+For the ones you have, put their names inside squiggles; for the ones
+you don't want, leave empty squiggles, \{\}, as I've demonstrated
+on the 5th member in this example.
+
+\textbf{Note also. }The chapters included here are just for illustration
+and testing. I've fiddled the format to look like what KU asks for. 
+
+\textbf{Note also. }Note the file ``thesis-ku.tex'' (or thesis-ku.lyx,
+as the case may be), does not have much content. It has the title
+page, the abstract, and not much else. Everything else is brought
+in from separate files. I strongly recommend you keep separate chapters
+in separate folders. If you don't do that, you will likely go insane.
+
+\textbf{Note for the version 2012-10-02.} In the first edition of
+this setup, I left the dates blank and expected users to write or
+type them in as necessary. A user requested a fix to allow the dates
+of the defense and final approval to be added in the document preamble
+with the other settings. So in the end of the document preamble, insert
+the following. The first is some \LaTeX{} code, don't change it. 
+
+\begin{minipage}[t]{1\columnwidth}%
+\inputencoding{latin9}\begin{lstlisting}
+\@printd@testrue
+\datedefended{October 2, 2012}
+\dateapproved{October 3, 2012}
+\end{lstlisting}
+\inputencoding{utf8}%
+\end{minipage}
+
+\textbf{Note finally.} I want you to use \LaTeX{} to prepare documents.
+Doing anything else is ``finger painting.'' But don't ask me for
+much help. If you find something wrong with kuthesis.cls, I will be
+glad to try to fix it if you let me know. I don't have time/ability
+to answer a million email questions about \LaTeX{} or \LyX{}. So please
+consult the WWW, there is a ton of stuff up there, that's how I learned.
+And if you get in a serious hole and ask me for help, it might cost
+you a t-shirt.
+
+Paul Johnson <pauljohn@ku.edu>
+
+Prof. Political Science \& Assoc. Dir., Center for Research Methods
+and Data Analysis
+
+2012-10-02
+
+And that's the end of the abstract.
+
+\begin{acknowledgementslong}
+%%if you want a "quote" environment for acknowledgements,
+%% use acknowledgements instead of acknowledgementslong
+
+I would like to thank mum, dad, Prof. Shandarin, committee members, officemates, friends, exes, uncles, aunts, grandpa, grandma, grandma's dogs, neighbors, neighbors' dogs who made this thesis possible. 
+
+\end{acknowledgementslong}
+
+\end{abstract}
+\tableofcontents{}
+
+\listoffigures
+
+
+\listoftables
+
+
+\end{romanpages}
+
+\include{Chapter1/intro}
+\include{Chapter2/background}
+\include{Chapter3/Paper2015}
+\include{Chapter4/Paper2017a_Nobmath}
+\include{Chapter5/Paper2017b_Nobmath}
+
+
+
+
+
+\global\long\def\bibname{References}
+
+
+\bibliographystyle{apalike2}
+%\bibliography{Biblio/allcites}
+\bibliography{Biblio/library2018}
+
+
+\appendix
+\include{Appendix1/Appendix1}
+\include{Appendix2/Appendix_paper2017a}
+\include{Appendix3/Appendix_paper2017b}
+
+\end{document}

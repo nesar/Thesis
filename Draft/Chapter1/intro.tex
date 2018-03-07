@@ -1,0 +1,83 @@
+
+\chapter{Introduction}
+
+\hl{Never gonna give you up, never gonna let you down}
+
+\hl{Never gonna run around and desert you ...} 
+
+
+
+
+\section{Trial}
+
+Never gonna make you cry, never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+
+\begin{table}
+
+
+\caption{Sample table\label{tab:Ordinal-Regression-Results}}
+
+
+\centering{}%
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+ & R: polr & R: lrm & SAS & Stata\tabularnewline
+\hline 
+\hline 
+$\hat{b}_{1}$ & -0.28 & -0.28 & 0.28 & -0.28\tabularnewline
+\hline 
+$\hat{\zeta}_{1}$ & -4.24 & 4.24 & -4.24 & -4.24\tabularnewline
+\hline 
+$\hat{\zeta}_{2}$ & -2.32 & 2.32 & -2.32 & -2.32\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+
+\noindent None of these are actually wrong, they are all correct \emph{given
+the model they specified}. This the point at which the student may
+be tempted to give up. Please don't. I've worked very hard to clear
+this up in the following sections.
+
+
+
+\begin{equation}
+y_{i}=\left\{ \begin{array}{lll}
+2 & if\, b_{0}+b_{1}X_{i}-e_{i}\geq\Pi_{1}\\
+1 & if\,\Pi_{0}\leq b_{0}+b_{1}X_{i}-e_{i}<\Pi_{1}\\
+0 & if\, b_{0}+b_{1}X_{i}-e_{i}<\Pi_{0}
+\end{array}\right.\label{eq:3category1}
+\end{equation}
+
+
+Note we don't really need 3 equations. If we have two, say $Pr(y_{i}=0)$
+and $Pr(y_{i}=1)$, then the chance of ending up in the other category
+is $1-Pr(y_{i}=0)-Pr(y_{i}=1)$.
+
+In order to translate this into a model involving the cumulative probability
+distribution, re-arrange so that the random variable $e_{i}$ is by
+itself.
+
+\begin{equation}
+y_{i}=\left\{ \begin{array}{lll}
+2 & if\, e_{i}\leq b_{0}+b_{1}X_{i}-\Pi_{1}\\
+1 & if\, b_{0}+b_{1}X_{i}-\Pi_{1}<e_{i}\leq b_{0}+b_{1}X_{i}-\Pi_{0}\\
+0 & if\, b_{0}+b_{1}X_{i}-\Pi_{0}<e_{i}
+\end{array}\right.\label{eq:3category2-1}
+\end{equation}
+
+
+
+
+\begin{equation}
+\begin{array}{lll}
+Pr(y_{i}=2) & =Pr(e_{i}\leq b_{0}+b_{1}X_{i}-\Pi_{1}) & =F(b_{0}+b_{1}X_{i}-\Pi_{1})\\
+Pr(y_{i}=1) & =Pr(b_{0}+b_{1}X_{i}-\Pi_{1}\leq e_{i}<b_{0}+b_{1}X_{i}-\Pi_{0})\\
+ & =1-F(b_{0}+b_{1}X_{i}-\Pi_{0})-F(b_{0}+b_{1}X_{i}-\Pi_{1})\\
+Pr(y_{i}=0) & =Pr(b_{0}+b_{1}X_{i}-\Pi_{0}<e_{i}) & =1-F(b_{0}+b_{1}X_{i}-\Pi_{0})
+\end{array}\label{eq:3category2}
+\end{equation}
+\\
+

@@ -1,0 +1,138 @@
+The authors would like to thank the referee for the detailed comments on the manuscript, and the editor for helping with the submission. Major changes in the manuscript includes dividing the draft into two separate papers as suggested by the referee. The first paper deals with global topology (both void and the web structure) and local geometrical aspects (using Hessian) of the multi-stream field. The second paper will be regarding the identification of halo candidates from the multi-stream field and will be submitted separately in a few weeks.  
+
+We address the comments pertaining to the first paper below. Corresponding changes in the draft are highlighted.
+
+1) Comments concerning presentation:
+
+1.1) Advice to present two separate papers - 
+
+RESPONSE: Sections in the previous drafts that deal with halo identification and comparisons with other halo finders (Sections 5 and 6.1) are entirely removed from this draft. They will be included in the next paper.
+
+Section 6 in the previous draft (deals with percolating multi-stream web) is moved to section 4 so that it follows discussion about single-streaming void percolation. 
+
+1.2) The title of the manuscript suggests the paper focusses on the topology and geometry of the spatial pattern outlined by the cosmic web. Only following a detailed study of the paper it is becoming clear that it concerns the local geometry of the multi-stream field. Perhaps therefore the title of the manuscript would more clearly express the contents when stating ”Topology and geometry of the multistream structure of the dark matter cosmic web”. In connection to previous point (1), this would be a proper title for the discussion on the multistream geometry, void region properties and percolation.
+
+RESPONSE: Title changed to `Topology and geometry of the dark matter web: A multi-stream view'.
+
+1.3) There is a considerable level of redundancy and repetition throughout the text. To my impression the text could be shortened by removal of the redundancies, and at the same time increase its transparency.
+
+RESPONSE: Text is significantly changed in order to avoid redundancies. Discussion on global topological aspects (percolation of void and web) and local geometrical measure (Hessian eigenvalue analysis) are separately dealt with.   
+
+2) Comments on scientific aspects: Only 2.1 - 2.8, 2.13 and 2.14 are addressed. Other comments are relevant to the second paper.
+
+2.1) Introduction and references
+
+RESPONSE: Changes are made in the introduction. New references are added, including the papers suggested by the referee.  
+
+2.2) While the idea of using the multistream field may be interesting, it may not be settled that the spatial structure of the multistream field is representative for the entire spatial region corresponding to the various weblike structures in the cosmic mass distribution. Partially relating to the argument above is the question of the extent of infall regions. Gravitationally they clearly belong to a region, but in general they correspond to larger regions than the multistream interior of an object. In this respect, note that even the turnaround region around a halo is vastly larger than the collapsed interior, let alone the entire gravitationally bound environment.
+
+RESPONSE: 
+
+The multi-stream transitions occur at the spatial locations of caustic surfaces. These locations mark the boundary of the region within which the particles are gravitationally bound to the multi-stream inside. Volume fraction of the first multi-stream region (nstr = 3) is very high compared to that of haloes, and the virial boundaries of FOF-haloes have varying number of multi-streams, sometimes nearly 100 streams (shown in Ramachandra & Shandarin 2015). Recent study of infall regions around a halo by More et al (2015), defines a `splashback radius' as an average distance from the center of the halo to the most external caustic, if it was resolved. The authors argue that it is “a more physical halo boundary choice” than the commonly defined boundaries of over-density thresholds. This is the boundary where the number of streams falls from three to one in the multi-stream field. Similar analogy can be made with filaments and walls too. 
+
+Further explanation concerning dynamical history and spatial distribution is addressed in 2.4. Relevent changes with respect to turnaround radii and infall regions are mentioned in the introduction (discussion of More et al 2015 is included).   
+
+2.3) 3. pg. 3, 2nd column, sect. 2.1: the statement that the first non-linear structures in the cosmic web have nstr = 3. That very much depends on the viewpoint, but in my view a partially contracted spherical mass peak  that has not yet undergone full collapse will not have a multistream region while being highly nonlinear. In fact, we may even call a void a nonlinear object, when nonlinearity is interpreted in terms of how far the dynamics and evolution of the object deviates from linear evolution. In other words, such a statement without any further elaboration will call up confusion and needs 
+to be better specified, justified or corrected.
+
+RESPONSE: We agree that the term “non-linear structures” can be understood differently by different people. It is perhaps better to say “…the first non-linear structure that reached non-perturbative stage have nstr = 3.”  Relevant changes are made in Section 2.1 (highlighted). We consistently use this term throughout this version of the paper. 
+
+2.4) pg. 4, 1st column, sect. 3: the statement ”a single-stream flow implies that gravitationally bound structures have not yet formed” is not proper, confusing, or both. Structures may easily be gravitationally bound 
+yet not having become nonlinear. Even primordial regions can be gravitationally bound.
+
+REPLY:
+The formation and evolution of the DM web — made of collisions dark matter only — can be viewed as the flow of the most of DM mass along the following route : 
+(1) entering into walls mostly from void/s,
+(2) then into filaments  mostly from walls 
+(3) and finally into halos mostly from filaments, 
+
+All particles fallen into a wall will never return to any void therefore they can be labeled as gravitationally bound to pancakes/walls. This is the sufficient condition of being gravitationally bound but not the necessary one. However we cannot say that all particles of a void defined at a certain time will stay in void forever because some or most of them certainly will end up in a wall, filament or halo. Similarly a particle that has fallen into filament will never return into a wall or void, but most of them will fall into some halo. The criterion for a particle of not returning to a void is simply to be at a location where number of streams greater than one. The criterion to be in a filament is far more complicated, and thus can only be approximated. Finally the particles in a halo will never return to a filament. At certain stages some walls may merge when the corresponding void disappear being squeezed by the walls. 
+
+The last statement about primordial regions is obviously correct: they are simply the progenitors of halos, filaments and walls/pancakes. But so far there is no accurate method to determine them in a generic case except by following the evolution of the web in N-body simulations and select those which actually become bound. Another way of doing this is actually checking whether they have entered the multi stream  web or not.
+
+An obvious exception is the collapse of spherical perturbation when the condition of being gravitationally bound is trivial but it does hold in the case of the generic perturbations of density. In other words the statement ”a single-stream flow implies that gravitationally bound structures have not yet formed” actually meant to say that  we cannot easily determine whether a particle in one-stream flow at time ‘t1’ will be in multi-stream region by time ’t2’. On the contrary the particle in multi-stream flow at time ’t1’ will stay in multi-stream flow region forever therefore it is certainly gravitationally bound (here we assume only collisionless fluid).
+
+The above reasoning is explained in the introduction and in beginning of Section 3. 
+
+2.5) The manuscript introduces the Hessian of the multistream field as a means to analyze its geometry. It would have been beneficial to have a more systematic argument and discussion on this. In this respect I would think in terms of eg. a related presentation of the cosmic web in the multistream field, as in figure 2, with that of the spatial outline of the eigenvalues, such as in figure 7. That is, for the same mass distribution, so that it will be more clear how the eigenvalues relate to the surrounding structure. I would certainly expect a more systematic discussion of the concept. It concerns an integer value field, and the Hessian of such a field - even when filtered - is a concept that makes a somewhat artificial impression. Perhaps a presentation in the context of a simple but illustrative situation would be helpful.
+
+RESPONSE: 
+Figure 8 (figure 7 in the previous draft) is edited to include the multi-stream field in a separate panel. The plots are also changed to highlight only the positive, zero and negative regions for each eigenvalue, which form defintions of 1-,2- and 3- dimensional geometries.   
+
+Section 5.1 (with illustrations) is added to discuss filtering of the field, and it's effect on volume fraction of each multi-streaming regions. We agree at the operation is not typical - in the sense that - the multi-stream field is not inherently smooth. However, at the scale of grid length, this field can be considered smooth. Figure 11 shows changes in the boundaries of structures on small scales with different smoothing scales.  
+
+Of course, the field is defined on a structured grid, which makes certain numerical operations convenient, but is nevertheless a grid-level approximation. Only the field with extremely high refinements would be able to resolve tiny structural details. These shortcomings can be overcome be using different tessellations schemes on the Lagrangian sub-manifold - like the ones shown in Figure 12. One can resolve volume measure-zero objects like caustics in an unstructured grid.  
+
+
+2.6) Taking the Hessian of the filtered - integer value - multistream field may be argued to represent a rather awkward operation. To this end, we may refer to its translation in Fourier space: it would correspond to a Fourier integral with as integrand the product of the filter function transform, the product k i k j of the wavenumber components, and - most importantly - the Fourier transform of the integer value field n sc , which will be beset by high-frequency ringing effects in Fourier space due to the sharp edges in the field. I am surprised this yields a stable outcome, as one might expect strong numerical artefacts. This surely deserves a more systematic discussion.
+
+RESPONSE: Appendix B mentions numerical calculations of Hessian components. Due to the nature of the field - which only takes value of 1, 3, 5, 7 etc. (variation is a multiple of 2), the second derivaties are independant of the field itself, and is independant of the grid size. More importantly, it results in symmetric Hessian matrix, similar to a continous field. The sharp edges in density fields at the location of caustic is less predictable, since the density fields become extremely noisy (for ex, the caustics near haloes shown in Vogelsberger and White (2011)) at high resolutions. At lower resolutions, the peaks are smoothed out, hence giving the impression of a smooth field. 
+
+Discussion added in Appendix B. 
+
+2.7) References/citations on voids. While the identity of voids is one of the main subjects of this paper, the discussion hardly addresses points of contention with other views on void structure, reflected in the absence of a number of relevant key studies on the subject is very limited. It is quite essential that these are mentioned, given the particular view forwarded in this manuscript on the identity of voids, which certainly is not a view that is generally supported. It would be by means of the contrast to these other views that the conclusions reached in the manuscript obtain more significance.
+
+RESPONSE: Several references for void finding algorithms are added for the traditional matter density based approaches. For the void idenfitifcation algorithms based on Lagrangian sub-manifold - Shandarin et al 2012, Abel et al 2012, Falck et al 2012 have similar definitions of voids. 
+
+2.8) section 3, voids in the multistream field. Continuing the argument above, and contending that while one may certainly forward the thesis that voids are to be identified with monostream regions in the large scale flow field, there are ample reasons not to agree on this view.
+2.8a) There are numerous regions that are monostream but NOT voidlike. The manuscript exclusively identifies monostream regions with voids, while the large -often overdense-regions surrounding filaments and halos that consist of matter infalling towards these structures cannot, in my view, be considered as belonging to voids.
+2.8b) when looking at the distribution of mass or galaxies, the most straightforward definition is that they are the underdense regions in the mass distribution
+2.8c) with the introduction of objective and mathematically solidly founded void identification, in particular by the watershed transform (Platen et al. 2007, Neyrinck 2008, Aragon-Calvo et al. 2011, Sutter et al. 2014, Cautun et al. 2016, and a score of others), the ”observational view” has been quantified into a proper topological void definition by itself. Such regions are certainly not all percolating through space: they identify boundaries between voids with saddle points, as we do valleys with ridges centered on mountain passes. This is not only closer to what the eye perceives as a separate underdense region, it also corresponds to the dynamically based view that voids need to be identified with separate outflow - velocity divergence - regions (see eg. Aragon-Calvo & Szalay 2013, Sheth & van de Weygaert 2004).
+2.8d) unlike the multistream/monostream definition, such topological void identifications also take into account the accumulation of mass at a given location, ie. density, and prevents the identification of mildly dense or overdense regions surrounding voids with void interiors while they do not involve multistreaming flows.
+
+
+RESPONSE: 
+
+This reply follows the explanation in 2.4: 
+
+We use the multi-stream field as a proxy for distinguishing of the DM web from DM voids: the web is defined as the regions with number of streams greater than one and thus voids as a single stream regions. The boundary between them representing a sharp transition from one– to three– stream flow regions would be a caustic surface in the density field if the mass and spatial resolutions were sufficiently high. They were clearly seen in 2D simulations by Melott & Shandarin (1989) as well as in 3D simulations by Angulo et al. (2016), Hahn & Angulo (2016), Hahn et al. (2013) and in velocity fields Hahn et al. (2015). 
+
+Although it's true that near single-streaming regions in the proximity of pancakes may have higher mass density, it will still be less dense than the nstr > 3 regions. Voids defined by single-streams ensures that none of the particle the have exited from the void during evolution would return back to the void, hence this definition considers the dynamical history of particles, and the location of the first caustic surface. The definition is also parameter-free. 
+
+While looking at the distribution of mass/galaxies, regions under a density threshold are identified as voids. In more sophisticated algorithms like the watershed method, the identification is more local. Numerous definitions and algorithms have emerged so far, and they don't necessarily agree with each other. Void finders show volume fractions ranging from 20-90 percent (This was shown in void finder comparison project (Colberg 2008)). 
+
+Certainly the methods such as ZOBOV, VIDE and WVF methods detect isolated pockets of voids that are separated from each other by the saddle regions. But the single-streaming voids are not detected by a local segmentation algorithm. The global definition is based on the gravitational evolution of the dark matter, where some particles would have entered their first caustic until z=0, are irreversibly bound to the walls/filaments/haloes, i.e. is the multi-stream web. The single-streaming voids are percolating (similar results were seen for ORIGAMI-voids as well (Falck et al 2015)). In addition, one may try to find troughs of matter distribution from Lagrangian sub-manifold itself ( Wojtak et al 2016), which is beyond the scope of this paper. 
+
+We also agree that regions denser than the average density of the Universe may be detected as voids. However the detected regions have lesser density than the immediate neighbouring multi-stream regions. Transition of nstr: 1->3 identifies a location of caustic surface at the level of the grid, where the mass density fields can only detect the sharp peaks at very high resolutions (since caustics surfaces are volume mesure zero).    
+
+It is also worth stressing that the single-stream definition of voids is appropriate only for the dark matter particles, where the dynamics is collion-less. Dynamics of the baryonic matter, formation of galaxies etc. involve more than just gravitational motion. We do not extrapolate the definitions of multi-streams to galactic distributions. 
+
+The above reasonings are explained in the manuscript in the introduction, sections 2.1, 3 and 6. 
+
+2.13) The discussion on the topology of the cosmic web is mainly restricted to percolation of structures. It would be good to be more explicit on this description, and at least mention other and more extensive topological characterizations of the (multiscale) mass distribution).
+
+RESPONSE: This description has been included in the discussion section. A few modern topological/morphological algorithms - (DisPerSe, SpineWeb, Felix, NEXUS etc) are mentioned in the introduction and discussion.    
+
+2.14) In the percolation analysis in section 6, such as presented in figure 19, the manuscript compares the percolation results of the multistream spine of the cosmic mass distribution with that of a CIC density field. This may hardly been considered a fair comparison. The CIC density averages the density over a cubic gridcell. It will therefore diminish any fine structure as well as anisotropic stucture, and in this way severely afflict the comparison with the multistream analysis. At least the analysis should seek to relate to a more refined density field measure in terms of mutiscale structure. Eg. something involving an adaptive density estimate by means of an SPH kernel or. However, most compellign would be a comparison with the density field estimates inferred from the phase-space structure itself, such as extensively discussed by Abel et al. and presented in impressive visualizations by Kaehler et al. In a sense, the thesis forwarded is that the Hessian of the multistream field would be more sensitive than the density field. However, that should be discussed on a proper basis.
+
+RESPONSE: The intent in this section is to compare percolating web structure in the multi-stream field and that in a mass-density field at the same level of refinement. Presently, the multi-stream field is calculated without any adaptive refinement. 
+
+As suggested, we have chosen a better density estimator - DTFE to find the percolating filament. The finer structures are resolved better with such a tessellation based method. This percolating filament is thinner than CIC, although still thicker than multi-stream filament. We have made corresponding changes in the text as well. 
+
+3) Comments on minor issues:
+
+3.1) Throughout the text I often see the word “web” mentioned without the adjective ”cosmic”. As the word “web” is used in many different meanings, it would be appropriate to keep to the concept ”cosmic web”. I would like to ask the authors to take care this is changed throughout the manuscript.
+
+RESPONSE: The changes are made throughout the text. Term multi-stream web or non-void is used to describe the structure that are not single-streaming voids. 
+
+3.2) pg. 2, 2nd column: Platen et al. 2007 is mentioned as reference that showed that DTFE is superior to CIC (and TSC). This is not entirely representative: Schaap 2007 and van de Weygaert & Schaap 2009 are the proper references for that. Platen et al. 2007 is the paper that introduced the watershed transform, in particular with respect to the identification of voids (and as such should be referenced, also in the discussion on pg. 16, 2nd column.
+
+RESPONSE: These references are corrected
+
+3.3) pg. 5, 1st column, sect. 3.2: the fact that Colberg et al. EVEN mention the existence of void haloes in several halo finder algorithms calls up 2 comments:
+[a.] the text means several void finding algorithms (that was the subject of Colberg et al. 2008)
+[b.] the remark appears to express surprise. This may be true for the void interpretation of the present study, but is certainly not strange in the context of other views of voids and void structure. In fact, there are targeted void galaxy survey campaigns (eg. Kreckel et al. 2011, 2012), and I presume the suggestion is not that these are based on a wrong interpretation of reality?
+
+RESPONSE: We are surprised that the 'dark matter haloes' - highly clustered objects in the Universe, irrespective of the defintion - are identified within the voids, which are regions of low density. Void galaxies are certainly not compared with to our definition of voids, since the multi-stream fields are only defined for collision-less dark matter particles. Clustering of baryonic matter is more complicated, and we do not extend our analysis to galaxies.  
+
+4) Other changes: 
+
+Altered abstract to account for changes in the text.  
+
+Figure 4 and 5 (from previous manuscript) are combined together for brevity. 
+
+Figure 20 and 21 are combined into one (figure 5 in the new manuscript). Panel for DTFE is added. Percolation plot (Figure 4) shows transitions in DTFE density fields as well. 
+
+Figure 9 and corresponding discussion will be included in the second paper since it is relevant for halo identification. 
+
+Changed reference: Shandarin & Medvedev (2014) to Shandarin & Medvedev (2016) for the paper on flip-flop fields.  

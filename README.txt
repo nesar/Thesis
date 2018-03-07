@@ -1,0 +1,44 @@
+Copying papers directly -
+
+Remove until Abstract
+Link images properly - Folder needs to be mentioned in \includegraphics
+
+
+All acknowledgements together later
+
+Check for consistent notations -- VERY IMPORTANT  - n_str(\bmath(x)) and \mathbff
+\odot - \sun
+
+\bmath - \bf ?
+
+
+CHECK - Track changes by MNRAS - check them all and correct them. 
+
+
+IMPORTANT: Figures in paper 1 need to be recomputed for consistency
+
+
+
+
+
+
+
+
+
+
+
+TO DO:
+
+Change figures from paper1 - to match the style
+Change Biblio references in paper1 - make it Mendeley compatible
+Change Fig. \ref to autoref - wherever possible
+
+
+CHECK talks for further things
+Make list of figures from other papers ??
+
+
+Link Comparison project paper with Chapter 3 or have a separate section
+
+
+

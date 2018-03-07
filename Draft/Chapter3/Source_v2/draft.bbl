@@ -1,0 +1,173 @@
+\begin{thebibliography}{}
+\makeatletter
+\relax
+\def\mn@urlcharsother{\let\do\@makeother \do\$\do\&\do\#\do\^\do\_\do\%\do\~}
+\def\mn@doi{\begingroup\mn@urlcharsother \@ifnextchar [ {\mn@doi@}
+  {\mn@doi@[]}}
+\def\mn@doi@[#1]#2{\def\@tempa{#1}\ifx\@tempa\@empty \href
+  {http://dx.doi.org/#2} {doi:#2}\else \href {http://dx.doi.org/#2} {#1}\fi
+  \endgroup}
+\def\mn@eprint#1#2{\mn@eprint@#1:#2::\@nil}
+\def\mn@eprint@arXiv#1{\href {http://arxiv.org/abs/#1} {{\tt arXiv:#1}}}
+\def\mn@eprint@dblp#1{\href {http://dblp.uni-trier.de/rec/bibtex/#1.xml}
+  {dblp:#1}}
+\def\mn@eprint@#1:#2:#3:#4\@nil{\def\@tempa {#1}\def\@tempb {#2}\def\@tempc
+  {#3}\ifx \@tempc \@empty \let \@tempc \@tempb \let \@tempb \@tempa \fi \ifx
+  \@tempb \@empty \def\@tempb {arXiv}\fi \@ifundefined
+  {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
+  mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
+
+\bibitem[\protect\citeauthoryear{{Abel}, {Hahn}  \& {Kaehler}}{{Abel}
+  et~al.}{2012}]{Abel_etal:12}
+{Abel} T.,  {Hahn} O.,   {Kaehler} R.,  2012, \mn@doi [MNRAS]
+  {10.1111/j.1365-2966.2012.21754.x}, \href
+  {http://adsabs.harvard.edu/abs/2012MNRAS.427...61A} {427, 61}
+
+\bibitem[\protect\citeauthoryear{{Angulo}, {Hahn}  \& {Abel}}{{Angulo}
+  et~al.}{2013}]{Angulo_etal:13}
+{Angulo} R.~E.,  {Hahn} O.,   {Abel} T.,  2013, \mn@doi [\mnras]
+  {10.1093/mnras/stt1246}, \href
+  {http://adsabs.harvard.edu/abs/2013MNRAS.434.3337A} {434, 3337}
+
+\bibitem[\protect\citeauthoryear{{Arag{\'o}n-Calvo}, {van de Weygaert}  \&
+  {Jones}}{{Arag{\'o}n-Calvo} et~al.}{2010}]{Aragon_etal:10}
+{Arag{\'o}n-Calvo} M.~A.,  {van de Weygaert} R.,   {Jones} B.~J.~T.,  2010,
+  \mn@doi [\mnras] {10.1111/j.1365-2966.2010.17263.x}, \href
+  {http://adsabs.harvard.edu/abs/2010MNRAS.408.2163A} {408, 2163}
+
+\bibitem[\protect\citeauthoryear{{Arnold}, {Shandarin}  \&
+  {Zeldovich}}{{Arnold} et~al.}{1982}]{Arnold_etal:82}
+{Arnold} V.~I.,  {Shandarin} S.~F.,   {Zeldovich} Y.~B.,  1982, \mn@doi
+  [Geophysical and Astrophysical Fluid Dynamics] {10.1080/03091928208209001},
+  \href {http://adsabs.harvard.edu/abs/1982GApFD..20..111A} {20, 111}
+
+\bibitem[\protect\citeauthoryear{{Bond}, {Kofman}  \& {Pogosyan}}{{Bond}
+  et~al.}{1996}]{Bond_etal:96}
+{Bond} J.~R.,  {Kofman} L.,   {Pogosyan} D.,  1996, \mn@doi [\nat]
+  {10.1038/380603a0}, \href {http://adsabs.harvard.edu/abs/1996Natur.380..603B}
+  {380, 603}
+
+\bibitem[\protect\citeauthoryear{{Cautun}, {van de Weygaert}, {Jones}  \&
+  {Frenk}}{{Cautun} et~al.}{2014}]{Cautun_etal:14}
+{Cautun} M.,  {van de Weygaert} R.,  {Jones} B.~J.~T.,   {Frenk} C.~S.,  2014,
+  \mn@doi [\mnras] {10.1093/mnras/stu768}, \href
+  {http://adsabs.harvard.edu/abs/2014MNRAS.441.2923C} {441, 2923}
+
+\bibitem[\protect\citeauthoryear{{Colberg} et~al.,}{{Colberg}
+  et~al.}{2008}]{Colberg_etal:08}
+{Colberg} J.~M.,  et~al., 2008, \mn@doi [\mnras]
+  {10.1111/j.1365-2966.2008.13307.x}, \href
+  {http://adsabs.harvard.edu/abs/2008MNRAS.387..933C} {387, 933}
+
+\bibitem[\protect\citeauthoryear{{Elahi} et~al.,}{{Elahi}
+  et~al.}{2013}]{Elahi_etal:13}
+{Elahi} P.~J.,  et~al., 2013, \mn@doi [MNRAS] {10.1093/mnras/stt825}, \href
+  {http://adsabs.harvard.edu/abs/2013MNRAS.433.1537E} {433, 1537}
+
+\bibitem[\protect\citeauthoryear{{Falck} \& {Neyrinck}}{{Falck} \&
+  {Neyrinck}}{2015}]{Flack_Neyrinck:14}
+{Falck} B.,  {Neyrinck} M.~C.,  2015, \mn@doi [\mnras] {10.1093/mnras/stv879},
+  \href {http://adsabs.harvard.edu/abs/2015MNRAS.450.3239F} {450, 3239}
+
+\bibitem[\protect\citeauthoryear{{Falck}, {Neyrinck}  \& {Szalay}}{{Falck}
+  et~al.}{2012}]{Flack_etal:12}
+{Falck} B.~L.,  {Neyrinck} M.~C.,   {Szalay} A.~S.,  2012, \mn@doi [\apj]
+  {10.1088/0004-637X/754/2/126}, \href
+  {http://adsabs.harvard.edu/abs/2012ApJ...754..126F} {754, 126}
+
+\bibitem[\protect\citeauthoryear{{Forero-Romero}, {Hoffman}, {Gottl{\"o}ber},
+  {Klypin}  \& {Yepes}}{{Forero-Romero} et~al.}{2009}]{Forero_etal:09}
+{Forero-Romero} J.~E.,  {Hoffman} Y.,  {Gottl{\"o}ber} S.,  {Klypin} A.,
+  {Yepes} G.,  2009, \mn@doi [\mnras] {10.1111/j.1365-2966.2009.14885.x}, \href
+  {http://adsabs.harvard.edu/abs/2009MNRAS.396.1815F} {396, 1815}
+
+\bibitem[\protect\citeauthoryear{{Frenk}, {White}  \& {Davis}}{{Frenk}
+  et~al.}{1983}]{Frenk_etal:83}
+{Frenk} C.~S.,  {White} S.~D.~M.,   {Davis} M.,  1983, \mn@doi [\apj]
+  {10.1086/161209}, \href {http://adsabs.harvard.edu/abs/1983ApJ...271..417F}
+  {271, 417}
+
+\bibitem[\protect\citeauthoryear{{Hahn}, {Carollo}, {Porciani}  \&
+  {Dekel}}{{Hahn} et~al.}{2007}]{Hahn_etal:07}
+{Hahn} O.,  {Carollo} C.~M.,  {Porciani} C.,   {Dekel} A.,  2007, \mn@doi
+  [\mnras] {10.1111/j.1365-2966.2007.12249.x}, \href
+  {http://adsabs.harvard.edu/abs/2007MNRAS.381...41H} {381, 41}
+
+\bibitem[\protect\citeauthoryear{{Hoffmann} et~al.,}{{Hoffmann}
+  et~al.}{2014}]{Hoffmann_etal:14}
+{Hoffmann} K.,  et~al., 2014, \mn@doi [\mnras] {10.1093/mnras/stu933}, \href
+  {http://adsabs.harvard.edu/abs/2014MNRAS.442.1197H} {442, 1197}
+
+\bibitem[\protect\citeauthoryear{{Klypin} \& {Shandarin}}{{Klypin} \&
+  {Shandarin}}{1983}]{Klypin_Shandarin:83}
+{Klypin} A.~A.,  {Shandarin} S.~F.,  1983, \mnras, \href
+  {http://adsabs.harvard.edu/abs/1983MNRAS.204..891K} {204, 891}
+
+\bibitem[\protect\citeauthoryear{{Knebe} et~al.,}{{Knebe}
+  et~al.}{2013}]{Knebe_etal:13}
+{Knebe} A.,  et~al., 2013, \mn@doi [\mnras] {10.1093/mnras/stt1403}, \href
+  {http://adsabs.harvard.edu/abs/2013MNRAS.435.1618K} {435, 1618}
+
+\bibitem[\protect\citeauthoryear{{Oort}}{{Oort}}{1983}]{Oort:83}
+{Oort} J.~H.,  1983, \mn@doi [\araa] {10.1146/annurev.aa.21.090183.002105},
+  \href {http://adsabs.harvard.edu/abs/1983ARA%26A..21..373O} {21, 373}
+
+\bibitem[\protect\citeauthoryear{{Shandarin}}{{Shandarin}}{2011}]{Shandarin:11}
+{Shandarin} S.~F.,  2011, \mn@doi [\jcap] {10.1088/1475-7516/2011/05/015},
+  \href {http://adsabs.harvard.edu/abs/2011JCAP...05..015S} {5, 15}
+
+\bibitem[\protect\citeauthoryear{{Shandarin} \& {Klypin}}{{Shandarin} \&
+  {Klypin}}{1984}]{Shandarin_Klypin:84}
+{Shandarin} S.~F.,  {Klypin} A.~A.,  1984, \sovast, \href
+  {http://adsabs.harvard.edu/abs/1984SvA....28..491S} {28, 491}
+
+\bibitem[\protect\citeauthoryear{{Shandarin} \& {Medvedev}}{{Shandarin} \&
+  {Medvedev}}{2014}]{Shandarin_Medvedev:14}
+{Shandarin} S.~F.,  {Medvedev} M.~V.,  2014, preprint, \href
+  {http://adsabs.harvard.edu/abs/2014arXiv1409.7634S} {} (\mn@eprint {arXiv}
+  {1409.7634})
+
+\bibitem[\protect\citeauthoryear{Shandarin \& Zeldovich}{Shandarin \&
+  Zeldovich}{1989}]{Shandarin_Zeldovich:89}
+Shandarin S.,  Zeldovich Y.,  1989, \mn@doi [Rev. Mod. Phys.]
+  {10.1103/RevModPhys.61.185}, 61, 185
+
+\bibitem[\protect\citeauthoryear{{Shandarin}, {Habib}  \&
+  {Heitmann}}{{Shandarin} et~al.}{2012}]{Shandarin_etal:12}
+{Shandarin} S.,  {Habib} S.,   {Heitmann} K.,  2012, \mn@doi [\prd]
+  {10.1103/PhysRevD.85.083005}, \href
+  {http://adsabs.harvard.edu/abs/2012PhRvD..85h3005S} {85, 083005}
+
+\bibitem[\protect\citeauthoryear{{Sousbie}}{{Sousbie}}{2011}]{Sousbie:11}
+{Sousbie} T.,  2011, \mn@doi [\mnras] {10.1111/j.1365-2966.2011.18394.x}, \href
+  {http://adsabs.harvard.edu/abs/2011MNRAS.414..350S} {414, 350}
+
+\bibitem[\protect\citeauthoryear{{Sousbie}, {Pichon}  \& {Kawahara}}{{Sousbie}
+  et~al.}{2011}]{Sousbie_etal:11}
+{Sousbie} T.,  {Pichon} C.,   {Kawahara} H.,  2011, \mn@doi [\mnras]
+  {10.1111/j.1365-2966.2011.18395.x}, \href
+  {http://adsabs.harvard.edu/abs/2011MNRAS.414..384S} {414, 384}
+
+\bibitem[\protect\citeauthoryear{{Springel}}{{Springel}}{2005}]{Springel:05}
+{Springel} V.,  2005, \mn@doi [\mnras] {10.1111/j.1365-2966.2005.09655.x},
+  \href {http://adsabs.harvard.edu/abs/2005MNRAS.364.1105S} {364, 1105}
+
+\bibitem[\protect\citeauthoryear{{Vogelsberger} \& {White}}{{Vogelsberger} \&
+  {White}}{2011}]{Vogelsberger_etal:11}
+{Vogelsberger} M.,  {White} S.~D.~M.,  2011, \mn@doi [\mnras]
+  {10.1111/j.1365-2966.2011.18224.x}, \href
+  {http://adsabs.harvard.edu/abs/2011MNRAS.413.1419V} {413, 1419}
+
+\bibitem[\protect\citeauthoryear{{Zel'dovich}}{{Zel'dovich}}{1970}]{Zeldovich_aap:70}
+{Zel'dovich} Y.~B.,  1970, \aap, \href
+  {http://adsabs.harvard.edu/abs/1970A%26A.....5...84Z} {5, 84}
+
+\bibitem[\protect\citeauthoryear{{van de Weygaert} \& {Schaap}}{{van de
+  Weygaert} \& {Schaap}}{2009}]{Weygaert_Schaap:09}
+{van de Weygaert} R.,  {Schaap} W.,  2009, in {Mart{\'{\i}}nez} V.~J.,  {Saar}
+  E.,  {Mart{\'{\i}}nez-Gonz{\'a}lez} E.,   {Pons-Border{\'{\i}}a} M.-J.,  eds,
+  Lecture Notes in Physics, Vol.~665, Data Analysis in Cosmology.
+{Berlin Springer Verlag}, pp 291--413, \mn@doi{10.1007/978-3-540-44767-2_11}
+
+\makeatother
+\end{thebibliography}
