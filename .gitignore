@@ -1,0 +1,14 @@
+*.log
+*.lof
+*.dvi
+*.blg
+*.backup
+*.aux
+*.lyx
+*.out
+*.toc
+*.bbl
+*.zip
+*.pdf
+OtherTheses
+
