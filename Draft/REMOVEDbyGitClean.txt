@@ -1,0 +1,59 @@
+nothing added to commit but untracked files present
+nes:Thesis$ git push origin master
+Username for 'https://github.com': nesar
+Password for 'https://nesar@github.com': 
+Everything up-to-date
+nes:Thesis$ vi .gitignore
+nes:Thesis$ git clean -fX
+Removing Draft/Appendix1/Appendix1.aux
+Removing Draft/Appendix1/Appendix1.lyx
+Removing Draft/Appendix2/Appendix_paper2017a.aux
+Removing Draft/Appendix3/Appendix_paper2017b.aux
+Removing Draft/Chapter1/intro.aux
+Removing Draft/Chapter1/intro.tex.backup
+Removing Draft/Chapter1/introduction.aux
+Removing Draft/Chapter2/General.aux
+Removing Draft/Chapter2/Multi-stream.aux
+Removing Draft/Chapter2/Regression-1-guide-1.0.aux
+Removing Draft/Chapter2/Regression-1-guide-1.0.lyx
+Removing Draft/Chapter2/background.aux
+Removing Draft/Chapter2/background.tex.backup
+Removing Draft/Chapter3/Paper2015.aux
+Removing Draft/Chapter3/Paper2015.log
+Removing Draft/Chapter3/Paper2017a.aux
+Removing Draft/Chapter3/Source_v2/draft.aux
+Removing Draft/Chapter3/Source_v2/draft.blg
+Removing Draft/Chapter3/Source_v2/draft.log
+Removing Draft/Chapter3/Source_v2/draft.out
+Removing Draft/Chapter4/Paper2017a.aux
+Removing Draft/Chapter4/Paper2017a_Nobmath.aux
+Removing Draft/Chapter4/Source_v2/draft_paper1.aux
+Removing Draft/Chapter4/Source_v2/draft_paper1.blg
+Removing Draft/Chapter4/Source_v2/draft_paper1.log
+Removing Draft/Chapter4/Source_v2/draft_paper1.out
+Removing Draft/Chapter4/Source_v2/missfont.log
+Removing Draft/Chapter5/OlderSource/draft.aux
+Removing Draft/Chapter5/OlderSource/draft.blg
+Removing Draft/Chapter5/OlderSource/draft.log
+Removing Draft/Chapter5/OlderSource/draft.out
+Removing Draft/Chapter5/OlderSource/missfont.log
+Removing Draft/Chapter5/Paper2017b_Nobmath.aux
+Removing Draft/Chapter5/Paper2017b_Nobmath_old.aux
+Removing Draft/Chapter5/Source_v2/draft.aux
+Removing Draft/Chapter5/Source_v2/draft.blg
+Removing Draft/Chapter5/Source_v2/draft.log
+Removing Draft/Chapter5/Source_v2/draft.out
+Removing Draft/Chapter5/Source_v2/draft.tex.backup
+Removing Draft/Chapter5/Source_v2/missfont.log
+Removing Draft/stylefiles/kuthesis.cls.backup
+Removing Draft/thesis-ku.aux
+Removing Draft/thesis-ku.bbl.backup
+Removing Draft/thesis-ku.blg
+Removing Draft/thesis-ku.dvi
+Removing Draft/thesis-ku.lof
+Removing Draft/thesis-ku.log
+Removing Draft/thesis-ku.lyx
+Removing Draft/thesis-ku.out
+Removing Draft/thesis-ku.tex.backup
+Removing Draft/thesis-ku.toc
+
