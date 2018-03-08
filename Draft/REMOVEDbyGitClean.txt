@@ -57,3 +57,14 @@ Removing Draft/thesis-ku.out
 Removing Draft/thesis-ku.tex.backup
 Removing Draft/thesis-ku.toc
 
+
+
+#######################################################
+
+ * branch            master     -> FETCH_HEAD
+Removing OtherTheses/JounghunLee.pdf
+Removing OtherTheses/JenniferLinde.pdf
+Removing OtherTheses/CappYess.pdf
+Removing OtherTheses/Brett.pdf
+CONFLICT (modify/delete): Draft/thesis-ku.pdf deleted in 39d14dd2f43100023860a0220f574dfc4e4de87c and modified in HEAD. Version HEAD of Draft/thesis-ku.pdf left in tree.
+
