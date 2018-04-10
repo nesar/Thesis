@@ -1,83 +1,34 @@
 
-\chapter{Introduction}
-
-\hl{Never gonna give you up, never gonna let you down}
-
-\hl{Never gonna run around and desert you ...} 
+\chapter{General Introduction}
 
 
+\section{Large Scale structure}
+
+\section{Observation?}
+
+\section{Cosmic fields: Characterizing non-linear growth of Cosmic structure}
+% Taken from Comprehensive essay
+% /home/nes/MEGA/Google_drive/KU courses/Fall2016/CompreEssay/Compre1/draft_compre_clean.tex
 
 
-\section{Trial}
-
-Never gonna make you cry, never gonna say goodbye
-Never gonna tell a lie and hurt you
+The most fundamental attributes of particles in the N-body simulations are their position and velocity co-ordinates, and their masses. Due to the lack of numerical tools for direct analysis these raw data, fields such as mass density $\rho(\mathbf{x}, t)$, velocity $\mathbf{v}(\mathbf{x}, t)$ or gravitational potential $\phi(\mathbf{x}, t)$ fields are often computed numerically. Mass density fields were calculated using Cloud-in-Cell (CIC) algorithm (cf. \citealt{Hockney1988}), which is numerically equivalent to counting the number of particles on each cell of a regular grid. Alternatively, the density field also generated on irregular grids by applying Delaunay (For example, \citealt{Icke1991} and the Delaunay Tessellation Field Estimator (DTFE) by \citealt{Schaap2000} and \citealt{Weygaert2009a}) or Voronoi tessellations (See \citealt{Schaap2000} and references therein) to the particle coordinates. Another parameter `linking length', using distances between nearest neighbouring particles, was used for percolation analyses and identifying super-clusters of galaxies ( \citealt{Zeldovich1982}, \citealt{Shandarin1983} and \citealt{Shandarin1983b}) for identifying halos \citealt{Davis1985} in the cosmological simulations. Left panel in \autoref{fig:cosmicfields} shows some of the popular fields/parameters that use particle mass and positions. It has to be noted that the density fields or linking-lengths are not dynamical descriptions that invoke the initial field of density fluctuations or the velocity of the particles. 
 
 
-\begin{table}
+\begin{figure*}
+\begin{minipage}[t]{0.99\linewidth}
+ \centering\includegraphics[height=8.5cm]{Chapter1/Plots/fig0.pdf} 
+\end{minipage}\hfill
+\captionsetup{font={small,stretch=1}}
+\caption{Classification of some of the fields/parameters used in cosmological analyses. Some fields utilise position co-ordinates only whereas others use the full phase-space information. In addition, the fields may be defined on a regular grid, or may be defined on an unstructured grid (For instance, flip-flop is a number-valued field defined on each dark matter particle). Fields like mass density and multi-streams can be defined on either grids, depending on the numerical technique. List is obviously not exhaustive- velocity and potential fields are not included, and discussions of correlation functions are excluded as well.}
+\label{fig:cosmicfields}
+\end{figure*}
 
 
-\caption{Sample table\label{tab:Ordinal-Regression-Results}}
+An obvious advantage of methods based on particle coordinates, both on structured and unstructured grids, is their applicability to redshift catalogues. The redshift catalogues like SDSS and 2dF provide only two angular coordinates and distances in redshift space. But cosmological N-body dark matter simulations provide the full dynamical information in six-dimensional phase space. This additional information is very valuable providing a greater opportunity for understanding the physics of the web and developing a better theory of the web.
 
 
-\centering{}%
-\begin{tabular}{|c|c|c|c|c|}
-\hline 
- & R: polr & R: lrm & SAS & Stata\tabularnewline
-\hline 
-\hline 
-$\hat{b}_{1}$ & -0.28 & -0.28 & 0.28 & -0.28\tabularnewline
-\hline 
-$\hat{\zeta}_{1}$ & -4.24 & 4.24 & -4.24 & -4.24\tabularnewline
-\hline 
-$\hat{\zeta}_{2}$ & -2.32 & 2.32 & -2.32 & -2.32\tabularnewline
-\hline 
-\end{tabular}
-\end{table}
+The velocity fields in the simulations of collision-less cold dark matter particles can become multi-valued under the action of gravity. This phenomenon was first discussed by \cite{Zeldovich1970}, where he predicted the formation of non-linear structures (also see \citealt{Shandarin1989} for discussion on formation of multi-stream). The primordial oblate structures were later known as `Zel'dovich pancakes'. These pancakes grow from initial perturbations in a continuous mass distribution, where the velocities are single-valued (also referred to as single-stream) everywhere in the configuration space. Multiple values in the velocity field $\mathbf{v} (\mathbf{x},t)$ or `multi-streams' can also be seen in the dynamically equivalent Lagrangian sub-manifold - $(\mathbf{q}, \mathbf{x})$, where $\mathbf{x}$ and $\mathbf{q}$ are co-moving Eulerian and Lagrangian co-ordinates respectively. \cite{Shandarin2011} and \cite{Abel2012b} studied this $ \mathbf{q} \mapsto \mathbf{x}$ mapping in N-body simulations to quantify the number of streams using phase-space tessellations. \cite{Shandarin2011} define a multi-stream field $n_{str}(\mathbf{x})$ as a field taking discrete values that are equal to the number of streams at every evaluation point in configuration space. Ordered sign-reversal of each elementary volume element in the Lagrangian sub-manifold was measured by \cite{Shandarin2014a}. Their {\it flip-flop} field $n_{ff}(\mathbf{q})$ in Lagrangian space demonstrates a very rich sub-structure of the cosmic web, especially in a halo environment. 
 
+Fields computed from a complete dynamical information (either $(\mathbf{q}, \mathbf{x})$ or $(\mathbf{p}, \mathbf{q})$) could provide valuable contributions to our understanding of the cosmic structure. \cite{Falck2012} have recently delineated archetypal web structures by counting the number of foldings in the sub-manifold for each dark matter particle along different directions. Another study by \cite{Ramachandra2016a} explored some of the global topological and local geometrical properties of the web in the context of multi-streaming. The applications of these analyses is certainly not limited to diagnostic tools; the multi-streaming phenomenon can be used in improving N-body simulations \citep{Hahn2013}, and studying galaxy evolution and star formation as well \citep{Aragon-Calvo2016b}. 
 
-\noindent None of these are actually wrong, they are all correct \emph{given
-the model they specified}. This the point at which the student may
-be tempted to give up. Please don't. I've worked very hard to clear
-this up in the following sections.
-
-
-
-\begin{equation}
-y_{i}=\left\{ \begin{array}{lll}
-2 & if\, b_{0}+b_{1}X_{i}-e_{i}\geq\Pi_{1}\\
-1 & if\,\Pi_{0}\leq b_{0}+b_{1}X_{i}-e_{i}<\Pi_{1}\\
-0 & if\, b_{0}+b_{1}X_{i}-e_{i}<\Pi_{0}
-\end{array}\right.\label{eq:3category1}
-\end{equation}
-
-
-Note we don't really need 3 equations. If we have two, say $Pr(y_{i}=0)$
-and $Pr(y_{i}=1)$, then the chance of ending up in the other category
-is $1-Pr(y_{i}=0)-Pr(y_{i}=1)$.
-
-In order to translate this into a model involving the cumulative probability
-distribution, re-arrange so that the random variable $e_{i}$ is by
-itself.
-
-\begin{equation}
-y_{i}=\left\{ \begin{array}{lll}
-2 & if\, e_{i}\leq b_{0}+b_{1}X_{i}-\Pi_{1}\\
-1 & if\, b_{0}+b_{1}X_{i}-\Pi_{1}<e_{i}\leq b_{0}+b_{1}X_{i}-\Pi_{0}\\
-0 & if\, b_{0}+b_{1}X_{i}-\Pi_{0}<e_{i}
-\end{array}\right.\label{eq:3category2-1}
-\end{equation}
-
-
-
-
-\begin{equation}
-\begin{array}{lll}
-Pr(y_{i}=2) & =Pr(e_{i}\leq b_{0}+b_{1}X_{i}-\Pi_{1}) & =F(b_{0}+b_{1}X_{i}-\Pi_{1})\\
-Pr(y_{i}=1) & =Pr(b_{0}+b_{1}X_{i}-\Pi_{1}\leq e_{i}<b_{0}+b_{1}X_{i}-\Pi_{0})\\
- & =1-F(b_{0}+b_{1}X_{i}-\Pi_{0})-F(b_{0}+b_{1}X_{i}-\Pi_{1})\\
-Pr(y_{i}=0) & =Pr(b_{0}+b_{1}X_{i}-\Pi_{0}<e_{i}) & =1-F(b_{0}+b_{1}X_{i}-\Pi_{0})
-\end{array}\label{eq:3category2}
-\end{equation}
-\\
-
+\section{Chapter Organization}
