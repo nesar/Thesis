@@ -1,0 +1,294 @@
+\subsection{DisPerSE \\ \hskip 0.75cm(Sousbie)}
+\label{section:Disperse}
+\disperse{} is a formalism designed for analyzing the cosmic web, and in particular its filamentary network, 
+on the basis of the topological structure of the cosmic mass distribution \citep{sousbie2011,sousbie2011b}. 
+The elaborate framework of \disperse{} is based on three mathematical and computational pillars. These are 
+Morse theory \citep{morse1934,milnor1963}, Discrete Morse theory \citep{forman1998,gyulassy2008} and the 
+Delaunay Tessellation Field Estimator \dtfe{} \citep{schaapwey2000,weyschaap2009,cautun2011}. 
+The formalism uses  three concepts in computational 
+topology: Persistent Homology and Topological Simplification \citep{edelsbrunner2002,gyulassy2008,edelsbrunner2010}. 
+These are used  for removal of noise and the selection of the significant morphological features from a discretely 
+sampled cosmic mass distribution. 
+
+\disperse{} analyzes and characterizes the cosmic web in terms of a spatial segmentation of space defined by the  
+singularity structure of the cosmic mass distribution, the \emph{Morse complex}. 
+The morphological components of the cosmic web are identified with the various $k$-dimensional manifolds that 
+outline this uniquely defined segmentation. Filaments are identified with the ascending 
+$1$-manifold. Voids, walls and clusters are identified with the ascending $3$-, $2$- and $0$-manifolds 
+\citep[also see][]{aragon2010a,shivashankar2016}.  \disperse{} follows earlier 
+applications of Morse theory to structural classification in astrophysical datasets \citep[][]{colombi2000}. 
+The immediate precursor to \disperse{} is the skeleton formalism \citep{sousbie2008,sousbie2008b,sousbie2009}. 
+
+%\medskip
+Morse theory, which forms the basis for \disperse{}, looks at the singularity structure of the density field $f(x)$. It leads to 
+the translation of the spatial distribution and connectivity of maxima, minima and saddle points in the density fields into a 
+geometric segmentation of space that is known as the \emph{Morse complex}. This is a uniquely defined segmentation of space in a 
+spatial tessellation of cells, faces, edges and nodes defined by the singularities and their connections by integral lines. 
+The \emph{index} of a non-degenerate critical point is the number of negative eigenvalues of its Hessian: a \emph{minimum} of a 
+field $f$ has index $0$, a \emph{maximum} has index $3$, while there are two types of \emph{saddles}, with index $1$  and $2$.  
+Morse theory captures the connectivity of a field $f$ via the flowlines defined by the field gradient $\nabla f$, the \emph{integral lines}.
+The field minima and maxima are the divergence and convergence points of these lines. It leads to a natural segmentation of space 
+into distinct regions of space called ascending and descending manifolds. The \emph{ascending} $k$-manifold of a critical point $P$ defines 
+the $k$-dimensional region of space defined by the set of points along integral lines that emanate from origin $P$. Conversely, the 
+\emph{descending} $m$-manifold of a critical point $P$ is the $m$-dimensional region of space defined by the set of points along 
+integral lines for which $P$ is the destination. 
+%In all, there exist exactly $d$ different classes of ascending and descending 
+%manifolds \citep[see e.g.][]{sousbie2011}. 
+
+%\medskip
+Since astronomical datasets (N-body simulations, galaxy catalogs, etc.) are discrete and intrinsically noisy tracers of the density field,  \disperse{} utilizes \emph{Discrete Morse theory}  \citep[see e.g.][]{forman1998}. It consists of a combinatorial formulation of Morse theory 
+in terms of intrinsically discrete functions defined over a simplicial complex\footnote{In essence, a simplicial complex 
+is a geometric assembly of cells, faces, edges and vertices marking a discrete map of the volume. Cells, faces, edges and 
+nodes/vertices are $3-$, $2-$, $1$- and $0$-dimensional simplices.}. A well-known example 
+is the Delaunay tessellation $\cal D$ \citep{weygaert1994,okabe2000}. \disperse{} uses the Delaunay tessellation, and 
+specifically its role as functional basis in the \dtfe{} formalism \citep{schaapwey2000,weyschaap2009,cautun2011}. 
+\disperse{} uses the \dtfe{} density estimate at each sample point, while 
+it assigns a density value $f(\sigma_k)$ to each simplex $\sigma_k$ of the Delaunay simplicial complex $\cal D$. On the basis of 
+these values, and the mutual connections between the various simplices, one may identify discrete simplicial analogues to the 
+singularity points, gradient vector field, integral lines and Morse complex \citep[see e.g.][for a detailed 
+treatment]{gyulassy2008,sousbie2011}. 
+
+%\medskip
+The finite sampling of the density field introduces noise into the detection of structural features. Instead of resorting to a simplistic feature-independent filtering 
+operation, which tends to suppress or even annihilate real structural features, \disperse{} makes use of persistent homology \citep{edelsbrunner2002,edelsbrunner2010}. Topological persistence 
+is the language that allows the identification of features according to their significance \citep{edelsbrunner2002}. 
+Persistence theory defines a topological criterion for the birth and death of features, and the persistence of a feature, i.e. its significance, is
+quantified according to the interval between its appearance and demise. For removal of insignificant 
+features \disperse{} augments the persistence measurement with the \emph{topological simplification} of 
+the discrete Morse complex \citep{edelsbrunner2002,gyulassy2008}, consisting of an ordered elimination of simplicial singularities and  their connections.
+
+%\medskip
+The final product of \disperse{} is a simplicial complex with appropriately adapted gradient lines and corresponding 
+ascending manifolds. It provides a map of the morphological structures that make up the weblike 
+arrangement of galaxies and mass elements on Megaparsec scales, identified in terms of the ascending 
+manifolds of a discrete and topologically filtered Morse complex. Most outstanding is the filamentary network 
+corresponding to the index $1$ ascending manifolds. 
+
+
+%@ARTICLE{aragon2010a,
+%   author = {{Arag{\'o}n-Calvo}, M.~A. and {Platen}, E. and {van de Weygaert}, R. and 
+%	{Szalay}, A.~S.},
+%    title = "{The Spine of the Cosmic Web}",
+%  journal = {\apj},
+%archivePrefix = "arXiv",
+%   eprint = {0809.5104},
+% keywords = {cosmology: theory, large-scale structure of universe, methods: numerical, surveys},
+%     year = 2010,
+%    month = nov,
+%   volume = 723,
+%    pages = {364-382},
+%      doi = {10.1088/0004-637X/723/1/364},
+%   adsurl = {http://adsabs.harvard.edu/abs/2010ApJ...723..364A},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%@MISC{cautun2011,
+%   author = {{Cautun}, M.~C. and {van de Weygaert}, R.},
+%    title = "{The DTFE public software: The Delaunay Tessellation Field Estimator code}",
+% keywords = {Software},
+%howpublished = {Astrophysics Source Code Library},
+%     year = 2011,
+%    month = may,
+%archivePrefix = "arXiv",
+%   eprint = {1105.0370},
+% primaryClass = "astro-ph.IM",
+%   adsurl = {http://adsabs.harvard.edu/abs/2011ascl.soft05003C},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%@ARTICLE{colombi2000,
+%   author = {{Colombi}, S. and {Pogosyan}, D. and {Souradeep}, T.},
+%    title = "{Tree Structure of a Percolating Universe}",
+%  journal = {Physical Review Letters},
+%   eprint = {astro-ph/0011293},
+%     year = 2000,
+%    month = dec,
+%   volume = 85,
+%    pages = {5515-5518},
+%      doi = {10.1103/PhysRevLett.85.5515},
+%   adsurl = {http://adsabs.harvard.edu/abs/2000PhRvL..85.5515C},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%@book{edelsbrunner2010,
+%  title={Computational Topology: An Introduction},
+%  author={Edelsbrunner, H. and Harer, J.},
+%  isbn={9780821849255},
+%  lccn={2009028121},
+%  series={Applied mathematics},
+%  url={http://books.google.at/books?id=MDXa6gFRZuIC},
+%  year={2010},
+%  publisher={American Mathematical Society}
+%}
+%@article{edelsbrunner2002,
+%year={2002},
+%issn={0179-5376},
+%journal={Discrete Computat. Geom.},
+%volume={28},
+%number={4},
+%doi={10.1007/s00454-002-2885-2},
+%title={Topological Persistence and Simplification},
+%url={http://dx.doi.org/10.1007/s00454-002-2885-2},
+%publisher={Springer-Verlag},
+%author={Edelsbrunner, H. and Letscher, J. and Zomorodian, A.},
+%pages={511-533},
+%language={English}
+%}
+%@article{forman1998,
+%title = "Morse Theory for Cell Complexes",
+%journal = "Advances in Mathematics",
+%volume = "134",
+%number = "1",
+%pages = "90 - 145",
+%year = "1998",
+%note = "",
+%issn = "0001-8708",
+%doi = "http://dx.doi.org/10.1006/aima.1997.1650",
+%url = "http://www.sciencedirect.com/science/article/pii/S0001870897916509",
+%author = "Robin Forman"
+%}
+%@ARTICLE{gyulassy2008,
+%   author = {{Gyulassy}, A.~G.},
+%    title = "{Combinatorial construction of Morse-Smale complexes for data analysis and visualization}",
+%  journal = {PhD Thesis},  
+%     year = 2008
+%}
+%@article{milnor1963,
+%    author = {{Milnor}, J.},
+%    journal = {Journal of Mathematical Physics},
+%    publisher = {Princeton Univ. Press, Princeton, New Jersey},
+%    title = {Morse Theory},
+%    year = {1963}
+%}
+%@Book{okabe2000,
+%  author = 	 "Atsuyuki Okabe and Barry Boots and Kokichi Sugihara
+%		  and Sung Nok Chiu",
+%  title = 	 "Spatial tessellations: Concepts and applications of
+%		  {V}oronoi diagrams",
+%  publisher = 	 "Wiley",
+%  year = 	 "2000",
+%  series =	 "Probability and Statistics",
+%  address =	 "NYC",
+%  edition =	 "2nd",
+%  note =	 "671 pages.",
+%  OPTannote = 	 ""
+%}
+%@ARTICLE{pranav2017,
+%   author = {{Pranav}, P. and {Edelsbrunner}, H. and {van de Weygaert}, R. and 
+%	{Vegter}, G. and {Kerber}, M. and {Jones}, B.~J.~T. and {Wintraecken}, M.
+%	},
+%    title = "{The topology of the cosmic web in terms of persistent Betti numbers}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {1608.04519},
+% keywords = {methods: data analysis, methods: numerical, methods: statistical, cosmology: theory, large-scale structure of Universe},
+%     year = 2017,
+%    month = mar,
+%   volume = 465,
+%    pages = {4281-4310},
+%      doi = {10.1093/mnras/stw2862},
+%   adsurl = {http://adsabs.harvard.edu/abs/2017MNRAS.465.4281P},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%@ARTICLE{schaapwey2000,
+%  author = {Schaap, W.~E. and van de Weygaert, R.},
+%  journal = {\aap},
+%  year = {2000},
+%  volume = {363},
+%  pages = {L29},
+%  timestamp = {2012.07.16}
+%}
+%@article{shivashankar2016,
+%  title={Felix: A Topology Based Framework for Visual Exploration of Cosmic Filaments},
+%  author={Shivashankar, Nithin and Pranav, Pratyush and Natarajan, Vijay and van de Weygaert, Rien and Bos, EG Patrick and Rieder, Steven},
+%  journal={IEEE Transactions on Visualization and Computer Graphics},
+%  volume={22},
+%  number={6},
+%  pages={1745--1759},
+%  year={2016},
+%  publisher={IEEE}
+%}
+%@ARTICLE{sousbie2008,
+%   author = {{Sousbie}, T. and {Pichon}, C. and {Colombi}, S. and {Novikov}, D. and 
+%	{Pogosyan}, D.},
+%    title = "{The 3D skeleton: tracing the filamentary structure of the Universe}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {0707.3123},
+% keywords = {cosmology: theory , dark matter , large-scale structure of Universe},
+%     year = 2008,
+%    month = feb,
+%   volume = 383,
+%    pages = {1655-1670},
+%      doi = {10.1111/j.1365-2966.2007.12685.x},
+%   adsurl = {http://adsabs.harvard.edu/abs/2008MNRAS.383.1655S},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%@ARTICLE{sousbie2011,
+%   author = {{Sousbie}, T.},
+%    title = "{The persistent cosmic web and its filamentary structure - I. Theory and implementation}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {1009.4015},
+% keywords = {methods: data analysis, methods: numerical, galaxies: formation, galaxies: kinematics and dynamics, cosmology: observations, large-scale structure of% Universe},
+%     year = 2011,
+%    month = jun,
+%   volume = 414,
+%    pages = {350-383},
+%      doi = {10.1111/j.1365-2966.2011.18394.x},
+%   adsurl = {http://adsabs.harvard.edu/abs/2011MNRAS.414..350S},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%@ARTICLE{sousbie2011b,
+%   author = {{Sousbie}, T. and {Pichon}, C. and {Kawahara}, H.},
+%    title = "{The persistent cosmic web and its filamentary structure - II. Illustrations}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {1009.4014},
+% keywords = {methods: data analysis, galaxies: formation, galaxies: kinematics and dynamics, cosmology: observations, dark matter, large-scale structure of Univer%se},
+%     year = 2011,
+%    month = jun,
+%   volume = 414,
+%    pages = {384-403},
+%      doi = {10.1111/j.1365-2966.2011.18395.x},
+%   adsurl = {http://adsabs.harvard.edu/abs/2011MNRAS.414..384S},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%@PHDTHESIS{weygaert1991,
+%   author = {{van de Weygaert}, M.~A.~M.},
+%    title = "{Voids and the geometry of large scale structure}",
+%   school = {Ph.~D.~thesis, University of Leiden (1991)},
+%     year = 1991,
+%    month = September,
+%   adsurl = {http://adsabs.harvard.edu/abs/1991PhDT........84V},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%@ARTICLE{weygaert1994,
+%   author = {{van de Weygaert}, R.},
+%    title = "{Fragmenting the Universe. 3: The constructions and statistics of 3-D Voronoi tessellations}",
+%  journal = {\aap},
+% keywords = {Astronomical Models, Computational Astrophysics, Cosmology, Galactic Clusters, Galactic Evolution, Mathematical Models, Statistical Analysis, Three D%imensional Models, Universe, Algorithms, Boundary Conditions, Computerized Simulation, Galactic Nuclei, Histograms, Monte Carlo Method, Poisson Equation, Spatial %Distribution},
+%     year = 1994,
+%    month = mar,
+%   volume = 283,
+%    pages = {361-406},
+%   adsurl = {http://adsabs.harvard.edu/abs/1994A\%26A...283..361V},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%@ARTICLE{weyschaap2009,
+%  author = {{van de Weygaert}, R. and {Schaap}, W.},
+%  title = {{The Cosmic Web: Geometric Analysis}},
+%  year = {2009},
+%  volume = {665},
+%  pages = {291-413},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+%  adsurl = {http://adsabs.harvard.edu/abs/2009LNP...665..291V},
+%  booktitle = {Data Analysis in Cosmology},
+%  doi = {10.1007/978-3-540-44767-211},
+%  editor = {{V.~J.~Mart{\'{\i}}nez, E.~Saar, E.~Mart{\'{\i}}nez-Gonz{\'a}lez,
+%	\& M.-J.~Pons-Border{\'{\i}}a}},
+%  file = {:net/plato/data/users/cautun/Papers/DTFE/The cosmic web Geometric Analysis - Weygaert & Schaap 2007.pdf:PDF},
+%  owner = {cautun},
+%  series = {Lecture Notes in Physics, Berlin Springer Verlag},
+%  timestamp = {2011.04.06}
+%}
+
+
+

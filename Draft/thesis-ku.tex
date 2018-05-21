@@ -40,6 +40,36 @@
 \usepackage{bm}
 
 
+
+%%%%%% FROM Comparison Paper2018
+
+\usepackage{url, amsmath,epsfig,epstopdf}
+%\usepackage{url,ulem,amsmath,amsfonts,amssymb,epsfig,epstopdf}
+%\usepackage{times}
+\usepackage{graphicx}
+% input macros for figures
+\usepackage{epsf}
+%\usepackage{bm}
+\usepackage{color}
+\usepackage{rotating}
+\usepackage[T1]{fontenc}
+%\usepackage{ae,aecompl}
+\usepackage{array,multirow}
+%\usepackage[percent]{overpic}
+
+%\usepackage[round]{natbib}
+% Symbol definitions
+%\bibliographystyle{mnras}
+\usepackage{aas_macros}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{txfonts}
+%\usepackage[draft]{hyperref}
+
+
+
+
 % ----------HIGHLIGHTING -------
 \usepackage{xcolor}
 \usepackage[normalem]{ulem} % use normalem to protect \emph
@@ -54,6 +84,40 @@
 %-------------------------------------------------------------------------
 
 %\newcommand{\bmath}[1]{\ensuremath{\boldmath{#1}}\xspace}
+
+
+%%%%%% FROM Comparison Paper2018
+
+\newcommand{\Mspace}         {{{\mathbb M}}}
+
+\newcommand{\nil}[1]{\textcolor{red}{\bf NL: #1}}
+\newcommand{\bridget}[1]{\textcolor{green}{\bf BF: #1}}
+\newcommand{\mc}[1]{\textcolor{red}{\bf #1}}
+\newcommand{\elmo}[1]{\textcolor{magenta}{\bf ET: #1}}
+
+\newcommand{\NEW}[1]{\textcolor{blue}{  #1}}
+\newcommand{\mcd}[1]{\textcolor{red}{\sout{  #1}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%        The names of the methods
+\newcommand{\bisous}{Bisous}
+\newcommand{\classic}{\textsc{CLASSIC}}
+\newcommand{\disperse}{\textsc{DisPerSE}}
+\newcommand{\fine}{\textsc{FINE}}
+\newcommand{\origami}{\textsc{ORIGAMI}}
+\newcommand{\mst}{\textsc{MST}}
+\newcommand{\dtfe}{\textsc{DTFE}}
+\newcommand{\Nexus}{\textsc{NEXUS}}
+\newcommand{\nexus}{\textsc{NEXUS+}}
+\newcommand{\tweb}{T-web}
+\newcommand{\vweb}{V-web}
+\newcommand{\mswa}{\textsc{MSWA}}
+\newcommand{\mmft}{\textsc{MMF-2}}
+\newcommand{\spine}{Spineweb}
+\newcommand{\logFilter}{Log-Gaussian}
+\newcommand{\Vector}[1]{\mathbf{#1}}
+
+
 
 \doublespacing
 
@@ -97,8 +161,8 @@
 %% to leave dates blank. If dates are included, then both dates 
 %% must be included.
 \@printd@testrue
-\datedefended{October 02, 2012}
-\dateapproved{October 03, 2012}
+\datedefended{October 02, 2018}
+\dateapproved{October 03, 2018}
 
 \@ifundefined{showcaptionsetup}{}{%
  \PassOptionsToPackage{caption=false}{subfig}}
@@ -111,137 +175,72 @@
 
 \maketitle
 \begin{abstract}
-Version 2.1, May 20, 2013. This was a minor update that slightly changed
-kuthesis.cls. First, the Graduate School no longer exists, so we rephrase
-the front matter to refer to Graduate Faculty. Second, the page numbering
-after the front matter begins at arabic number 1. This was an oversight
-in the previous edition, it was never intended, but users found easy
-``work arounds'' and we were not aware of it.
 
-Version 2, October 2, 2012. This is a minor update to allow insertion
-of dates in the document preamble.
 
-If you are reading the pdf, this document is produced from ``thesis-ku.tex''
-using the \LaTeX{} class kuthesis.cls and other common packages that
-are almost surely installed in a working \LaTeX{} system. We suggest
-you try to compile this document in your system (as a test), and after
-that use it as a template for your project.
 
-\textbf{Look here.} The \LaTeX{} class ``kuthesis.cls'' extends
-the base class called ``report''. If you have a report document
-already, migration into this format will be easy, since we inherit
-everything from ``report'' and then customize a few things. 
+% 2015 Paper
+We report the results of the first study of the multi-stream environment of dark matter haloes in cosmological N-body simulations
+in the $\Lambda$CDM cosmology. The full dynamical state of  dark matter can be described as a three-dimensional sub-manifold
+in six-dimensional phase space - the dark matter sheet. In our study we use a Lagrangian sub-manifold ${\bf x} = {\bf x}({\bf q},t)$ 
+(where {\bf x} and {\bf q} are co-moving Eulerian and Lagrangian coordinates respectively), which 
+is dynamically  equivalent to the dark matter sheet but is more convenient for numerical analysis.
+Our major results can be summarized as follows. At the resolution of the simulation i.e. without additional
+smoothing, the cosmic web represents a hierarchical structure: each halo is embedded in the filamentary framework of the web predominantly 
+at the filament crossings, 
+and each filament is embedded in the wall like fabric of the web at the wall crossings. 
+Locally, each halo or sub-halo is a peak in the number of streams field. The number of streams in the neighbouring  
+filaments is higher than in the neighbouring walls. The walls are regions where number of streams
+ is equal to three or a few. Voids are uniquely defined by the local condition requiring to be a single-stream flow region.
+  The shells of streams 
+ around haloes are  quite thin and the closest void region is typically within one and a half FOF radius 
+ from the center of the halo.
 
-\textbf{How To Use? }This is a basic \LaTeX{} usage question. You
-need a ``\LaTeX{} distribution'' such as TexLive or MikTex. You
-need to run the file thesis-ku.tex through the \LaTeX{} processing
-system. At the current time, the preferred output format is pdf from
-the ``pdflatex'' program, but it is probably safe to try other programs
-as well. On most \LaTeX{} systems, your latex processor will look
-in several places for ``kuthesis.cls'' while it processes thesis-ku.tex.
-Usually, you don't need to install formally that file, since--on most
-systems--the \LaTeX{} program will look in the current working directory
-for syle files. If so, then this document will ``just work'' for
-you. If you want to use kuthesis.cls for several documents, you need
-to either copy it into every document directory, or install ``kuthesis.cls''
-in a place where your \LaTeX{} system will find it, and then run the
-\LaTeX{} re-configurator to make the system notice. In my system,
-\LaTeX{} is set up to look in /usr/share/texmf/tex/latex, /usr/local/share/texmf/tex/latex,
-as well as in my home directory and the current working directory.
-I copy kuthesis.sty into /usr/local/share/texmf/tex/latex, run the
-re-configurator program ``texhash,'' and it is ready to go. 
+% 2017 Paper_b
+Mysterious dark matter constitutes about 85\% of all mass in the Universe. Clustering of dark matter plays the dominant role in the formation of all observed structures on scales from a fraction to a few hundreds of Mega-parsecs. Galaxies play a role of lights illuminating these structures so they can be observed. The observations in the last several decades have unveiled opulent geometry of these structures currently known as the cosmic web. Haloes are the highest concentrations of dark matter and host luminous galaxies. Currently the most accurate modeling of dark matter haloes is achieved in cosmological N-body simulations. Identifying the haloes from the distribution of particles in N-body simulations is one of the problems attracting both considerable interest and efforts. We propose a novel framework for detecting potential dark matter haloes using the field unique for dark matter  -- multistream field. The multistream field emerges at the nonlinear stage of the growth of perturbations because the dark matter is collisionless. Counting the number of velocity streams in gravitational collapses supplements our knowledge of spatial clustering. We assume that the virialized haloes have convex boundaries. Closed and convex regions of the multistream field are hence isolated by imposing a positivity condition on all three eigenvalues of the Hessian estimated on the smoothed multistream field. In a single-scale analysis of high multistream field resolution and low softening length, the halo substructures with local multistream maxima are isolated as individual halo sites.
 
-\textbf{Does it work with Lyx?} Yes, as a matter of fact, I'm preparing
-this document in \LyX{} right now. (\LyX{} is a GUI \LaTeX{} document
-editor, available for free at \url{http://www.lyx.org}.) \LyX{} will
-open the document, but it will warn that the layout file ``kuthesis.layout''
-is unavailable. Unfortunately, the only fix for that is to install
-the customized layout file, which is provided with this document in
-the stylefiles directory. Copy the kuthesis.layout file into the one
-of the folders where \LyX{} looks for layout configurations. I did
-not install that in the system-wide \LyX{} layout folder, but rather
-in my personal user configuration folder. I suggest you so the same,
-at least while you are testing this. On Linux, that is in the user
-HOME under .lyx/layouts. (For me, that's ``/home/pauljohn/.lyx/layouts.''
-On other OS, here's how you can find out where to put the layout.
-Run \LyX{}, in the top menu choose Tools/Preferences. Change something
-trivial, close. That will force \LyX{} to create a user folder somewhere
-in your personal HOME directories. In MS Windows 7, I just tested
-this. I searched for the word ``layouts'' and found my \LyX{} preference
-folder is ``C:\textbackslash{}Users\textbackslash{}pauljohn\textbackslash{}AppData\textbackslash{}Roaming\textbackslash{}lyx202\textbackslash{}layouts''. 
 
-\textbf{Note.} To customize this document, you have to edit the document
-preamble to put in your name, title, degree name, department, and
-advisors. If you don't do that, you won't get the right title page.
-To be explicit, in this document, the following values are currently
-set in the preamble:
+% 2017 Paper_a
+Topological connections in the single-streaming voids and multistreaming filaments and walls reveal a cosmic web structure different from traditional mass density fields. A single void structure not only percolates the multistream field in all the directions, but also occupies over 99 per cent of all the single-streaming regions. Sub-grid analyses on scales smaller than simulation resolution reveal tiny pockets of voids that are isolated by membranes of the structure. For the multistreaming excursion sets, the percolating structure is significantly  thinner than the filaments in over-density excursion approach.  
 
-\begin{minipage}[t]{1\columnwidth}%
-\inputencoding{latin9}\begin{lstlisting}
-\title{Please Read the Abstract} 
-\author{Abstract Writer} 
-\dept{Department of People who read Abstracts} 
-\degreetitle{Doctor of Philosophy} 
-\papertype{Dissertation} %capitalization is important here 
-\committee{MEMBER 1}{MEMBER 2}{MEMBER 3}{MEMBER 4}{}
-\end{lstlisting}
-\inputencoding{utf8}%
-\end{minipage}
+Hessian eigenvalues of the multistream field are used as local geometrical indicators of dark matter structures. Single-streaming regions have most of the zero eigenvalues. Parameter-free conditions on the eigenvalues in the multistream region may be used to delineate primitive geometries with concavities corresponding to filaments, walls and haloes.
 
-\textbf{Note please.} Replace ``Member 1'' with a name, of course.
-You can have at most 5 committee members, but you can have fewer.
-For the ones you have, put their names inside squiggles; for the ones
-you don't want, leave empty squiggles, \{\}, as I've demonstrated
-on the 5th member in this example.
 
-\textbf{Note also. }The chapters included here are just for illustration
-and testing. I've fiddled the format to look like what KU asks for. 
 
-\textbf{Note also. }Note the file ``thesis-ku.tex'' (or thesis-ku.lyx,
-as the case may be), does not have much content. It has the title
-page, the abstract, and not much else. Everything else is brought
-in from separate files. I strongly recommend you keep separate chapters
-in separate folders. If you don't do that, you will likely go insane.
 
-\textbf{Note for the version 2012-10-02.} In the first edition of
-this setup, I left the dates blank and expected users to write or
-type them in as necessary. A user requested a fix to allow the dates
-of the defense and final approval to be added in the document preamble
-with the other settings. So in the end of the document preamble, insert
-the following. The first is some \LaTeX{} code, don't change it. 
+% \begin{minipage}[t]{1\columnwidth}%
+% \inputencoding{latin9}\begin{lstlisting}
+% \title{Please Read the Abstract} 
+% \author{Abstract Writer} 
+% \dept{Department of People who read Abstracts} 
+% \degreetitle{Doctor of Philosophy} 
+% \papertype{Dissertation} %capitalization is important here 
+% \committee{MEMBER 1}{MEMBER 2}{MEMBER 3}{MEMBER 4}{}
+% \end{lstlisting}
+% \inputencoding{utf8}%
+% \end{minipage}
 
-\begin{minipage}[t]{1\columnwidth}%
-\inputencoding{latin9}\begin{lstlisting}
-\@printd@testrue
-\datedefended{October 2, 2012}
-\dateapproved{October 3, 2012}
-\end{lstlisting}
-\inputencoding{utf8}%
-\end{minipage}
 
-\textbf{Note finally.} I want you to use \LaTeX{} to prepare documents.
-Doing anything else is ``finger painting.'' But don't ask me for
-much help. If you find something wrong with kuthesis.cls, I will be
-glad to try to fix it if you let me know. I don't have time/ability
-to answer a million email questions about \LaTeX{} or \LyX{}. So please
-consult the WWW, there is a ton of stuff up there, that's how I learned.
-And if you get in a serious hole and ask me for help, it might cost
-you a t-shirt.
 
-Paul Johnson <pauljohn@ku.edu>
+% 2018 Paper
+The cosmic web is one of the most striking features of the distribution of galaxies and dark matter on the largest scales in the Universe. It is composed of dense regions packed full of galaxies, long filamentary bridges, flattened sheets and vast low density voids. The study of the cosmic web has focused primarily on the identification of such features, and on understanding the environmental effects on galaxy formation and halo assembly. As such, a variety of different methods have been devised to classify the cosmic web -- depending on the data at hand, be it numerical simulations, large sky surveys or other. In this paper we bring twelve of these methods together and apply them to the same data set in order to understand how they compare. In general these cosmic web classifiers have been designed with different cosmological goals in mind, and to study different questions. Therefore one would not {\it a priori} expect agreement between different techniques however, many of these methods do converge on the identification of specific features. In this paper we study the agreements and disparities of the different methods. For example, each method finds that knots inhabit higher density regions than filaments, etc. and that voids have the lowest densities. For a given web environment, we find substantial overlap in the density range assigned by each web classification scheme. We also compare classifications on a halo-by-halo basis; for example, we find that 9 of 12 methods classify around a third of group-mass haloes (i.e. $M_{\rm halo}\sim10^{13.5}h^{-1}M_{\odot}$) as being in filaments. Lastly, so that any future cosmic web classification scheme can be compared to the 12 methods used here, we have made all the data used in this paper public.
 
-Prof. Political Science \& Assoc. Dir., Center for Research Methods
-and Data Analysis
 
-2012-10-02
+% \begin{minipage}[t]{1\columnwidth}%
+% \inputencoding{latin9}\begin{lstlisting}
+% \@printd@testrue
+% \datedefended{October 2, 2012}
+% \dateapproved{October 3, 2012}
+% \end{lstlisting}
+% \inputencoding{utf8}%
+% \end{minipage}
 
-And that's the end of the abstract.
+
 
 \begin{acknowledgementslong}
 %%if you want a "quote" environment for acknowledgements,
 %% use acknowledgements instead of acknowledgementslong
 
-I would like to thank mum, dad, Prof. Shandarin, committee members, officemates, friends, exes, uncles, aunts, grandpa, grandma, grandma's dogs, neighbors, neighbors' dogs who made this thesis possible. 
+I would like to thank mum, dad, profs, committee members, officemates, friends, exes, uncles, aunts, grandpa, grandma, grandma's dogs, neighbors, neighbors' dogs who made this thesis possible. 
 
 \end{acknowledgementslong}
 
@@ -259,8 +258,10 @@ I would like to thank mum, dad, Prof. Shandarin, committee members, officemates,
 \include{Chapter1/intro}
 \include{Chapter2/background}
 \include{Chapter3/Paper2015}
+\include{Chapter3b/Paper2018}
 \include{Chapter4/Paper2017a_Nobmath}
 \include{Chapter5/Paper2017b_Nobmath}
+\include{Chapter6/concl}
 
 
 
@@ -271,11 +272,11 @@ I would like to thank mum, dad, Prof. Shandarin, committee members, officemates,
 
 \bibliographystyle{apalike2}
 %\bibliography{Biblio/allcites}
-\bibliography{Biblio/library2018}
+\bibliography{Biblio/library}
 
 
 \appendix
-\include{Appendix1/Appendix1}
+% \include{Appendix1/Appendix1}
 \include{Appendix2/Appendix_paper2017a}
 \include{Appendix3/Appendix_paper2017b}
 

@@ -1,0 +1,67 @@
+\subsection{FINE \\ \hskip 0.75cm(Gonzalez \& Padilla)}
+\label{section:gonzalez}
+
+The filamentary structure in the cosmic web can be found by following the highest density paths between density peaks.
+The Filament Identification using NodEs (\fine) method described in \citet{gonzalez2010} looks for filaments in halo or galaxy distributions.
+
+The method requires halo/galaxy positions and masses (luminosities for galaxies), and we define as Nodes, the haloes/galaxies above a given mass/luminosity.
+The mass of the nodes will define the scale of the filaments in the search. The smaller the node masses, the smaller the filaments that will be found between them.
+
+The density field is computed using Voronoi Tessellations similar to \citet{schaapwey2000}.
+The method looks first for a filament skeleton between any node pair by following the highest density path and a minimum separation; those two parameters characterize the filament quality.
+Filament members are selected by binding energy in the plane perpendicular to the filament; this condition is associated to characteristic orbital times. However, if one assumes a fixed orbital timescale for all filaments, the resulting filament properties show only marginal changes, indicating that the use of dynamical information is not critical for this criterion.
+Filaments detected using this method are in good agreement with \citet{colberg2005} who use  by-eye criteria.
+
+
+In this comparison we define nodes as the haloes with masses above $5\times10^{13}M_{\odot}$, and the minimum density threshold for the skeleton search is $5$ times the mean Voronoi density.
+
+
+
+%%%%%%%%%%References used
+%@ARTICLE{2010MNRAS.407.1449G,
+%   author = {{Gonz{\'a}lez}, R.~E. and {Padilla}, N.~D.},
+%    title = "{Automated detection of filaments in the large-scale structure of the Universe}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {0912.0006},
+% primaryClass = "astro-ph.CO",
+% keywords = {large-scale structure of Universe},
+%     year = 2010,
+%    month = sep,
+%   volume = 407,
+%    pages = {1449-1463},
+%      doi = {10.1111/j.1365-2966.2010.17015.x},
+%   adsurl = {http://adsabs.harvard.edu/abs/2010MNRAS.407.1449G},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%
+%@ARTICLE{2000A&A...363L..29S,
+%   author = {{Schaap}, W.~E. and {van de Weygaert}, R.},
+%    title = "{Continuous fields and discrete samples: reconstruction through Delaunay tessellations}",
+%  journal = {\aap},
+%   eprint = {astro-ph/0011007},
+% keywords = {METHODS: N-BODY SIMULATIONS, METHODS: NUMERICAL, METHODS: STATISTICAL, COSMOLOGY: LARGE-SCALE STRUCTURE OF UNIVERSE},
+%     year = 2000,
+%    month = nov,
+%   volume = 363,
+%    pages = {L29-L32},
+%   adsurl = {http://adsabs.harvard.edu/abs/2000A%26A...363L..29S},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%
+%@ARTICLE{2005MNRAS.359..272C,
+%   author = {{Colberg}, J.~M. and {Krughoff}, K.~S. and {Connolly}, A.~J.
+%	},
+%    title = "{Intercluster filaments in a {$\Lambda$}CDM Universe}",
+%  journal = {\mnras},
+%   eprint = {astro-ph/0406665},
+% keywords = {methods: N-body simulations, cosmology: theory, dark matter, large-scale structure of Universe},
+%     year = 2005,
+%    month = may,
+%   volume = 359,
+%    pages = {272-282},
+%      doi = {10.1111/j.1365-2966.2005.08897.x},
+%   adsurl = {http://adsabs.harvard.edu/abs/2005MNRAS.359..272C},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+

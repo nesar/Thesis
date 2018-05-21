@@ -1,0 +1,336 @@
+
+\subsection{MMF/Nexus: the Multiscale Morphology Filter \\ \hskip 0.75cm(Arag\'on-Calvo, Cautun, van de Weygaert \& Jones)} 
+The MMF/Nexus Multiscale Morphology Filter technique \citep[][]{aragon2007,aragon2010b,cautun2013,cautun2014,aragon2014} performs the morphological 
+identification of the cosmic web using a \textit{Scale-Space formalism} that ensures the detection of structures present at all scales. The formalism 
+consists of a fully adaptive framework for classifying the matter distribution on the basis of local variations in the density field, velocity 
+field or gravity field encoded in the Hessian matrix in these scales. Subsequently, a set of morphological filters is used to classify the spatial 
+matter distribution into three basic components, the clusters, filaments and walls that constitute the cosmic web. The final product of the 
+procedure is a complete and unbiased characterization of the cosmic web components, from the prominent features present in overdense regions 
+to the tenuous networks pervading the cosmic voids.
+
+Instrumental for this class of MMF cosmic web identification methods is that it simultaneously pays heed to two principal 
+aspects characterizing the weblike cosmic mass distribution. The first aspect invokes the Hessian of the corresponding 
+fields to probe the existence and identity of the mostly anisotropic structural components of the cosmic web. 
+The second, equally important, aspect uses a scale-space analysis to probe the multiscale character of the cosmic mass distribution, 
+the product of the hierarchical evolution and buildup of structure in the Universe. 
+
+The Scale Space representation of a data set consists of a sequence of copies of the data having different resolutions 
+\citep{florack1992,lindeberg1998}. A feature searching algorithm is applied to all of these copies, and the features are extracted in a 
+scale independent manner by suitably combining the information from all copies. A prominent application of Scale Space analysis involves 
+the detection of the web of blood vessels in a medical image \citep{sato1998,li2003}. The similarity to the structural patterns seen on 
+Megaparsec scales is suggestive. The Multiscale Morphology Filter has translated, extended and optimized the Scale Space technology to 
+identifying the principal characteristic structural elements in the cosmic mass and galaxy distribution.  
+%The basic setup of MMF/Nexus is that of defining a four-dimensional scale-space representation of the input field $f(\Vector{x})$. In nearly 
+%all implementations this is achieved by means of a Gaussian filtering of $f(\Vector{x})$ over a set of scales $[R_0,R_1,...,R_N]$. 
+%%\begin{equation}
+%%    f_{R_n}(\Vector{x}) = \int \frac{{\rm d}^3k}{(2\pi)^3} e^{-k^2R_n^2/2} \hat{f}(\Vector{k})  e^{i\Vector{k}\cdot\Vector{x}} ,
+%%    \label{eq:filtered_field}
+%%\end{equation}
+%%\noindent where $\hat{f}(\Vector{k})$ is the Fourier transform of the input field $f(\Vector{x})$. 
+%Subsequently, the Hessian $H_{ij,R_n}(\Vector{x})$ of the filtered field is computed, including a 
+%normalization term for the scale, $R_n^2$. 
+% \begin{eqnarray}
+%    H_{ij,R_n}(\Vector{x})&\,=\,&R_n^2 \; \frac{\partial^2f_{R_n}(\Vector{x})}{\partial x_i\partial x_j}\,.
+%%    \ \\
+%%    \hat{H}_{ij,R_n}(\Vector{k})&\,=\,& -k_ik_j R_n^2 \hat{f}(\Vector{k}) e^{-k^2R_n^2/2}\,.\nonumber
+%    \label{eq:hessian_general}
+%\end{eqnarray}
+%%\noindent In this, the $R_n^2$ term serves as a renormalization factor that has to do with the multiscale nature of the algorithm. 
+%%
+%The morphological information of the analyzed mass distribution is contained in the local geometry as specified 
+%by the eigenvalues of the Hessian matrix, $\lambda_1 \le \lambda_2 \le \lambda_3$. On the basis of the corresponding 
+%expected geometric behaviour, to every point $\Vector{x}$ the eigenvalues are used to assign a knot/cluster, filament and 
+%wall characteristic. This is accomplished by means of a set of morphology filters on the resulting eigenvalue fields 
+%\citep[see][]{aragon2007,cautun2013}. 
+%
+%The product of the morphology filter operation consists of the assignment of the environment signature $\mathcal{S}_{R_n}(\Vector{x})$, 
+%to each volume element, at each scale represented in scale space. Subsequently, for each point, the environmental signatures 
+%computed for each scale are combined to obtain a scale independent signature $\mathcal{S}(\Vector{x})$. It is defined as the 
+%the maximum signature over all scales.
+%%\begin{equation}
+%%    \mathcal{S}(\Vector{x}) = \max_{\rmn{levels\;}n} \mathcal{S}_{R_n}(\Vector{x})\,.
+%%    \label{eq:total_response}
+%%\end{equation} 
+%
+%The final step in the MMF/Nexus procedure involves the use of criteria to find the threshold signature that discriminates 
+%between valid and invalid detections. Signature values larger than the threshold correspond to real structures while the rest 
+%are spurious detections. The different implementations and versions of the MMF/Nexus technique often differ in the 
+%definition of the threshold values. 
+%
+The final outcome of the MMF/Nexus procedure is a field which at each location $\Vector{x}$ 
+specifies what the local morphological signature is, cluster node, filaments, wall or void. 
+The MMF/Nexus algorithms perform the environment detection by applying the above steps first to knots, then to filaments and 
+finally to walls. Each volume element is assigned a single environment characteristic by requiring that filament regions 
+cannot be knots and that wall regions cannot be either knots or filaments. The remaining regions are classified as voids.
+
+Following the basic version of the MMF technique introduced by \cite{aragon2007}, it was applied to the analysis of the cosmic web 
+in simulations of cosmic structure formation \citep{aragon2010b} and for finding filaments and galaxy-filament alignments in the SDSS galaxy 
+distribution \citep{jones2010}. The principal technique, and corresponding philosophy, has subsequently branched into several 
+further elaborations and developments. In this survey, we describe the Nexus formalism developed by \cite{cautun2013} and the 
+MMF2 method developed by \cite{aragon2014}. Nexus has extended the MMF formalism to a substantially wider range of 
+physical agents involved in the formation of the cosmic web, along with a substantially firmer foundation for the 
+criteria used in identifying the various weblike structures. MMF-2 not only focusses on the multiscale nature 
+of the cosmic web itself, but also addresses the nesting relations of the hierarchy. 
+
+\subsubsection{\nexus{} \\ \hskip 0.9cm (Cautun, van de Weygaert \& Jones)}
+\label{section:nexus}
+The \nexus{} version of the MMF/Nexus formalism \citep{cautun2013,cautun2014} builds upon 
+the original Multiscale Morphology Filter \citep{aragon2007,aragon2010b} algorithm and was developed with the goal of obtaining 
+a more physically motivated and robust method. 
+
+\nexus{} is the principal representative of the full \Nexus{} suite of cosmic web identifiers \citep[see][]{cautun2013}. 
+These include the options for corresponding multiscale morphology identifiers on the basis of the raw density, the 
+logarithmic density, the velocity divergence, the velocity shear and tidal force field. \Nexus{} has incorporated these 
+options in a versatile code for the analysis of cosmic web structure and dynamics following the realization that they 
+are significant physical influences in shaping the cosmic mass distribution into the complexity of the cosmic web. 
+
+\nexus{} takes as input a regularly sampled density field. In a first step, the input field is Gaussian smoothed 
+over using a \logFilter{} filter \citep[see][]{cautun2013} that is applied over a set of scales $[R_0,R_1,...,R_N]$, 
+with $R_n=2^{n/2}R_0$. 
+%For each of these scales, \nexus{} computes the eigenvalues of the Hessian matrix of the 
+%smoothed density field. 
+%Using the Hessian eigenvalues, following the procedure outlined above, 
+\nexus{} then computes an environmental signature for 
+each volume element. 
+
+The \Nexus{} suite of MMF identifiers pays particular attention to the key aspect of setting the detection 
+thresholds for the environmental signature. Physical criteria are used to determine a detection threshold. All points 
+with signature values above the threshold are valid structures. For knots, the threshold is given by the requirement 
+that most knot-regions should be virialized. For filaments and walls, the threshold is determined on the basis of the 
+change in filament and wall mass as a function of signature. The peak of the mass variation with signature delineates 
+the most prominent filamentary and wall features of the cosmic web.
+
+For the \nexus{} implementation, the Delaunay Tessellation Field Estimator \dtfe{} method \citep{schaapwey2000,weyschaap2009} is  
+used to interpolate the dark matter particle distribution to a continuous density field defined on a regular grid of size 
+$600^3$ (grid spacing of $0.33\hmpc$). \nexus{} was applied to the resulting density field using a set of 7 smoothing scales 
+from $0.5$ to $4\hmpc$ (in increments of $\sqrt{2}$ factors). This resulted in an environment tag for each grid cell that, in a second step, 
+was down sampled to the target $100^3$ grid using a mass weighted selection scheme. For each cell of the coarser grid, we computed the mass 
+fraction in each environment using all the fine level cells ($6^3$ in total) that overlap the coarser one. Then, the coarser cell was assigned 
+the environment corresponding to the largest mass fraction. Each FOF halo was assigned the web tag corresponding to the fine grid cell in 
+which the halo centre was located.
+
+\subsubsection{MMF-2: Multiscale Morphology Filter-2\\ \hskip 0.9cm (Arag\'on-Calvo)}
+\label{section:MMF}
+%The Multiscale Morphology Filter \citep[MMF,][]{aragon2007,aragon2010b,cautun2013,aragon2014} method is a fully adaptive algorithm that classifies 
+%the matter distribution into three basic morphologies: cluster, filament and wall. The morphological classification is based on 
+%the local variations of the density field encoded in the Hessian matrix. 
+The MMF-2 implementation of the MMF formalism differs from the \Nexus{} formalism in that it focusses on the multiscale character 
+of the initial density field, instead of that of the evolved mass distribution. 
+In order to account for hierarchical nature of the cosmic web, MMF-2 introduces the concept of \textit{hierarchical space} 
+\citep{aragon2010, aragon2013}. While the conventional scale-space approach emphasizes the scale of the structures, it does 
+not addresss their nesting relations. To accomplish this, MMF-2 resorts to the alternative of \textit{hierarchical space} 
+\citep{aragon2010, aragon2013, aragon2014}. 
+
+\textit{Hierarchical space} is created in the 
+first step in the MMF-2 procedure \citep{aragon2010, aragon2013}. It is obtained by Gaussian-smoothing the initial conditions, 
+and in principal concerns a continuum covering the full range of scales in the density field. For practical purposes however, a 
+small set of linear-regime smoothed initial conditions is generated. Subsequently, by means of an N-body code these conditions 
+are gravitationally evolved to the present time. 
+
+By applying to linear-regime smoothing, \textit{hierarchical space} involves density field Fourier modes that are independent. This 
+allows the user to target specific scales in the density field before Fourier mode-mixing occurs. The subsequent gravitational 
+evolution of these smooth initial conditions results in a mass distribution that contains all the anisotropic features of the Cosmic Web, 
+while it lacks the small-scale structures below the smoothing scale. Dense haloes corresponding to these small scales are absent. This reduces the 
+dynamic range in the density field and greatly limits the contamination produced by dense haloes in the identification of filaments 
+and walls. 
+
+In line with the MMF procedure, for each realisation in the hierarchical space a set of 
+morphology filters is applied, defined by ratios between the eigenvalues of the Hessian matrix 
+\citep[$\lambda_1 < \lambda_2 < \lambda_3$, see][]{aragon2007}.  It also involves the applications of a threshold to the response from 
+each morphology filter. This leads to a  final product consisting of a set of binary masks sampled on a regular grid indicating 
+which voxels belong to a given morphology at a given hierarchical level. 
+
+%%%%%%%%%%References used
+%
+%@ARTICLE{aragon2007,
+%   author = {{Arag{\'o}n-Calvo}, M.~A. and {Jones}, B.~J.~T. and {van de Weygaert}, R. and 
+%	{van der Hulst}, J.~M.},
+%    title = "{The multiscale morphology filter: identifying and extracting spatial patterns in the galaxy distribution}",
+%  journal = {\aap},
+%archivePrefix = "arXiv",
+%   eprint = {0705.2072},
+% keywords = {cosmology: theory, large-scale structure of Universe, methods: statistical, surveys},
+%     year = 2007,
+%    month = oct,
+%   volume = 474,
+%    pages = {315-338},
+%      doi = {10.1051/0004-6361:20077880},
+%   adsurl = {http://adsabs.harvard.edu/abs/2007A%26A...474..315A},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%
+%@ARTICLE{aragon2010,
+%   author = {{Aragon-Calvo}, M.~A. and {van de Weygaert}, R. and {Araya-Melo}, P.~A. and 
+%	{Platen}, E. and {Szalay}, A.~S.},
+%    title = "{Unfolding the hierarchy of voids}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {1002.1503},
+% keywords = {methods: N-body simulations, methods: data analysis, techniques: image processing, large-scale structure of Universe},
+%     year = 2010,
+%    month = may,
+%   volume = 404,
+%    pages = {L89-L93},
+%      doi = {10.1111/j.1745-3933.2010.00841.x},
+%   adsurl = {http://adsabs.harvard.edu/abs/2010MNRAS.404L..89A},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%
+%@ARTICLE{aragon2010b,
+%   author = {{Arag{\'o}n-Calvo}, M.~A. and {van de Weygaert}, R. and {Jones}, B.~J.~T.
+%	},
+%    title = "{Multiscale phenomenology of the cosmic web}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {1007.0742},
+% keywords = {methods: data analysis, methods: numerical, cosmology: theory, large-scale structure of Universe},
+%     year = 2010,
+%    month = nov,
+%   volume = 408,
+%    pages = {2163-2187},
+%      doi = {10.1111/j.1365-2966.2010.17263.x},
+%   adsurl = {http://adsabs.harvard.edu/abs/2010MNRAS.408.2163A},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%
+%@ARTICLE{aragon2013,
+%   author = {{Aragon-Calvo}, M.~A. and {Szalay}, A.~S.},
+%    title = "{The hierarchical structure and dynamics of voids}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {1203.0248},
+% keywords = {methods: data analysis, large-scale structure of Universe},
+%     year = 2013,
+%    month = feb,
+%   volume = 428,
+%    pages = {3409-3424},
+%      doi = {10.1093/mnras/sts281},
+%   adsurl = {http://adsabs.harvard.edu/abs/2013MNRAS.428.3409A},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%
+%
+%@ARTICLE{aragon2014,
+%   author = {{Aragon-Calvo}, M.~A. and {Yang}, L.~F.},
+%    title = "{The hierarchical nature of the spin alignment of dark matter haloes in filaments}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {1303.1590},
+% keywords = {methods: data analysis, galaxies: formation, large-scale structure of Universe},
+%     year = 2014,
+%    month = may,
+%   volume = 440,
+%    pages = {L46-L50},
+%      doi = {10.1093/mnrasl/slu009},
+%   adsurl = {http://adsabs.harvard.edu/abs/2014MNRAS.440L..46A},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%
+%@ARTICLE{cautun2013,
+%   author = {{Cautun}, M. and {van de Weygaert}, R. and {Jones}, B.~J.~T.
+%	},
+%    title = "{NEXUS: tracing the cosmic web connection}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {1209.2043},
+% keywords = {methods: data analysis, techniques: image processing, cosmology: theory, large-scale structure of Universe},
+%     year = 2013,
+%    month = feb,
+%   volume = 429,
+%    pages = {1286-1308},
+%      doi = {10.1093/mnras/sts416},
+%   adsurl = {http://adsabs.harvard.edu/abs/2013MNRAS.429.1286C},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}2009LNP...665..291V
+%
+%@ARTICLE{cautun2014,
+%   author = {{Cautun}, M. and {van de Weygaert}, R. and {Jones}, B.~J.~T. and 
+%	{Frenk}, C.~S.},
+%    title = "{Evolution of the cosmic web}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {1401.7866},
+% keywords = {methods: data analysis, cosmology: theory, large-scale structure of Universe},
+%     year = 2014,
+%    month = jul,
+%   volume = 441,
+%    pages = {2923-2973},
+%      doi = {10.1093/mnras/stu768},
+%   adsurl = {http://adsabs.harvard.edu/abs/2014MNRAS.441.2923C},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%@ARTICLE{florack1992,
+%    author = {Luc M J Florack and Bat M Ter Haar Romeny and Jan J Koenderink and Max A Viergever},
+%    title = {Scale and the differential structure of images},
+%    journal = {Image and Vision Computing},
+%    year = {1992},
+%    volume = {10},
+%    pages = {376--388}
+%}
+%
+%@ARTICLE{jones2010,
+%   author = {{Jones}, B.~J.~T. and {van de Weygaert}, R. and {Arag{\'o}n-Calvo}, M.~A.
+%	},
+%    title = "{Fossil evidence for spin alignment of Sloan Digital Sky Survey galaxies in filaments}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {1001.4479},
+% keywords = {methods: data analysis, cosmology: observations, cosmology: theory, large-scale structure of Universe},
+%     year = 2010,
+%    month = oct,
+%   volume = 408,
+%    pages = {897-918},
+%      doi = {10.1111/j.1365-2966.2010.17202.x},
+%   adsurl = {http://adsabs.harvard.edu/abs/2010MNRAS.408..897J},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%@article{lindeberg1998,
+% author = {Lindeberg, T.},
+%title = {Feature Detection with Automatic Scale Selection},
+% journal = {Int. J. Comput. Vision},
+% issue_date = {Nov. 1998},
+% volume = {30},
+% number = {2},
+% month = nov,
+% year = {1998},
+% issn = {0920-5691},
+% pages = {79--116},
+% numpages = {38},
+% acmid = {305298},
+% publisher = {Kluwer Academic Publishers}
+%} 
+%
+%@ARTICLE{schaapwey2000,
+%   author = {{Schaap}, W.~E. and {van de Weygaert}, R.},
+%    title = "{Continuous fields and discrete samples: reconstruction through Delaunay tessellations}",
+%  journal = {\aap},
+%   eprint = {astro-ph/0011007},
+% keywords = {METHODS: N-BODY SIMULATIONS, METHODS: NUMERICAL, METHODS: STATISTICAL, COSMOLOGY: LARGE-SCALE STRUCTURE OF UNIVERSE},
+%     year = 2000,
+%    month = nov,
+%   volume = 363,
+%    pages = {L29-L32},
+%   adsurl = {http://adsabs.harvard.edu/abs/2000A%26A...363L..29S},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%
+%@INPROCEEDINGS{weyschaap2009,
+%   author = {{van de Weygaert}, R. and {Schaap}, W.},
+%    title = "{The Cosmic Web: Geometric Analysis}",
+%booktitle = {Data Analysis in Cosmology},
+%     year = 2009,
+%   series = {Lecture Notes in Physics, Berlin Springer Verlag},
+%   volume = 665,
+%   editor = {{Mart{\'{\i}}nez}, V.~J. and {Saar}, E. and {Mart{\'{\i}}nez-Gonz{\'a}lez}, E. and 
+%	{Pons-Border{\'{\i}}a}, M.-J.},
+%    pages = {291-413},
+%      doi = {10.1007/978-3-540-44767-2_11},
+%   adsurl = {http://adsabs.harvard.edu/abs/2009LNP...665..291V},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%
+%
+%
+%
+%
+%

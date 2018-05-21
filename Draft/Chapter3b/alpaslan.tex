@@ -1,0 +1,115 @@
+\subsection{Adapted minimal spanning tree\\ \hskip 0.75cm(Alpaslan \& Robotham)}
+\label{section:Alpaslan}
+
+
+The adapted minimal spanning tree algorithm \citep[][see also \citealt{barrow1985,2004A&A...418....7D,colberg2007}]{2014MNRAS.438..177A}, uses a multiple pass approach to detecting large scale structure, similar to \cite{Murphy2011}. 
+
+Designed to be run on galaxy survey data, the adapted MST algorithm begins by identifying filamentary networks by using galaxy group centroids as nodes for an initial MST; in doing so, redshift-space distortion effects typically present in such data are successfully removed. The maximal allowable distance $b$ between two group (or halo) centres is selected such that at least 90\% of groups or haloes with $M_{\rm halo} \geq 10^{11} M_{\odot}$ are considered to be in filaments. A large $b$ will cause galaxies in voids to be associated with filaments, and a small $b$ will only identify close pairings of groups to be in filaments and ignore the expansive structures visible in the data.
+
+Following the identification of filaments from group centres, galaxies that are within an orthogonal distance $r$ of filaments are associated with those filaments. Additionally, the topological structure of the MST that forms each filament is analysed, with the principal axis of each filament (the so-called `backbone') identified as the longest contiguous path of groups that spans the entirety of the filament, along with tributary `branches' that link to it. The size and shapes of these pathways are used to successfully compare observational results to simulated universes in \cite{2014MNRAS.438..177A}. Galaxies associated with each filament are further associated with the branch of the filament they are closest to, allowing for a detailed analysis of galaxy properties as a function of filament morphology \citep{2015MNRAS.451.3249A,2016MNRAS.457.2287A}.
+
+Galaxies that are too distant from filaments are reprocessed under a second MST which identifies smaller-scale interstitial structures dubbed `tendrils' \citep{2014MNRAS.440L.106A}. Tendrils typically contain a few tens of galaxies, and typically exist within voids, or bridge the gap between two filaments within underdense regions. The properties of galaxies in these structures are often similar to those in more dense filaments \citep{2015MNRAS.451.3249A}.
+
+Finally, galaxies that are beyond a distance $q$ from tendrils are identified as isolated void galaxies. The distances $r$ and $q$ are selected such that the integral over the two-point correlation, $\int R^2 \xi(R) \,\mathrm{d} R$, of void galaxies is minimized. This definition of a void galaxy ensures that the algorithm identifies a population of very isolated galaxies; this differs from searching for void galaxies in low density regions, which does allow for clustering. 
+
+%%%%%%%%%%References used
+
+%
+%Alpaslan 2015: https://ui.adsabs.harvard.edu/#abs/2015MNRAS.451.3249A/abstract
+%Alpaslan 2016: https://ui.adsabs.harvard.edu/#abs/2016MNRAS.457.2287A/abstract
+
+
+
+% @article{Alpaslan2013a,
+% author = {Alpaslan, M. and Robotham, A. S. G. and Driver, S. and Norberg, P. and Baldry, I. and Bauer, A. E. and Bland-Hawthorn, J. and Brown, M. and Cluver, M. and Colless, M. and Foster, C. and Hopkins, A. and {Van Kampen}, E. and Kelvin, L. and Lara-Lopez, M. A. and Liske, J. and Lopez-Sanchez, A. R. and Loveday, J. and McNaught-Roberts, T. and Merson, A. and Pimbblet, K.},
+% doi = {10.1093/mnras/stt2136},
+% issn = {0035-8711},
+% journal = {Monthly Notices of the Royal Astronomical Society},
+% keywords = {large-scale structure of Universe,methods: observational,surveys},
+% month = dec,
+% number = {1},
+% pages = {177--194},
+% title = {{Galaxy And Mass Assembly (GAMA): the large-scale structure of galaxies and comparison to mock universes}},
+% url = {http://adsabs.harvard.edu/abs/2014MNRAS.438..177A},
+% volume = {438},
+% year = {2014}
+% }
+
+% @article{Murphy2011,
+% author = {Murphy, D. N. A. and Eke, V. R. and Frenk, Carlos S.},
+% file = {:Users/malpasla/Library/Application Support/Mendeley Desktop/Downloaded/Murphy, Eke, Frenk - 2011 - Connected structure in the Two-degree Field Galaxy Redshift Survey.html:html},
+% journal = {Monthly Notices of the Royal Astronomical Society},
+% keywords = {cosmology: observations,large-scale structure of Universe},
+% mendeley-groups = {Zotero - litreview,Zotero - Zotero Library,filaments,tendrils,galprops},
+% mendeley-tags = {cosmology: observations,large-scale structure of Universe},
+% month = may,
+% pages = {2288--2296},
+% title = {{Connected structure in the Two-degree Field Galaxy Redshift Survey}},
+% url = {http://adsabs.harvard.edu/abs/2011MNRAS.413.2288M},
+% volume = {413},
+% year = {2011}
+% }
+
+% @article{Alpaslan2014b,
+% doi = {10.1093/mnrasl/slu019},
+% issn = {1745-3925},
+% journal = {Monthly Notices of the Royal Astronomical Society: Letters},
+% keywords = {large-scale structure of Universe,methods: data analysis,surveys},
+% month = mar,
+% number = {1},
+% pages = {L106--L110},
+% title = {{Galaxy and Mass Assembly (GAMA): fine filaments of galaxies detected within voids}},
+% url = {http://adsabs.harvard.edu/abs/2014MNRAS.440L.106A},
+% volume = {440},
+% year = {2014}
+% }
+
+% @article{BarrowJ.D.1985,
+% author = {{Barrow, J. D.} and {Bhavsar, S. P.} and {Sonoda, D. H.}},
+% journal = {Monthly Notices of the Royal Astronomical Society (ISSN 0035-8711)},
+% keywords = {COMPUTATIONAL ASTROPHYSICS,FILAMENTS,GALACTIC CLUSTERS,GRAPH THEORY,PATTERN RECOGNITION,RANDOM SAMPLING,STATISTICAL DISTRIBUTIONS},
+% mendeley-groups = {filaments},
+% pages = {17--35},
+% title = {{Minimal spanning trees, filaments and galaxy clustering}},
+% url = {http://adsabs.harvard.edu/abs/1985MNRAS.216...17B},
+% volume = {216},
+% year = {1985}
+% }
+
+% @article{Colberg2007,
+% author = {Colberg, J\"{o}rg M.},
+% doi = {10.1111/j.1365-2966.2006.11312.x},
+% issn = {0035-8711},
+% journal = {Monthly Notices of the Royal Astronomical Society},
+% keywords = {cosmology: theory,dark matter,large-scale structure of Universe,methods: N-body simulations},
+% mendeley-groups = {filaments,tendrils,galprops,alongFilament},
+% month = feb,
+% number = {1},
+% pages = {337--347},
+% title = {{Quantifying cosmic superstructures}},
+% url = {http://adsabs.harvard.edu/abs/2007MNRAS.375..337C},
+% volume = {375},
+% year = {2007}
+% }
+
+% @article{Doroshkevich2004,
+% doi = {10.1051/0004-6361:20031780},
+% issn = {0004-6361},
+% journal = {Astronomy and Astrophysics},
+% keywords = {cosmology: large-scale structure of the Universe,surveys},
+% mendeley-groups = {filaments,tendrils,galprops,alongFilament},
+% month = apr,
+% number = {1},
+% pages = {7--23},
+% title = {{Large scale structure in the SDSS galaxy survey}},
+% url = {http://adsabs.harvard.edu/abs/2004A\&A...418....7D},
+% volume = {418},
+% year = {2004}
+% }
+
+
+
+
+
+
+

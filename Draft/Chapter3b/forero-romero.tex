@@ -1,0 +1,88 @@
+\subsection{T-web: Tidal Shear Tensor\\ \hskip 0.75cm (Forero-Romero, Hoffman \& Gottl\"ober)}
+\label{section:forero-romero}
+
+This method \citep[T-web,][]{forero2009} works on density field grids
+obtained either from numerical simulations or reconstructions from
+redshift surveys. 
+
+The method builds on the work by \cite{hahn2007a}. It
+also uses the Hessian of the gravitational potential 
+\begin{equation}
+T_{\alpha\beta} = \frac{\partial^2\phi}{\partial x_\alpha\partial x_\beta},
+\end{equation}
+%
+where the physical gravitational potential has been normalized by
+$4\pi G\bar{\rho}$ so that $\phi$ satisfies the Poisson
+equation
+\begin{equation}
+\nabla^2\phi=\delta,
+\end{equation}
+%
+with $\delta$ the dimensionless matter overdensity, $G$ the
+gravitational constant and $\bar{\rho}$ the average density of the
+Universe.
+
+This tidal tensor can be represented by a real symmetric $3\times 3$
+matrix with eigenvalues $\lambda_1>\lambda_2>\lambda_3$ and
+eigenvectors ${\bf e}_1$, ${\bf e}_2$ and ${\bf e}_3$. The eigenvalues
+are indicators of orbital stability along the directions defined by
+the eigenvectors. 
+
+This method introduces a threshold $\lambda_{\rm th}$ to gauge the
+strength of the eigenvalues of the tidal shear tensor. The number of
+eigenvalues larger than the threshold is used to classify the cosmic
+web into four kinds of environments: voids (3 eigenvalues smaller than
+$\lambda_{\rm th}$), sheets (2), filaments (1) and knots (0).
+
+In practice the density is interpolated over a grid using the particle
+data and a Cloud-In-Cell scheme. The Poisson equation is solved in
+Fourier space to obtain the potential over a grid. At each grid cell
+the shear tensor is computed to obtain and store the corresponding
+eigenvalues and eigenvectors. The grid cell has a size of $\sim
+1h^{-1}$Mpc and the threshold is fixed to be $\lambda_{\th}=0.2$ as
+suggested by previous studies that aim at capturing the visual
+impression of the cosmic web \citep{forero2009}. 
+
+
+
+
+%%%%%%%%%%References used
+%@ARTICLE{2007MNRAS.375..489H,
+%   author = {{Hahn}, O. and {Porciani}, C. and {Carollo}, C.~M. and {Dekel}, A.
+%	},
+%    title = "{Properties of dark matter haloes in clusters, filaments, sheets and voids}",
+%  journal = {\mnras},
+%   eprint = {astro-ph/0610280},
+% keywords = {methods: N-body simulations , galaxies: haloes , cosmology: theory , dark matter , large-scale structure of Universe},
+%     year = 2007,
+%    month = feb,
+%   volume = 375,
+%    pages = {489-499},
+%      doi = {10.1111/j.1365-2966.2006.11318.x},
+%   adsurl = {http://adsabs.harvard.edu/abs/2007MNRAS.375..489H},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+
+
+
+%@ARTICLE{2009MNRAS.396.1815F,
+%   author = {{Forero-Romero}, J.~E. and {Hoffman}, Y. and {Gottl{\"o}ber}, S. and 
+%	{Klypin}, A. and {Yepes}, G.},
+%    title = "{A dynamical classification of the cosmic web}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {0809.4135},
+% keywords = {methods: numerical , cosmology: large-scale structure of Universe},
+%     year = 2009,
+%    month = jul,
+%   volume = 396,
+%    pages = {1815-1824},
+%      doi = {10.1111/j.1365-2966.2009.14885.x},
+%   adsurl = {http://adsabs.harvard.edu/abs/2009MNRAS.396.1815F},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+
+
+
+
+

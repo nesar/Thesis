@@ -42,24 +42,75 @@ Albareti, F.~D., {Allende Prieto}, C., Almeida, A., Anders, F., Anderson, S.,
   Jullo, E., Kallinger, T., Kinemuchi, K., Kirkby, D., Klaene, M., Kneib,
   J.-P., Kollmeier, J.~A., Lacerna, I., Lane, R.~R., Lang, D., Laurent, P.,
   Law, D.~R., Goff, J.-M.~L., Leauthaud, A., Li, C., Li, R., Li, C., Li, N.,
-  Liang, F.-H., Liang, Y., Lima, M., Lin, L., Lin, L., Lin, Y.-T., Long, D.,
-  Lucatello, S., MacDonald, N., MacLeod, C.~L., Mackereth, J.~T., Mahadevan,
-  S., Maia, M. A.-G., Maiolino, R., Majewski, S.~R., Malanushenko, O.,
-  Mallmann, N.~D., Manchado, A., Maraston, C., Marques-Chaves, R., Valpuesta,
-  I.~M., Masters, K.~L., Mathur, S., McGreer, I.~D., Merloni, A., Merrifield,
-  M.~R., Meszaros, S., Meza, A., Miglio, A., Minchev, I., Molaverdikhani, K.,
-  Montero-Dorta, A.~D., Mosser, B., Muna, D., Myers, A., Nair, P., Nandra, K.,
-  Ness, M., Newman, J.~A., Nichol, R.~C., Nidever, D.~L., Nitschelm, C.,
-  O'Connell, J., Oravetz, A., Padilla, N., Palanque-Delabrouille, N., Pan, K.,
-  Parejko, J., Paris, I., Peacock, J.~A., Peirani, S., Pellejero-Ibanez, M.,
-  Penny, S., Percival, W.~J., Percival, J.~W., Perez-Fournon, I., Petitjean,
-  P., Pieri, M., Pinsonneault, M.~H., Pisani, A., Prada, F., Prakash, A.,
-  Price-Jones, N., Raddick, M.~J., Rahman, M., Raichoor, A., Rembold, S.~B.,
-  Reyna, A.~M., Rich, J., Richstein, H., Ridl, J., Riffel, R., Riffel, R.~A.,
-  Rix, H.-W., Robin, A.~C., Rockosi, C.~M., Rodriguez-Torres, S., Rodrigues,
-  T.~S., Roe, N., Lopes, A.~R., Roman-Zuniga, C., Ross, A.~J., Rossi, G., Ruan,
-  J., Ruggeri, R., Runnoe, J.~C., Salazar-Albornoz, S., Salvato, M., Sanchez,
-  A.~G., Sanchez, S.~F., Sanchez-Gallego, J.~R., Santiago, B.~X., Schiavon, R.,
+  Liang, F.-H., Liang, Y., Lima, M., Lin, L.~L., Lin, L.~L., Lin, Y.-T., Long,
+  D., Lucatello, S., MacDonald, N., MacLeod, C.~L., Mackereth, J.~T.,
+  Mahadevan, S., Maia, M. A.-G., Maiolino, R., Majewski, S.~R., Malanushenko,
+  O., Mallmann, N.~D., Manchado, A., Maraston, C., Marques-Chaves, R.,
+  Valpuesta, I.~M., Masters, K.~L., Mathur, S., McGreer, I.~D., Merloni, A.,
+  Merrifield, M.~R., Meszaros, S., Meza, A., Miglio, A., Minchev, I.,
+  Molaverdikhani, K., Montero-Dorta, A.~D., Mosser, B., Muna, D., Myers, A.,
+  Nair, P., Nandra, K., Ness, M., Newman, J.~A., Nichol, R.~C., Nidever, D.~L.,
+  Nitschelm, C., O'Connell, J., Oravetz, A., Padilla, N.,
+  Palanque-Delabrouille, N., Pan, K., Parejko, J., Paris, I., Peacock, J.~A.,
+  Peirani, S., Pellejero-Ibanez, M., Penny, S., Percival, W.~J., Percival,
+  J.~W., Perez-Fournon, I., Petitjean, P., Pieri, M., Pinsonneault, M.~H.,
+  Pisani, A., Prada, F., Prakash, A., Price-Jones, N., Raddick, M.~J., Rahman,
+  M., Raichoor, A., Rembold, S.~B., Reyna, A.~M., Rich, J., Richstein, H.,
+  Ridl, J., Riffel, R. A. R. R.~A., Riffel, R. A. R. R.~A., Rix, H.-W., Robin,
+  A.~C., Rockosi, C.~M., Rodriguez-Torres, S., Rodrigues, T.~S., Roe, N.,
+  Lopes, A.~R., Roman-Zuniga, C., Ross, A.~J., Rossi, G., Ruan, J., Ruggeri,
+  R., Runnoe, J.~C., Salazar-Albornoz, S., Salvato, M., Sanchez, A.~G.,
+  Sanchez, S.~F., Sanchez-Gallego, J.~R., Santiago, B.~X., Schiavon, R.,
+  Schimoia, J.~S., Schlafly, E., Schlegel, D.~J., Schneider, D.~P., Schoenrich,
+  R., Schultheis, M., Schwope, A., Seo, H.-J., Serenelli, A., Sesar, B., Shao,
+  Z., Shetrone, M., Shull, M., Aguirre, V.~S., Skrutskie, M.~F., Slosar, A.,
+  Smith, M., Smith, V.~V., Sobeck, J., Somers, G., Souto, D., Stark, D.~V.,
+  Stassun, K.~G., Steinmetz, M., Stello, D., Bergmann, T.~S., Strauss, M.~A.,
+  Streblyanska, A., Stringfellow, G.~S., Suarez, G., Sun, J., Taghizadeh-Popp,
+  M., Tang, B., Tao, C., Tayar, J., Tembe, M., Thomas, D., Tinker, J., Tojeiro,
+  R., Tremonti, C., Troup, N., Trump, J.~R., Unda-Sanzana, E., Valenzuela, O.,
+  van~den Bosch, R., Vargas-Magana, M., Vazquez, J.~A., Villanova, S., Vivek,
+  M., Vogt, N., Wake, D., Walterbos, R., Wang, Y., Wang, E., Weaver, B.~A.,
+  Weijmans, A.-M., Weinberg, D.~H., Westfall, K.~B., Whelan, D.~G., Wilcots,
+  E., Wild, V., Williams, R.~A., Wilson, J., Wood-Vasey, W.~M., Wylezalek, D.,
+  Xiao, T., Yan, R., Yang, M., Ybarra, J.~E., Yeche, C., Yuan, F.-T., Zakamska,
+  N., Zamora, O., Zasowski, G., Zhang, K., Zhao, C., Zhao, G.-B., Zheng, Z.,
+  Zheng, Z., Zhou, Z.-M., Zhu, G., Zinn, J.~C., Zou, H., des Bourboux, H.
+  d.~M., Du, C., Dwelly, T., Ebelke, G., Eigenbrot, A., Eisenstein, D.~J.,
+  Elsworth, Y.~P., Emsellem, E., Eracleous, M., Escoffier, S., Evans, M.~L.,
+  Falcon-Barroso, J., Fan, X., Favole, G., Fernandez-Alvar, E.,
+  Fernandez-Trincado, J.~G., Feuillet, D., Fleming, S.~W., Font-Ribera, A.,
+  Freischlad, G., Frinchaboy, P., Fu, H., Gao, Y., Garcia-Hernandez, D.~A.,
+  Perez, A. E.~G., Garcia, R.~A., Garcia-Dias, R., Gaulme, P., Ge, J., Geisler,
+  D., Marin, H.~G., Gillespie, B., Girardi, L., Goddard, D., Chew, Y. G.~M.,
+  Gonzalez-Perez, V., Grabowski, K., Green, P., Grier, C.~J., Grier, T., Guo,
+  H., Guy, J., Hagen, A., Hall, M., Harding, P., Harley, R.~E., Hasselquist,
+  S., Hawley, S., Hayes, C.~R., Hearty, F., Hekker, S., Toledo, H.~H., Ho, S.,
+  Hogg, D.~W., Holley-Bockelmann, K., Holtzman, J.~A., Holzer, P.~H., Hu, J.,
+  Huber, D., Hutchinson, T.~A., Hwang, H.~S., Ibarra-Medel, H.~J., Ivans,
+  I.~I., Ivory, K., Jaehnig, K., Jensen, T.~W., Johnson, J.~A., Jones, A.,
+  Jullo, E., Kallinger, T., Kinemuchi, K., Kirkby, D., Klaene, M., Kneib,
+  J.-P., Kollmeier, J.~A., Lacerna, I., Lane, R.~R., Lang, D., Laurent, P.,
+  Law, D.~R., Goff, J.-M.~L., Leauthaud, A., Li, C., Li, R., Li, C., Li, N.,
+  Liang, F.-H., Liang, Y., Lima, M., Lin, L.~L., Lin, L.~L., Lin, Y.-T., Long,
+  D., Lucatello, S., MacDonald, N., MacLeod, C.~L., Mackereth, J.~T.,
+  Mahadevan, S., Maia, M. A.-G., Maiolino, R., Majewski, S.~R., Malanushenko,
+  O., Mallmann, N.~D., Manchado, A., Maraston, C., Marques-Chaves, R.,
+  Valpuesta, I.~M., Masters, K.~L., Mathur, S., McGreer, I.~D., Merloni, A.,
+  Merrifield, M.~R., Meszaros, S., Meza, A., Miglio, A., Minchev, I.,
+  Molaverdikhani, K., Montero-Dorta, A.~D., Mosser, B., Muna, D., Myers, A.,
+  Nair, P., Nandra, K., Ness, M., Newman, J.~A., Nichol, R.~C., Nidever, D.~L.,
+  Nitschelm, C., O'Connell, J., Oravetz, A., Padilla, N.,
+  Palanque-Delabrouille, N., Pan, K., Parejko, J., Paris, I., Peacock, J.~A.,
+  Peirani, S., Pellejero-Ibanez, M., Penny, S., Percival, W.~J., Percival,
+  J.~W., Perez-Fournon, I., Petitjean, P., Pieri, M., Pinsonneault, M.~H.,
+  Pisani, A., Prada, F., Prakash, A., Price-Jones, N., Raddick, M.~J., Rahman,
+  M., Raichoor, A., Rembold, S.~B., Reyna, A.~M., Rich, J., Richstein, H.,
+  Ridl, J., Riffel, R. A. R. R.~A., Riffel, R. A. R. R.~A., Rix, H.-W., Robin,
+  A.~C., Rockosi, C.~M., Rodriguez-Torres, S., Rodrigues, T.~S., Roe, N.,
+  Lopes, A.~R., Roman-Zuniga, C., Ross, A.~J., Rossi, G., Ruan, J., Ruggeri,
+  R., Runnoe, J.~C., Salazar-Albornoz, S., Salvato, M., Sanchez, A.~G.,
+  Sanchez, S.~F., Sanchez-Gallego, J.~R., Santiago, B.~X., Schiavon, R.,
   Schimoia, J.~S., Schlafly, E., Schlegel, D.~J., Schneider, D.~P., Schoenrich,
   R., Schultheis, M., Schwope, A., Seo, H.-J., Serenelli, A., Sesar, B., Shao,
   Z., Shetrone, M., Shull, M., Aguirre, V.~S., Skrutskie, M.~F., Slosar, A.,
@@ -120,15 +171,15 @@ Aragon-Calvo, M.~A., {Van De Weygaert}, R., Jones, B. J.~T., Arag??n-Calvo,
 \newblock {\em MNRAS}, 408(4), 2163--2187.
 
 \bibitem[Aragon-Calvo et~al., 2016]{Aragon-Calvo2016}
-Aragon-Calvo, M. A.~M., Neyrinck, M. M.~C., \& Silk, J. (2016).
+Aragon-Calvo, M. M. A.~M., Neyrinck, M. M.~C., \& Silk, J. (2016).
 \newblock {How Cosmic Web Detachment Drives Galaxy Quenching}.
 \newblock {\em ArXiv e-prints}, (July).
 
 \bibitem[Arnold et~al., 1982]{Arnold1982}
-Arnold, V., Shandarin, S., \& Zeldovich, I. (1982).
+Arnold, V.~I., Shandarin, S.~F., Zeldovich, Y.~B., \& Zeldovich, I. (1982).
 \newblock {The large scale structure of the universe. I - General properties
   One- and two-dimensional models}.
-\newblock {\em Geophys. Astrophys. Fluid Dyn.}, 20, 111--130.
+\newblock {\em Geophys. Astrophys. Fluid Dyn.}, 20(1-2), 111--130.
 
 \bibitem[Ascasibar, 2010]{Ascasibar2010}
 Ascasibar, Y. (2010).
@@ -164,12 +215,13 @@ Bertschinger, E. (1998).
 \newblock {\em Annu. Rev. Astron. Astrophys.}, 36(1), 599--654.
 
 \bibitem[Bertschinger \& Gelb, 1991]{Bertschinger1991}
-Bertschinger, E. \& Gelb, J. (1991).
+Bertschinger, E. \& Gelb, J.~M. (1991).
 \newblock {Cosmological N-Body Simulations}.
 \newblock {\em Comput. Phys.}, 164(5), 164.
 
 \bibitem[Blumenthal et~al., 1992]{Blumenthal1992}
-Blumenthal, G., {Da Costa}, N., Goldwirth, D., Lecar, M., \& Piran, T. (1992).
+Blumenthal, G.~R., {Da Costa}, N., Goldwirth, D.~S., Lecar, M., \& Piran, T.
+  (1992).
 \newblock {The largest possible voids}.
 \newblock {\em ApJ}, 388, 234--241.
 
@@ -190,21 +242,16 @@ Bond, N.~A., Strauss, M.~A., \& Cen, R. (2010b).
   structure}.
 \newblock {\em MNRAS}, 409(1), 156--168.
 
-\bibitem[Cautun et~al., 2013]{Cautun2013}
-Cautun, M., van~de Weygaert, R., \& Jones, B. J.~T. (2013).
-\newblock {Nexus: Tracing the cosmic web connection}.
-\newblock {\em MNRAS}, 429(2), 1286--1308.
-
 \bibitem[Cautun et~al., 2014]{Cautun2014a}
 Cautun, M., {Van De Weygaert}, R., Jones, B. J.~T., \& Frenk, C.~S. (2014).
 \newblock {Evolution of the cosmic web}.
 \newblock {\em MNRAS}, 441(4), 2923--2973.
 
-\bibitem[Cautun \& van~de Weygaert, 2011]{Cautun2011}
-Cautun, M. C.~M. \& van~de Weygaert, R. (2011).
-\newblock {The DTFE public software: The Delaunay Tessellation Field Estimator
-  code}.
-\newblock Astrophysics Source Code Library.
+\bibitem[Cautun et~al., 2013]{Cautun2013}
+Cautun, M., van~de Weygaert, R., Jones, B. J.~T., van~de Weygaert, R., \&
+  Jones, B. J.~T. (2013).
+\newblock {Nexus: Tracing the cosmic web connection}.
+\newblock {\em MNRAS}, 429(2), 1286--1308.
 
 \bibitem[Centrella \& Melott, 1983]{Centrella1983}
 Centrella, J. \& Melott, A. (1983).
@@ -234,12 +281,7 @@ Davis, M., Efstathiou, G., Frenk, C.~S., \& White, S. D.~M. (1985).
 \bibitem[de~Lapparent et~al., 1986]{DeLapparent1986}
 de~Lapparent, V., Geller, M.~J., \& Huchra, J.~P. (1986).
 \newblock {A slice of the universe}.
-\newblock {\em ApJ}, 302, L1--L5.
-
-\bibitem[Diemand et~al., 2006]{Diemand2006}
-Diemand, J., Kuhlen, M., \& Madau, P. (2006).
-\newblock {Early supersymmetric cold dark matter substructure ¨}.
-\newblock {\em ApJ}, 649, 1--13.
+\newblock {\em ApJ}, 302, L1----L5.
 
 \bibitem[Doroshkevich, 1973]{Doroshkevich1973}
 Doroshkevich, A.~G. (1973).
@@ -298,14 +340,14 @@ Falck, B.~L., Neyrinck, M.~C., \& Szalay, A.~S. (2012).
 \newblock {\em ApJ}, 281, 1.
 
 \bibitem[Forero-Romero et~al., 2009]{Forero-Romero2009a}
-Forero-Romero, J.~E., Hoffman, Y., Gottl??ber, S., Klypin, A., Yepes, G.,
-  Gottl{\"{o}}ber, S., Klypin, A., Yepes, G., Gottl??ber, S., Klypin, A., \&
-  Yepes, G. (2009).
+Forero-Romero, J.~E., Hoffman, Y., Gottl{\"{o}}ber, S., Klypin, A., Yepes, G.,
+  Gottl??ber, S., Klypin, A., Yepes, G., Gottl{\"{o}}ber, S., Klypin, A.,
+  Yepes, G., Gottl??ber, S., Klypin, A., \& Yepes, G. (2009).
 \newblock {A dynamical classification of the cosmic web}.
 \newblock {\em MNRAS}, 396(3), 1815--1824.
 
 \bibitem[Frenk et~al., 1983]{Frenk1983}
-Frenk, C., White, S., \& Davis, M. (1983).
+Frenk, C.~S., White, S. D.~M., \& Davis, M. (1983).
 \newblock {Nonlinear evolution of large-scale structure in the universe}.
 \newblock {\em ApJ}, 271(Part 1), 417--430.
 
@@ -314,6 +356,11 @@ Frenk, C.~S., White, S. D.~M., Davis, M., \& Efstathiou, G. (1988).
 \newblock {The formation of dark halos in a universe dominated by cold dark
   matter}.
 \newblock {\em ApJ}, 327, 507--525.
+
+\bibitem[Geller \& Huchra, 1989]{Geller1989}
+Geller, M.~J. \& Huchra, J.~P. (1989).
+\newblock {Mapping the Universe}.
+\newblock {\em Science (80-. ).}, 246(4932), 897--903.
 
 \bibitem[Gill et~al., 2004]{Gill2004a}
 Gill, S. P.~D., Knebe, A., \& Gibson, B.~K. (2004).
@@ -325,8 +372,13 @@ Giocoli, C., Tormen, G., Sheth, R.~K., \& van~den Bosch, F.~C. (2010).
 \newblock {The substructure hierarchy in dark matter haloes}.
 \newblock {\em MNRAS}, 404(1), 502--517.
 
+\bibitem[Gonzalez \& Padilla, 2016]{Gonzalez2016}
+Gonzalez, R.~E. \& Padilla, N.~D. (2016).
+\newblock {Subhalo accretion through filaments}.
+\newblock {\em ApJ}, 829(1), 1--13.
+
 \bibitem[Gott et~al., 1986]{Gott1986}
-Gott, J. R.~I., Melott, A.~L., \& Dickinson, M. (1986).
+Gott, J. R. I. I.~I., Melott, A.~L., \& Dickinson, M. (1986).
 \newblock {Sponge-like topology}.
 \newblock {\em ApJ}, 306, 341--357.
 
@@ -415,8 +467,8 @@ Hoffman, Y., Metuki, O., Yepes, G., Gottl, S., Forero, J.~E., Libeskind, N.~I.,
 \bibitem[Hoffmann et~al., 2014]{Hoffmann2014}
 Hoffmann, K., Planelles, S., Gazta??aga, E., Knebe, A., Pearce, F.~R., Lux, H.,
   Onions, J., Muldrew, S.~I., Elahi, P., Behroozi, P., Ascasibar, Y., Han, J.,
-  Maciejewski, M., Merchan, M.~E., Neyrinck, M., Ruiz, A.~N., \& Sgro, M.~A.
-  (2014).
+  Maciejewski, M., Merchan, M.~E., Neyrinck, M., Ruiz, A. N. A.~N., \& Sgro,
+  M.~A. (2014).
 \newblock {Subhaloes gone Notts: Subhaloes as tracers of the dark matter halo
   shape}.
 \newblock {\em MNRAS}, 442(2), 1197--1210.
@@ -493,6 +545,12 @@ Knollmann, S.~R. \& Knebe, A. (2009).
 Kofman, L., Pogosyan, D., Shandarin, S. F.~S., \& Melott, A. A.~L. (1992).
 \newblock {Coherent structures in the Universe and the Adhesion Model}.
 \newblock {\em ApJ}, 393, 437--449.
+
+\bibitem[Kuhlen et~al., 2006]{Diemand2006}
+Kuhlen, M., Madau, P., Diemand, J., Kuhlen, M., Madau, P., Diemand, J., Kuhlen,
+  M., \& Madau, P. (2006).
+\newblock {Early Supersymmetric Cold Dark Matter Substructure}.
+\newblock {\em ApJ}, 649(1), 1--13.
 
 \bibitem[Lacey \& Cole, 1994]{Lacey1994}
 Lacey, C. \& Cole, S. (1994).
@@ -586,19 +644,19 @@ Neyrinck, M.~C., Gnedin, N.~Y., \& Hamilton, A. J.~S. (2005).
 \bibitem[Onions et~al., 2012]{Onions2012}
 Onions, J., Knebe, A., Pearce, F.~R., Muldrew, S.~I., Lux, H., Knollmann,
   S.~R., Ascasibar, Y., Behroozi, P., Elahi, P., Han, J., MacIejewski, M.,
-  Merch??n, M.~E., Neyrinck, M., Ruiz, A.~N., Sgr??, M.~A., Springel, V., \&
-  Tweed, D. (2012).
+  Merch??n, M.~E., Neyrinck, M., Ruiz, A. N. A.~N., Sgr??, M.~A., Springel, V.,
+  \& Tweed, D. (2012).
 \newblock {Subhaloes going Notts: The subhalo-finder comparison project}.
 \newblock {\em MNRAS}, 423(2), 1200--1214.
 
 \bibitem[Oort, 1983]{Oort1983}
-Oort, J. (1983).
+Oort, J.~H. (1983).
 \newblock {Superclusters}.
 \newblock {\em Ann. Rev. Astron. Astrophys.}, 21, 373--428.
 
 \bibitem[Pahwa et~al., 2016]{Pahwa2016}
 Pahwa, I., Libeskind, N.~I., Tempel, E., Hoffman, Y., {Brent Tully}, R.,
-  Courtois, H.~M., Gottl??ber, S., Steinmetz, M., \& Sorce, J.~G. (2016).
+  Courtois, H. M. H.~M., Gottl??ber, S., Steinmetz, M., \& Sorce, J.~G. (2016).
 \newblock {The alignment of galaxy spin with the shear field in observations}.
 \newblock {\em MNRAS}, 457(1), 695--703.
 
@@ -656,6 +714,11 @@ Rasera, Y., Alimi, J.~M., Courtin, J., Roy, F., Corasaniti, P.~S., Fuzfa, A.,
 \newblock {Introducing the Dark Energy Universe Simulation Series (DEUSS)}.
 \newblock {\em AIP Conf. Proc.}, 1241, 1134--1139.
 
+\bibitem[Sahni et~al., 1994]{Sahni1994}
+Sahni, V., Sathyaprakash, B.~S., \& Shandarin, S.~F. (1994).
+\newblock {The Evolution of Voids in the Adhesion Approximation}.
+\newblock {\em J. Chem. Inf. Model.}, 431, 20--40.
+
 \bibitem[Sahni et~al., 1998]{Sahni1998}
 Sahni, V., Sathyaprakash, B.~S., \& Shandarin, S.~F. (1998).
 \newblock {Shapefinders: A New Shape Diagnostic for Large-Scale Structure}.
@@ -675,12 +738,12 @@ Schaap, W.~E. (2007).
 Schaap, W.~E. \& van~de Weygaert, R. (2000).
 \newblock {Continuous Fields and Discrete Samples: Reconstruction through
   Delaunay Tessellations}.
-\newblock {\em Astron. Astrophys.}, 363, L39--L32.
+\newblock {\em Astron. Astrophys.}, 363, L39----L32.
 
 \bibitem[Schaye et~al., 2015]{Schaye2015}
 Schaye, J., Crain, R.~A., Bower, R.~G., Furlong, M., Schaller, M., Theuns, T.,
   {Dalla Vecchia}, C., Frenk, C.~S., Mccarthy, I.~G., Helly, J.~C., Jenkins,
-  A., Rosas-Guevara, Y.~M., White, S.~D., Baes, M., Booth, C.~M., Camps, P.,
+  A., Rosas-Guevara, Y.~M., White, S. D.~M., Baes, M., Booth, C.~M., Camps, P.,
   Navarro, J.~F., Qu, Y., Rahmati, A., Sawala, T., Thomas, P.~A., \& Trayford,
   J. (2015).
 \newblock {The EAGLE project: Simulating the evolution and assembly of galaxies
@@ -774,12 +837,6 @@ Soneira, R.~M. \& Peebles, P. J.~E. (1978).
   distribution in the Lick catalog}.
 \newblock {\em Astron. J.}, 83, 845.
 
-\bibitem[Sousbie, 2011]{Sousbie2011a}
-Sousbie, T. (2011).
-\newblock {The persistent cosmic web and its filamentary structure - I. Theory
-  and implementation}.
-\newblock {\em MNRAS}, 414(1), 350--383.
-
 \bibitem[Sousbie \& Colombi, 2015]{Sousbie2015}
 Sousbie, T. \& Colombi, S. (2015).
 \newblock {ColDICE: a parallel Vlasov-Poisson solver using moving adaptive
@@ -815,10 +872,15 @@ Springel, V., White, S. D.~M., Jenkins, A., Frenk, C.~S., Yoshida, N., Gao, L.,
 \newblock {\em Nature}, 435(7042), 629--636.
 
 \bibitem[Springel et~al., 2001b]{Springel2001}
-Springel, V., Yoshida, N., \& White, S.~D. (2001b).
+Springel, V., Yoshida, N., \& White, S. D.~M. (2001b).
 \newblock {GADGET: a code for collisionless and gasdynamical cosmological
   simulations}.
 \newblock {\em New Astron.}, 6(2), 79--117.
+
+\bibitem[Sutter et~al., 2014]{Sutter2014a}
+Sutter, P.~M., Carlesi, E., Wandelt, B.~D., \& Knebe, A. (2014).
+\newblock {On the observability of coupled dark energy with cosmic voids}.
+\newblock {\em Mon. Not. R. Astron. Soc. Lett.}, 446(1), L1--L5.
 
 \bibitem[Sutter et~al., 2015]{Sutter2015}
 Sutter, P.~M., Lavaux, G., Hamaus, N., Pisani, A., Wandelt, B.~D., Warren, M.,
@@ -854,15 +916,15 @@ van~de Weygaert, R., Aragon-Calvo, M.~A., Jones, B. J.~T., \& Platen, E.
 \newblock {Geometry and Morphology of the Cosmic Web: Analyzing Spatial
   Patterns in the Universe}.
 
-\bibitem[van~de Weygaert \& Bond, 2008a]{Weygaert2008}
-van~de Weygaert, R. \& Bond, J. (2008a).
+\bibitem[van~de Weygaert \& Bond, 2008]{Weygaert2008}
+van~de Weygaert, R. \& Bond, J. (2008).
 \newblock {Observations and Morphology of the Cosmic Web}.
 \newblock In M. Plionis, O. L{\'{o}}pez-Cruz, \& D. Hughes (Eds.), {\em A
   Pan-Chromatic View Clust. Galaxies Large-Scale Struct.}, volume 740 of {\em
   Lecture Notes in Physics, Berlin Springer Verlag}  (pp.\~24).
 
-\bibitem[van~de Weygaert \& Bond, 2008b]{Weygaert2008c}
-van~de Weygaert, R. \& Bond, J.~R. (2008b).
+\bibitem[van~de Weygaert et~al., 2008]{Weygaert2008c}
+van~de Weygaert, R., Bond, J.~R., van~de Weygaert, R., \& Bond, J.~R. (2008).
 \newblock {Clusters and the Theory of the Cosmic Web}.
 \newblock In {\em A Pan-Chromatic View Clust. Galaxies Large-Scale Struct.}
   (pp.\ 335--408). Dordrecht: Springer Netherlands.
@@ -894,6 +956,13 @@ Vogelsberger, M. \& White, S. D.~M. (2011).
 Weinberg, D.~H., Hernquist, L., \& Katz, N. (1997).
 \newblock {Photoionization, Numerical Resolution, and Galaxy Formation}.
 \newblock {\em ApJ}, 477, 8--20.
+
+\bibitem[Wojtak et~al., 2014]{Wojtak2014}
+Wojtak, R., Knebe, A., Watson, W.~A., Iliev, I.~T., He{\ss}, S., Rapetti, D.,
+  Yepes, G., \& Gottl{\"{o}}ber, S. (2014).
+\newblock {Cosmic variance of the local hubble flow in large-scale cosmological
+  simulations}.
+\newblock {\em MNRAS}, 438(2), 1805--1812.
 
 \bibitem[Wojtak et~al., 2016]{Wojtak2016a}
 Wojtak, R., Powell, D., \& Abel, T. (2016).

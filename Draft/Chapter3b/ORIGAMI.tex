@@ -1,0 +1,52 @@
+\subsection{ORIGAMI \\ \hskip 0.85cm (Falck \& Neyrinck)}
+\label{section:origami}
+
+The gravitational collapse of dark matter can be thought of as the six-dimensional distortion, in phase-space, of an initially flat three-dimensional manifold. Folds in this manifold occur at caustics and mark out regions of shell-crossing within which the velocity field is multi-valued. \origami\ uses the association between shell-crossing and nonlinear structure formation to identify the different components of the cosmic web, which are fundamentally distinguished by the dimensionality of their collapse: haloes are collapsing along three orthogonal axes, filaments along two, walls along one, and voids are instead expanding~\citep{falck2012}. 
+
+\origami\ determines whether, and in how many dimensions, shell-crossing has occurred for each dark matter particle in the simulation by checking whether particles are out of order with respect to their initial orientation on the Lagrangian grid. For computational efficiency \origami\ currently requires grid instead of `glass' initial conditions; we check for crossings along the Cartesian grid of the simulation box and additionally along three sets of rotated axes~\citep[for details see][]{falck2012}. For each particle we test for crossings with respect to all particles along a given Lagrangian axis, extending up to $1/4$th of the box size in each direction. The number of orthogonal axes along which shell-crossing is detected is counted for each set of axes, and the maximum among all sets of axes is the particle's morphology index: 0, 1, 2, and 3 crossings indicate void, wall, filament, and halo particles respectively.
+
+\origami\ thus provides a cosmic web classification for each dark matter particle in the simulation without using a density parameter or smoothing scale. Since we apply no smoothing or otherwise impose a scale, the cosmic web classification thus depends on the simulation resolution: there is more small-scale structure present in higher resolution simulations, so ORIGAMI identifies a higher fraction of halo particles and lower fraction of void particles as resolution increases~\citep{falck2012,falck2015}.
+
+
+For the purpose of this comparison project, the cosmic web identification for each particle is converted to classification on a regular grid as follows: for each grid cell, select the morphology having the maximum number of particles as the morphology of that cell. If there are no particles in a cell, that cell may be designated as a void. If there is a tie, with two morphologies having the maximum number of particles, assign the lower morphology to the cell (i.e. void $<$ wall $<$ filament $<$ halo). Ties can be quite common between void and wall particles, especially for low resolution simulations and fine grids.
+
+Because of the particle-based web definition, most halo particles identified by \origami\ correspond to haloes identified by FOF. In previous work~\citep{2014JCAP...07..058F}, the web environment of ORIGAMI haloes is defined according to the morphology of particles that neighbor the haloes, but this does not work for FOF haloes since the neighbor particles of FOF haloes are most often included as part of ORIGAMI haloes. For this comparison project, then, we classify each FOF halo according to the web identification of the grid cell it is in.
+
+%%%%%%%%%%References used
+%@ARTICLE{Falck2012,
+%   author = {{Falck}, B.~L. and {Neyrinck}, M.~C. and {Szalay}, A.~S.},
+%    title = "{ORIGAMI: Delineating Halos Using Phase-space Folds}",
+%  journal = {\apj},
+%archivePrefix = "arXiv",
+%   eprint = {1201.2353},
+% keywords = {dark matter, galaxies: halos, large-scale structure of universe, methods: numerical},
+%     year = 2012,
+%    month = aug,
+%   volume = 754,
+%      eid = {126},
+%    pages = {126},
+%      doi = {10.1088/0004-637X/754/2/126},
+%   adsurl = {http://adsabs.harvard.edu/abs/2012ApJ...754..126F},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%@ARTICLE{Falck2015,
+%   author = {{Falck}, B. and {Neyrinck}, M.~C.},
+%    title = "{The persistent percolation of single-stream voids}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {1410.4751},
+% keywords = {methods: numerical, dark matter, large-scale structure of Universe},
+%     year = 2015,
+%    month = jul,
+%   volume = 450,
+%    pages = {3239-3253},
+%      doi = {10.1093/mnras/stv879},
+%   adsurl = {http://adsabs.harvard.edu/abs/2015MNRAS.450.3239F},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+
+%}
+
+
+
+

@@ -1,0 +1,80 @@
+\subsection{Multi-Stream Web Analysis (MSWA)\\ \hskip 0.85cm (Shandarin \& Ramachandra)}
+\label{section:shandarin}
+
+The growth of CDM density perturbations results in the emergence of regions where the velocity has distinct multiple values.
+These regions are also of high densities. The DM web can be viewed as a multi stream field. For example, voids are the regions 
+where the velocity field has a single value. This is because no gravitationally bound DM object can form prior to origin of shell crossing, which 
+corresponds to the formation of regions with at least three streams. Three-stream flows associated with Zel'dovich's pancakes are
+gravitationally bound only in one direction, roughly perpendicular to the pancake. Filaments are bound in two directions orthogonal to the
+filament, and haloes are of course fully bound.
+The generic geometrical structures of the web, i.e. walls aka pancakes, filaments and haloes, 
+cannot be uniquely defined by any particular threshold of the multi stream field, which is also true for the density field.
+Generally all three-stream regions belong to the walls, but the transition to the filaments and to the haloes may occur at different levels.
+
+The multi stream field can be easily computed from the final and initial coordinates of the particles in cosmological $N$-body simulations
+\citep{ abel2012,shandarin2012}. 
+A cold collisionless matter represents an extremely thin three-dimensional sheet called a Lagrangian submanifold in six-dimensional space 
+made by  three  initial and three final coordinates at a chosen state of the simulation. Similarly to the three-dimensional sheet in six-dimensional phase space, the
+Lagrangian submanifold contains full dynamic information about the system. It needs to be tetrahedralized only once by using initial positions of the particles
+on a regular grid as vertices of the tetrahedra. During the following evolution the tessellation remains intact. It always remains continuous, and
+its projection in 3D coordinate space fully tiles it at least by one layer in voids and many times in the web regions.
+The tetrahedra during the evolution are deformed, but the deformation has no effect on the connectivity assignments  between the particles.
+The number of streams can be computed on an arbitrary set  of spatial points by simply counting how many tetrahedra contain a given point. 
+The first study of the multi-stream environment of DM haloes has been recently described in \citet{Ramachandara_Shandarin:15}.
+
+
+Delineating the web components (walls, filaments and haloes) in multi-stream fields is not straightforward, and could be done using various approaches. By studying the scaling of multi-stream variation around dark-matter haloes, \cite{Ramachandara_Shandarin:15} showed that the geometries of structures change from sheets to filaments at a multi-stream value of $n_{\rm str} \gtrsim 17$. The next transition from filaments to knots is seen at around $n_{\rm str} \gtrsim 90$ -- which also roughly corresponds to the virial mass density $\Delta_{\rm vir} = 200$. These thresholds are heuristic -- the analysis may have to be repeated for different simulations for the calibration of thresholds. On the other hand, local Hessian-based geometric methods were recently used to identify multi-stream structures by \cite{Ramachandra2017}. This approach hints towards a portrait of structures in multi-stream fields that are free of ad hoc thresholds. For instance, the haloes could be identified simply as convex surfaces enclosing a local maxima of the multi-stream field (Ramachandra \& Shandarin, in preparation).
+
+A summary of the classification scheme used for this comparison project is as follows: Voids are simply the regions with $n_{str} = 1$. The web components are delineated by utilizing the first approach of calibrating thresholds, i.e, sheets: $3 \leq n_{\rm str} < 17$, filaments: $ 17 \leq n_{\rm str} < 90$ and knots: $n_{\rm str} \geq 90$.
+
+
+% %%%%%%%%%%References used
+% @ARTICLE{Shandarin_etal:12,
+%    author = {{Shandarin}, S. and {Habib}, S. and {Heitmann}, K.},
+%     title = "{Cosmic web, multistream flows, and tessellations}",
+%   journal = {\prd},
+% archivePrefix = "arXiv",
+%    eprint = {1111.2366},
+%  primaryClass = "astro-ph.CO",
+%  keywords = {Galaxy groups clusters and superclusters, large scale structure of the Universe, Superclusters, large-scale structure of the Universe, Cosmology, Origin and formation of the Universe},
+%      year = 2012,
+%     month = apr,
+%    volume = 85,
+%    number = 8,
+%       eid = {083005},
+%     pages = {083005},
+%       doi = {10.1103/PhysRevD.85.083005},
+%    adsurl = {http://adsabs.harvard.edu/abs/2012PhRvD..85h3005S},
+%   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+% }
+% @article{Abel_etal:12,
+% author = {{Abel}, T. and {Hahn}, O. and {Kaehler}, R.},
+% title = "{Tracing the dark matter sheet in phase space}",
+% journal = {MNRAS},
+% archivePrefix = "arXiv",
+% eprint = {1111.3944},
+% primaryClass = "astro-ph.CO",
+%  keywords = {methods: numerical, galaxies: formation, cosmology: theory, dark matter, large-scale structure of Universe},
+% year = 2012,
+% month = nov,
+% volume = 427,
+% pages = {61-76},
+% doi = {10.1111/j.1365-2966.2012.21754.x},
+% adsurl = {http://adsabs.harvard.edu/abs/2012MNRAS.427...61A},
+% adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+% }
+% @ARTICLE{Ramachandara_Shandarin:15,
+% author = {Ramachandra, Nesar S. and Shandarin, Sergei F.}, 
+% title = {Multi-stream portrait of the cosmic web},
+% journal = {Monthly Notices of the Royal Astronomical Society},
+% volume = {452}, 
+% number = {2}, 
+% pages = {1643-1653}, 
+% year = {2015}, 
+% doi = {10.1093/mnras/stv1389}, 
+% eprint = {http://mnras.oxfordjournals.org/content/452/2/1643.full.pdf+html}, 
+% } 
+
+
+
+

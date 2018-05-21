@@ -1,0 +1,74 @@
+\subsection{V-web: Velocity Shear Tensor\\ \hskip 0.75cm (Libeskind, Hoffman, Knebe \& Gottl\"ober)}
+\label{section:libeskind}
+The cosmic web may be quantified directly using the cosmic velocity field, as suggested by \cite{2012MNRAS.425.2049H}. This method is ideally suited to numerical simulations but may be applied to any cosmic velocity field, for example reconstructed ones from redshift or velocity data.
+
+The method is similar to that suggested by \cite{hahn2007a} but uses the shear field instead of the Hessian of the potential. In the linear regime these two methods give similar results. First, a grid is superimposed on the particle distribution. A ``clouds in cells'' (CIC) technique is used to obtain a smoothed density and velocity distribution at each point on the grid. The CIC of the velocity field is then Fast Fourier Transformed into $k$-space and smoothed with a Gaussian kernel. The size of the kernel determines the scale of the computation and must be at least equal to one grid cell (i.e. in this case we use a $256^3$ grid and so $r_{\rm smooth}\ge L_{\rm box}/256$) in order to wash out artificial effects introduced by the preferential axes of the Cartesian grid. Using the Fourier Transform of the velocity field the normalized shear tensor is calculated as:
+\begin{equation}
+\Sigma_{\alpha\beta} = -\frac{1}{2H_{0}}\left(\frac{\partial v_{\alpha}}{\partial r_{\beta}}+\frac{\partial v_{\beta}}{\partial r_{\alpha}}\right)
+\end{equation}
+where $\alpha, \beta$ are the $x,y,z$ components of the positions $r$ and velocity $v$ and $H_{0}$ is the Hubble constant. Note that the shear tensor is simply the symmetric part of the velocity deformation tensor \citep[the anti-symmetric part being the curl or vorticity, see][]{2013ApJ...766L..15L,2014MNRAS.441.1974L}. The shear tensor is then diagonalised and the eigenvalues are sorted, according to convention ($\lambda_{\rm1}>\lambda_{\rm2}>\lambda_{\rm3}$). The eigenvalues and corresponding eigenvectors (${\bf e}_{\rm 1}$, ${\bf e}_{\rm 2}$, ${\bf e}_{\rm 3}$) of the shear field are obtained at each grid cell. Note that the eigenvectors (${\bf e}_{i}$'s) define non-directional lines and as such the +/- orientation is arbitrary and degenerate.
+
+A web classification scheme based on how many eigenvalues are above an arbitrary threshold may be carried out at each grid cell. If none, one, two or three eigenvalues are above this threshold, the grid cell may be classified as belonging to a void, sheet, filament or knot. The threshold may be taken to be zero \citep[as in][]{hahn2007a} or may be fixed to another value to, e.g., reproduce the visual impression of the matter distribution; for the purposes of $\Lambda CDM$ simulations, such as this one, the threshold is chosen to be 0.44 \citep{forero2009,2012MNRAS.421L.137L,2013MNRAS.428.2489L,2014MNRAS.443.1274L}.
+
+%
+%2013MNRAS.428.2489L
+%2012MNRAS.421L.137L
+%2014MNRAS.443.1274L
+%
+%%%%%%%%%%References used
+%@ARTICLE{2012MNRAS.425.2049H,
+%   author = {{Hoffman}, Y. and {Metuki}, O. and {Yepes}, G. and {Gottl{\"o}ber}, S. and 
+%	{Forero-Romero}, J.~E. and {Libeskind}, N.~I. and {Knebe}, A.
+%	},
+%    title = "{A kinematic classification of the cosmic web}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {1201.3367},
+% primaryClass = "astro-ph.CO",
+% keywords = {cosmology: theory, dark matter, large scale of Universe },
+%     year = 2012,
+%    month = sep,
+%   volume = 425,
+%    pages = {2049-2057},
+%      doi = {10.1111/j.1365-2966.2012.21553.x},
+%   adsurl = {http://adsabs.harvard.edu/abs/2012MNRAS.425.2049H},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+
+%@ARTICLE{2007MNRAS.375..489H,
+%   author = {{Hahn}, O. and {Porciani}, C. and {Carollo}, C.~M. and {Dekel}, A.
+%	},
+%    title = "{Properties of dark matter haloes in clusters, filaments, sheets and voids}",
+%  journal = {\mnras},
+%   eprint = {astro-ph/0610280},
+% keywords = {methods: N-body simulations , galaxies: haloes , cosmology: theory , dark matter , large-scale structure of Universe},
+%     year = 2007,
+%    month = feb,
+%   volume = 375,
+%    pages = {489-499},
+%      doi = {10.1111/j.1365-2966.2006.11318.x},
+%   adsurl = {http://adsabs.harvard.edu/abs/2007MNRAS.375..489H},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+
+%@ARTICLE{2009MNRAS.396.1815F,
+%   author = {{Forero-Romero}, J.~E. and {Hoffman}, Y. and {Gottl{\"o}ber}, S. and 
+%	{Klypin}, A. and {Yepes}, G.},
+%    title = "{A dynamical classification of the cosmic web}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {0809.4135},
+% keywords = {methods: numerical , cosmology: large-scale structure of Universe},
+%     year = 2009,
+%    month = jul,
+%   volume = 396,
+%    pages = {1815-1824},
+%      doi = {10.1111/j.1365-2966.2009.14885.x},
+%   adsurl = {http://adsabs.harvard.edu/abs/2009MNRAS.396.1815F},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+
+
+
+
+

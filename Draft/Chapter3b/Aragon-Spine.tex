@@ -1,0 +1,80 @@
+\subsection{Spine Web \\ \hskip 0.75cm (Arag\'on-Calvo, Platen \& van de Weygaert)}
+\label{section:Spine}
+
+The Spine method \citep{aragon2010a} produces a characterization of space based on the topology of the density field, catalogs of individual voids, walls and filaments and their connectivity. Its hierarchical implementation \citep{aragon2010b,aragon2013} allows us to describe the nesting properties of the elements of the cosmic web in a quantitative way. The Spine can be applied to both simulations and galaxy catalogs with minimal assumptions. Given its topological nature it is highly robust against geometrical deformations (e.g. fingers of God or polar grid sampling) as long as the topology of the field remains unchanged.
+
+The Spine method extends the idea introduced in the watershed void finder \citep{platen2007} to identify voids as the contiguous regions sharing the same local minima. Walls are then identified as the two-dimensional regions where two voids meet and filaments correspond to the one-dimensional intersection of two or more walls. Nodes correspond to the intersection of two or more filaments but due to the finite size of voxels in practice they are difficult to recover and therefore we merge them with the filaments into the filament-node class. 
+
+The Spine method can be extended to a fully hierarchical analysis as explained in  \citet{aragon2010b} and \citet{aragon2013}. In this approach voids regions are identified at several hierarchical levels (see MMF-2 method), then voids identified at large scales (high in the hierarchical space) are reconstructed in terms of the voids they contain at smaller scales in order to recover their original boundaries lost by the smoothing procedure used to create the hierarchical space. From the reconstructed voids we compute the watershed transform and identify walls and filament-nodes as described above. 
+
+We use the fact that walls are the intersection of two voids to identify voxels belonging to a unique wall (voxels at the boundary between the same pair of walls). The same can be done for filaments in order to obtain a catalog of voids, walls and filaments. The same connectivity relations can be used to reconstruct the full graph describing the elements of the cosmic web.
+
+%@ARTICLE{platen2007,
+%   author = {{Platen}, E. and {van de Weygaert}, R. and {Jones}, B.~J.~T.
+%	},
+%    title = "{A cosmic watershed: the WVF void detection technique}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {0706.2788},
+% keywords = {methods: data analysis, methods: numerical, cosmology: theory, large-scale structure of Universe},
+%     year = 2007,
+%    month = sep,
+%   volume = 380,
+%    pages = {551-570},
+%      doi = {10.1111/j.1365-2966.2007.12125.x},
+%   adsurl = {http://adsabs.harvard.edu/abs/2007MNRAS.380..551P},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+
+%@ARTICLE{aragon2010a,
+%   author = {{Arag{\'o}n-Calvo}, M.~A. and {Platen}, E. and {van de Weygaert}, R. and 
+%	{Szalay}, A.~S.},
+%    title = "{The Spine of the Cosmic Web}",
+%  journal = {\apj},
+%archivePrefix = "arXiv",
+%   eprint = {0809.5104},
+% keywords = {cosmology: theory, large-scale structure of universe, methods: numerical, surveys},
+%     year = 2010,
+%    month = nov,
+%   volume = 723,
+%    pages = {364-382},
+%      doi = {10.1088/0004-637X/723/1/364},
+%   adsurl = {http://adsabs.harvard.edu/abs/2010ApJ...723..364A},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%
+%@ARTICLE{aragon2010b,
+%   author = {{Aragon-Calvo}, M.~A. and {van de Weygaert}, R. and {Araya-Melo}, P.~A. and 
+%	{Platen}, E. and {Szalay}, A.~S.},
+%    title = "{Unfolding the hierarchy of voids}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {1002.1503},
+% keywords = {methods: N-body simulations, methods: data analysis, techniques: image processing, large-scale structure of Universe},
+%     year = 2010,
+%    month = may,
+%   volume = 404,
+%    pages = {L89-L93},
+%      doi = {10.1111/j.1745-3933.2010.00841.x},
+%   adsurl = {http://adsabs.harvard.edu/abs/2010MNRAS.404L..89A},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%
+%
+%@ARTICLE{aragon2013,
+%   author = {{Aragon-Calvo}, M.~A. and {Szalay}, A.~S.},
+%    title = "{The hierarchical structure and dynamics of voids}",
+%  journal = {\mnras},
+%archivePrefix = "arXiv",
+%   eprint = {1203.0248},
+% keywords = {methods: data analysis, large-scale structure of Universe},
+%     year = 2013,
+%    month = feb,
+%   volume = 428,
+%    pages = {3409-3424},
+%      doi = {10.1093/mnras/sts281},
+%   adsurl = {http://adsabs.harvard.edu/abs/2013MNRAS.428.3409A},
+%  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+%}
+%
+

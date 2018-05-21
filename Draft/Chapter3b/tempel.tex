@@ -1,0 +1,73 @@
+\subsection{Bisous\\ \hskip 0.75cm (Tempel, Stoica \& Saar)}
+
+The detection of cosmic web filaments is performed by applying an object (marked) point process with interactions \citep[the Bisous process;][]{stoica2005} to the spatial distribution of galaxies or haloes. This algorithm provides a quantitative classification that complies with the visual impression of the cosmic web and is based on a robust and well-defined mathematical scheme. More detailed descriptions of the Bisous model can be found in \citet{2007JRSSC..56....1S,2010A&A...510A..38S} and \citet{tempel2014, 2016AC....16...17T}. A brief and intuitive summary is provided below.
+
+The model approximates the filamentary web by a random configuration of small segments (cylinders). It is assumed that locally, galaxy conglomerations can be probed with relatively small cylinders, which can be combined to trace a filament if the neighboring cylinders are oriented similarly. An advantage of the approach is that it relies directly on the positions of galaxies and does not require any additional smoothing for creating a continuous density field.
+
+The solution provided by the model is stochastic. Therefore, it is found some variation in the detected patterns for different Markov chain Monte Carlo (MCMC) runs of the model. On the other hand, thanks to the stochastic nature of the method simultaneously a morphological and a statistical characterization of the 
+filamentary pattern is gained.
+
+In practice, after fixing an approximate scale of the filaments, the algorithm returns the filament detection probability field together with the filament orientation field. Based on these data, filament spines are extracted and a filament catalogue is built in which every filament is represented by its spine as a set of points that defines the axis of the filament.
+
+The spine detection follows two ideas. First, filament spines are located at the highest density regions outlined by the filament probability maps. Second, in these regions of high probability for the filamentary network, the spines are oriented along the orientation field of the filamentary network. See \citet{tempel2014, 2016AC....16...17T} for more details of the procedure.
+
+
+The \bisous{} model uses only the coordinates of all haloes. These were analyzed using a uniform prior for filament radius between $0.4-1.0\hmpc$, which determines the scale of the detected structures. This scale has a measurable effect on properties of galaxies \citep{2015ApJ...800..112G, 2015A&A...576L...5T,2015MNRAS.450.2727T}. Using the halo distribution, the \bisous{} model generates two fields -- the filament detection and the filament orientation fields. These two fields are continuous and have a well defined value at each point. To generate the datasets required by the comparison project, each grid cell on the target $100^3$ mesh and each FOF halo was tagged as either part of a filament or not. For the visitmap\footnote{In mathematics the visitmap is also called a ``level set'', and refers to a probabilistic filament detection map, see \cite{Heinrich:12}.} a threshold value 0.05 was used, which selects regions that are reasonably covered by the detected filamentary network. To exclude regions where the filament orientation is not well defined (e.g. regions at intersection of filaments), it is required that orientation strength parameter is higher than 0.7. The same values were used in previous studies \citep[e.g.][]{2015A&A...583A.142N}.
+
+
+
+%%%%%%%%%%References used
+
+% @article{Stoica:05,
+% 	Author = {{Stoica}, R.~S. and {Gregori}, P. and {Mateu}, J.},
+% 	Journal = {Stochastic Processes and their Applications},
+% 	Month = sep,
+% 	Pages = {1860},
+% 	Title = {{Simulated annealing and object point processes: tools for analysis of spatial patterns}},
+% 	Volume = 115,
+% 	Year = 2005
+% }
+%
+% @ARTICLE{2007JRSSC..56....1S,
+%    author = {{Stoica}, R.~S. and {Mart{\'{\i}}nez}, V.~J. and {Saar}, E.},
+%     title = {A three-dimensional object point process for detection of cosmic filaments},
+%   journal = {Journal of the Royal Statistical Society: Series C},
+%  keywords = {Bisous model, cosmology, filaments, large scale structure, object point processes},
+%      year = 2007,
+%     month = aug,
+%    volume = 56,
+%     pages = {459-477},
+%       doi = {10.1111/j.1467-9876.2007.00587.},
+%    adsurl = {http://adsabs.harvard.edu/abs/2007JRSSC..56....1S},
+%   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+% }
+%
+% @ARTICLE{2010A&A...510A..38S,
+%    author = {{Stoica}, R.~S. and {Mart{\'{\i}}nez}, V.~J. and {Saar}, E.},
+%     title = {Filaments in observed and mock galaxy catalogues},
+%   journal = {\aap},
+%  keywords = {cosmology: large-scale structure of Universe, methods: data analysis, methods: statistical},
+%      year = 2010,
+%     month = feb,
+%    volume = 510,
+%       eid = {A38},
+%     pages = {A38},
+%       doi = {10.1051/0004-6361/200912823},
+%    adsurl = {http://adsabs.harvard.edu/abs/2010A%26A...510A..38S},
+%   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+% }
+%
+% @ARTICLE{2014MNRAS.438.3465T,
+%    author = {{Tempel}, E. and {Stoica}, R.~S. and {Mart{\'{\i}}nez}, V.~J. and
+% 	{Liivam{\"a}gi}, L.~J. and {Castellan}, G. and {Saar}, E.},
+%     title = {Detecting filamentary pattern in the cosmic web: a catalogue of filaments for the SDSS},
+%   journal = {\mnras},
+%  keywords = {methods: data analysis, methods: statistical, catalogues, galaxies: statistics, large-scale structure of Universe},
+%      year = 2014,
+%     month = mar,
+%    volume = 438,
+%     pages = {3465-3482},
+%       doi = {10.1093/mnras/stt2454},
+%    adsurl = {http://adsabs.harvard.edu/abs/2014MNRAS.438.3465T},
+%   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+% }
