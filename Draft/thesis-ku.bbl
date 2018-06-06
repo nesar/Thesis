@@ -10,6 +10,11 @@ Achitouv, I., Neyrinck, M., \& Paranjape, A. (2015).
 \newblock {Testing spherical evolution for modelling void abundances}.
 \newblock {\em MNRAS}, 451(4), 3964--3974.
 
+\bibitem[Adler, 1981]{Adler1981}
+Adler, R. (1981).
+\newblock {\em {The Geometry of Random Fields}}.
+\newblock Chichester: Wiley.
+
 \bibitem[Albareti et~al., 2016]{Albareti2016}
 Albareti, F.~D., {Allende Prieto}, C., Almeida, A., Anders, F., Anderson, S.,
   Andrews, B.~H., Aragon-Salamanca, A., Argudo-Fernandez, M., Armengaud, E.,
@@ -42,8 +47,8 @@ Albareti, F.~D., {Allende Prieto}, C., Almeida, A., Anders, F., Anderson, S.,
   Jullo, E., Kallinger, T., Kinemuchi, K., Kirkby, D., Klaene, M., Kneib,
   J.-P., Kollmeier, J.~A., Lacerna, I., Lane, R.~R., Lang, D., Laurent, P.,
   Law, D.~R., Goff, J.-M.~L., Leauthaud, A., Li, C., Li, R., Li, C., Li, N.,
-  Liang, F.-H., Liang, Y., Lima, M., Lin, L.~L., Lin, L.~L., Lin, Y.-T., Long,
-  D., Lucatello, S., MacDonald, N., MacLeod, C.~L., Mackereth, J.~T.,
+  Liang, F.-H., Liang, Y., Lima, M., Lin, L. L.~L., Lin, L. L.~L., Lin, Y.-T.,
+  Long, D., Lucatello, S., MacDonald, N., MacLeod, C.~L., Mackereth, J.~T.,
   Mahadevan, S., Maia, M. A.-G., Maiolino, R., Majewski, S.~R., Malanushenko,
   O., Mallmann, N.~D., Manchado, A., Maraston, C., Marques-Chaves, R.,
   Valpuesta, I.~M., Masters, K.~L., Mathur, S., McGreer, I.~D., Merloni, A.,
@@ -92,8 +97,8 @@ Albareti, F.~D., {Allende Prieto}, C., Almeida, A., Anders, F., Anderson, S.,
   Jullo, E., Kallinger, T., Kinemuchi, K., Kirkby, D., Klaene, M., Kneib,
   J.-P., Kollmeier, J.~A., Lacerna, I., Lane, R.~R., Lang, D., Laurent, P.,
   Law, D.~R., Goff, J.-M.~L., Leauthaud, A., Li, C., Li, R., Li, C., Li, N.,
-  Liang, F.-H., Liang, Y., Lima, M., Lin, L.~L., Lin, L.~L., Lin, Y.-T., Long,
-  D., Lucatello, S., MacDonald, N., MacLeod, C.~L., Mackereth, J.~T.,
+  Liang, F.-H., Liang, Y., Lima, M., Lin, L. L.~L., Lin, L. L.~L., Lin, Y.-T.,
+  Long, D., Lucatello, S., MacDonald, N., MacLeod, C.~L., Mackereth, J.~T.,
   Mahadevan, S., Maia, M. A.-G., Maiolino, R., Majewski, S.~R., Malanushenko,
   O., Mallmann, N.~D., Manchado, A., Maraston, C., Marques-Chaves, R.,
   Valpuesta, I.~M., Masters, K.~L., Mathur, S., McGreer, I.~D., Merloni, A.,
@@ -130,6 +135,25 @@ Albareti, F.~D., {Allende Prieto}, C., Almeida, A., Anders, F., Anderson, S.,
   Spectroscopic Data from the SDSS-IV Survey Mapping Nearby Galaxies at Apache
   Point Observatory}.
 
+\bibitem[Alpaslan et~al., 2014a]{2014MNRAS.440L.106A}
+Alpaslan, M., Robotham, A., Obreschkow, D., Penny, S., Driver, S., Norberg, P.,
+  Brough, S., Brown, M., Cluver, M., Holwerda, B., Hopkins, A., van Kampen, E.,
+  Kelvin, L., Lara-Lopez, M., Liske, J., Loveday, J., Mahajan, S., \& Pimbblet,
+  K. (2014a).
+\newblock {Galaxy and Mass Assembly (GAMA): fine filaments of galaxies detected
+  within voids}.
+\newblock {\em MNRAS}, 440, L106--L110.
+
+\bibitem[Alpaslan et~al., 2014b]{Alpaslan2014}
+Alpaslan, M., Robotham, A. S.~G., Driver, S., Norberg, P., Baldry, I., Bauer,
+  A.~E., Bland-hawthorn, J., Brown, M., Cluver, M., Colless, M., Foster, C.,
+  Hopkins, A., Van~kampen, E., Kelvin, L., Lara-Lopez, M.~A., Liske, J.,
+  Lopez-Sanchez, A.~R., Loveday, J., Mcnaught-Roberts, T., Merson, A., \&
+  Pimbblet, K. (2014b).
+\newblock {Galaxy and mass assembly (GAMA): The large-scale structure of
+  galaxies and comparison to mock universes}.
+\newblock {\em MNRAS}, 438(1), 177--194.
+
 \bibitem[Angulo et~al., 2013a]{Angulo2013b}
 Angulo, R.~E., Chen, R., Hilbert, S., \& Abel, T. (2013a).
 \newblock {Noiseless Gravitational Lensing Simulations}.
@@ -149,6 +173,25 @@ Angulo, R.~E., Hahn, O., Ludlow, A., \& Bonoli, S. (2016).
 \newblock {Earth-mass haloes and the emergence of NFW density profiles}.
 \newblock {\em MNRAS}, 15(April), 1--15.
 
+\bibitem[Aragon-calvo et~al., 2016]{Aragon-Calvo2016}
+Aragon-calvo, M., Neyrinck, M., \& Silk, J. (2016).
+\newblock {\em {How Cosmic Web Detachment Drives Galaxy Quenching}}.
+\newblock Technical Report July.
+
+\bibitem[Arag{\'{o}}n-Calvo et~al., 2010]{Aragon-Calvo2010}
+Arag{\'{o}}n-Calvo, M., Platen, E., van~de Weygaert, R., \& Szalay, A. (2010).
+\newblock {The Spine of the Cosmic Web}.
+\newblock {\em ApJ}, 723, 364--382.
+
+\bibitem[Aragon-Calvo et~al., 2010]{Aragon-Calvo2010a}
+Aragon-Calvo, M., {Van De Weygaert}, R., Jones, B. J. T.~B., Aragon-Calvo,
+  M.~A., {Van De Weygaert}, R., Jones, B. J. T.~B., Arag??n-Calvo, M.~A., {Van
+  De Weygaert}, R., Jones, B. J. T.~B., Aragon-Calvo, M.~A., {Van De Weygaert},
+  R., Jones, B. J. T.~B., Aragon-Calvo, M.~A., {Van De Weygaert}, R., \& Jones,
+  B. J. T.~B. (2010).
+\newblock {Multiscale phenomenology of the cosmic web}.
+\newblock {\em MNRAS}, 408(4), 2163--2187.
+
 \bibitem[Aragon-Calvo et~al., 2007]{Aragon-Calvo2007}
 Aragon-Calvo, M.~A., Jones, B. J.~T., {Van De Weygaert}, R., M, J., \& {Der
   Hulst}, V. (2007).
@@ -162,18 +205,16 @@ Aragon-Calvo, M.~A., Platen, E., {Van De Weygaert}, R., \& Szalay, A.~S.
 \newblock {The Spine of the Cosmic Web}.
 \newblock {\em ApJ}, 723(1), 364--382.
 
-\bibitem[Aragon-Calvo et~al., 2010]{Aragon-Calvo2010a}
-Aragon-Calvo, M.~A., {Van De Weygaert}, R., Jones, B. J.~T., Arag??n-Calvo,
-  M.~A., {Van De Weygaert}, R., Jones, B. J.~T., Aragon-Calvo, M.~A., {Van De
-  Weygaert}, R., Jones, B. J.~T., Aragon-Calvo, M.~A., {Van De Weygaert}, R.,
-  \& Jones, B. J.~T. (2010).
-\newblock {Multiscale phenomenology of the cosmic web}.
-\newblock {\em MNRAS}, 408(4), 2163--2187.
+\bibitem[Aragon-Calvo \& Szalay, 2012]{Aragon-Calvo2012}
+Aragon-Calvo, M.~a. \& Szalay, a.~S. (2012).
+\newblock {The hierarchical structure and dynamics of voids}.
+\newblock {\em MNRAS}, 428(4), 3409--3424.
 
-\bibitem[Aragon-Calvo et~al., 2016]{Aragon-Calvo2016}
-Aragon-Calvo, M. M. A.~M., Neyrinck, M. M.~C., \& Silk, J. (2016).
-\newblock {How Cosmic Web Detachment Drives Galaxy Quenching}.
-\newblock {\em ArXiv e-prints}, (July).
+\bibitem[Aragon-Calvo \& Yang, 2014]{Aragon-Calvo2014}
+Aragon-Calvo, M.~A. \& Yang, L.~F. (2014).
+\newblock {The hierarchical nature of the spin alignment of dark matter haloes
+  in filaments}.
+\newblock {\em Mon. Not. R. Astron. Soc. Lett.}, 440(1), 46--50.
 
 \bibitem[Arnold et~al., 1982]{Arnold1982}
 Arnold, V.~I., Shandarin, S.~F., Zeldovich, Y.~B., \& Zeldovich, I. (1982).
@@ -191,6 +232,16 @@ Ascasibar, Y. (2010).
 Bagla, J.~S. \& Padmanabhan, T. (1997).
 \newblock {Cosmological N-Body Simulations}.
 \newblock {\em Pramana}, V, 161.
+
+\bibitem[Bardeen et~al., 1986]{bbks}
+Bardeen, J., Bond, J., Kaiser, N., \& Szalay, A. (1986).
+\newblock {The statistics of peaks of Gaussian random fields}.
+\newblock {\em ApJ}, 304, 15--61.
+
+\bibitem[Barrow et~al., 1985]{Barrow1985}
+Barrow, J., Bhavsar, S., \& Sonada, H. (1985).
+\newblock {Minimal spanning trees, filaments and galaxy clustering}.
+\newblock {\em MNRAS}, 216, 17--35.
 
 \bibitem[Beacom et~al., 1991]{Beacom1991}
 Beacom, J.~F., Dominik, K.~G., Melott, A.~L., Perkins, S.~P., \& Shandarin,
@@ -219,6 +270,11 @@ Bertschinger, E. \& Gelb, J.~M. (1991).
 \newblock {Cosmological N-Body Simulations}.
 \newblock {\em Comput. Phys.}, 164(5), 164.
 
+\bibitem[Bharadwaj et~al., 2004]{2004ApJ...606...25B}
+Bharadwaj, S., Bhavsar, S., \& Sheth, J. (2004).
+\newblock {The Size of the Longest Filaments in the Universe}.
+\newblock {\em ApJ}, 606, 25--31.
+
 \bibitem[Blumenthal et~al., 1992]{Blumenthal1992}
 Blumenthal, G.~R., {Da Costa}, N., Goldwirth, D.~S., Lecar, M., \& Piran, T.
   (1992).
@@ -242,22 +298,71 @@ Bond, N.~A., Strauss, M.~A., \& Cen, R. (2010b).
   structure}.
 \newblock {\em MNRAS}, 409(1), 156--168.
 
+\bibitem[Bos et~al., 2012]{Bos2012}
+Bos, E.~G., van~de Weygaert, R., Dolag, K., \& Pettorino, V. (2012).
+\newblock {The darkness that shaped the void: Dark energy and cosmic voids}.
+\newblock {\em MNRAS}, 426(1), 440--461.
+
+\bibitem[Carollo et~al., 2013]{2013ApJ...776...71C}
+Carollo, C., Cibinel, A., Lilly, S., Miniati, F., Norberg, P., Silverman, J.,
+  van Gorkom, J., Cameron, E., Finoguenov, A., Peng, Y., Pipino, A., \& Rudick,
+  C. (2013).
+\newblock {The Zurich Environmental Study of Galaxies in Groups along the
+  Cosmic Web. I. Which Environment Affects Galaxy Evolution?}
+\newblock {\em ApJ}, 776, 71.
+
+\bibitem[Cautun et~al., 2015]{Cautun2015}
+Cautun, M., Bose, S., Frenk, C.~S., Guo, Q., Han, J., Hellwing, W.~A., Sawala,
+  T., \& Wang, W. (2015).
+\newblock {Planes of satellite galaxies: When exceptions are the rule}.
+\newblock {\em MNRAS}, 452(4), 3838--3852.
+
 \bibitem[Cautun et~al., 2014]{Cautun2014a}
 Cautun, M., {Van De Weygaert}, R., Jones, B. J.~T., \& Frenk, C.~S. (2014).
 \newblock {Evolution of the cosmic web}.
 \newblock {\em MNRAS}, 441(4), 2923--2973.
 
 \bibitem[Cautun et~al., 2013]{Cautun2013}
-Cautun, M., van~de Weygaert, R., Jones, B. J.~T., van~de Weygaert, R., \&
-  Jones, B. J.~T. (2013).
+Cautun, M., van~de Weygaert, R., Jones, B. J.~T., van~de Weygaert, R., Jones,
+  B. J.~T., van~de Weygaert, R., \& Jones, B. J.~T. (2013).
 \newblock {Nexus: Tracing the cosmic web connection}.
 \newblock {\em MNRAS}, 429(2), 1286--1308.
+
+\bibitem[Cautun \& van~de Weygaert, 2011]{Cautun2011b}
+Cautun, M. M. C.~M. \& van~de Weygaert, R. (2011).
+\newblock {The DTFE public software: The Delaunay Tessellation Field Estimator
+  code}.
+\newblock Astrophysics Source Code Library.
 
 \bibitem[Centrella \& Melott, 1983]{Centrella1983}
 Centrella, J. \& Melott, A. (1983).
 \newblock {Three-dimensional simulation of large-scale structure in the
   universe}.
 \newblock {\em Nature}, 305, 196--198.
+
+\bibitem[Chazal et~al., 2009]{Chazal2009}
+Chazal, F., Cohen-steiner, D., \& M{\'{e}}rigot, Q. (2009).
+\newblock {Geometric Inference for Measures based on Distance Functions}.
+\newblock {\em INRIA Rapp. R{\'{e}}cherche}, RR-6930.
+
+\bibitem[Choi et~al., 2010]{Choi2010}
+Choi, E., Bond, N.~A., Strauss, M.~A., Coil, A.~L., Davis, M., \& Willmer, C.
+  N.~A. (2010).
+\newblock {Tracing the filamentary structure of the galaxy distribution at z
+  ∼ 0 . 8}.
+\newblock {\em MNRAS}, 328(June), 320--328.
+
+\bibitem[Codis et~al., 2012]{Codis2012}
+Codis, S., Pichon, C., Devriendt, J., Slyz, A., Pogosyan, D., Dubois, Y., \&
+  Sousbie, T. (2012).
+\newblock {Connecting the cosmic web to the spin of dark haloes : implications
+  for galaxy formation}.
+\newblock {\em MNRAS}, 427, 3320--3336.
+
+\bibitem[Colberg, 2007]{Colberg2007}
+Colberg, J. (2007).
+\newblock {Quantifying cosmic superstructures}.
+\newblock {\em MNRAS}, 375, 337--347.
 
 \bibitem[Colberg et~al., 2008]{Colberg2008}
 Colberg, J.~M., Pearce, F., Foster, C., Platen, E., Brunino, R., Neyrinck, M.,
@@ -272,22 +377,98 @@ Colberg, J.~M., Sheth, R.~K., Diaferio, A., Gao, L., \& Yoshida, N. (2005).
 \newblock {Voids in lcdm universe}.
 \newblock {\em MNRAS}, 360, 216--226.
 
+\bibitem[Colless et~al., 2003]{Colless2003}
+Colless, M., Peterson, B., Jackson, C., Peacock, J., Cole, S., Norberg, P.,
+  Baldry, I., Baugh, C., Bland-Hawthorn, J., Bridges, T., Cannon, R., Collins,
+  C., Couch, W., Cross, N., Dalton, G., {De Propris}, R., Driver, S.,
+  Efstathiou, G., Ellis, R., Frenk, C., Glazebrook, K., Lahav, O., Lewis, I.,
+  Lumsden, S., Maddox, S., Madgwick, D., Sutherland, W., \& Taylor, K. (2003).
+\newblock {The 2dF Galaxy Redshift Survey: Final Data Release}.
+\newblock {\em ArXiv Astrophys. e-prints}.
+
+\bibitem[Colombi et~al., 2000]{Colombi2000}
+Colombi, S., Pogosyan, D., \& Souradeep, T. (2000).
+\newblock {Tree Structure of a Percolating Universe}.
+\newblock {\em Phys. Rev. Lett.}, 85, 5515--5518.
+
+\bibitem[Courtois et~al., 2013]{Courtois2013}
+Courtois, M., Pomar, D., Tully, R.~B., Hoffman, Y., Courtois, D., Inp, U. C. B.
+  L.~C., \& Lyon, I. P.~N. (2013).
+\newblock {COSMOGRAPHY OF THE LOCAL UNIVERSE}.
+\newblock {\em ApJ}, 146, 69.
+
+\bibitem[Creasey et~al., 2015]{2015ApJ...800L...4C}
+Creasey, P., Scannapieco, C., Nuza, S., Yepes, G., Gottl{\"{o}}ber, S., \&
+  Steinmetz, M. (2015).
+\newblock {The Effect of Environment On Milky Way-Mass Galaxies in a
+  Constrained Simulation of the Local Group}.
+\newblock {\em $\backslash$apjl}, 800, L4.
+
+\bibitem[Danovich et~al., 2015]{2015MNRAS.449.2087D}
+Danovich, M., Dekel, A., Hahn, O., Ceverino, D., \& Primack, J. (2015).
+\newblock {Four phases of angular-momentum buildup in high-z galaxies: from
+  cosmic-web streams through an extended ring to disc and bulge}.
+\newblock {\em MNRAS}, 449, 2087--2111.
+
+\bibitem[Danovich et~al., 2012]{2012MNRAS.422.1732D}
+Danovich, M., Dekel, A., Hahn, O., \& Teyssier, R. (2012).
+\newblock {Coplanar streams, pancakes and angular-momentum exchange in high-z
+  disc galaxies}.
+\newblock {\em MNRAS}, 422, 1732--1749.
+
 \bibitem[Davis et~al., 1985]{Davis1985}
 Davis, M., Efstathiou, G., Frenk, C.~S., \& White, S. D.~M. (1985).
 \newblock {The evolution of large-scale structure in a universe dominated by
   cold dark matter}.
 \newblock {\em ApJ}, 292, 371.
 
-\bibitem[de~Lapparent et~al., 1986]{DeLapparent1986}
+\bibitem[de~Lapparent et~al., 1986]{Lapparent1986}
 de~Lapparent, V., Geller, M.~J., \& Huchra, J.~P. (1986).
 \newblock {A slice of the universe}.
 \newblock {\em ApJ}, 302, L1----L5.
 
-\bibitem[Doroshkevich, 1973]{Doroshkevich1973}
-Doroshkevich, A.~G. (1973).
+\bibitem[de~Vaucouleurs, 1953]{1953AJ.....58...30D}
+de~Vaucouleurs, G. (1953).
+\newblock {Evidence for a local super,galaxy}.
+\newblock {\em $\backslash$aj}, 58, 30.
+
+\bibitem[Dekel et~al., 2009]{Dekel2009b}
+Dekel, A., Sari, R., \& Ceverino, D. (2009).
+\newblock {Formation of massive galaxies at high redshift: Cold streams, clumpy
+  disks, and compact spheroids}.
+\newblock {\em ApJ}, 703(1), 785--801.
+
+\bibitem[Diemand et~al., 2006]{Diemand2006}
+Diemand, J., Kuhlen, M., \& Madau, P. (2006).
+\newblock {Early Supersymmetric Cold Dark Matter Substructure}.
+\newblock {\em ApJ}, 649(1), 1--13.
+
+\bibitem[Doroshkevich, 1970]{Doroshkevich1970}
+Doroshkevich, A.~G. (1970).
 \newblock {Spatial structure of perturbations and origin of galactic rotation
   in fluctuation theory}.
 \newblock {\em Astrophysics}, 6(4), 320--330.
+
+\bibitem[Dressler, 1980]{Dressler1980}
+Dressler, A. (1980).
+\newblock {GALAXY MORPHOLOGY IN RICH CLUSTERS: IMPLICATIONS FOR THE FORMATION
+  AND EVOLUTION OF GALAXIES}.
+\newblock {\em ApJ}, 236, 351--365.
+
+\bibitem[Eardley et~al., 2015]{2015MNRAS.448.3665E}
+Eardley, E., Peacock, J., McNaught-Roberts, T., Heymans, C., Norberg, P.,
+  Alpaslan, M., Baldry, I., Bland-Hawthorn, J., Brough, S., Cluver, M., Driver,
+  S., Farrow, D., Liske, J., Loveday, J., \& Robotham, A. (2015).
+\newblock {Galaxy And Mass Assembly (GAMA): the galaxy luminosity function
+  within the cosmic web}.
+\newblock {\em MNRAS}, 448, 3665--3678.
+
+\bibitem[Eckert et~al., 2015]{2015Natur.528..105E}
+Eckert, D., Jauzac, M., Shan, H., Kneib, J.-P., Erben, T., Israel, H., Jullo,
+  E., Klein, M., Massey, R., Richard, J., \& Tchernin, C. (2015).
+\newblock {Warm-hot baryons comprise 5-10 per cent of filaments in the cosmic
+  web}.
+\newblock {\em $\backslash$nat}, 528, 105--107.
 
 \bibitem[Einasto et~al., 1984]{Einasto1984}
 Einasto, J., Klypin, A., Saar, E., \& Shandarin, S.~F. (1984).
@@ -339,12 +520,28 @@ Falck, B.~L., Neyrinck, M.~C., \& Szalay, A.~S. (2012).
 \newblock {Self-similar gravitational collapse in an expanding universe}.
 \newblock {\em ApJ}, 281, 1.
 
+\bibitem[Forero-Romero \& Gonzalez, 2014]{Forero-Romero2014}
+Forero-Romero, J.~E. \& Gonzalez, R.~E. (2014).
+\newblock {The Local Group in the cosmic web}.
+\newblock 45, 1--6.
+
 \bibitem[Forero-Romero et~al., 2009]{Forero-Romero2009a}
-Forero-Romero, J.~E., Hoffman, Y., Gottl{\"{o}}ber, S., Klypin, A., Yepes, G.,
-  Gottl??ber, S., Klypin, A., Yepes, G., Gottl{\"{o}}ber, S., Klypin, A.,
-  Yepes, G., Gottl??ber, S., Klypin, A., \& Yepes, G. (2009).
+Forero-Romero, J.~E., Hoffman, Y., Gottl??ber, S., Klypin, A., Yepes, G.,
+  Gottl{\"{o}}ber, S., Klypin, A., Yepes, G., Gottl??ber, S., Klypin, A.,
+  Yepes, G., Gottl{\"{o}}ber, S., Klypin, A., Yepes, G., Gottl??ber, S.,
+  Klypin, A., \& Yepes, G. (2009).
 \newblock {A dynamical classification of the cosmic web}.
 \newblock {\em MNRAS}, 396(3), 1815--1824.
+
+\bibitem[Frenk et~al., 1999]{1999ApJ...525..554F}
+Frenk, C., White, S., Bode, P., Bond, J., Bryan, G., Cen, R., Couchman, H.,
+  Evrard, A., Gnedin, N., Jenkins, A., Khokhlov, A., Klypin, A., Navarro, J.,
+  Norman, M., Ostriker, J., Owen, J., Pearce, F., Pen, U.-L., Steinmetz, M.,
+  Thomas, P., Villumsen, J., Wadsley, J., Warren, M., Xu, G., \& Yepes, G.
+  (1999).
+\newblock {The Santa Barbara Cluster Comparison Project: A Comparison of
+  Cosmological Hydrodynamics Solutions}.
+\newblock {\em ApJ}, 525, 554--582.
 
 \bibitem[Frenk et~al., 1983]{Frenk1983}
 Frenk, C.~S., White, S. D.~M., \& Davis, M. (1983).
@@ -362,6 +559,11 @@ Geller, M.~J. \& Huchra, J.~P. (1989).
 \newblock {Mapping the Universe}.
 \newblock {\em Science (80-. ).}, 246(4932), 897--903.
 
+\bibitem[Genovese et~al., 2010]{Genovese2010}
+Genovese, C., Perone-Pacifico, M., Verdinelli, I., \& Wasserman, L. (2010).
+\newblock {The Geometry of Nonparametric Filament Estimation}.
+\newblock {\em ArXiv e-prints}.
+
 \bibitem[Gill et~al., 2004]{Gill2004a}
 Gill, S. P.~D., Knebe, A., \& Gibson, B.~K. (2004).
 \newblock {The evolution of substructure -I. A new identification method}.
@@ -371,6 +573,23 @@ Gill, S. P.~D., Knebe, A., \& Gibson, B.~K. (2004).
 Giocoli, C., Tormen, G., Sheth, R.~K., \& van~den Bosch, F.~C. (2010).
 \newblock {The substructure hierarchy in dark matter haloes}.
 \newblock {\em MNRAS}, 404(1), 502--517.
+
+\bibitem[Giovanelli \& Haynes, 1985]{Giovanelli1985}
+Giovanelli, R. \& Haynes, M.~P. (1985).
+\newblock {A 21 CM survey of the Pisces-Perseus supercluster. I - The
+  declination zone +27.5 to +33.5 degrees}.
+\newblock {\em Astron. J.}, 90(12), 2445.
+
+\bibitem[Goerdt et~al., 2015]{2015MNRAS.454..637G}
+Goerdt, T., Ceverino, D., Dekel, A., \& Teyssier, R. (2015).
+\newblock {Distribution of streaming rates into high-redshift galaxies}.
+\newblock {\em MNRAS}, 454, 637--648.
+
+\bibitem[Gonz{\'{a}}lez \& Padilla, 2010]{Gonzalez2010}
+Gonz{\'{a}}lez, R. \& Padilla, N. (2010).
+\newblock {Automated detection of filaments in the large‐scale structure of
+  the Universe}.
+\newblock {\em MNRAS}, 407(3), 1449--1463.
 
 \bibitem[Gonzalez \& Padilla, 2016]{Gonzalez2016}
 Gonzalez, R.~E. \& Padilla, N.~D. (2016).
@@ -382,6 +601,12 @@ Gott, J. R. I. I.~I., Melott, A.~L., \& Dickinson, M. (1986).
 \newblock {Sponge-like topology}.
 \newblock {\em ApJ}, 306, 341--357.
 
+\bibitem[{Gott III} et~al., 2005]{2005ApJ...624..463G}
+{Gott III}, J., Juri{\'{c}}, M., Schlegel, D., Hoyle, F., Vogeley, M., Tegmark,
+  M., Bahcall, N., \& Brinkmann, J. (2005).
+\newblock {A Map of the Universe}.
+\newblock {\em ApJ}, 624, 463--484.
+
 \bibitem[Gottlober et~al., 1999]{Gottlober1999}
 Gottlober, S., Klypin, A., \& Kravtsov, A.~V. (1999).
 \newblock {Halo Evolution}.
@@ -392,12 +617,34 @@ Gregory, S.~A. \& Thompson, L.~A. (1978).
 \newblock {The Coma A1367 supercluster and its environs}.
 \newblock {\em ApJ}, 222, 784.
 
-\bibitem[{Gurbatov, S.N., Saichev, A.I., Shandarin} et~al., 1989]{Gurbatov1989}
-{Gurbatov, S.N., Saichev, A.I., Shandarin}, S.~F., Gurbatov, S., Saichev, A.,
-  \& Shandarin, S. (1989).
+\bibitem[Guo et~al., 2015]{2015ApJ...800..112G}
+Guo, Q., Tempel, E., \& Libeskind, N. (2015).
+\newblock {Galaxies in Filaments have More Satellites: The Influence of the
+  Cosmic Web on the Satellite Luminosity Function in the SDSS}.
+\newblock {\em ApJ}, 800, 112.
+
+\bibitem[Gurbatov et~al., 1989]{Gurbatov1989}
+Gurbatov, S., Saichev, A., Shandarin, S., {Gurbatov, S.N., Saichev, A.I.,
+  Shandarin}, S.~F., Gurbatov, S., Saichev, A., \& Shandarin, S. (1989).
 \newblock {The large-scale structure of the universe in the frame of the model
   equation of non-linear diffusion}.
 \newblock {\em MNRAS}, 236, 385--402.
+
+\bibitem[Guzzo et~al., 2014]{Vipers2014}
+Guzzo, L., Scodeggio, M., Garilli, B., Granett, B., Fritz, A., Abbas, U.,
+  Adami, C., Arnouts, S., Bel, J., Bolzonella, M., Bottini, D., Branchini, E.,
+  Cappi, A., Coupon, J., Cucciati, O., Davidzon, I., {De Lucia}, G., de~la
+  Torre, S., Franzetti, P., Fumana, M., Hudelot, P., Ilbert, O., Iovino, A.,
+  Krywult, J., {Le Brun}, V., {Le F{\`{e}}vre}, O., Maccagni, D., Ma{\l}ek, K.,
+  Marulli, F., McCracken, H., Paioro, L., Peacock, J., Polletta, M., Pollo, A.,
+  Schlagenhaufer, H., Tasca, L., Tojeiro, R., Vergani, D., Zamorani, G.,
+  Zanichelli, A., Burden, A., {Di Porto}, C., Marchetti, A., Marinoni, C.,
+  Mellier, Y., Moscardini, L., Nichol, R., Percival, W., Phleps, S., \& Wolk,
+  M. (2014).
+\newblock {The VIMOS Public Extragalactic Redshift Survey (VIPERS). An
+  unprecedented view of galaxies and large-scale structure at 0.5 {\textless} z
+  {\textless} 1.2}.
+\newblock {\em A{\{}{\&}{\}}A}, 566, A108.
 
 \bibitem[Habib et~al., 2009]{Habib2009a}
 Habib, S., Pope, A., Luki{\'{c}}, Z., Daniel, D., Fasel, P., Desai, N.,
@@ -428,13 +675,19 @@ Hahn, O., Angulo, R.~E., \& Abel, T. (2015).
 \newblock {The properties of cosmic velocity fields}.
 \newblock {\em MNRAS}, 454(4), 3920--3937.
 
-\bibitem[Hahn et~al., 2007]{Hahn2007}
-Hahn, O., Carollo, C.~M., Porciani, C., \& Dekel, A. (2007).
+\bibitem[Hahn et~al., 2007a]{Hahn2007}
+Hahn, O., Carollo, C.~M., Porciani, C., \& Dekel, A. (2007a).
 \newblock {The evolution of dark matter halo properties in clusters, filaments,
   sheets and voids}.
 \newblock {\em MNRAS}, 381(1), 41--51.
 
-\bibitem[Han et~al., 2012]{Han2012a}
+\bibitem[Hahn et~al., 2007b]{Hahn2007b}
+Hahn, O., Porciani, C., Carollo, C., \& Dekel, A. (2007b).
+\newblock {Properties of dark matter haloes in clusters, filaments, sheets and
+  voids}.
+\newblock {\em MNRAS}, 375, 489--499.
+
+\bibitem[Han et~al., 2012]{Han2012}
 Han, J., Jing, Y.~P., Wang, H., \& Wang, W. (2012).
 \newblock {Resolving subhaloes' lives with the Hierarchical Bound-Tracing
   algorithm}.
@@ -447,11 +700,33 @@ Heitmann, K., Frontiere, N., Sewell, C., Habib, S., Pope, A., Finkel, H.,
   Supercomputers}.
 \newblock {\em ApJS}, 219(2), 34.
 
+\bibitem[Hess et~al., 2013]{Hess2013}
+Hess, S., Kitaura, F.-S. F.~S., \& Gottl{\"{o}}ber, S. (2013).
+\newblock {Simulating structure formation of the Local Universe}.
+\newblock {\em MNRAS}, 435(3), 2065--2076.
+
+\bibitem[Hidding, 2017]{Hidding2017}
+Hidding, J. (2017).
+\newblock {\em {The phase-space geometry of the cosmic web}}.
+\newblock PhD thesis, PhD thesis, University of Groningen, The Netherlands.
+
 \bibitem[Hidding et~al., 2014]{Hidding2014}
 Hidding, J., Shandarin, S.~F., \& van~de Weygaert, R. (2014).
 \newblock {The zel'dovich approximation: Key to understanding cosmic web
   complexity}.
 \newblock {\em MNRAS}, 437(4), 3442--3472.
+
+\bibitem[Hidding et~al., 2012]{Hidding2012}
+Hidding, J., van~de Weygaert, R., Vegter, G., \& Jones, B. (2012).
+\newblock {Adhesion and the Geometry of the Cosmic Web}.
+\newblock {\em arXiv}, 1211.5385, 1--3.
+
+\bibitem[Hirv et~al., 2017]{Hirv2017}
+Hirv, A., Pelt, J., Saar, E., Tago, E., Tamm, A., Tempel, E., \& Einasto, M.
+  (2017).
+\newblock {Alignment of galaxies relative to their local environment in
+  SDSS-DR8}.
+\newblock {\em Astron. Astrophys.}, 599, A31.
 
 \bibitem[Hockney \& Eastwood, 1988]{Hockney1988}
 Hockney, R.~W. \& Eastwood, J.~W. (1988).
@@ -464,14 +739,24 @@ Hoffman, Y., Metuki, O., Yepes, G., Gottl, S., Forero, J.~E., Libeskind, N.~I.,
 \newblock {A kinematic classification of the cosmic web}.
 \newblock {\em MNRAS}, 425, 2049--2057.
 
+\bibitem[Hoffman et~al., 2017]{Hoffman2017}
+Hoffman, Y., Pomar, D., \& Tully, R.~B. (2017).
+\newblock {The Dipole Repeller}.
+\newblock {\em Nat. Astron.}, 1, 36.
+
 \bibitem[Hoffmann et~al., 2014]{Hoffmann2014}
 Hoffmann, K., Planelles, S., Gazta??aga, E., Knebe, A., Pearce, F.~R., Lux, H.,
   Onions, J., Muldrew, S.~I., Elahi, P., Behroozi, P., Ascasibar, Y., Han, J.,
-  Maciejewski, M., Merchan, M.~E., Neyrinck, M., Ruiz, A. N. A.~N., \& Sgro,
-  M.~A. (2014).
+  Maciejewski, M., Merchan, M.~E., Neyrinck, M., Ruiz, A. N. A. N. A. N. A.~N.,
+  \& Sgro, M.~A. (2014).
 \newblock {Subhaloes gone Notts: Subhaloes as tracers of the dark matter halo
   shape}.
 \newblock {\em MNRAS}, 442(2), 1197--1210.
+
+\bibitem[Hoyle, 1951]{Hoyle1951}
+Hoyle, F. (1951).
+\newblock {The Origin of the Rotations of the Galaxies}.
+\newblock In {\em Probl. Cosm. Aerodyn.}  (pp.\ 195).
 
 \bibitem[Huchra et~al., 2012]{Huchra2012}
 Huchra, J.~P., Macri, L.~M., Masters, K.~L., Jarrett, T.~H., Berlind, P.,
@@ -481,10 +766,23 @@ Huchra, J.~P., Macri, L.~M., Masters, K.~L., Jarrett, T.~H., Berlind, P.,
 \newblock {the 2Mass Redshift Survey—Description and Data Release}.
 \newblock {\em ApJS}, 199(2), 26.
 
+\bibitem[Ibata et~al., 2013]{Ibata2013}
+Ibata, R., Lewis, G., Conn, A., Irwin, M., McConnachie, A., Chapman, S.,
+  Collins, M., Fardal, M., Ferguson, A., Ibata, N., Mackey, A., Martin, N.,
+  Navarro, J., Rich, R., Valls-Gabaud, D., \& Widrow, L. (2013).
+\newblock {A vast, thin plane of corotating dwarf galaxies orbiting the
+  Andromeda galaxy}.
+\newblock {\em $\backslash$nat}, 493, 62--65.
+
 \bibitem[Icke, 1973]{Icke1975}
 Icke, V. (1973).
 \newblock {Formation of Galaxies inside Clusters}.
-\newblock {\em A{\&}A}, 27, 1.
+\newblock {\em A{\{}{\&}{\}}A}, 27, 1.
+
+\bibitem[Icke, 1984]{Icke1984}
+Icke, V. (1984).
+\newblock {Voids and filaments}.
+\newblock {\em MNRAS}, 206, 1P--3P.
 
 \bibitem[Icke \& van~de Weygaert, 1991]{Icke1991}
 Icke, V. \& van~de Weygaert, R. (1991).
@@ -501,6 +799,33 @@ Jenkins, A., Frenk, C.~S., White, S. D.~M., Colberg, J.~M., Cole, S., Evrard,
 Jennings, E., Li, Y., \& Hu, W. (2013).
 \newblock {The abundance of voids and the excursion set formalism}.
 \newblock {\em MNRAS}, 434(3), 2167--2181.
+
+\bibitem[Jones et~al., 2010]{Jones2010}
+Jones, B. J.~T., {Van De Weygaert}, R., \& Arag{\'{o}}n-Calvo, M.~A. (2010).
+\newblock {Fossil evidence for spin alignment of Sloan Digital Sky Survey
+  galaxies in filaments}.
+\newblock {\em MNRAS}, 408(2), 897--918.
+
+\bibitem[Kirshner et~al., 1981]{Kirshner1981}
+Kirshner, R., {Oemler Jr.}, A., Schechter, P., \& Shectman, S. (1981).
+\newblock {A million cubic megaparsec void in Bootes}.
+\newblock {\em $\backslash$apjl}, 248, L57--L60.
+
+\bibitem[Kirshner et~al., 1987]{Kirshner1987}
+Kirshner, R., {Oemler Jr.}, A., Schechter, P., \& Shectman, S. (1987).
+\newblock {A survey of the Bootes void}.
+\newblock {\em ApJ}, 314, 493--506.
+
+\bibitem[Kitaura, 2013]{Kitaura2013}
+Kitaura, F.~S. (2013).
+\newblock {The initial conditions of the universe from constrained
+  simulations}.
+\newblock {\em Mon. Not. R. Astron. Soc. Lett.}, 429(1), 84--88.
+
+\bibitem[Kitaura \& Angulo, 2012]{2012MNRAS.425.2443K}
+Kitaura, F.-S. \& Angulo, R. (2012).
+\newblock {Linearization with cosmological perturbation theory}.
+\newblock {\em MNRAS}, 425, 2443--2454.
 
 \bibitem[Klypin et~al., 1999]{Klypin1999}
 Klypin, A., Gottlober, S., Kravtsov, A.~V., \& Khokhlov, A.~M. (1999).
@@ -546,16 +871,64 @@ Kofman, L., Pogosyan, D., Shandarin, S. F.~S., \& Melott, A. A.~L. (1992).
 \newblock {Coherent structures in the Universe and the Adhesion Model}.
 \newblock {\em ApJ}, 393, 437--449.
 
-\bibitem[Kuhlen et~al., 2006]{Diemand2006}
-Kuhlen, M., Madau, P., Diemand, J., Kuhlen, M., Madau, P., Diemand, J., Kuhlen,
-  M., \& Madau, P. (2006).
-\newblock {Early Supersymmetric Cold Dark Matter Substructure}.
-\newblock {\em ApJ}, 649(1), 1--13.
+\bibitem[Kraan-Korteweg et~al., 2017]{2017MNRAS.466L..29K}
+Kraan-Korteweg, R., Cluver, M., Bilicki, M., Jarrett, T., Colless, M., Elagali,
+  A., B{\"{o}}hringer, H., \& Chon, G. (2017).
+\newblock {Discovery of a supercluster in the Zone of Avoidance in Vela}.
+\newblock {\em MNRAS}, 466, L29--L33.
+
+\bibitem[Kuutma et~al., 2017]{Kuutma2017}
+Kuutma, T., Tamm, A., \& Tempel, E. (2017).
+\newblock {From voids to filaments: environmental transformations of galaxies
+  in the SDSS}.
+\newblock {\em Astron. Astrophys.}, (pp.\ 1--5).
 
 \bibitem[Lacey \& Cole, 1994]{Lacey1994}
 Lacey, C. \& Cole, S. (1994).
 \newblock {Merger rate in hierarchical models}.
 \newblock {\em MNRAS}, 271, 676--692.
+
+\bibitem[Lahav et~al., 2000]{2000MNRAS.312..166L}
+Lahav, O., Santiago, B., Webster, A., Strauss, M., Davis, M., Dressler, A., \&
+  Huchra, J. (2000).
+\newblock {The supergalactic plane revisited with the Optical Redshift Survey}.
+\newblock {\em MNRAS}, 312, 166--176.
+
+\bibitem[Lavaux \& Wandelt, 2010]{Lavaux2010}
+Lavaux, G. \& Wandelt, B.~D. (2010).
+\newblock {Precision cosmology with voids: Definition, methods, dynamics}.
+\newblock {\em MNRAS}, 403(3), 1392--1408.
+
+\bibitem[Lavaux \& Wandelt, 2012]{Lavaux2012}
+Lavaux, G. \& Wandelt, B.~D. (2012).
+\newblock {Precision cosmography with stacked voids}.
+\newblock {\em ApJ}, 754(2).
+
+\bibitem[Leclercq et~al., 2015a]{Leclercq2015b}
+Leclercq, F., Jasche, J., Sutter, P.~M., Hamaus, N., \& Wandelt, B. (2015a).
+\newblock {Dark matter voids in the SDSS galaxy survey}.
+\newblock {\em J. Cosmol. Astropart. Phys.}, 2015(03), 47.
+
+\bibitem[Leclercq et~al., 2015b]{Leclercq2015c}
+Leclercq, F., Jasche, J., \& Wandelt, B. (2015b).
+\newblock {Bayesian analysis of the dynamic cosmic web in the SDSS galaxy
+  survey}.
+\newblock {\em $\backslash$jcap}, 6, 15.
+
+\bibitem[Leclercq et~al., 2015c]{Leclercq2015}
+Leclercq, F., Jasche, J., \& Wandelt, B. (2015c).
+\newblock {Cosmic web-type classification using decision theory}.
+\newblock {\em A{\&}A}, 576, L17.
+
+\bibitem[Leclercq et~al., 2016]{Leclercq2016}
+Leclercq, F., Lavaux, G., Jasche, J., \& Wandelt, B. (2016).
+\newblock {Comparing cosmic web classifiers using information theory}.
+\newblock {\em $\backslash$jcap}, 8, 27.
+
+\bibitem[Lee \& Pen, 2000]{Leepen2000}
+Lee, J. \& Pen, U.-L. (2000).
+\newblock {Cosmic Shear from Galaxy Spins}.
+\newblock {\em $\backslash$apjl}, 532, L5--L8.
 
 \bibitem[Lee \& Shandarin, 1998]{Lee1998}
 Lee, J. \& Shandarin, S.~F. (1998).
@@ -567,15 +940,38 @@ Lee, J. \& Yepes, G. (2016).
 \newblock {Turning Around along the Cosmic Web}.
 \newblock {\em ApJ}, 832(2), 185.
 
+\bibitem[Libeskind et~al., 2018]{Libeskind2018}
+Libeskind, N., van~de Weygaert, R., Cautun, M., Falck, B., Tempel, E., Abel,
+  T., Alpaslan, M., Arag{\'{o}}n-Calvo, M., Forero-Romero, J., Gonzalez, R.,
+  Gottl{\"{o}}ber, S., Hahn, O., Hellwing, W., Hoffman, Y., Jones, B., Kitaura,
+  F., Knebe, A., Manti, S., Neyrinck, M., Nuza, S., Padilla, N., Platen, E.,
+  Ramachandra, N., Robotham, A., Saar, E., Shandarin, S., Steinmetz, M.,
+  Stoica, R., Sousbie, T., \& Yepes, G. (2018).
+\newblock {Tracing the cosmic web}.
+\newblock {\em MNRAS}, 473, 1195--1217.
+
 \bibitem[Libeskind et~al., 2013]{Libeskind2013}
 Libeskind, N.~I., Hoffman, Y., Forero-Romero, J., Gottl{\"{o}}ber, S., Knebe,
   A., Steinmetz, M., \& Klypin, A. (2013).
 \newblock {The velocity shear tensor: Tracer of halo alignment}.
 \newblock {\em MNRAS}, 428(3), 2489--2499.
 
-\bibitem[Lin et~al., 1965]{Lin1965}
-Lin, C., Mestel, L., \& Shu, F. (1965).
-\newblock {The Gravitational Collapse of a Uniform Spheroid}.
+\bibitem[Libeskind et~al., 2015]{Libeskind2015}
+Libeskind, N.~I., Hoffman, Y., Tully, R.~B., Courtois, H.~M., Pomar??de, D.,
+  Gottl??ber, S., \& Steinmetz, M. (2015).
+\newblock {Planes of satellite galaxies and the cosmic web}.
+\newblock {\em MNRAS}, 452(1), 1052--1059.
+
+\bibitem[Lietzen et~al., 2016]{2016A&A...588L...4L}
+Lietzen, H., Tempel, E., Liivam{\"{a}}gi, L., Montero-Dorta, A., Einasto, M.,
+  Streblyanska, A., Maraston, C., Rubi{\~{n}}o-Mart$\backslash$'$\backslash$in,
+  J., \& Saar, E. (2016).
+\newblock {Discovery of a massive supercluster system at z {\~{}} 0.47}.
+\newblock {\em A{\&}A}, 588, L4.
+
+\bibitem[Lin et~al., 1965]{Lin1965a}
+Lin, C.~C., Mestel, L., \& Shu, F.~H. (1965).
+\newblock {The Gravitational Collapse of a Uniform Spheroid.}
 \newblock {\em ApJ}, 142, 1431.
 
 \bibitem[{LSST Science Collaboration} et~al., 2009]{lsst2009}
@@ -584,11 +980,23 @@ Lin, C., Mestel, L., \& Shu, F. (1965).
   (2009).
 \newblock {LSST Science Book, Version 2.0}.
 
+\bibitem[Lynden-Bell et~al., 1988]{1988ApJ...326...19L}
+Lynden-Bell, D., Faber, S., Burstein, D., Davies, R., Dressler, A., Terlevich,
+  R., \& Wegner, G. (1988).
+\newblock {Spectroscopy and photometry of elliptical galaxies. V - Galaxy
+  streaming toward the new supergalactic center}.
+\newblock {\em ApJ}, 326, 19--49.
+
 \bibitem[MacIejewski et~al., 2009]{Maciejewski2009c}
 MacIejewski, M., Colombi, S., Springel, V., Alard, C., \& Bouchet, F.~R.
   (2009).
 \newblock {Phase-space structures - II. Hierarchical Structure Finder}.
 \newblock {\em MNRAS}, 396(3), 1329--1348.
+
+\bibitem[Mart$\backslash$'$\backslash$inez et~al., 2016]{2016MNRAS.455..127M}
+Mart$\backslash$'$\backslash$inez, H., Muriel, H., \& Coenda, V. (2016).
+\newblock {Galaxies infalling into groups: filaments versus isotropic infall}.
+\newblock {\em MNRAS}, 455, 127--135.
 
 \bibitem[Melott et~al., 1983]{Melott1983b}
 Melott, A., Einasto, J., Saar, E., Suisalu, I., Klypin, A., \& Shandarin, S.
@@ -625,6 +1033,12 @@ More, S., Kravtsov, A.~V., Dalal, N., \& Gottl{\"{o}}ber, S. (2011).
   Universality of Halo Mass Function}.
 \newblock {\em ApJS}, 195(1), 4.
 
+\bibitem[Morse, 1934]{Morse1934}
+Morse, M. (1934).
+\newblock {\em {The Calculus of Variations in the Large}}.
+\newblock Number v. 18 in American Mathematical Society. American Mathematical
+  Society.
+
 \bibitem[Neyrinck, 2008]{Neyrinck2008}
 Neyrinck, M.~C. (2008).
 \newblock {Zobov: A parameter-free void-finding algorithm}.
@@ -641,24 +1055,34 @@ Neyrinck, M.~C., Gnedin, N.~Y., \& Hamilton, A. J.~S. (2005).
 \newblock {VOBOZ: an almost-parameter-free halo-finding algorithm}.
 \newblock {\em MNRAS}, 53, 1222--1232.
 
+\bibitem[Novikov et~al., 2006]{Novikov2006}
+Novikov, D., Colombi, S., \& Dor{\'{e}}, O. (2006).
+\newblock {Skeleton as a probe of the cosmic web: the two-dimensional case}.
+\newblock {\em MNRAS}, 366, 1201--1216.
+
 \bibitem[Onions et~al., 2012]{Onions2012}
 Onions, J., Knebe, A., Pearce, F.~R., Muldrew, S.~I., Lux, H., Knollmann,
   S.~R., Ascasibar, Y., Behroozi, P., Elahi, P., Han, J., MacIejewski, M.,
-  Merch??n, M.~E., Neyrinck, M., Ruiz, A. N. A.~N., Sgr??, M.~A., Springel, V.,
-  \& Tweed, D. (2012).
+  Merch??n, M.~E., Neyrinck, M., Ruiz, A. N. A. N. A.~N., Sgr??, M.~A.,
+  Springel, V., \& Tweed, D. (2012).
 \newblock {Subhaloes going Notts: The subhalo-finder comparison project}.
 \newblock {\em MNRAS}, 423(2), 1200--1214.
 
 \bibitem[Oort, 1983]{Oort1983}
-Oort, J.~H. (1983).
+Oort, J. J. H.~H. (1983).
 \newblock {Superclusters}.
-\newblock {\em Ann. Rev. Astron. Astrophys.}, 21, 373--428.
+\newblock {\em $\backslash$araa}, 21, 373--428.
 
 \bibitem[Pahwa et~al., 2016]{Pahwa2016}
 Pahwa, I., Libeskind, N.~I., Tempel, E., Hoffman, Y., {Brent Tully}, R.,
   Courtois, H. M. H.~M., Gottl??ber, S., Steinmetz, M., \& Sorce, J.~G. (2016).
 \newblock {The alignment of galaxy spin with the shear field in observations}.
 \newblock {\em MNRAS}, 457(1), 695--703.
+
+\bibitem[Pan et~al., 2012]{Pan2012}
+Pan, D., Vogeley, M., Hoyle, F., Choi, Y.-Y., \& Park, C. (2012).
+\newblock {Cosmic voids in Sloan Digital Sky Survey Data Release 7}.
+\newblock {\em MNRAS}, 421, 926--934.
 
 \bibitem[Paranjape et~al., 2012]{Paranjape2012}
 Paranjape, A., Lam, T.~Y., Sheth, R.~K., \& van~de Weygaert, R. (2012).
@@ -678,6 +1102,43 @@ Park, C., Pranav, P., Chingangbam, P., van~de Weygaert, R., Jones, B., Vegter,
 \newblock {Betti numbers of Gaussian fields}.
 \newblock {\em J. Korean Astron. Soc.}, 46(3), 125--131.
 
+\bibitem[Park \& Lee, 2007]{Park2007}
+Park, D. \& Lee, J. (2007).
+\newblock {Void ellipticity distribution as a probe of cosmology}.
+\newblock {\em Phys. Rev. Lett.}, 98(8).
+
+\bibitem[Peebles, 1980]{Peebles1980}
+Peebles, P. (1980).
+\newblock {\em {The large-scale structure of the universe}}.
+\newblock Princeton, N.J.: Princeton University Press.
+
+\bibitem[Peebles, 1969]{Peebles1969}
+Peebles, P. J.~E. (1969).
+\newblock {Origin of the Angular Momentum of Galaxies}.
+\newblock {\em ApJ}, 155(February), 393.
+
+\bibitem[Pichon et~al., 2016]{Pichon2016}
+Pichon, C., Codis, S., Pogosyan, D., Dubois, Y., Desjacques, V., \& Devriendt,
+  J. (2016).
+\newblock {Why do galactic spins flip in the cosmic web? A Theory of Tidal
+  Torques near saddles}.
+\newblock In R. van~de Weygaert, S. Shandarin, E. Saar, \& J. Einasto (Eds.),
+  {\em Zeldovich Universe Genes. Growth Cosm. Web}, volume 308 of {\em IAU
+  Symposium}  (pp.\ 421--432).
+
+\bibitem[Pisani et~al., 2015]{Pisani2015}
+Pisani, A., Sutter, P.~M., Hamaus, N., Alizadeh, E., Biswas, R., Wandelt,
+  B.~D., \& Hirata, C.~M. (2015).
+\newblock {Counting voids to probe dark energy}.
+\newblock {\em Phys. Rev. D}, 92(8), 1--10.
+
+\bibitem[{Planck Collaboration} et~al., 2014]{2014A&A...571A..16P}
+{Planck Collaboration}, Ade, P., Aghanim, N., Armitage-Caplan, C., Arnaud, M.,
+  Ashdown, M., Atrio-Barandela, F., Aumont, J., Baccigalupi, C., Banday, A., \&
+  al., E. (2014).
+\newblock {Planck 2013 results. XVI. Cosmological parameters}.
+\newblock {\em A{\&}A}, 571, A16.
+
 \bibitem[Planelles \& Quilis, 2010]{Planelles2010}
 Planelles, S. \& Quilis, V. (2010).
 \newblock {ASOHF: a new adaptive spherical overdensity halo finder}.
@@ -688,11 +1149,31 @@ Platen, E., {Van De Weygaert}, R., \& Jones, B. J.~T. (2007).
 \newblock {A cosmic watershed: The WVF void detection technique}.
 \newblock {\em MNRAS}, 380(2), 551--570.
 
+\bibitem[Platen et~al., 2008]{Platen2008a}
+Platen, E., Weygaert, R. V.~D., \& Jones, B. J.~T. (2008).
+\newblock {Alignment of voids in the cosmic web}.
+\newblock 136, 128--136.
+
+\bibitem[Poudel et~al., 2017]{2017A&A...597A..86P}
+Poudel, A., Hein{\"{a}}m{\"{a}}ki, P., Tempel, E., Einasto, M., Lietzen, H., \&
+  Nurmi, P. (2017).
+\newblock {The effect of cosmic web filaments on the properties of groups and
+  their central galaxies}.
+\newblock {\em A{\&}A}, 597, A86.
+
 \bibitem[Press \& Schechter, 1974]{Press1974}
 Press, W.~H. \& Schechter, P. (1974).
 \newblock {Formation of Galaxies and Clusters of Galaxies by Self-Similar
   Gravitational Condensation}.
 \newblock {\em ApJ}, 187, 425.
+
+\bibitem[Proust et~al., 2006]{2006A&A...447..133P}
+Proust, D., Quintana, H., Carrasco, E., Reisenegger, A., Slezak, E., Muriel,
+  H., D{\"{u}}nner, R., {Sodr{\'{e}} Jr.}, L., Drinkwater, M., Parker, Q., \&
+  Ragone, C. (2006).
+\newblock {Structure and dynamics of the Shapley Supercluster. Velocity
+  catalogue, general morphology and mass}.
+\newblock {\em A{\&}A}, 447, 133--144.
 
 \bibitem[Ramachandra \& Shandarin, 2015]{Ramachandra2015}
 Ramachandra, N.~S. \& Shandarin, S.~F. (2015).
@@ -714,6 +1195,11 @@ Rasera, Y., Alimi, J.~M., Courtin, J., Roy, F., Corasaniti, P.~S., Fuzfa, A.,
 \newblock {Introducing the Dark Energy Universe Simulation Series (DEUSS)}.
 \newblock {\em AIP Conf. Proc.}, 1241, 1134--1139.
 
+\bibitem[Sahni \& Coles, 1995]{1995PhR...262....1S}
+Sahni, V. \& Coles, P. (1995).
+\newblock {Approximation methods for non-linear gravitational clustering}.
+\newblock {\em $\backslash$physrep}, 262, 1--135.
+
 \bibitem[Sahni et~al., 1994]{Sahni1994}
 Sahni, V., Sathyaprakash, B.~S., \& Shandarin, S.~F. (1994).
 \newblock {The Evolution of Voids in the Adhesion Approximation}.
@@ -728,6 +1214,16 @@ Sahni, V., Sathyaprakash, B.~S., \& Shandarin, S.~F. (1998).
 Sathyaprakash, B.~S., Sahni, V., \& Shandarin, S.~F. (1998).
 \newblock {Cosmological Gravitational Clustering}.
 \newblock {\em ApJ}, 508, 551--569.
+
+\bibitem[Scannapieco et~al., 2012]{2012MNRAS.423.1726S}
+Scannapieco, C., Wadepuhl, M., Parry, O., Navarro, J., Jenkins, A., Springel,
+  V., Teyssier, R., Carlson, E., Couchman, H., Crain, R., {Dalla Vecchia}, C.,
+  Frenk, C., Kobayashi, C., Monaco, P., Murante, G., Okamoto, T., Quinn, T.,
+  Schaye, J., Stinson, G., Theuns, T., Wadsley, J., White, S., \& Woods, R.
+  (2012).
+\newblock {The Aquila comparison project: the effects of feedback and numerical
+  methods on simulations of galaxy formation}.
+\newblock {\em MNRAS}, 423, 1726--1749.
 
 \bibitem[Schaap, 2007]{Schaap2007}
 Schaap, W.~E. (2007).
@@ -771,6 +1267,12 @@ Shandarin, S., Habib, S., \& Heitmann, K. (2012).
 \newblock {Cosmic web, multistream flows, and tessellations}.
 \newblock {\em Phys. Rev. D}, 85(8), 1--15.
 
+\bibitem[Shandarin \& Klypin, 1984]{Shandarin1984}
+Shandarin, S. \& Klypin, A. (1984).
+\newblock {Rich Galaxy Clusters may Result from Largescale Motions Inside
+  Superclusters}.
+\newblock {\em $\backslash$sovast}, 28, 491--495.
+
 \bibitem[Shandarin \& Zeldovich, 1983]{Shandarin1983b}
 Shandarin, S. \& Zeldovich, I. (1983).
 \newblock {Topology of the large-scale structure of the universe}.
@@ -789,6 +1291,10 @@ Shandarin, S.~F. (1983b).
 \newblock {Percolation theory}.
 \newblock {\em Pis'ma Astron Zh.}, 53(9), 195--199.
 
+\bibitem[Shandarin \& Medvedev, 2014]{Shandarin2014a}
+Shandarin, S.~F. \& Medvedev, M.~V. (2014).
+\newblock {Tracing the Cosmic Web substructure with Lagrangian submanifold}.
+
 \bibitem[Shandarin \& Medvedev, 2017]{Shandarin2016}
 Shandarin, S.~F. \& Medvedev, M.~V. (2017).
 \newblock {The features of the Cosmic Web unveiled by the flip-flop field}.
@@ -799,24 +1305,48 @@ Shandarin, S.~F., Sheth, J.~V., \& Sahni, V. (2004).
 \newblock {Morphology of the supercluster-void network in ??CDM cosmology}.
 \newblock {\em MNRAS}, 353(1), 162--178.
 
-\bibitem[Shandarin \& Zeldovich, 1984]{Shandarin1984}
-Shandarin, S.~F. \& Zeldovich, Y.~B. (1984).
-\newblock topological mapping.
-\newblock {\em Phys. Rev. Lett.}, 52(17), 1488--1491.
+\bibitem[Shandarin \& Sunyaev, 2009]{Shandarin2009}
+Shandarin, S.~F. \& Sunyaev, R.~A. (2009).
+\newblock {The conjecture of the cosmic web}.
+\newblock {\em Astron. Astrophys.}, 500, 19--20.
 
 \bibitem[Shandarin \& Zeldovich, 1989]{Shandarin1989}
 Shandarin, S.~F. \& Zeldovich, Y.~B. (1989).
-\newblock {Large scale structure of the Universe:}.
+\newblock {The large-scale structure of the universe: Turbulence,
+  intermittency, structures in a self-gravitating medium}.
 \newblock {\em Rev. Mod. Phys.}, 61(2), 185--220.
 
-\bibitem[Shandarin \& Medvedev, 2014]{Shandarin2014}
-Shandarin, S. F.~S. \& Medvedev, M. M.~V. (2014).
-\newblock {Tracing the Cosmic Web substructure with Lagrangian submanifold}.
+\bibitem[Shapley, 1930]{1930BHarO.874....9S}
+Shapley, H. (1930).
+\newblock {Note on a Remote Cloud of Galaxies in Centaurus}.
+\newblock {\em Harvard Coll. Obs. Bull.}, 874, 9--12.
+
+\bibitem[Shectman et~al., 1996]{Shectman1996}
+Shectman, S.~A., Landy, S.~D., Oemler, A., Tucker, D.~L., Lin, H., Kirshner,
+  R.~P., \& Schechter, P.~L. (1996).
+\newblock {The Las Campanas Redshift Survey}.
+\newblock (pp.\ 1--40).
+
+\bibitem[Shen et~al., 2006]{Shen2006}
+Shen, J., Abel, T., \& Sheth, R.~K. (2006).
+\newblock {AN EXCURSION SET MODEL OF THE COSMIC WEB : THE ABUNDANCE OF SHEETS ,
+  FILAMENTS , AND HALOS}.
+\newblock {\em ApJ}, 645, 783--791.
 
 \bibitem[Sheth et~al., 2003]{Sheth2003}
 Sheth, J.~V., Sahni, V., Shandarin, S.~F., \& Sathyaprakash, B.~S. (2003).
 \newblock {SURFGEN}.
 \newblock {\em MNRAS}, 343, 22--46.
+
+\bibitem[Sheth \& Tormen, 1999]{1999MNRAS.308..119S}
+Sheth, R. \& Tormen, G. (1999).
+\newblock {Large-scale bias and the peak background split}.
+\newblock {\em MNRAS}, 308, 119--126.
+
+\bibitem[Sheth \& van~de Weygaert, 2003]{Sheth2003b}
+Sheth, R.~K. \& van~de Weygaert, R. (2003).
+\newblock {A hierarchy of voids: Much ado about nothing}.
+\newblock {\em MNRAS}, 538(February), 517--538.
 
 \bibitem[Shivshankar et~al., 2015]{Shivshankar2015a}
 Shivshankar, N., Pranav, P., Natarajan, V., van~de Weygaert, R., Bos, E. G.~P.,
@@ -837,15 +1367,26 @@ Soneira, R.~M. \& Peebles, P. J.~E. (1978).
   distribution in the Lick catalog}.
 \newblock {\em Astron. J.}, 83, 845.
 
+\bibitem[Sousbie, 2011]{Sousbie2011f}
+Sousbie, T. (2011).
+\newblock {The persistent cosmic web and its filamentary structure – I .
+  Theory and implementation}.
+\newblock {\em MNRAS}, 383(June), 350--383.
+
 \bibitem[Sousbie \& Colombi, 2015]{Sousbie2015}
 Sousbie, T. \& Colombi, S. (2015).
 \newblock {ColDICE: a parallel Vlasov-Poisson solver using moving adaptive
   simplicial tessellation}.
 
-\bibitem[Sousbie et~al., 2008]{Sousbie2008a}
-Sousbie, T., Pichon, C., Colombi, S., Novikov, D., \& Pogosyan, D. (2008).
+\bibitem[Sousbie et~al., 2008a]{Sousbie2008a}
+Sousbie, T., Pichon, C., Colombi, S., Novikov, D., \& Pogosyan, D. (2008a).
 \newblock {The 3D skeleton: Tracing the filamentary structure of the Universe}.
 \newblock {\em MNRAS}, 383(4), 1655--1670.
+
+\bibitem[Sousbie et~al., 2008b]{Sousbie2008c}
+Sousbie, T., Pichon, C., Courtois, H., Colombi, S., \& Novikov, D. (2008b).
+\newblock {THE THREE-DIMENSIONAL SKELETON OF THE SDSS}.
+\newblock {\em ApJ}, 672, L1--L4.
 
 \bibitem[Sousbie et~al., 2011]{Sousbie2011e}
 Sousbie, T., Pichon, C., \& Kawahara, H. (2011).
@@ -853,7 +1394,7 @@ Sousbie, T., Pichon, C., \& Kawahara, H. (2011).
   Illustrations}.
 \newblock {\em MNRAS}, 414(1), 384--403.
 
-\bibitem[Springel, 2005]{Springel2005}
+\bibitem[Springel, 2005]{Springel2005c}
 Springel, V. (2005).
 \newblock {The cosmological simulation code GADGET-2}.
 \newblock {\em MNRAS}, 364(4), 1105--1134.
@@ -877,10 +1418,21 @@ Springel, V., Yoshida, N., \& White, S. D.~M. (2001b).
   simulations}.
 \newblock {\em New Astron.}, 6(2), 79--117.
 
+\bibitem[Stoica et~al., 2010]{2010A&A...510A..38S}
+Stoica, R., Mart$\backslash$'$\backslash$inez, V., \& Saar, E. (2010).
+\newblock {Filaments in observed and mock galaxy catalogues}.
+\newblock {\em A{\&}A}, 510, A38.
+
+\bibitem[Sutter et~al., 2012]{Sutter2012}
+Sutter, P., Lavaux, G., Wandelt, B., \& Weinberg, D. (2012).
+\newblock {A Public Void Catalog from the SDSS DR7 Galaxy Redshift Surveys
+  Based on the Watershed Transform}.
+\newblock {\em ApJ}, 761, 44.
+
 \bibitem[Sutter et~al., 2014]{Sutter2014a}
 Sutter, P.~M., Carlesi, E., Wandelt, B.~D., \& Knebe, A. (2014).
 \newblock {On the observability of coupled dark energy with cosmic voids}.
-\newblock {\em Mon. Not. R. Astron. Soc. Lett.}, 446(1), L1--L5.
+\newblock {\em Mon. Not. R. Astron. Soc. Lett.}, 446(1), L1----L5.
 
 \bibitem[Sutter et~al., 2015]{Sutter2015}
 Sutter, P.~M., Lavaux, G., Hamaus, N., Pisani, A., Wandelt, B.~D., Warren, M.,
@@ -904,6 +1456,40 @@ Tegmark, M., Strauss, M., Blanton, M., Abazajian, K., Dodelson, S., Sandvik,
   Szapudi, I., Xu, Y., \& Others, . (2003).
 \newblock {Cosmological parameters from SDSS and WMAP}.
 \newblock {\em Phys. Rev. D}, 69(10), 1--27.
+
+\bibitem[Tempel et~al., 2014]{Tempel2014}
+Tempel, E., Stoica, R.~S., Mart{\'{i}}nez, V.~J., Liivam{\"{a}}gi, L.~J.,
+  Castellan, G., \& Saar, E. (2014).
+\newblock {Detecting filamentary pattern in the cosmic web: A catalogue of
+  filaments for the SDSS}.
+\newblock {\em MNRAS}, 438(4), 3465--3482.
+
+\bibitem[Tempel et~al., 2013]{tempel2013}
+Tempel, E., Stoica, R.~S., \& Saar, E. (2013).
+\newblock {Evidence for spin alignment of spiral and elliptical/S0 galaxies in
+  filaments}.
+\newblock {\em MNRAS}, 428(2), 1827--1836.
+
+\bibitem[Trowland et~al., 2013]{Trowland2013}
+Trowland, H.~E., Lewis, G.~F., \& Bland-Hawthorn, J. (2013).
+\newblock {The cosmic history of the spin of dark matter halos within the
+  large-scale structure}.
+\newblock {\em ApJ}, 762(2).
+
+\bibitem[Tully et~al., 2014]{Tully2014}
+Tully, R., Courtois, H., Hoffman, Y., \& Pomar{\`{e}}de, D. (2014).
+\newblock {The Laniakea supercluster of galaxies}.
+\newblock {\em $\backslash$nat}, 513, 71--73.
+
+\bibitem[Tully \& Fisher, 1987]{Tully1987}
+Tully, R. \& Fisher, J. (1987).
+\newblock {\em {Atlas of Nearby Galaxies}}.
+
+\bibitem[Tully et~al., 2008]{Tully2008}
+Tully, R., Shaya, E., Karachentsev, I., Courtois, H., Kocevski, D., Rizzi, L.,
+  \& Peel, A. (2008).
+\newblock {Our Peculiar Motion Away from the Local Void}.
+\newblock {\em ApJ}, 676, 184--205.
 
 \bibitem[Tweed et~al., 2009]{Tweed2009}
 Tweed, D., Devriendt, J., Blaizot, J., Colombi, S., \& Slyz, A. (2009).
@@ -933,6 +1519,17 @@ van~de Weygaert, R., Bond, J.~R., van~de Weygaert, R., \& Bond, J.~R. (2008).
 van~de Weygaert, R. \& Schaap, W. (2009).
 \newblock {Data Analysis in Cosmology: The Cosmic Web: Geometric Analysis}.
 \newblock {\em Lect. Notes Phys.}, 665(September), 291--413.
+
+\bibitem[van~de Weygaert et~al., 2016]{Iau308}
+van~de Weygaert, R., Shandarin, S., Saar, E., \& Einasto, J., Eds. (2016).
+\newblock {\em {The Zeldovich Universe: Genesis and Growth of the Cosmic Web}},
+  volume 308 of {\em IAU Symposium}.
+
+\bibitem[van Haarlem \& van~de Weygaert, 1993]{Haarlem1993}
+van Haarlem, M. \& van~de Weygaert, R. (1993).
+\newblock {Velocity Fields and Alignments of Clusters in Gravitational
+  Instability Scenarios}.
+\newblock {\em ApJ}, 418, 544.
 
 \bibitem[van Kampen, 1995]{vanKampen1995}
 van Kampen, E. (1995).
@@ -968,6 +1565,12 @@ Wojtak, R., Knebe, A., Watson, W.~A., Iliev, I.~T., He{\ss}, S., Rapetti, D.,
 Wojtak, R., Powell, D., \& Abel, T. (2016).
 \newblock {Voids in cosmological simulations over cosmic time}.
 \newblock {\em MNRAS}, 458, 4431--4442.
+
+\bibitem[Wu et~al., 2009]{Wu2009}
+Wu, Y., Batuski, D.~J., \& Khalil, A. (2009).
+\newblock {MULTI-SCALE MORPHOLOGICAL ANALYSIS OF SDSS DR5 SURVEY USING THE
+  METRIC SPACE TECHNIQUE}.
+\newblock {\em ApJ}, 707, 1160--1167.
 
 \bibitem[Zeldovich, 1970]{Zeldovich1970}
 Zeldovich, Y.~B. (1970).

@@ -102,7 +102,15 @@ The cosmic web is one of the most striking features of the distribution of galax
 
 \end{comment}
 
-\section{Introduction}
+\chapter{Comparison of structure finding algorithms}\label{chapter3b}
+
+
+This chapter brings twelve cosmic web classification methods together and applies all the different algorithms to the same data set in order to understand how they compare. One of methods is based on our multistream algorithm summarized in Chapter \ref{chapter3} and \cite{Ramachandra2015}. In general these cosmic web classifiers have been designed with different cosmological goals in mind, and to study different questions. Therefore one would not {\it a priori} expect agreement between different techniques however, many of these methods do converge on the identification of specific features. We study the agreements and disparities of the different methods. For example, each method finds that knots inhabit higher density regions than filaments, etc. and that voids have the lowest densities. For a given web environment, we find substantial overlap in the density range assigned by each web classification scheme. We also compare classifications on a halo-by-halo basis; for example, we find that 9 of 12 methods classify around a third of group-mass haloes (i.e. $M_{\rm halo}\sim10^{13.5}h^{-1}M_{\odot}$) as being in filaments. 
+
+The individual methods and the comparison study are tabulated in \cite{Libeskind2018}, which is the outcome of the ``Tracing the Cosmic Web'' Lorentz Center workshop, held in Leiden, 17-21 February of 2014. Moreover, to enable comparison of any future cosmic web classification scheme with the 12 methods used here, we have made all the data used in this paper public: \url{https://data.aip.de/tracingthecosmicweb/}
+
+
+\section{Overview of Cosmic components}
 \label{section:intro}
 On Megaparsec scales the matter and galaxy distribution is not uniform, but defines an intricate multi-scale inter-connected network 
 which is known as the \emph{cosmic web} \citep{Bond1996}. It represents the fundamental spatial organization of 
@@ -114,29 +122,29 @@ considerably enhanced by its intrinsic multiscale nature, including objects over
 For, a recent up-to-date report on a wide range of relevant aspects of the cosmic web, we refer to the volume by \cite{Iau308}.
 
 The presence of the weblike pattern can be easily seen in the spatial distribution of galaxies. Its existence was  suggested 
-by early attempts to map the nearby cosmos in galaxy redshift surveys \citep{Gregthomp1978,Joeveer1978b,Lapparent1986,Geller1989,Shectman1996} 
+by early attempts to map the nearby cosmos in galaxy redshift surveys \citep{Gregory1978,Geller1989,Shectman1996} 
 Particularly iconic was the publication of the \emph{slice of the Universe} by \cite{Lapparent1986}. Since then, the impression 
 of a weblike arrangement of galaxies has been confirmed many times by large galaxy redshift surveys such as 2dFGRS 
-\citep{Colless2003,Weyschaap2009}, the Sloan Digital Sky Survey SDSS \citep{Tegmark2004} and the 2MASS redshift survey \citep{Huchra2012}, 
+\citep{Colless2003,Weygaert2009}, the Sloan Digital Sky Survey SDSS \citep{Tegmark2003} and the 2MASS redshift survey \citep{Huchra2012}, 
 as well as by recently produced maps of the galaxy distribution at larger cosmic depths such as VIPERS \citep{Vipers2014}. 
-From cosmological N-body simulations \citep[e.g.][]{Springmillen2005,Illustris2014,Eagle2015} and recent Bayesian reconstructions of the 
-underlying dark matter distribution in the Local Universe \citep{Hess2013,Kitaura2013,2014MNRAS.445..988N,Leclercq2015,Sorce2016}, we have 
+From cosmological N-body simulations \citep[e.g.][]{Springel2005c,Vogelsberger2014,Schaye2015} and recent Bayesian reconstructions of the 
+underlying dark matter distribution in the Local Universe \citep{Hess2013,Kitaura2013}, we have 
 come to realize that the weblike pattern is even more pronounced and intricate in the distribution of dark matter.
 
 %\bigskip
 \subsection{The Components of the Cosmic Web}
 The most prominent and defining features of the cosmic web are the filaments. The most outstanding specimen in the local Universe 
 is the Pisces-Perseus chain \citep{Giovanelli1985}. A recent systematic inventory of filaments in the SDSS galaxy redshift 
-distribution has been catalogued by \cite{Tempel2014} \cite[also see][]{Jones2010,Sousbie2011b}. Filaments appear to be the highways of the Universe, 
-the transport channels along which mass and galaxies get channelled into the higher density cluster regions \citep{Haarlemwey1993,2004ApJ...603....7K} and 
-which define the connecting structures between higher density complexes \citep{Bond1996,Colberg2005,Weybond2008,Aragon2010}. On the largest 
+distribution has been catalogued by \cite{Tempel2014} \cite[also see][]{Jones2010,Sousbie2011e}. Filaments appear to be the highways of the Universe, 
+the transport channels along which mass and galaxies get channelled into the higher density cluster regions \citep{Haarlem1993} and 
+which define the connecting structures between higher density complexes \citep{Bond1996,Colberg2005,Weygaert2009,Aragon-Calvo2010a}. On the largest 
 scales, filaments on scales of 10 up to 100~Mpc, are found to connect complexes of superclusters - such as the great attractor 
 \citep{1988ApJ...326...19L}, the Shapley concentration 
-\citep{1930BHarO.874....9S,2006A&A...447..133P} or more recently the Vela supercluster \citep{2017MNRAS.466L..29K} - as was, for example, indicated by the work of \cite{2004ApJ...606...25B}, \cite{Romanodiaz2007} and \cite{2015MNRAS.452.1052L}. 
+\citep{1930BHarO.874....9S,2006A&A...447..133P} or more recently the Vela supercluster \citep{2017MNRAS.466L..29K} - as was, for example, indicated by the work of \cite{2004ApJ...606...25B} and \cite{Libeskind2015}. 
 
 By contrast, the tenuous sheetlike membranes are considerably more difficult to find in the spatial mass distribution traced by 
 galaxies. Their low surface density renders them far less conspicuous than the surrounding filaments, while they are populated 
-by galaxies with a considerably lower luminosity \citep[see e.g.][]{Cautun2014}. When looking at the spatial structure outlined by 
+by galaxies with a considerably lower luminosity \citep[see e.g.][]{Cautun2014a}. When looking at the spatial structure outlined by 
 clusters, we do recognise more prominent flattened supercluster configurations, often identified as \emph{Great Walls}, which 
 is a reflection of their dynamical youth. Particularly outstanding specimens are the 
 CfA Great Wall \citep{Geller1989}, the Sloan Great Wall \citep{2005ApJ...624..463G}, and most recently the BOSS 
@@ -144,14 +152,14 @@ Great Wall \citep{2016A&A...588L...4L} and the well established supergalactic pl
 
 Along with filaments, the large void regions represent the most prominent aspect of the Megaparsec scale Universe. These are enormous regions 
 with sizes in the range of $20-50h^{-1}$~Mpc that are practically devoid of any galaxy, usually roundish in shape and occupying the major 
-share of space in the Universe \citep[see][for a recent review]{Weyiau308}.  Forming an essential and prominent aspect of the 
+share of space in the Universe \citep[see][for a recent review]{Iau308}.  Forming an essential and prominent aspect of the 
 {\it cosmic web} \citep{Bond1996}, voids are instrumental in the spatial organisation of the cosmic web \citep{Icke1984,Sahni1994,
-Shethwey2004,Einasto2011b,Aragon2013}. The first indications for their existence was found in early galaxy redshift samples 
-\citep{Chincarini1975,Gregthomp1978,Zeldovich1982}, while the discovery of the 50 Mpc size Bo\"otes void by \cite{Kirshner1981}, \cite{Kirshner1987} 
+Sheth2003b,Aragon-Calvo2012}. The first indications for their existence was found in early galaxy redshift samples 
+\citep{Gregory1978,Zeldovich1982}, while the discovery of the 50 Mpc size Bo\"otes void by \cite{Kirshner1981}, \cite{Kirshner1987} 
 and the CfA study by \cite{Lapparent1986} established them as key aspects of the large scale galaxy distribution. Recent studies have 
-been mapping and cataloguing the void population in the Local Universe \citep{Fairall1998,Pan2012,Sutter2012}, and even that in the implied dark 
+been mapping and cataloguing the void population in the Local Universe \citep{Pan2012,Sutter2012}, and even that in the implied dark 
 matter distribution \citep{Leclercq2015b}. In the immediate vicinity of our Milky Way, one of the most interesting features 
-is in fact the Local Void whose diameter is around 30~Mpc \citep{Tully_atlas1987}. Its effectively repulsive dynamical influence 
+is in fact the Local Void whose diameter is around 30~Mpc \citep{Tully1987}. Its effectively repulsive dynamical influence 
 has been demonstrated in studies of cosmic flows in the local volume \citep{Tully2008}, while a recent study even indicated the 
 dominant impact of a major depression at a distance of more than 100 Mpc \citep[the so-called ``dipole repeller'',][]{Hoffman2017}. 
 
@@ -166,7 +174,7 @@ linear growth phase, we see the emergence of complex patterns and structures in 
 
 Within the gravitationally driven emergence and evolution of cosmic structure the weblike patterns in the overall cosmic matter 
 distribution do represent a universal but possibly transient phase. As borne out by a large array of N-body computer experiments 
-of cosmic structure formation \citep[e.g.][]{Springmillen2005,Illustris2014,Eagle2015}, web-like patterns 
+of cosmic structure formation \citep[e.g.][]{Springel2005c, Vogelsberger2014,Schaye2015}, web-like patterns 
 defined by prominent anisotropic filamentary and planar features --- and with characteristic large underdense void regions --- are the 
 natural outcome of the gravitational cosmic structure formation process. They are the manifestation of the anisotropic nature of gravitational 
 collapse, and mark the transition from the primordial (Gaussian) random field to highly nonlinear structures that have fully collapsed into halos 
@@ -177,9 +185,9 @@ Within this context, the formation and evolution of anisotropic structures are t
 %Within this context, the formation and evolution of anisotropic structures are the product of the gravitational tidal forces 
 %induced by the inhomogeneous mass distribution.
  In other words, it is the anisotropy of the force field and the resulting deformation of 
-the matter distribution which are at the heart of the emergence of the weblike structure of the mildly nonlinear mass distribution \citep[also see][]{Bond1996,Hahn2007a,Weybond2008,Forero-Romero2009}.
+the matter distribution which are at the heart of the emergence of the weblike structure of the mildly nonlinear mass distribution \citep[also see][]{Bond1996}.
 
-This idea was first pointed out by \citet[][also see \citealt{icke1973}]{Zeldovich1970} who described, in the now seminal \emph{"Zel'dovich approximation"} framework, how gravitational collapse amplifies any initial anisotropies and gives rise to 
+This idea was first pointed out by \citet[][also see \citealt{Shandarin1989}]{Zeldovich1970} who described, in the now seminal \emph{"Zel'dovich approximation"} framework, how gravitational collapse amplifies any initial anisotropies and gives rise to 
 highly anisotropic structures. Accordingly, the final morphology of a structure depends on 
 the eigenvalues of the deformation tensor.  Sheets, filaments and clusters correspond to domains with one, two and three positive 
 eigenvalues, while voids correspond to regions with all negative eigenvalues. Based on this realization, \cite{Doroshkevich1970} derived 
@@ -192,16 +200,16 @@ Following up on this, the early evolution of the cosmic web can be understood in
 are arising in the matter distribution as a result of the structure of the corresponding flow field \citep[see][]{Shandarin1989,Hidding2014}. 
 Indeed, one of the most interesting recent developments in our understanding of the dynamical evolution of the cosmic web has been the 
 uncovering of the intimate link between the emerging anisotropic structures and the multistream migration flows involved in the buildup of 
-cosmic structure \citep[][]{Shandarin2011,Shandarin2012,Falck2012,Neyrinck2012,Abel2012}. 
+cosmic structure \citep[][]{Shandarin2011,Shandarin2012,Falck2012,Abel2012}. 
 
 Also recent observational advances have enabled new 
 profound insights into the dynamical processes that are shaping the cosmic web in our Local Universe. In particular the Cosmicflows-2 and 
 Cosmicflows-3 surveys of galaxy peculiar velocities in our Local Universe have produced tantalizing results \citep{Courtois2013,Tully2014}, opening up a window on the flows of mass along and towards structures in the local cosmic web. Amongst others, these studies show 
 the sizeable impact of low-density void regions on the dynamics in the vicinity of the Milky Way and have allowed 
-the velocity shear based V-web identification of weblike components in the local Universe \citep{2015MNRAS.452.1052L,2015ApJ...812...17P,Hoffman2017}. 
+the velocity shear based V-web identification of weblike components in the local Universe \citep{Hoffman2017}. 
 
 The extension of the Zel'dovich approximation, the \emph{adhesion approximation}, allows further insights into the hierarchical buildup 
-of the cosmic web \citep{Gurbatov1989,Kofman1990,Kofman1992,Hidding2012}. By introducing an artificial viscosity term, the adhesion 
+of the cosmic web \citep{Gurbatov1989,Kofman1992,Hidding2012}. By introducing an artificial viscosity term, the adhesion 
 approximation mitigates some of the late-time limitations of the Zel'dovich approximation. It also leads to a profound understanding 
 of the link between the evolving phase-space structure of the cosmic matter distribution and the tendency to continuously morph the 
 emerging spatial structure into one marked by ever larger structures \citep[see also][for a review of analytical extensions to the Zel'dovich approximation]{1995PhR...262....1S}. 
@@ -211,12 +219,12 @@ the Zel'dovich pancake picture was seen as the rival view to the purely hierarch
 synthesis of both elements culminated in the \emph{cosmic web} theory \citep{Bond1996}, which stresses the dominance of filamentary 
 shaped features and appears to provide a successful description of large scale structure formation in the $\Lambda$CDM cosmology. This theoretical 
 framework pointed out the dynamical relationship between the filamentary patterns and the compact dense clusters that stand out 
-as the nodes within the cosmic matter distribution: filaments as cluster-cluster bridges \citep[also see][]{Bond1996,Weyedb1996,Colberg2005,
-Weybond2008}. In the overall cosmic mass distribution, clusters --- and the density peaks in the primordial density field that are their 
+as the nodes within the cosmic matter distribution: filaments as cluster-cluster bridges \citep[also see][]{Bond1996,Colberg2005,
+Weygaert2009}. In the overall cosmic mass distribution, clusters --- and the density peaks in the primordial density field that are their 
 precursors --- stand out as the dominant features for determining and outlining the anisotropic force field that generates the cosmic web. 
 The cosmic web theory embeds the anisotropic evolution of structures in the cosmic web within the context of the hierarchically evolving 
-mass distribution \citep{Bondmyers1996}. Meanwhile, complementary analytical descriptions of a hierarchically evolving cosmic web within the 
-context of excursion set theory form the basis for a statistical evaluation of its properties \citep{Shethwey2004,Shen2006}.
+mass distribution. Meanwhile, complementary analytical descriptions of a hierarchically evolving cosmic web within the 
+context of excursion set theory form the basis for a statistical evaluation of its properties \citep{Sheth2003b,Shen2006}.
 
 %\bigskip
 
@@ -249,7 +257,7 @@ tempel2013,trowland2013,trowlandphd2013,aragon2014,2016MNRAS.457..695P,hirv2017,
 role of filamentary and other weblike environments in determining 
 the morphology of galaxies \citep[see e.g.][for a short review]{pichon2016}. Indeed, the direct impact of the structure and 
 connectivity of filamentary web on the star formation activity of forming galaxies has been convincingly demonstrated 
-by \citet[][see also \citealt{2009ApJ...703..785D,2015MNRAS.449.2087D,2015MNRAS.454..637G,aragon2016}]{2009Natur.457..451D}. Such studies point out the instrumental importance of the filaments as transport conduits of cold 
+by \citet[][see also \citealt{2015MNRAS.449.2087D,2015MNRAS.454..637G,aragon2016}]{2009Natur.457..451D}. Such studies point out the instrumental importance of the filaments as transport conduits of cold 
 gas on to the forming galaxies, and hence the implications of the topology of the network in determining the evolution and 
 final nature. Such claims are supported by a range of observational findings, of which the morphology-density relation 
 \citep{dressler1980} is best known as relating intrinsic galaxy properties with the cosmic environment in which the 
@@ -264,13 +272,13 @@ of the surrounding large scale structures \citep[see][]{ibata2013,cautun2015,201
 To enable further advances in the astronomical issues addressed above, we need to establish a more objective description 
 and quantification of the structure seen in the cosmic web. However, extracting such topological and morphological information 
 from a discrete set of points, provided by either an $N$-body simulation or a galaxy survey, is very difficult. As such, many different methods have been developed to tackle this problem (reviewed in depth in Section~4). Some of the problems faced by observational surveys include sampling errors, projection effects, observational errors, incomplete sky coverage, magnitude limits, as well as various biases (e.g. Malmquist bias, selection bias). On the other hand, $N$-body simulations return the full 6-dimensional phase space and density field of the simulated universe at any desired epoch. 
- A method that takes full advantage of this often unobservable information cannot be directly applied to observations, but can be applied to simulations constrained to match observations \citep[e.g.][]{2016arXiv160100093L}. For this reason, methods that are developed specifically for the analysis of numerical simulations, may be completely inapplicable to current observational data sets and vice versa. Yet the numerous articles in the literature which attempt to study the cosmic web often refer to the same structural hierarchy: knots, filaments, sheets and voids. Here, we use a numerical simulation to compare classifiers, that, regardless of their position on the theoretical to observational spectrum, speak the same language of knots, filaments, sheets, and voids.
+ A method that takes full advantage of this often unobservable information cannot be directly applied to observations, but can be applied to simulations constrained to match observations. For this reason, methods that are developed specifically for the analysis of numerical simulations, may be completely inapplicable to current observational data sets and vice versa. Yet the numerous articles in the literature which attempt to study the cosmic web often refer to the same structural hierarchy: knots, filaments, sheets and voids. Here, we use a numerical simulation to compare classifiers, that, regardless of their position on the theoretical to observational spectrum, speak the same language of knots, filaments, sheets, and voids.
 
 
-In the spirit of previous structure finder comparison projects~\citep[][etc.]{Colberg2008,Knebe2011}, we present a comparison of cosmic web identification codes and philosophies. However, our comparison differs significantly from e.g. the seminal Santa Barbara comparison project \citep{1999ApJ...525..554F} or other tests of codes which purport to model the same physical process \citep[e.g.][]{2012MNRAS.423.1726S,2013MNRAS.435.1618K}. Instead, the methods compared here were developed for very different purposes, to be applied to different kinds of data and with different goals in mind. Some of the methods are based on treating galaxies (haloes) as points; while others were developed to be applied to density or velocity fields. Furthermore, unlike halo finders seeking collapsed or bound objects, there is no robust analytical theory \cite[such as the spherical top hat collapse model of][]{1999MNRAS.308..119S} which we may use as a guide for how we expect different cosmic web finders to behave. Therefore, we enter into this comparison fully expecting large disagreements between the methods examined.
+In the spirit of previous structure finder comparison projects~\citep[][etc.]{Colberg2008,Knebe2011a}, we present a comparison of cosmic web identification codes and philosophies. However, our comparison differs significantly from e.g. the seminal Santa Barbara comparison project \citep{1999ApJ...525..554F} or other tests of codes which purport to model the same physical process \citep[e.g.][]{2012MNRAS.423.1726S,Knebe2013}. Instead, the methods compared here were developed for very different purposes, to be applied to different kinds of data and with different goals in mind. Some of the methods are based on treating galaxies (haloes) as points; while others were developed to be applied to density or velocity fields. Furthermore, unlike halo finders seeking collapsed or bound objects, there is no robust analytical theory \cite[such as the spherical top hat collapse model of][]{1999MNRAS.308..119S} which we may use as a guide for how we expect different cosmic web finders to behave. Therefore, we enter into this comparison fully expecting large disagreements between the methods examined.
 
 \subsection{Outline}
-This paper is laid out as follows: in Section~2 we group the different methods into ``families'' that follow broadly similar approaches. In Section~3, we present the test dataset that has been used as the basis for our comparison. In Section~4, we review each method that has taken part in the comparison. In Section~5, we describe the results of the comparison. In Section 6 we summarise our results and draw conclusions.
+This chapter is laid out as follows: in Section \ref{section:methods} we group the different methods into ``families'' that follow broadly similar approaches. In Section \ref{section:simulation}, we present the test dataset that has been used as the basis for our comparison. In Section \ref{section:methods}, we review each method that has taken part in the comparison. In Section \ref{sec:results}, we describe the results of the comparison and the final section summarises our results and drawn conclusions.
 
 \section{Web Identification Methods: \ \ \ Classification}
 \label{section:methods}
@@ -303,7 +311,7 @@ different methods that have been developed can largely be grouped into five main
 \ \\
   Adapted Minimal Spanning Tree (MST) & filaments & haloes & Graph \& Percolation & \citet{Alpaslan2014} \\
 \ \\
-  Bisous  & filaments & haloes & Stochastic & \citet{Tempel2014,2016AC....16...17T} \\
+  Bisous  & filaments & haloes & Stochastic & \citet{Tempel2014} \\
   FINE  & filaments & haloes & Stochastic & \citet{Gonzalez2010} \\
 \ \\
   Tidal Shear Tensor (T-web) & all & particles & Hessian & \citet{Forero-Romero2009a} \\
@@ -315,10 +323,10 @@ different methods that have been developed can largely be grouped into five main
   &&&&\citet{Aragon-Calvo2014}\\
 \ \\
   Spineweb	 & all except knots & particles & Topology & \citet{Aragon-Calvo2010a} \\
-  DisPerSE & all except knots & particles & Topology & \citet{Sousbie2011} \\
+  DisPerSE & all except knots & particles & Topology & \citet{Sousbie2011f} \\
 \ \\
   ORIGAMI & all & particles & Phase-Space & \citet{Falck2012,Falck2015} \\
-  MultiStream Web Analysis (MSWA)& all & particles & Phase-Space & \citet{Ramachandara2015} \\
+  MultiStream Web Analysis (MSWA)& all & particles & Phase-Space & \citet{Ramachandra2015} \\
 \ \\
   \hline
  \end{tabular}
@@ -329,14 +337,14 @@ different methods that have been developed can largely be grouped into five main
 \item[1.] {\bf Graph and Percolation techniques.} The connectedness of elongated supercluster structures in the cosmic matter distribution 
 was first probed by means of percolation analysis, introduced and emphasized by Zel'dovich and coworkers \citep{Zeldovich1982,Shandarin1989,
 Shandarin2004}. A related graph-theoretical construct, the minimum spanning tree (MST) of the galaxy distribution, was extensively 
-analyzed by Bhavsar and collaborators \citep{Barrow1985,Graham1995,Colberg2007} in an attempt to develop an objective measure of filamentarity. 
+analyzed by Bhavsar and collaborators \citep{Barrow1985, Colberg2007} in an attempt to develop an objective measure of filamentarity. 
 \citet{Colberg2007} set out to identify filaments and their adjoining clusters, using an elaborate set of criteria for the identification of 
 features based on the branching of MSTs. In our study, we involve the MST based algorithm developed by \cite{2014MNRAS.440L.106A} for identification 
-of filaments and void regions in the GAMA survey \citep{2014MNRAS.438..177A}. 
+of filaments and void regions in the GAMA survey \citep{Alpaslan2014}. 
 
 \item[2.] {\bf Stochastic methods.} This class of methods involves the statistical evaluation of stochastic geometric concepts. Examples are 
  filament detection algorithms based on the Bayesian sampling of well-defined and parameterized stochastic spatial (marked) point 
-processes that model particular geometric configurations. \citet{stoica2005,2007JRSSC..56....1S,2010A&A...510A..38S} and \citet{2016AC....16...17T} use the Bisous model as an object point process of connected and aligned cylinders to locate and catalogue filaments in galaxy surveys. One of the advantages of this approach is that it can be applied directly on the original galaxy point field, given by the positions of the galaxies centres, without requiring the computation of a continuous density field. These 
+processes that model particular geometric configurations. \cite{2010A&A...510A..38S} use the Bisous model as an object point process of connected and aligned cylinders to locate and catalogue filaments in galaxy surveys. One of the advantages of this approach is that it can be applied directly on the original galaxy point field, given by the positions of the galaxies centres, without requiring the computation of a continuous density field. These 
 methods are computationally very demanding. A thorough mathematical nonparametric formalism involving the medial axis of a point cloud, as yet 
 for 2-D point distributions, was proposed by \cite{Genovese2010}. It is based on a geometric representation of filaments as the medial axis of 
 the data distribution. Also solidly rooted within a geometric and mathematical context is the more generic geometric inference formalism 
@@ -359,19 +367,19 @@ geometric segments using information theory. \cite{Leclercq2016} have  previousl
 
 \begin{itemize}
 \item[3.] {\bf Geometric, Hessian-based methods.} A large class of approaches exploits the morphological and (local) geometric  information included in the Hessian of the density, tidal or velocity shear fields
-\citep[e.g.][]{Aragon2007,Hahn2007a,Forero-Romero2009,Bond2010a,2012MNRAS.421L.137L,Cautun2013}. Based on the realization that the formation and 
-dynamical evolution of the cosmic web is tied to the tidal force field \citep[see][]{Bondweb1996}, \cite{Hahn2007a} 
+\citep[e.g.][]{Aragon-Calvo2007,Hahn2007,Forero-Romero2009a,Bond2010a,Cautun2013}. Based on the realization that the formation and 
+dynamical evolution of the cosmic web is tied to the tidal force field \citep[see][]{Bond1996}, \cite{Hahn2007} 
 developed an elaborate classification scheme based on the signature of the tidal tensor \citep[also see][]{Hahn2007b}. 
-A further extension and elaboration of this tidal field based scheme was developed by \cite{Forero-Romero2009}, while also the 
+A further extension and elaboration of this tidal field based scheme was developed by \cite{Forero-Romero2009a}, while also the 
 multiscale Nexus formalism incorporates versions that classify weblike features on the tidal tensor signature \citep[][see below]{Cautun2013}
 
 Following a similar rationale and focusing on the link between emerging weblike structures and the nature of the 
 velocity flow in and around these features, in a sense following up on the classic realization of such a connection by \cite{Zeldovich1970}, 
-Libeskind, Hoffman and collaborators forwarded the V-web technique \citep{Hoffman2012a,2012MNRAS.421L.137L,2013MNRAS.428.2489L,2013ApJ...766L..15L,2014MNRAS.441.1974L,2014MNRAS.443.1274L,2015MNRAS.452.1052L,2015MNRAS.453L.108L,2015MNRAS.446.1458M,2016MNRAS.460..297M,2016MNRAS.458..900C,2016MNRAS.457..695P}. Its classification is explicitly based on the 
+Libeskind, Hoffman and collaborators forwarded the V-web technique \citep{Hoffman2012a, Forero-Romero2009a, Libeskind2013}. Its classification is explicitly based on the 
 signature of the velocity shear field. 
 
 Instead of using the tidal or velocity sheer field configuration, one may also try to link directly to the morphology of the density field itself 
-\citep{Aragon2007,Bond2010a,Cautun2013}. Though this allows a more detailed view of the  multiscale matter distribution, it 
+\citep{Aragon-Calvo2007,Bond2010a,Cautun2013}. Though this allows a more detailed view of the  multiscale matter distribution, it 
 is usually more sensitive to noise and less directly coupled to the underlying dynamics of structure formation than the tidal field morphology. 
 A single scale dissection of the density field into its various morphological components has been defined by \cite{Bond2010a}, and applied to N-body 
 simulations and galaxy redshift samples \citep[also see][]{Bond2010a,Bond2010b,Choi2010}. 
@@ -380,11 +388,11 @@ simulations and galaxy redshift samples \citep[also see][]{Bond2010a,Bond2010b,C
 \item[3b.] {\bf Scale-space Multiscale Hessian-based methods.} While most of the Hessian-based formalisms are defined 
 on one particular (smoothing) scale for the field involved, explicit multiscale versions have also been developed. 
 %The  Multiscale Morphology Filter (MMF) and \nexus~formalisms of \cite{aragon2007} and \cite{cautun2013} look at structure from a {\it Scale Space} point of view, where the (usually Gaussian) smoothing scale of the field, defines an extra dimension.
-The MMF/Nexus Multiscale Morphology Filter formalism of \cite{Aragon2007} and \cite{Cautun2013}  look at structure from a {\it Scale Space} point of view, where the  (usually Gaussian) smoothing scale of the field, defines an extra dimension.
+The MMF/Nexus Multiscale Morphology Filter formalism of \cite{Aragon-Calvo2007} and \cite{Cautun2013}  look at structure from a {\it Scale Space} point of view, where the  (usually Gaussian) smoothing scale of the field, defines an extra dimension.
 This formalism takes into account the multiscale character of the 
 cosmic mass distribution by assessing at each spatial location the prominence of structural signatures, set by the signature of the Hessian of 
-the field involved \citep{Aragon2007,Cautun2013}. A somewhat similar multiscale approach was followed by the Metric Space Technique described 
-by \cite{Wu2009}, who applied it to a morphological analysis of SDSS-DR5.  While the original MMF method \citep{Aragon2007} only 
+the field involved \citep{Aragon-Calvo2007,Cautun2013}. A somewhat similar multiscale approach was followed by the Metric Space Technique described 
+by \cite{Wu2009}, who applied it to a morphological analysis of SDSS-DR5.  While the original MMF method \citep{Aragon-Calvo2007} only 
 involved the density field, the Nexus formalism extended this to a versatile algorithm that classifies the cosmic web on the basis 
 of a multiscale filter bank applied to  either the density, tidal, velocity divergence or velocity shear fields. Applying the technique to the logarithm of the density increases its sensitivity and dynamical range and allows the approach to attain its optimal form, the so called \nexus{} method, revealing both major filamentary arteries as 
 well as tiny branching tendrils \citep{Cautun2013}. 
@@ -393,27 +401,27 @@ well as tiny branching tendrils \citep{Cautun2013}.
 velocity or tidal field, another family of techniques seeks to assess the cosmic web by studying the connectivity and topological 
 properties of the field involved. A typical example involves the delineation of underdense void basins in the large scale mass 
 distribution by means of the {\it Watershed Transform}, in the form of the Watershed Void Finder \citep{Platen2007} and ZOBOV 
-\citep{Neyrinck2008}. The Spineweb procedure \citep{Aragon2010} extends this to an elaborate scheme for tracing the various 
+\citep{Neyrinck2008}. The Spineweb procedure \citep{Aragon-Calvo2010a} extends this to an elaborate scheme for tracing the various 
 weblike features -- filaments, sheets and voids -- on purely topological grounds. Spineweb achieves this by identifying the 
 central axis of filaments and the core plane of walls with the boundaries between the watershed basins of the density field. 
 While the basic Spineweb procedure involves one single scale, the full multiscale spineweb procedure allows a multiscale topological 
-characterization of the cosmic web \citep{Aragon2010b,Aragon2013}. 
+characterization of the cosmic web \citep{Aragon-Calvo2010,Aragon-Calvo2010a}. 
 
 In essence, the Spineweb procedure is a practical implementation of the mathematics of Morse theory \citep{Morse1934}. Morse theory 
 describes the spatial connectivity of the density field on the basis of its singularity structure, i.e. on the location and identity 
 of the singularities - maxima, minima and saddle points - and their spatial connectivity by means of the characteristic lines 
 defined by the gradient field. \cite{Colombi2000} first described the role of Morse theory in a cosmological context, which 
-subsequently formed the basis of the {\it skeleton analysis} by \cite{Novikov2006} (2-D) and \cite{Sousbie2008} (3-D). This 
+subsequently formed the basis of the {\it skeleton analysis} by \cite{Novikov2006} (2-D) and \cite{Sousbie2008a} (3-D). This 
 defined an elegant and mathematically rigorous tool for filament identification. In a considerably more versatile elaboration 
-of this, invoking the power of topological persistence to identify topologically significant features, \cite{Sousbie2011}  
+of this, invoking the power of topological persistence to identify topologically significant features, \cite{Sousbie2011f}  
 has formulated the sophisticated \disperse~formalism that facilitates the detection of the full array of structural features 
-in the cosmic mass distribution \citep[also see][]{Sousbie2011b}. Nonetheless, most of its applications are directed towards outlining the filaments. A further 
+in the cosmic mass distribution \citep[also see][]{Sousbie2011e}. Nonetheless, most of its applications are directed towards outlining the filaments. A further 
 development along these lines, invoking the information provided by persistence measures, is that advocated 
-by \cite{Shivashankar2016}.   
+by \cite{Shivshankar2015a}.   
 
 \item[5.] {\bf Phase-space methods.} Most closely connected to the dynamics of the cosmic web formation process  
 are several recently proposed formalisms that look at the phase-space structure of the evolving mass distribution  
-\citep[][]{Abel2012,Falck2012,Shandarin2012}. They are based on the realization that -- in cosmologies in which 
+\citep[][]{Abel2012,Falck2012,Shandarin2012, Shandarin2016, Ramachandra2015, Ramachandra2017}. They are based on the realization that -- in cosmologies in which 
 the intrinsic velocity dispersion of particles in the primordial universe is small -- the evolving 
 spatial mass distribution has the appearance of a 3D sheet folding itself in 6D phase space, 
 a {\it phase space sheet}. By assessing its structure in full phase space, these formalisms 
@@ -425,14 +433,22 @@ identification of the emerging structures.
 %This class of methods contains the Origami formalism of Neyrinck et al. \citep{falck2012,neyrinck2012}, the phase-space sheet methods of Shandarin \citep{2011JCAP...05..015S,medvedev2016} and \cite{Abel_etal:12}, and the Claxon formalism of Hidding et al. \citep{hidding2016,hidding2017}. 
 
 This class of methods contains the \origami\ formalism \citep{Falck2012,Falck2015}, the phase-space sheet methods of \cite{Shandarin2011} 
-\citep[also see][]{Ramachandara2015} and \cite{Abel2012}, and the Claxon formalism \citep{Hidding2017}. The Claxon approach incorporates the modelling of 
+\citep[also see][]{Ramachandra2015} and \cite{Abel2012}, and the Claxon formalism \citep{Hidding2017}. The Claxon approach incorporates the modelling of 
 the nonlinear evolution of the cosmic mass distribution by means of the adhesion 
 formalism \citep{Gurbatov1989,Hidding2012}, in order to identify and classify the singularities -- shocks -- emerging 
 in the evolving structure. Claxon states that these singularities trace the skeleton of the cosmic web. 
 \end{itemize}
 \section{Test data:  Simulation and Data set}
-\input{Chapter3b/simulationtestdata.tex}
+% \input{simulationtestdata.tex}
+\label{section:simulation}
 
+Each of the participants applied their web identification methods to the same Gadget-2~\citep{Springel2005c} dark matter only $N$-body simulation, with a box size of 200 $\hmpc$ and $512^3$ particles. The $\Lambda$CDM cosmological parameters are taken from Planck \citep{2014A&A...571A..16P}: $h=0.68$, $\Omega_M = 0.31$, $\Omega_\Lambda = 0.69$, $n_s = 0.96$, and $\sigma_8 = 0.82$. Haloes in the simulation are identified using a standard FOF algorithm \citep{Davis1985}, with a linking length of $b=0.2$ and a minimum of 20 particles per halo. Fig. \ref{fig:den_slice} shows a thin slice through the density field and the halo population of this simulation.
+
+The main output of the methods is the classification of the dark matter density field into one of four web components: knot, filament, wall and void. This classification is performed for either volume elements (e.g. the Hessian methods), dark matter mass elements (e.g. the phase-space methods), or for the haloes (e.g. the point process methods). The exact choice was left to the discretion of the authors to better reflect the procedure used in the studies employing those methods. 
+
+Though the output format of the web identification methods may vary, each participant was asked to provide two datasets: the web identification tag defined on a regular grid with a $2\hmpc$ cell size ($100^3$ cells) and the web classification of each FOF halo. Most methods returned both datasets except for some of the point-process methods (MST, FINE), for which assigning a environment tag to each grid cell would not make sense. These return information regarding the filamentary environment of just the FOF haloes.
+
+The simulation is made publicly available\footnote{http://data.aip.de/tracingthecosmicweb/ \\  doi:10.17876/data/2017\_1} for exploitation by interested parties. We have included the $z=0$ Gadget snapshots, the FOF halo catalogue as well as the output of each cosmic web method included in this work. Where available, each method's classification is returned on a regular grid. Included in the data set is also the FOF catalogue appended with the classification of each halo for each method. We encourage other methods not included in this paper, to use this data set as a bench mark of the community's current status.
 
 
 

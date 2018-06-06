@@ -72,12 +72,16 @@ methods: numerical -- cosmology: theory -- dark matter -- large-scale structure 
 \newpage
 \end{comment}
 %-------------------------------------------------------------------------------------------------------------------------------
-\chapter{Dark matter haloes: a multistream view}
+\chapter{Dark matter haloes: a multistream view}\label{chapter5}
 
-\section{Introduction} 
+
+Identifying the haloes from the distribution of particles in N-body simulations is one of the problems attracting both considerable interest and efforts. In this chapter, we propose a novel framework for detecting potential dark matter haloes using the field unique for dark matter  -- multistream field. The current status of halo finding techniques are summarized in Section \ref{sec:intro}. A review of the DM particle clustering in a one-dimensional dimensional universe is made in Section \ref{sec:HaloFormation}, and the concept of multistream field is extended to higher dimensions. The multistream field is computed on the cosmological simulations described in Section \ref{sec:ch5_simulation}. The halo identification framework in this field is described in Section \ref{sec:haloDetection}. This algorithm isolates convex regions of the multistream field using Hessian eigenvalues, each enclosing a local multistream maximum. Without employing any non-local thresholds that several halo finders generally use, these convex multistream regions are identified as potential halo sites. We also illustrate the significance of multistream refinement and softening scales in finding subhaloes. However, this paper does not focus on adaptive multi-scale analyses for substructure studies. A few properties of the multistream haloes are discussed in Section \ref{sub:HaloProperties}, and comparison of these haloes with AHF and FOF algorithms is done in Section \ref{sub:compareHalo}. We also discuss the spatial distribution of the dark matter haloes along the percolating web structure.
+
+
+\section{Overview of halo finders} 
 \label{sec:intro}
 
-The web-like distribution of matter initially revealed by redshift surveys (with less than 300 galaxies by \citealt{Gregory1978} and around 1000 galaxies by \citealt{DeLapparent1986}) and numerical modeling (using N-body simulations of around 30000 particles by \citealt{Shandarin1983} and \citealt{Klypin1983a}) pioneered morphological investigations of the cosmic web structures (see \citealt{Bond1996}, also reviews by \citealt{Shandarin1989} and \citealt{Weygaert2008}). Detailed mapping of the Universe has crossed three million objects today, by catalogues such as the Sloan Digital Sky Survey (SDSS; \citealt{Albareti2016}). The upcoming Large Synoptic Survey Telescope (LSST; \citealt{lsst2009}) is expected to probe the nature of dark matter using several billion galaxies. On the other hand, cosmological simulations have improved immensely in several aspects -- numerical techniques, parallelization schemes, inclusion of various physical processes, volume and resolution (some of these developments are summarized in \cite{Bertschinger1998} and \cite{Bagla1997}. Modern state-of-the-art simulations like the Illustris Project \cite{Vogelsberger2014}, the EAGLE project \cite{Schaye2015} and Q-Continuum \cite{Heitmann2015} use more than a billion dark matter particles. Finally, the ever improving data analysis techniques have resulted in new and sophisticated density estimators, geometrical and topological indicators. A plethora of algorithms for identifying and characterizing dark matter structures have emerged in last two decades (a summary on cosmological data analysis is highlighted in \citealt{Weygaert2009a}). Considering all these improvements, it is worth noting that the proto-structures detected in the modern simulations are qualitatively similar to the quasi-linear description of clustering by Zeldovich Approximation (ZA; \citealt{Zeldovich1970}). Location and properties of these structures, i.e., the voids, walls, filaments and haloes maybe inconsistent across different structure finding algorithms, but that is primarily due to varied definitions. 
+The web-like distribution of matter initially revealed by redshift surveys (with less than 300 galaxies by \citealt{Gregory1978} and around 1000 galaxies by \citealt{Lapparent1986}) and numerical modeling (using N-body simulations of around 30000 particles by \citealt{Shandarin1983} and \citealt{Klypin1983a}) pioneered morphological investigations of the cosmic web structures (see \citealt{Bond1996}, also reviews by \citealt{Shandarin1989} and \citealt{Weygaert2008}). Detailed mapping of the Universe has crossed three million objects today, by catalogues such as the Sloan Digital Sky Survey (SDSS; \citealt{Albareti2016}). The upcoming Large Synoptic Survey Telescope (LSST; \citealt{lsst2009}) is expected to probe the nature of dark matter using several billion galaxies. On the other hand, cosmological simulations have improved immensely in several aspects -- numerical techniques, parallelization schemes, inclusion of various physical processes, volume and resolution (some of these developments are summarized in \cite{Bertschinger1998} and \cite{Bagla1997}. Modern state-of-the-art simulations like the Illustris Project \cite{Vogelsberger2014}, the EAGLE project \cite{Schaye2015} and Q-Continuum \cite{Heitmann2015} use more than a billion dark matter particles. Finally, the ever improving data analysis techniques have resulted in new and sophisticated density estimators, geometrical and topological indicators. A plethora of algorithms for identifying and characterizing dark matter structures have emerged in last two decades (a summary on cosmological data analysis is highlighted in \citealt{Weygaert2009a}). Considering all these improvements, it is worth noting that the proto-structures detected in the modern simulations are qualitatively similar to the quasi-linear description of clustering by Zeldovich Approximation (ZA; \citealt{Zeldovich1970}). Location and properties of these structures, i.e., the voids, walls, filaments and haloes maybe inconsistent across different structure finding algorithms, but that is primarily due to varied definitions. 
 
 
 Most of structure finders are halo finders only and majority of them are stemmed from three underlying algorithms. One of them is the SO (Spherical Over-density) halo finder that defines halos  as spherical regions whose mass density exceeds the mean density by a specified factor \citep{Press1974}. 
@@ -95,7 +99,7 @@ The FOF can be also used for identifying filaments and walls/pancakes by increas
 (iv) Generalization of FOF and DENMAX techniques to six-dimensional phase space, and many others (such as 6DFOF by \citealt{Diemand2006} and ROCKSTAR by \citealt{Behroozi2013a} use velocity-position space with parameters analogous to linking-length.)
 
 (v) Computing hierarchical tree of clusters in the phase-space such as the Hierarchical Structure Finder \cite{Maciejewski2009c}, and the 6-D Hierarchical Over-density Tree \cite{Ascasibar2010}. 
-(vi) Hybrid algorithms: frameworks such as the Hierarchical Bound-Tracing algorithm \cite{Han2012a} and SURV \cite{Giocoli2010a} identify haloes at multiple time steps from the simulation to find prospective sub-haloes. In addition, there are HOP methods by \cite{Eisenstein1998}, \cite{Tweed2009} and \cite{Skory2010}. 
+(vi) Hybrid algorithms: frameworks such as the Hierarchical Bound-Tracing algorithm \cite{Han2012} and SURV \cite{Giocoli2010a} identify haloes at multiple time steps from the simulation to find prospective sub-haloes. In addition, there are HOP methods by \cite{Eisenstein1998}, \cite{Tweed2009} and \cite{Skory2010}. 
 
 %---------------------------------
 
@@ -118,62 +122,61 @@ It has been demonstrated that the multistream field in Eulerian space can be com
 %-------------------------------
 
 
-In this paper, we identify potential haloes by utilizing multistreaming as the governing dynamical phenomena. A review of the DM particle clustering in a one-dimensional dimensional universe is made in Section \ref{sec:HaloFormation}, and the concept of multistream field is extended to higher dimensions. The multistream field is computed on the cosmological simulations described in Section \ref{sec:simulation}. The halo identification framework in this field is described in Section \ref{sec:haloDetection}. This algorithm isolates convex regions of the multistream field using Hessian eigenvalues, each enclosing a local multistream maximum. Without employing any non-local thresholds that several halo finders generally use, these convex multistream regions are identified as potential halo sites. We also illustrate the significance of multistream refinement and softening scales in finding subhaloes. However, this paper does not focus on adaptive multi-scale analyses for substructure studies. A few properties of the multistream haloes are discussed in Section \ref{sub:HaloProperties}, and comparison of these haloes with AHF and FOF algorithms is done in Section \ref{sub:compareHalo}. We also discuss the spatial distribution of the dark matter haloes along the percolating web structure.
 
 
-%-------------------------------------------------------------------------------------------------------------------------------
-\section{Phase-space representation of gravitational clustering}
-\label{sec:HaloFormation}
-
-
-\begin{figure*} 
-\centering\includegraphics[height=7cm]{Chapter5/Source_v2/fig1.pdf} 
-\caption{Dynamical collapse of dark matter in one-dimensional universe: Top panels show the $(\mathbf{p}, \mathbf{x})$ phase-space manifold of the dark matter sheet at redshifts $z_1$, $z_2$, $z_3$ and $z = 0$. Dots represent the dark matter particles. The momentum values are chosen at arbitrary scales. Bottom panels show the corresponding multistream field multistream field $n_{str}(\mathbf{x}, z)$ (red) and density field $\rho(\mathbf{x}, z)$ (gray). }
-\label{fig:1d}
-\end{figure*}
-
-We begin with a simple illustration showing the formation of a few haloes in a one-dimensional simulation. Dark matter clustering in a (1+1)-dimensional phase-space $(\mathbf{p}, \mathbf{x})$ (where $p$ is the momentum and $x$ is the co-moving Eulerian coordinate) at four successive time steps is shown in the top panels of \autoref{fig:1d}. The lower panels show the corresponding multistream field (\citealt{Shandarin2012} and \citealt{Abel2012}) $n_{str}(\mathbf{x}, z)$ (red) and density field $\rho(\mathbf{x}, z)$ (gray). At $z_1$ (left-most panel), velocity is single-valued in Eulerian co-ordinates shown, except at a small three-stream region near $\mathbf{x} = 5\pi/4$. This is the first instance of multistreaming in the region, which was previously had $n_{str} = 1$ throughout. The interface of $n_{str} = 1$ and $n_{str} = 3$ regions is also the location of the first caustic. On the other hand, the density calculated at a high resolution shows variations, even in the mono-streaming regions. The variations are especially more pronounced around  the caustic (near $\mathbf{x} = 5\pi/4$).
-
-
-The gravitational clustering is more evolved in the two center panels ($z_2$ and $z_3$) with three prominent phase-space spirals. The regions between the spirals have sparsely distributed dark matter particles, and have $n_{str} = 1$. Each spiral corresponds to a location of gravitational collapse with $n_{str} > 1$ region, and higher density. A few of these regions within three-streaming regions are elevated to $n_{str} = 5$. The corresponding density field is not only noisier, but also reaches very high values at the caustics. This is also a primary distinguishing feature between mass density fields and multistream fields: At the locations of caustic, the density (regardless of how it is calculated) is not smooth \cite{Vogelsberger2011}. Computational limitations on simulation resolutions and refinement of density calculations soften the fields, exceptionally at the zero volume measure regions of caustic surfaces.  On the other-hand, multistream values are increased by finite values at caustic surface locations - This property is preserved at higher simulation resolutions and any refinements of multistream field calculations - although $n_{str}$ may be resolved enough to have intermediate even-values. Multistream fields are also intrinsically discrete valued, which is not true with density fields. Discreteness of multistream fields is discussed in more detail in \cite{Ramachandra2017}. 
-
-The right-most panel in \autoref{fig:1d} shows the final structure at $z=0$. Two large spirals have spatially merged. These collapse environments are naturally very complex, with an increased number of successive caustic formation and merging. 
-The corresponding velocity streams also show a more complicated structure. Clearly, the multistream field has a saddle point that is not as low as $n_{str} = 1$. This poses a bigger problem in the context of most of halo detection algorithms, and we discuss this in Appendix \ref{appendix:Eigen}. 
-
-
-
-\subsection{Collapse in higher dimensions}
-
-Extending the above results of one-dimensional collapse into higher dimension is vital, primarily in the context of halo formation. The individual spiral collapses in the one-dimension happen at a small region (left-most panel in \autoref{fig:1d}), and the region grows by volume, whilst increasing the spiral twists within. This is in contrast with the theoretical top-hat spherical model of halo formation when the shell crossing would not happen until the final moment of the collapse of the entire halo into a point-like singularity. Thus all shell crossings happen at a single point
-and at a single instant of time. The collapse of an isolated, spherically symmetric density peak is a very exceptional case, because every spherical shell feels only the force due to interior mass until it collapses into the caustic region. The collapse of the real peak proceeds in the field generated by the mass distribution - in both the mass within the forming halo, and the mass outside the halo. 
-
-The collapse of a uniform ellipsoid also results in a simultaneous collapse of the entire ellipsoid
-however this time not into a point but into a two-dimensional ellipse (\citealt{Lin1965}, \citealt{Icke1975}, \citealt{Eisenstein1995}).
-Another customarily used spherical model of halo formation by \cite{Fillmore1984} and \cite{Bertschinger1985} does not consider
-the initial collapse at all. Instead it assumes self-similar initial conditions and the halo at advanced stage with formally infinite number of spherical caustic shells.
-
-The `core' in a collision-less dark matter collapse (in \autoref{fig:1d}) is a region where a multistream region is first formed due to caustic formation. This is conceptually similar to a shell crossing. However, there are successive caustic formations that follow the first shell crossing, and they are not limited to the halo cores. Each caustic increases the multistream value within by a finite number. The cores of the multistream haloes obviously have the local maxima of velocity streams in Eulerian coordinates. On the contrary, mass densities have infinite values at the caustics surfaces, including the core. Discontinuities in densities at these regions of sharp multistream transitions are clearly seen if the mass and spatial resolutions were sufficiently high( see two-dimensional simulations by \citealt{Melott1989} as well as in three-dimensional simulations by \citealt{Hahn2013}, \citealt{Angulo2016}, \citealt{Hahn2016a} etc.). 
-
-In three-dimensional simulations, the Lagrangian sub-manifold twists in complicated ways in a six-dimensional phase space. This is due to complexities involving caustic formations in higher dimensions, which is true even in the ZA, see \citealt{Arnold1982} and \citealt{Hidding2014} for detailed analyses of caustic formation. The resulting intricate geometrical structures can be characterized by the $n_{str}$ field. Nearly  $90\%$ of the volume in N-body simulations are single-streamed voids at $z=0$ (\citealt{Shandarin2012}, also see \citealt{Falck2015} for a percolation analysis of single-streaming voids). From the visualizations in \cite{Ramachandra2015} and percolation analysis of \cite{Ramachandra2017}, we also know that the $n_{str} = 3$ regions mostly form connected wall-like structures, unlike the isolated patches as seen in one-dimensional simulations of \autoref{fig:1d}. The structures become predominantly filamentary at higher thresholds of $ n_{str} \gtrsim 17$. Subsequently, the regions around the multistream maxima have isolated closed surfaces (for example, in \autoref{fig:full}), which may be identified as halo locations. 
-
-Caustic formations and mass accretion are also seen to occur more along the higher streams, which makes the haloes non-spherical, with the alignment generally determined by a complicated interplay  of the intensities of the streams from neighboring filamentary structures. Number of streams corresponding to the dark matter halo also has a local environment dependence. The three small haloes in \autoref{fig:full}, where the number of streams are higher than the neighbouring filaments, are aligned along three intersecting filaments. Halo environment studied in \cite{Ramachandra2015} show similar hierarchical variation in $n_{str}$ values. The halo environments are thus very complicated, and empirical thresholds (on multistream or density fields) may not account for all the haloes uniformly. Hence we use a local geometrical method to identify potential haloes in multistream fields.
-
-
-The first non-linear structures in the web have $n_{str} = 3$. By visual inspection, these regions generally form a fabric-like open structures that resemble walls. The surface contours of higher $n_{str}$ are embedded within the walls. \autoref{fig:full} shows a filamentary structure of the web at $n_{str} \gtrsim 17$. The figure also shows regions around local maxima of the multistream field, which are generally located at the intersections of filaments.    
-
-
-
-\begin{figure} 
-\centering\includegraphics[width=16cm]{Chapter5/Source_v2/fig2.pdf} 
-\caption{Multistream field contours: The multistream field is calculated at 8 times the native resolution. Each inner convex blobs (red) surround local multistream maxima inside. Surrounding outer shell(blue) is not convex throughout the surface, and the outermost gray multistream surface displays a filamental geometry.}
-\label{fig:full}
-\end{figure}
+% %-------------------------------------------------------------------------------------------------------------------------------
+% \section{Phase-space representation of gravitational clustering}
+% \label{sec:HaloFormation}
+% 
+% 
+% \begin{figure*} 
+% \centering\includegraphics[height=7cm]{Chapter5/Source_v2/fig1.pdf} 
+% \caption{Dynamical collapse of dark matter in one-dimensional universe: Top panels show the $(\mathbf{p}, \mathbf{x})$ phase-space manifold of the dark matter sheet at redshifts $z_1$, $z_2$, $z_3$ and $z = 0$. Dots represent the dark matter particles. The momentum values are chosen at arbitrary scales. Bottom panels show the corresponding multistream field multistream field $n_{str}(\mathbf{x}, z)$ (red) and density field $\rho(\mathbf{x}, z)$ (gray). }
+% \label{fig:1d}
+% \end{figure*}
+% 
+% We begin with a simple illustration showing the formation of a few haloes in a one-dimensional simulation. Dark matter clustering in a (1+1)-dimensional phase-space $(\mathbf{p}, \mathbf{x})$ (where $p$ is the momentum and $x$ is the co-moving Eulerian coordinate) at four successive time steps is shown in the top panels of \autoref{fig:1d}. The lower panels show the corresponding multistream field (\citealt{Shandarin2012} and \citealt{Abel2012}) $n_{str}(\mathbf{x}, z)$ (red) and density field $\rho(\mathbf{x}, z)$ (gray). At $z_1$ (left-most panel), velocity is single-valued in Eulerian co-ordinates shown, except at a small three-stream region near $\mathbf{x} = 5\pi/4$. This is the first instance of multistreaming in the region, which was previously had $n_{str} = 1$ throughout. The interface of $n_{str} = 1$ and $n_{str} = 3$ regions is also the location of the first caustic. On the other hand, the density calculated at a high resolution shows variations, even in the mono-streaming regions. The variations are especially more pronounced around  the caustic (near $\mathbf{x} = 5\pi/4$).
+% 
+% 
+% The gravitational clustering is more evolved in the two center panels ($z_2$ and $z_3$) with three prominent phase-space spirals. The regions between the spirals have sparsely distributed dark matter particles, and have $n_{str} = 1$. Each spiral corresponds to a location of gravitational collapse with $n_{str} > 1$ region, and higher density. A few of these regions within three-streaming regions are elevated to $n_{str} = 5$. The corresponding density field is not only noisier, but also reaches very high values at the caustics. This is also a primary distinguishing feature between mass density fields and multistream fields: At the locations of caustic, the density (regardless of how it is calculated) is not smooth \cite{Vogelsberger2011}. Computational limitations on simulation resolutions and refinement of density calculations soften the fields, exceptionally at the zero volume measure regions of caustic surfaces.  On the other-hand, multistream values are increased by finite values at caustic surface locations - This property is preserved at higher simulation resolutions and any refinements of multistream field calculations - although $n_{str}$ may be resolved enough to have intermediate even-values. Multistream fields are also intrinsically discrete valued, which is not true with density fields. Discreteness of multistream fields is discussed in more detail in \cite{Ramachandra2017}. 
+% 
+% The right-most panel in \autoref{fig:1d} shows the final structure at $z=0$. Two large spirals have spatially merged. These collapse environments are naturally very complex, with an increased number of successive caustic formation and merging. 
+% The corresponding velocity streams also show a more complicated structure. Clearly, the multistream field has a saddle point that is not as low as $n_{str} = 1$. This poses a bigger problem in the context of most of halo detection algorithms, and we discuss this in Appendix \ref{appendix:Eigen}. 
+% 
+% 
+% 
+% \subsection{Collapse in higher dimensions}
+% 
+% Extending the above results of one-dimensional collapse into higher dimension is vital, primarily in the context of halo formation. The individual spiral collapses in the one-dimension happen at a small region (left-most panel in \autoref{fig:1d}), and the region grows by volume, whilst increasing the spiral twists within. This is in contrast with the theoretical top-hat spherical model of halo formation when the shell crossing would not happen until the final moment of the collapse of the entire halo into a point-like singularity. Thus all shell crossings happen at a single point
+% and at a single instant of time. The collapse of an isolated, spherically symmetric density peak is a very exceptional case, because every spherical shell feels only the force due to interior mass until it collapses into the caustic region. The collapse of the real peak proceeds in the field generated by the mass distribution - in both the mass within the forming halo, and the mass outside the halo. 
+% 
+% The collapse of a uniform ellipsoid also results in a simultaneous collapse of the entire ellipsoid
+% however this time not into a point but into a two-dimensional ellipse (\citealt{Lin1965a}, \citealt{Icke1975}, \citealt{Eisenstein1995}).
+% Another customarily used spherical model of halo formation by \cite{Fillmore1984} and \cite{Bertschinger1985} does not consider
+% the initial collapse at all. Instead it assumes self-similar initial conditions and the halo at advanced stage with formally infinite number of spherical caustic shells.
+% 
+% The `core' in a collision-less dark matter collapse (in \autoref{fig:1d}) is a region where a multistream region is first formed due to caustic formation. This is conceptually similar to a shell crossing. However, there are successive caustic formations that follow the first shell crossing, and they are not limited to the halo cores. Each caustic increases the multistream value within by a finite number. The cores of the multistream haloes obviously have the local maxima of velocity streams in Eulerian coordinates. On the contrary, mass densities have infinite values at the caustics surfaces, including the core. Discontinuities in densities at these regions of sharp multistream transitions are clearly seen if the mass and spatial resolutions were sufficiently high( see two-dimensional simulations by \citealt{Melott1989} as well as in three-dimensional simulations by \citealt{Hahn2013}, \citealt{Angulo2016}, \citealt{Hahn2016a} etc.). 
+% 
+% In three-dimensional simulations, the Lagrangian sub-manifold twists in complicated ways in a six-dimensional phase space. This is due to complexities involving caustic formations in higher dimensions, which is true even in the ZA, see \citealt{Arnold1982} and \citealt{Hidding2014} for detailed analyses of caustic formation. The resulting intricate geometrical structures can be characterized by the $n_{str}$ field. Nearly  $90\%$ of the volume in N-body simulations are single-streamed voids at $z=0$ (\citealt{Shandarin2012}, also see \citealt{Falck2015} for a percolation analysis of single-streaming voids). From the visualizations in \cite{Ramachandra2015} and percolation analysis of \cite{Ramachandra2017}, we also know that the $n_{str} = 3$ regions mostly form connected wall-like structures, unlike the isolated patches as seen in one-dimensional simulations of \autoref{fig:1d}. The structures become predominantly filamentary at higher thresholds of $ n_{str} \gtrsim 17$. Subsequently, the regions around the multistream maxima have isolated closed surfaces (for example, in \autoref{fig:full}), which may be identified as halo locations. 
+% 
+% Caustic formations and mass accretion are also seen to occur more along the higher streams, which makes the haloes non-spherical, with the alignment generally determined by a complicated interplay  of the intensities of the streams from neighboring filamentary structures. Number of streams corresponding to the dark matter halo also has a local environment dependence. The three small haloes in \autoref{fig:full}, where the number of streams are higher than the neighbouring filaments, are aligned along three intersecting filaments. Halo environment studied in \cite{Ramachandra2015} show similar hierarchical variation in $n_{str}$ values. The halo environments are thus very complicated, and empirical thresholds (on multistream or density fields) may not account for all the haloes uniformly. Hence we use a local geometrical method to identify potential haloes in multistream fields.
+% 
+% 
+% The first non-linear structures in the web have $n_{str} = 3$. By visual inspection, these regions generally form a fabric-like open structures that resemble walls. The surface contours of higher $n_{str}$ are embedded within the walls. \autoref{fig:full} shows a filamentary structure of the web at $n_{str} \gtrsim 17$. The figure also shows regions around local maxima of the multistream field, which are generally located at the intersections of filaments.    
+% 
+% 
+% 
+% \begin{figure} 
+% \centering\includegraphics[width=16cm]{Chapter5/Source_v2/fig2.pdf} 
+% \caption{Multistream field contours: The multistream field is calculated at 8 times the native resolution. Each inner convex blobs (red) surround local multistream maxima inside. Surrounding outer shell(blue) is not convex throughout the surface, and the outermost gray multistream surface displays a filamental geometry.}
+% \label{fig:full}
+% \end{figure}
 
 
 \section{Simulations and tools}
-\label{sec:simulation}
+\label{sec:ch5_simulation}
 
-The emphasis of this paper is to demonstrate the use of multistream field in identifying potential dark matter haloes, and not a full statistical analysis of halo properties. For this purpose, we have run simulations at two different mass resolutions (number of particles $N_p = 128^3$ and $256^3$, and respective mass of particles, $m_p = 3.65 \times 10^{10} h^{-1} M_{\odot}$ and $ 4.57 \times 10^{9} h^{-1} M_{\odot}$), with the same periodic side length $L = 100 h^{-1} Mpc$. The gravitational softening length $\epsilon = 20 h^{-1} kpc$ and $10 h^{-1} kpc$ for low and high resolution simulation respectively. The initial conditions are generated by {MUSIC} \citep{Hahn2011a} with the transfer function from \cite{Eisenstein1998a} at a redshift of $z_{ini}= 80$. The $\Lambda$CDM cosmological simulation is run using {GADGET-2} (\citealt{Springel2005} and \citealt{Springel2001}) is similar to the ones used in \cite{Ramachandra2017}. The cosmological parameters used in the simulation are $\Omega_{m}= 0.276$, $\Omega_{\Lambda}= 0.724$, the Hubble parameter, $h = 0.703$, the power spectrum normalization, $\sigma_8 = 0.811$ and the spectral index $n_s= 0.961$. 
+The emphasis of this paper is to demonstrate the use of multistream field in identifying potential dark matter haloes, and not a full statistical analysis of halo properties. For this purpose, we have run simulations at two different mass resolutions (number of particles $N_p = 128^3$ and $256^3$, and respective mass of particles, $m_p = 3.65 \times 10^{10} h^{-1} M_{\odot}$ and $ 4.57 \times 10^{9} h^{-1} M_{\odot}$), with the same periodic side length $L = 100 h^{-1} Mpc$. The gravitational softening length $\epsilon = 20 h^{-1} kpc$ and $10 h^{-1} kpc$ for low and high resolution simulation respectively. The initial conditions are generated by {MUSIC} \citep{Hahn2011a} with the transfer function from \cite{Eisenstein1998a} at a redshift of $z_{ini}= 80$. The $\Lambda$CDM cosmological simulation is run using {GADGET-2} (\citealt{Springel2005c} and \citealt{Springel2001}) is similar to the ones used in \cite{Ramachandra2017}. The cosmological parameters used in the simulation are $\Omega_{m}= 0.276$, $\Omega_{\Lambda}= 0.724$, the Hubble parameter, $h = 0.703$, the power spectrum normalization, $\sigma_8 = 0.811$ and the spectral index $n_s= 0.961$. 
 
 
 
@@ -244,7 +247,7 @@ Of the three geometries that are characterised by the eigenvalue conditions, we 
 
 \begin{figure}
 \begin{minipage}[t]{0.99\linewidth}
- \centering\includegraphics[height=8.5cm]{Chapter5/Source_v2/fig3.pdf} 
+ \centering\includegraphics[height=14cm]{Chapter5/Source_v2/fig3.pdf} 
 \end{minipage}\hfill
 \caption{ Detection of potential halo candidates in the multistream field: algorithm of segmentation and filtering are illustrated in a smaller slice of $40 h^{-1} Mpc \times 40 h^{-1} Mpc$ slice of the simulation box. Top left figure shows the multistream field of the slice. Voids (white) are the regions with $n_{str} =1$, rest are non-void structures. Blue patches within the structure (gray) are the regions with gravitational collapses in more than one direction, i.e., $n_{str} \geq 7$. Top Right figure shows the smallest eigenvalue $\lambda_3$ field. The value of $\lambda_3$ is close to 0 in most of the regions (yellow), including the voids. Regions with  $\lambda_3 > 0$ and $n_{str} > 1$, are isolated (black spots) using image segmentation techniques. Bottom left panel shows the filtering scheme: the red patches do not have maxima of $n_{str} \geq 7$ in the regions, hence are filtered out. The remaining potential halo regions with more than 20 particles are shown in the bottom right panel.}
 \label{fig:labelsfilter}
@@ -253,20 +256,21 @@ Of the three geometries that are characterised by the eigenvalue conditions, we 
 For the illustration halo detection framework in this section, we have calculated the number-of-streams at refinement factor of $2$ and smoothing scale of $0.39 h^{-1} Mpc$ (equal to the grid length of the multistream field) for the simulation box of $128^3$ particles and size $L = 100 h^{-1} Mpc$ . Hessian matrices and eigenvalues are calculated on the same diagnosis grid. Results of the halo detection scheme for simulation box of higher mass resolution, and different smoothing factors are discussed in Sections \ref{sub:compareHalo} and \ref{sub:Smooth}. Hereafter we refer to the potential dark matter haloes detected from the Hessian analysis of the multistream field as $\lambda_3$-haloes for brevity. 
  
 
-Applying the above scheme on the simulation with side length of $100 h^{-1}$ Mpc and $128^3$ particles (with cosmological parameters mentioned in Section \ref{sec:simulation}), we detected approximately 50000 regions satisfying $\lambda_3 > 0$ within the non-void in the multistream field of refinement factor $l_l/l_d = 2$ and smoothing scale of grid length, i.e, $0.39 h^{-1} Mpc$. We filtered out the segments with local maxima of $n_{str} < 7$, and around 14000 regions remained as prospective haloes. Majority of these regions have less than 20 particles, which are excluded in the halo catalogues. On the whole, our algorithm detected about 4500 haloes with more than 20 particles in the entire simulation box. We have not applied virialisation to define the halo boundaries. A more detailed study of halo edges, and comparison with that of FOF-haloes and AHF-haloes is done in Section \ref{sub:HaloProperties}. Here we concentrate on the three vital factors in our framework: local geometrical indicators $\lambda_i$'s, the softening scale of the field and multistream thresholds.
+Applying the above scheme on the simulation with side length of $100 h^{-1}$ Mpc and $128^3$ particles (with cosmological parameters mentioned in Section \ref{sec:ch5_simulation}), we detected approximately 50000 regions satisfying $\lambda_3 > 0$ within the non-void in the multistream field of refinement factor $l_l/l_d = 2$ and smoothing scale of grid length, i.e, $0.39 h^{-1} Mpc$. We filtered out the segments with local maxima of $n_{str} < 7$, and around 14000 regions remained as prospective haloes. Majority of these regions have less than 20 particles, which are excluded in the halo catalogues. On the whole, our algorithm detected about 4500 haloes with more than 20 particles in the entire simulation box. We have not applied virialisation to define the halo boundaries. A more detailed study of halo edges, and comparison with that of FOF-haloes and AHF-haloes is done in Section \ref{sub:HaloProperties}. Here we concentrate on the three vital factors in our framework: local geometrical indicators $\lambda_i$'s, the softening scale of the field and multistream thresholds.
 
 The maximum values of $\lambda_1$, $\lambda_2$ and $\lambda_3$ in each of the haloes have peaks away from 0 as shown in \autoref{fig:maxL3}. The median values of $max(\lambda_1)$ and $max(\lambda_2)$ are in the range of 1-10 (\autoref{tab:maxL3}), in-spite of the threshold for $\lambda_3$ being barely positive, by definition. Hence the interior of the potential halo segments is quite convex, with a local maxima inside. In some haloes, the local maxima of eigenvalue are in the order of thousands, as tabulated in \autoref{tab:maxL3}. 
 
 
 \begin{figure}
 \begin{minipage}[t]{.99\linewidth}
- \centering\includegraphics[width=8.cm]{Chapter5/Source_v2/fig4.pdf} 
+ \centering\includegraphics[width=10.cm]{Chapter5/Source_v2/fig4.pdf} 
 \end{minipage}\hfill
 \caption{PDF of highest $\lambda_1$, $\lambda_2$ and $\lambda_3$ values in each of 4492 haloes detected by out algorithm. The peaks of the PDF are in the range 1-10. Shaded regions represent 1$\sigma$ error. }
 \label{fig:maxL3}
 \end{figure}
 
 \begin{table}
+\centering
   \caption{Statistics of the Hessian eigenvalues in the halo candidates}
 \begin{tabular}{|l|r|r|r|}
 \hline
@@ -294,7 +298,7 @@ However, the second order variation (and consequently the Hessian eigenvalues) i
 
 \begin{figure}
 \begin{minipage}[t]{.99\linewidth}
- \centering\includegraphics[width=8.cm]{Chapter5/Source_v2/fig5.pdf} 
+ \centering\includegraphics[width=10.cm]{Chapter5/Source_v2/fig5.pdf} 
 \end{minipage}\hfill
 \caption{The distribution of $\lambda_3$ in the simulation box of $128^3$ particles and multistream field of refinement factor $l_l/l_d = 2$. Three smoothing scales are shown. }
 \label{fig:Eval3Smooth}
@@ -303,6 +307,7 @@ However, the second order variation (and consequently the Hessian eigenvalues) i
 In addition to reducing the numerical noise, smoothing of the multistream field also results in softening of the sub-structures \cite{Ramachandra2017}. Since our framework of detecting haloes isolates the multistream regions with local maxima, the closed curvatures are resolved separately. The halo or a sub-halo regions, that enclose the local maxima of the $n_{str}$ field, vary with the smoothing scale of the multistream field. By increasing smoothing of the multistream field, the number of haloes are reduced as shown in \autoref{tab:HaloesSmooth}. In the simulation with $256^3$ particles, $27929$ $\lambda_3$-haloes are detected at smoothing scale equal to the diagnostic grid length, $l_d = 0.20 h^{-1} \text{Mpc}$. The number of haloes decreases to $18221$ and $7897$ at softening scales of two- and four times the grid lengths respectively. 
 
 \begin{table}
+\centering
   \caption{Number of $\lambda_3$-haloes identified at smoothing of $n_{str}(\mathbf{x})$ at different scales.}
 \begin{tabular}{|l|r|r|r|}
 \hline
@@ -319,7 +324,7 @@ Moreover, since the spatial resolution is higher at the low softening, more smal
 
 \begin{figure}
 \begin{minipage}[t]{.99\linewidth}
- \centering\includegraphics[width=8.cm]{Chapter5/Source_v2/fig6.pdf} 
+ \centering\includegraphics[width=10.cm]{Chapter5/Source_v2/fig6.pdf} 
 \end{minipage}\hfill
 \caption{Top panel shows Halo Mass functions of the potential $\lambda_3$-haloes in the multistream field refinement factor $l_l/l_d = 2$ with various smoothing scales. Simulation box has $256^3$ particles. Lower panel shows the deviation of the each halo mass function with respect to their average.}
 \label{fig:hmfSmooth}
@@ -347,7 +352,7 @@ haloes while the number of haloes with $M  \gtrsim 2\times10^{12} M_{\bigodot}$ 
 
 \begin{figure}
 \begin{minipage}[t]{.99\linewidth}
- \centering\includegraphics[width=8.cm]{Chapter5/Source_v2/fig7.pdf} 
+ \centering\includegraphics[width=10.cm]{Chapter5/Source_v2/fig7.pdf} 
 \end{minipage}\hfill
 \caption{Halo Mass functions of the potential $\lambda_3$-haloes in the multistream field refinement factor $l_l/l_d = 2$ (in Simulation box with $N_p = 256^3$) with various thresholds on local maxima of $n_{str}$ within the halo. Lower panel shows the deviation of the each halo mass function with respect to their average.}
 \label{fig:hmfEth}
@@ -368,7 +373,7 @@ The potential haloes $H_i$s selected by eigenvalue condition $\lambda_3 > 0$ hav
 
 \begin{figure}
 \begin{minipage}[t]{.99\linewidth}
- \centering\includegraphics[width=8.cm]{Chapter5/Source_v2/fig8.pdf} 
+ \centering\includegraphics[width=10.cm]{Chapter5/Source_v2/fig8.pdf} 
 \end{minipage}\hfill
 \caption{Maximum, minimum and median of $n_{str}$ in each of 4492 halo candidates. The closed contours of haloes encompass a wide range of multistream values. None of the haloes are in contact with the void region, since lowest value of min$(n_{str})$ is 3. Shaded regions are the 1$\sigma$ absolute errors in the number of $\lambda_3$-haloes. }
 \label{fig:minmaxstr}
@@ -376,6 +381,7 @@ The potential haloes $H_i$s selected by eigenvalue condition $\lambda_3 > 0$ hav
 
 
 \begin{table}
+\centering
 \caption{Local maxima and minima of $n_{str}$ in each of 4492 haloes. The highest $n_{str}$ values in the interior of haloes span over a large range of values. Low values of $n_{str}$ in haloes, which are generally near halo boundaries, have a median of 3.}
 \begin{tabular}{|l|r|r|}
 \hline
@@ -399,7 +405,7 @@ The multistream field usually has concentric shells in the regions of successive
 
 \begin{figure}
 \begin{minipage}[t]{.99\linewidth}
-  \centering\includegraphics[width=7.cm]{Chapter5/Source_v2/fig9.pdf} 
+  \centering\includegraphics[width=8.cm]{Chapter5/Source_v2/fig9.pdf} 
 \end{minipage}\hfill
 \caption{Multistream environment of a $\lambda_3$-halo. The contours represent regions with 3 different multistream values: Outermost $n_{str} \geq 25$ (gray) is tubular, The blue region has $n_{str} \geq 75$. The inner region is highly non-linear with $n_{str} \geq 200$.  The black dots represent the mass particles belonging to a $\lambda_3$-halo, as detected by our algorithm.}
 \label{fig:l3Nst}
@@ -420,6 +426,7 @@ The particles in a massive $\lambda_3$-halo shown in \autoref{fig:l3Nst} form a 
 Comparison of haloes obtained from AHF and FOF method, along with our geometric analysis of the multistream field reveals several interesting features. The number of haloes ($N_H$) with at least 20 particles that were detected by all the algorithms is shown in \autoref{tab:HaloFinderMF}. For both the simulations, FOF detects the highest number of haloes and AHF detects the least. By applying the Hessian algorithm on multistream fields smoothed at the scale of diagnostic grid size, $l_d$, we detected around $4500$ and $28000$ haloes in simulations with $128^3$ and $256^3$ particles respectively. The number of $\lambda_3$-halo is close to the mean of AHF- and FOF- haloes in each simulation -- i.e., $N_H^{\lambda_3}$ is around $2$ per cent of mean of $N_H^{\rm AHF}$ and $N_H^{\rm FOF}$ for the $N_p = 128^3$ simulation and $8$ per cent for the $N_p = 256^3$ simulation. Multistream field both the simulations we calculated at a refinement factor of $l_l/l_d = 2$. 
 
 \begin{table}
+\centering
   \caption{Number of haloes, $N_H$ detected by the three halo finder algorithms in the two simulations of $L = 100 h^{-1} \text{Mpc}$ with different mass resolutions. Values shown for $\lambda_3$-haloes are done in the multistream fields with refinement factor of 2, and smoothing scale equal to the diagnostic grid size.}
 \begin{tabular}{|l|r|r|r|}
 \hline
@@ -438,7 +445,7 @@ The halo mass functions from all three finders are shown in \autoref{fig:hmf}. F
 
 \begin{figure}
 \begin{minipage}[t]{.99\linewidth}
- \centering\includegraphics[width=8.cm]{Chapter5/Source_v2/fig10.pdf} 
+ \centering\includegraphics[width=10.cm]{Chapter5/Source_v2/fig10.pdf} 
 \end{minipage}\hfill
 \caption{Halo Mass functions from AHF-, FOF- and $\lambda_3$-haloes. The AHF-haloes are fewer than FOF- or $\lambda_3$-haloes. The number of haloes above a mass threshold are binned and taken along vertical axis, normalized to simulation box volume. Error of 1$\sigma$ is shown in shaded region. }
 \label{fig:hmf}
@@ -451,7 +458,7 @@ By observing some of the massive haloes, like the one in \autoref{fig:FinderComp
 \begin{figure}
 \begin{minipage}[t]{.99\linewidth}
  \centering
- \includegraphics[width=8.cm]{Chapter5/Source_v2/fig11.pdf}
+ \includegraphics[width=10.cm]{Chapter5/Source_v2/fig11.pdf}
 \end{minipage}\hfill
 \caption{A large halo that was detected by AHF (top, red), our geometric analysis in the multistream field (centre, green) and FOF (bottom, blue). Halo boundary differs for each halo finder method. AHF detects particles within a sphere of virial radius. FOF-halo is irregularly shaped. $\lambda_3$-halo particles are in a non-spherical, yet compact structure. }
 \label{fig:FinderCompareAll}
@@ -499,7 +506,7 @@ Other cause for differences in mass fraction is also rooted in the definition of
 \begin{figure}
 \begin{minipage}[t]{.99\linewidth}
  \centering
- \includegraphics[width=8.cm]{Chapter5/Source_v2/fig13.pdf}
+ \includegraphics[width=10.cm]{Chapter5/Source_v2/fig13.pdf}
 \end{minipage}\hfill
 \caption{Mass fraction of haloes $f_h$ (in per cent) as a detected by the three finders. Each circle represents fractions of mass of all halo particles (AHF, FOF or $\lambda_3$) in the total mass of the simulation box. The particles concurrently detected as belonging to haloes by different frameworks are shown in the intersections. }
 \label{fig:HaloFinderMF}
@@ -518,7 +525,7 @@ The fraction of haloes in the non-excursion set are shown at various $n_{str}$ t
 
 \begin{figure}
 \begin{minipage}[t]{.99\linewidth}
-  \centering\includegraphics[width=8.cm]{Chapter5/Source_v2/fig14.pdf} 
+  \centering\includegraphics[width=10.cm]{Chapter5/Source_v2/fig14.pdf} 
 \end{minipage}\hfill
 \caption{ Percentage of haloes detected (in the simulation with $N_p = 256^3$) that are embedded in the non-excursion set (top panel), largest excursion set segment (center panel) and the rest of excursion set regions (bottom panel). Multistream haloes, AHF-haloes and FOF-haloes are shown in green, red and blue respectively. Vertical dashed line at $n_{str} = 17$ is where percolation transition occurs. }
 \label{fig:HaloFilAll}
@@ -554,7 +561,7 @@ We note that present halo finders employ a variety of physical and numerical pro
 The applicability of non-local thresholds in detecting haloes deserves deeper investigation. Lower bounds on over-density or linking-length thresholds traditionally define halo regions in several halo finders. Values such as $\Delta_{vir} \approx 180$ or $b \approx 0.2$ correspond to virial theorem applied to isolated spherical collapse models. Recently \cite{More2011} demonstrated that depending on halo environment, cosmology and redshift the over-densities corresponding to $b = 0.2$ have different values. The virial theorem itself is a good measure of equilibrium of a system. However, the global thresholds empirically derived from it may not be pertinent to diverse environment of dark matter haloes. 
 
 
-The algorithm prescribed in Section \ref{sec:haloDetection} lists out a set of physically motivated steps that filter out the noisy $\lambda_3 > 0$ regions that cannot be identified as haloes. The analysis in the simulation of $100 h^{-1}$ Mpc side length and $128^3$ particles, with the multistream calculated on $256^3$ diagnosis box, approximately 40000 labelled segments satisfying $\lambda_3 > 0$ criterion in the non-voids were filtered out by a lower limit on multistreaming regions. One of the possible improvements in our algorithm would be to use information of number of flip-flops of each particle (For instance, using methods prescribed by \citealt{Shandarin2014,Shandarin2016}). Such methods involving the Lagrangian sub-manifold may reveal rich sub-structure in the haloes. 
+The algorithm prescribed in Section \ref{sec:haloDetection} lists out a set of physically motivated steps that filter out the noisy $\lambda_3 > 0$ regions that cannot be identified as haloes. The analysis in the simulation of $100 h^{-1}$ Mpc side length and $128^3$ particles, with the multistream calculated on $256^3$ diagnosis box, approximately 40000 labelled segments satisfying $\lambda_3 > 0$ criterion in the non-voids were filtered out by a lower limit on multistreaming regions. One of the possible improvements in our algorithm would be to use information of number of flip-flops of each particle (For instance, using methods prescribed by \citealt{Shandarin2014a,Shandarin2016}). Such methods involving the Lagrangian sub-manifold may reveal rich sub-structure in the haloes. 
 
  
 The requirement that each halo should have closed convex surfaces with a multistream maximum inside may identify sub-haloes in large haloes but is too demanding because a halo with sub-haloes must have saddle points in the $n_{str}$ field. This may explain the shortage of massive haloes shown in \autoref{fig:hmf}. Applying a filter for smoothing the $n_{str}$ field increases the number of massive haloes but reduces the number of low mass haloes. Although our present method does not currently perform an analysis simultaneously on multiple smoothing scales, such approaches done in density, lognormal density, tidal, velocity divergence or velocity shear fields (see MMF by \citealt{Aragon-Calvo2007} and NEXUS+ by \citealt{Cautun2013}) have shown interesting multi-scale features of the cosmic web. Applying a more sophisticated procedure for linking $\lambda_3$-sub-haloes in a more massive halo will be done in the follow-up paper.  

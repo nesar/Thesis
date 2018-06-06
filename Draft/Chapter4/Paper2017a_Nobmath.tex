@@ -77,79 +77,84 @@ methods: numerical -- cosmology: theory -- dark matter -- large-scale structure 
 \newpage
 \end{comment}
 %-------------------------------------------------------------------------------------------------------------------------------
-\chapter{Topology and geometry of the dark matter web}
+\chapter{Topology and geometry of the dark matter web}\label{chapter4}
+
+Heuristic analysis of the multistream field has been done in Chapter \ref{chapter3} and parts of Chapter \ref{chapter3b}. In this chapter, we analyse the dark matter structures based on their phyiscal shapes and connectivity. Extensive studies of geometrical and topological properties in cosmic matter density field have been done in the past. Here we extend some of these studies into the Lagrangian sub-manifold regime -- taking advantage of certain unique properties of the multistream field supplement our understanding of dark matter structures. The analysis and text in this chapter overlaps with \cite{Ramachandra2017}.   
 
 
 \section{Introduction} 
 \label{sec:intro}
 
 
-Large scale structures with  highly anisotropic shapes were first theoretically predicted by Zeldovich approximation (hereafter ZA) \citep{Zeldovich1970}. The model based on ZA suggested that the eigenvalues of the deformation tensor dictate the shapes of the {\it collapsed} structures at the beginning non-linear stage of gravitational instability (\citealt{Arnold1982}, see also \citealt{Shandarin1989} and \citealt{Hidding2014}). These structures were found to be crudely  characterised as two-, one- and zero- dimensional  which actually meant that three characteristic scales of each structure ($L_1\ge L_2\ge L_3$) are approximately related as  $L_1^{(p)} \approx L_2^{(p)} \gg L_3^{(p)}$ or $L_1^{(f)} \gg L_2^{(f)} \approx L_3^{(f)}$ or $L_1^{(h)} \approx L_2^{(h)}  \approx L_3^{(h)} $ respectively.  In addition it implied that $L_1^{(p)} \approx L_1^{(f)}$ and $L_3^{(p)} \approx L_2^{(f)} \approx L_1^{(h)}$.\footnote{The multi-scale character of the cosmic web was not discussed until 1990s.} At present these generic types of structures are referred to as  walls/pancakes/sheets/membranes, filaments and haloes. Although the accuracy of the Zeldovich approximation deteriorates from pancakes to  filaments and especially to halos on qualitative level  there are no more types of  structures. Altogether these structures contain the most of mass in the universe nevertheless they occupy  very little space. The most of space is almost empty  and is referred to as voids.
+% Large scale structures with  highly anisotropic shapes were first theoretically predicted by Zeldovich approximation (hereafter ZA) \citep{Zeldovich1970}. The model based on ZA suggested that the eigenvalues of the deformation tensor dictate the shapes of the {\it collapsed} structures at the beginning non-linear stage of gravitational instability (\citealt{Arnold1982}, see also \citealt{Shandarin1989} and \citealt{Hidding2014}). These structures were found to be crudely  characterised as two-, one- and zero- dimensional  which actually meant that three characteristic scales of each structure ($L_1\ge L_2\ge L_3$) are approximately related as  $L_1^{(p)} \approx L_2^{(p)} \gg L_3^{(p)}$ or $L_1^{(f)} \gg L_2^{(f)} \approx L_3^{(f)}$ or $L_1^{(h)} \approx L_2^{(h)}  \approx L_3^{(h)} $ respectively.  In addition it implied that $L_1^{(p)} \approx L_1^{(f)}$ and $L_3^{(p)} \approx L_2^{(f)} \approx L_1^{(h)}$.\footnote{The multi-scale character of the cosmic web was not discussed until 1990s.} At present these generic types of structures are referred to as  walls/pancakes/sheets/membranes, filaments and haloes. Although the accuracy of the Zeldovich approximation deteriorates from pancakes to  filaments and especially to halos on qualitative level  there are no more types of  structures. Altogether these structures contain the most of mass in the universe nevertheless they occupy  very little space. The most of space is almost empty  and is referred to as voids.
+% 
+% \cite{Klypin1983a} (firstly reported  in \citealt{Shandarin1983}) were the first to identify a `three dimensional web structure' in the N-body simulation of the hot dark matter scenario. The simulation with $32^3$ particles used Cloud-in-Cell (CIC) technique on equal mesh revealed  that the gravitationally bound clumps of mass -- haloes in the present-day terminology --  were linked by the web of filamentary enhancements of density which spanned throughout the entire simulation box with the side of about 150$h^{-1}$Mpc in co-moving space. In addition \cite{Klypin1983a}  suggested that pancakes must be considerably less dense than the filaments since they were not detected in the simulation. These  results were quickly confirmed by \cite{Centrella1983} and \cite{Frenk1983}. In addition \cite{Centrella1983} who ran the simulation on similar mesh but with 27 times more particles also detected pancakes at $\rho/\bar{\rho} = 2$ level. At present this picture is widely accepted, and is referred to as the `cosmic web' (\citealt{Bond1996} and \citealt{Weygaert2008c}). 
+% 
+% Galactic distributions in redshift surveys have also revealed distinct geometries and topologies of the cosmic web. One of the first indications of the connection of the clusters of galaxies by filaments was demonstrated by \cite{Gregory1978} who discovered a conspicuous chain of galaxies between Coma and A1367 clusters using a sample of 238 galaxies. Later  this result was confirmed by \cite{Lapparent1986} who used a significantly greater redshift catalogue of 1100 galaxies of the same region. \cite{Zeldovich1982} compared the percolation properties of the redshift catalogue of 866 local galaxies provided by J. Huchra with three theoretical distribution of particle in space: a Poisson distribution, the  hierarchical model by \cite{Soneira1978} and the particle distribution obtained from N-body simulation by \cite{Klypin1983a}.  They found that the both the galaxy sample and the density field obtained in N-body simulation percolated at considerably smaller filling factors  than  the Poisson distribution. On the other hand the  hierarchical model percolated at higher filling factors  than  the Poisson distribution. Further studies confirmed that the galaxies and the particles in the hot dark matter  model are arranged in the web-like structures \cite{Zeldovich1982}, \cite{Shandarin1983}, \cite{Shandarin1983b}, \cite{Shandarin1984}. This result was confirmed in more detailed analysis by \cite{Einasto1984}. \cite{Melott1983b} also found similar percolation properties in the mass distribution in the N-body simulation of a CDM model.
+%  
+% Thus by the  early 1990s it was clearly demonstrated that the web like structure is a generic type for a wide range of initial conditions in both two-(\citealt{Melott1990}, \citealt{Beacom1991}) and three- dimensional \citep{Melott1993} cosmological N-body simulations. However it also was demonstrated that the quantitative parameters of the web structures depend on the initial  power spectrum. Remarkably the simulations also showed that  adding small scale perturbations does not ruin the large scale structures if the slope of the power spectrum is negative in both two- and three- dimensional simulations.
+% 
+% All aspects of these studies have been experiencing great advancements in  three decades passed since the discovery and first studies of the geometry and topology  of the large-scale structures. The galaxy redshift catalogues have grown by thousands of times (by surveys such as Sloan Digital Sky Survey (SDSS) \citealt{Tegmark2003} and \citealt{Albareti2016} and the 2MASS Redshift Survey \citealt{Huchra2012}), the sizes of cosmological N-body simulations (modern large scale simulations like Millennium \citealt{Springel2005b} and Q-Continuum \citealt{Heitmann2015}) by more than a million times. The number of various methods for identifying  structures has also grown practically from  one method\footnote{FOF was used for the topological studies via percolation technique and identifying super clusters of galaxies (\citealt{Zeldovich1982}, \citealt{Shandarin1983}, \citealt{Shandarin1983b} on the one hand and for identifying halos \citealt{Davis1985} on the other.}  to several dozens (\citealt{Colberg2008}, \citealt{Knebe2011a}, \citealt{Onions2012}, \citealt{Knebe2013} and references therein). Measuring or quantifying  the structures always has  been a difficult problem and many sophisticated  techniques both mathematically and computationally have been proposed and investigated (see reviews by \citealt{Weygaert2008c}, \citealt{Weygaert2008}).
+% 
+% \begin{comment}
+% 
+% Most of structure finders are halo finders only and most of them are stemmed from three types suggested long ago.
+% One of them is the SO (Spherical Over-density) halo finder that defines halos  as spherical regions whose mass density 
+% exceeds the mean density by a specified factor \citep{Press1974}. 
+% Another is the FOF  (Friends-of-Friends) halo finder describing haloes  as the groups of particles separated less than 
+% a specified linking length often chosen as 0.2 times the mean particle separation \citep{Davis1985}.
+% Finally the DENMAX (DENsity MAXimum) halo finder assumes that the halos are the peaks of the density  fields
+%  and thus selects the particles concentrated in the vicinity of the density maxima \citep{Bertschinger1991}.
+% One of the common features of these  techniques is that all three are density based in one form or another.  
+% And all of them depend on free parameters that are chosen chiefly on the `merits principle' \citep{Forero-Romero2009a} 
+% rather than on physics.   Over the years all three kinds of the halo finders have been experiencing various modifications and
+% improvements.  A few examples from a long list of these modifications may include: (i) more accurate sophisticated 
+% techniques of generation  the density field from the particle positions, 
+% (ii) adaptive methods controlling the linking length in methods using FOF, 
+% (iii) hybrid halo finders,  
+% (iv) adaptive methods for searching the positions of density maxima,
+% (v) additional physical principles like excluding particle that are not gravitationally bound to the haloes, 
+% (vi) generalization of FOF and DENMAX techniques to six-dimensional phase space,
+% and many others.
+% A nice summary discussing  these developments as well as describing a few new suggestions is given 
+% in four comparison project papers quoted above.
+% 
+% In addition to the refinements and generalizations of these basic methods a few new techniques have been
+% developed for identifying haloes and structures with other geometries like filaments and walls.
+% \end{comment}
+% 
+% 
+% 
+% Cosmic web structures have been characterized using several geometrical and topological indicators such as genus curves (\cite{Gott1986}). In an attempt to characterize the shapes of  individual regions in the excursion sets of the density field, \cite{Sahni1998} suggested to use partial Minkowski functionals. They developed the method labelled SURFGEN and applied it to CIC density field obtained in N-body simulations 
+% (\citealt{Sathyaprakash1998}, \citealt{Sheth2003}, \citealt{Shandarin2004}). \cite{Aragon-Calvo2007} have developed the multi-scale MMF (Multi-scale Morphology Filter) detection technique based on the signs of three eigenvalues of the Hessian computed for  a set of replicas of the density field filtered on different scales. Similar multi-scale approaches to identifying structures is adopted in NEXUS and its extensions to velocity shear, divergence, and tidal fields \cite{Cautun2013}. More recently, persistence and Morse-Smale complexes in the density fields are analysed by \cite{Sousbie2011f}, \cite{Sousbie2011e} and \cite{Shivshankar2015a} to detect multi-scale morphology of the cosmic web.
+% 
+% % ---------------------------------------------------------------------
+% 
+% %   ADDED paragraph 2.1  -- more required -- make connection
+% There is also an increasing interest in the measures for detecting filaments in large astronomical surveys. Topology in the large scale structure was analysed by Betti Numbers for Gaussian fields \citep{Park2013} and SDSS-III Baryon Oscillation Spectroscopic Survey \citep{Parihar2014}. \cite{Sousbie2008a} detected skeleton of filaments of the SDSS and compared to the corresponding galaxy distribution. In smoothed density of mock galaxy distribution, \cite{Bond2010a} studied the projection of eigenvalues. The Hessian eigenvector corresponding to the largest eigenvalue is used by \cite{Bond2010b} to trace individual filaments in N-body simulations and the SDSS redshift survey data. Majority of the above analyses, however, ignore the dynamical information from the velocity field.
+% 
+% %   Newly ADDED paragraph 2.7/2.8
+% 
+% 
+% %In addition, \cite{Falck2015b} demonstrated that the particles with multistreams also percolate, albeit with a different resolution dependence. 
+% 
+% %Astronomers generally refer to large regions devoid of galaxies to be voids. 
+% On the other hand, detection of voids and study of their morphological properties are done via numerous methods too. Traditional detection of void regions using just the particle coordinates differ based on the various methods used to identify them (see comparison of void finders in \citealt{Colberg2008} and references therein). Some methods involve using under-density thresholds. \cite{Blumenthal1992} proposed that the mean density in voids is $\delta = -0.8$ by applying linear theory argument. Similar threshold was used by \cite{Colberg2005} to identify voids. Under-dense excursion set approach was used by \cite{Shandarin2006} to identify percolating voids. \cite{Sheth2004a} used the excursion set formalism to develop an analytical model for the distribution voids in hierarchical structure formation (also see the excursion set approaches applied to voids by \citealt{Paranjape2012}, \citealt{Jennings2013} and \citealt{Achitouv2015}). Voids are also detected by isolating regions around local minima of density fields. For instance, the watershed transform is used by WVF-\cite{Platen2007},  ZOBOV-\cite{Neyrinck2008} and VIDE-\cite{Sutter2015} for segmentation of under-dense regions. 
+% 
+% 
+% The unfiltered density field was generated using DTFE-Delaunay Tessellation Field Estimator (\citealt{Schaap2000}, \citealt{Weygaert2009a} and \citealt{Cautun2011}) by applying it to the particle coordinates. Earlier it was shown that DTFE is superior to CIC techniques (\citealt{Schaap2007} and \citealt{Weygaert2009a}) in generation of the density field with high spatial resolution. In a new approach to the analysis of the shapes of the large-scale structures, \cite{Sousbie2011f} introduced DIScrete Persistent Structure Extractor ({DisPerSE}) based on Morse-smale complex. By implementing it on realistic cosmological simulations and observed redshift catalogues \cite{Sousbie2011e} found that DisPerSE traces very well the observed filaments, walls and voids.
+% 
+% An additional dimension to the scope of the structure shapes is related to the question whether the density distribution (regardless of it form: continuous or discrete) is the only physical diagnostic of the cosmic web shapes or not. If not, then whether it is the best of all or not. And even if it is the best, then whether the other fields or distributions can provide a valuable contribution to understanding the shapes of the cosmic web or not. The answer to the latter question seems to be positive. In fact there are examples of attempts to bring new players into the field. For instance \cite{Hahn2007} and \cite{Forero-Romero2009a} studied the relation between the geometry of structures and the Hessian of the gravitational potential. \cite{Shandarin2011} demonstrated that the study of the multistream field reveals some features of the structures that cannot be easily seen in the density field. This has become even more evident when \cite{Shandarin2012} and \cite{Abel2012} showed that the full dynamical information in the form of three-dimensional  sub-manifold in six-dimensional phase space can be easily obtained from the  initial and final coordinates of the particles in DM simulations. \cite{Hahn2015a} showed that this method provides extremely accurate estimates of the cosmic velocity fields and its derivatives. It has been shown that the multistream field provides a physical definition of voids in N-body DM simulations by the local condition $n_{str} = 1$ (\citealt{Shandarin2012} and \citealt{Ramachandra2015}). \cite{Falck2012} proposed the {ORIGAMI} method of assigning particles to  structures based on the number of axes along which particle crossing has occurred. Void, wall, filament, and halo particles are particles that have been crossed along 0, 1, 2, and 3 orthogonal axes, respectively. \cite{Shandarin2016} identify the void particles as the ones that do not undergo any {\it flip-flop} through the evolution. Each of above definitions completely independent of any free parameters, with small differences in the physical implication.
 
-\cite{Klypin1983a} (firstly reported  in \citealt{Shandarin1983}) were the first to identify a `three dimensional web structure' in the N-body simulation of the hot dark matter scenario. The simulation with $32^3$ particles used Cloud-in-Cell (CIC) technique on equal mesh revealed  that the gravitationally bound clumps of mass -- haloes in the present-day terminology --  were linked by the web of filamentary enhancements of density which spanned throughout the entire simulation box with the side of about 150$h^{-1}$Mpc in co-moving space. In addition \cite{Klypin1983a}  suggested that pancakes must be considerably less dense than the filaments since they were not detected in the simulation. These  results were quickly confirmed by \cite{Centrella1983} and \cite{Frenk1983}. In addition \cite{Centrella1983} who ran the simulation on similar mesh but with 27 times more particles also detected pancakes at $\rho/\bar{\rho} = 2$ level. At present this picture is widely accepted, and is referred to as the `cosmic web' (\citealt{Bond1996} and \citealt{Weygaert2008c}). 
 
-Galactic distributions in redshift surveys have also revealed distinct geometries and topologies of the cosmic web. One of the first indications of the connection of the clusters of galaxies by filaments was demonstrated by \cite{Gregory1978} who discovered a conspicuous chain of galaxies between Coma and A1367 clusters using a sample of 238 galaxies. Later  this result was confirmed by \cite{DeLapparent1986} who used a significantly greater redshift catalogue of 1100 galaxies of the same region. \cite{Zeldovich1982} compared the percolation properties of the redshift catalogue of 866 local galaxies provided by J. Huchra with three theoretical distribution of particle in space: a Poisson distribution, the  hierarchical model by \cite{Soneira1978} and the particle distribution obtained from N-body simulation by \cite{Klypin1983a}.  They found that the both the galaxy sample and the density field obtained in N-body simulation percolated at considerably smaller filling factors  than  the Poisson distribution. On the other hand the  hierarchical model percolated at higher filling factors  than  the Poisson distribution. Further studies confirmed that the galaxies and the particles in the hot dark matter  model are arranged in the web-like structures \cite{Zeldovich1982}, \cite{Shandarin1983}, \cite{Shandarin1983b}, \cite{Shandarin1984}. This result was confirmed in more detailed analysis by \cite{Einasto1984}. \cite{Melott1983b} also found similar percolation properties in the mass distribution in the N-body simulation of a CDM model.
- 
-Thus by the  early 1990s it was clearly demonstrated that the web like structure is a generic type for a wide range of initial conditions in both two-(\citealt{Melott1990}, \citealt{Beacom1991}) and three- dimensional \citep{Melott1993} cosmological N-body simulations. However it also was demonstrated that the quantitative parameters of the web structures depend on the initial  power spectrum. Remarkably the simulations also showed that  adding small scale perturbations does not ruin the large scale structures if the slope of the power spectrum is negative in both two- and three- dimensional simulations.
+%%% Text above added in intro
 
-All aspects of these studies have been experiencing great advancements in  three decades passed since the discovery and first studies of the geometry and topology  of the large-scale structures. The galaxy redshift catalogues have grown by thousands of times (by surveys such as Sloan Digital Sky Survey (SDSS) \citealt{Tegmark2003} and \citealt{Albareti2016} and the 2MASS Redshift Survey \citealt{Huchra2012}), the sizes of cosmological N-body simulations (modern large scale simulations like Millennium \citealt{Springel2005b} and Q-Continuum \citealt{Heitmann2015}) by more than a million times. The number of various methods for identifying  structures has also grown practically from  one method\footnote{FOF was used for the topological studies via percolation technique and identifying super clusters of galaxies (\citealt{Zeldovich1982}, \citealt{Shandarin1983}, \citealt{Shandarin1983b} on the one hand and for identifying halos \citealt{Davis1985} on the other.}  to several dozens (\citealt{Colberg2008}, \citealt{Knebe2011a}, \citealt{Onions2012}, \citealt{Knebe2013} and references therein). Measuring or quantifying  the structures always has  been a difficult problem and many sophisticated  techniques both mathematically and computationally have been proposed and investigated (see reviews by \citealt{Weygaert2008c}, \citealt{Weygaert2008}).
+% Tracing the Lagrangian sub-manifold also provides rich insights into caustics (\cite{Arnold1982} and \citealt{Hidding2014}) and halo collapse \cite{Neyrinck2015a}. Recently, there are attempts to improve N-body simulations (see \cite{Hahn2013}, \cite{Angulo2013a}, \cite{Angulo2013b}, \cite{Sousbie2015} and \cite{Hahn2016a}) by solving the Vlasav-Poisson equation using tessellations in the Lagrangian sub-manifold. Galaxy evolution and star formation in the context of multi streaming phenomenon are studied by \cite{Aragon-Calvo2016}. 
 
-\begin{comment}
-
-Most of structure finders are halo finders only and most of them are stemmed from three types suggested long ago.
-One of them is the SO (Spherical Over-density) halo finder that defines halos  as spherical regions whose mass density 
-exceeds the mean density by a specified factor \citep{Press1974}. 
-Another is the FOF  (Friends-of-Friends) halo finder describing haloes  as the groups of particles separated less than 
-a specified linking length often chosen as 0.2 times the mean particle separation \citep{Davis1985}.
-Finally the DENMAX (DENsity MAXimum) halo finder assumes that the halos are the peaks of the density  fields
- and thus selects the particles concentrated in the vicinity of the density maxima \citep{Bertschinger1991}.
-One of the common features of these  techniques is that all three are density based in one form or another.  
-And all of them depend on free parameters that are chosen chiefly on the `merits principle' \citep{Forero-Romero2009a} 
-rather than on physics.   Over the years all three kinds of the halo finders have been experiencing various modifications and
-improvements.  A few examples from a long list of these modifications may include: (i) more accurate sophisticated 
-techniques of generation  the density field from the particle positions, 
-(ii) adaptive methods controlling the linking length in methods using FOF, 
-(iii) hybrid halo finders,  
-(iv) adaptive methods for searching the positions of density maxima,
-(v) additional physical principles like excluding particle that are not gravitationally bound to the haloes, 
-(vi) generalization of FOF and DENMAX techniques to six-dimensional phase space,
-and many others.
-A nice summary discussing  these developments as well as describing a few new suggestions is given 
-in four comparison project papers quoted above.
-
-In addition to the refinements and generalizations of these basic methods a few new techniques have been
-developed for identifying haloes and structures with other geometries like filaments and walls.
-\end{comment}
-
-
-
-Cosmic web structures have been characterized using several geometrical and topological indicators such as genus curves (\cite{Gott1986}). In an attempt to characterize the shapes of  individual regions in the excursion sets of the density field, \cite{Sahni1998} suggested to use partial Minkowski functionals. They developed the method labelled SURFGEN and applied it to CIC density field obtained in N-body simulations 
-(\citealt{Sathyaprakash1998}, \citealt{Sheth2003}, \citealt{Shandarin2004}). \cite{Aragon-Calvo2007} have developed the multi-scale MMF (Multi-scale Morphology Filter) detection technique based on the signs of three eigenvalues of the Hessian computed for  a set of replicas of the density field filtered on different scales. Similar multi-scale approaches to identifying structures is adopted in NEXUS and its extensions to velocity shear, divergence, and tidal fields \cite{Cautun2013}. More recently, persistence and Morse-Smale complexes in the density fields are analysed by \cite{Sousbie2011a}, \cite{Sousbie2011b} and \cite{Shivshankar2015a} to detect multi-scale morphology of the cosmic web.
-
+% Text above added in concl
 % ---------------------------------------------------------------------
 
-%   ADDED paragraph 2.1  -- more required -- make connection
-There is also an increasing interest in the measures for detecting filaments in large astronomical surveys. Topology in the large scale structure was analysed by Betti Numbers for Gaussian fields \citep{Park2013} and SDSS-III Baryon Oscillation Spectroscopic Survey \citep{Parihar2014}. \cite{Sousbie2008a} detected skeleton of filaments of the SDSS and compared to the corresponding galaxy distribution. In smoothed density of mock galaxy distribution, \cite{Bond2010a} studied the projection of eigenvalues. The Hessian eigenvector corresponding to the largest eigenvalue is used by \cite{Bond2010b} to trace individual filaments in N-body simulations and the SDSS redshift survey data. Majority of the above analyses, however, ignore the dynamical information from the velocity field.
-
-%   Newly ADDED paragraph 2.7/2.8
-
-
-%In addition, \cite{Falck2015b} demonstrated that the particles with multistreams also percolate, albeit with a different resolution dependence. 
-
-%Astronomers generally refer to large regions devoid of galaxies to be voids. 
-On the other hand, detection of voids and study of their morphological properties are done via numerous methods too. Traditional detection of void regions using just the particle coordinates differ based on the various methods used to identify them (see comparison of void finders in \citealt{Colberg2008} and references therein). Some methods involve using under-density thresholds. \cite{Blumenthal1992} proposed that the mean density in voids is $\delta = -0.8$ by applying linear theory argument. Similar threshold was used by \cite{Colberg2005} to identify voids. Under-dense excursion set approach was used by \cite{Shandarin2006} to identify percolating voids. \cite{Sheth2004a} used the excursion set formalism to develop an analytical model for the distribution voids in hierarchical structure formation (also see the excursion set approaches applied to voids by \citealt{Paranjape2012}, \citealt{Jennings2013} and \citealt{Achitouv2015}). Voids are also detected by isolating regions around local minima of density fields. For instance, the watershed transform is used by WVF-\cite{Platen2007},  ZOBOV-\cite{Neyrinck2008} and VIDE-\cite{Sutter2015} for segmentation of under-dense regions. 
-
-
-The unfiltered density field was generated using DTFE-Delaunay Tessellation Field Estimator (\citealt{Schaap2000}, \citealt{Weygaert2009a} and \citealt{Cautun2011}) by applying it to the particle coordinates. Earlier it was shown that DTFE is superior to CIC techniques (\citealt{Schaap2007} and \citealt{Weygaert2009a}) in generation of the density field with high spatial resolution. In a new approach to the analysis of the shapes of the large-scale structures, \cite{Sousbie2011a} introduced DIScrete Persistent Structure Extractor ({DisPerSE}) based on Morse-smale complex. By implementing it on realistic cosmological simulations and observed redshift catalogues \cite{Sousbie2011e} found that DisPerSE traces very well the observed filaments, walls and voids.
-
-An additional dimension to the scope of the structure shapes is related to the question whether the density distribution (regardless of it form: continuous or discrete) is the only physical diagnostic of the cosmic web shapes or not. If not, then whether it is the best of all or not. And even if it is the best, then whether the other fields or distributions can provide a valuable contribution to understanding the shapes of the cosmic web or not. The answer to the latter question seems to be positive. In fact there are examples of attempts to bring new players into the field. For instance \cite{Hahn2007} and \cite{Forero-Romero2009a} studied the relation between the geometry of structures and the Hessian of the gravitational potential. \cite{Shandarin2011} demonstrated that the study of the multistream field reveals some features of the structures that cannot be easily seen in the density field. This has become even more evident when \cite{Shandarin2012} and \cite{Abel2012} showed that the full dynamical information in the form of three-dimensional  sub-manifold in six-dimensional phase space can be easily obtained from the  initial and final coordinates of the particles in DM simulations. \cite{Hahn2015a} showed that this method provides extremely accurate estimates of the cosmic velocity fields and its derivatives. It has been shown that the multistream field provides a physical definition of voids in N-body DM simulations by the local condition $n_{str} = 1$ (\citealt{Shandarin2012} and \citealt{Ramachandra2015}). \cite{Falck2012} proposed the {ORIGAMI} method of assigning particles to  structures based on the number of axes along which particle crossing has occurred. Void, wall, filament, and halo particles are particles that have been crossed along 0, 1, 2, and 3 orthogonal axes, respectively. \cite{Shandarin2016} identify the void particles as the ones that do not undergo any {\it flip-flop} through the evolution. Each of above definitions completely independent of any free parameters, with small differences in the physical implication.
-
-Tracing the Lagrangian sub-manifold also provides rich insights into caustics (\cite{Arnold1982} and \citealt{Hidding2014}) and halo collapse \cite{Neyrinck2015a}. Recently, there are attempts to improve N-body simulations (see \cite{Hahn2013}, \cite{Angulo2013a}, \cite{Angulo2013b}, \cite{Sousbie2015} and \cite{Hahn2016a}) by solving the Vlasav-Poisson equation using tessellations in the Lagrangian sub-manifold. Galaxy evolution and star formation in the context of multi streaming phenomenon are studied by \cite{Aragon-Calvo2016b}. 
-
-% ---------------------------------------------------------------------
-
-Despite the considerable improvements  in simulating, identifying and measuring the cosmic web 
--- briefly discussed above -- many aspects remain unsettled and are vigorously debated. 
+Despite the considerable improvements  in simulating, identifying and measuring the cosmic web, many aspects remain unsettled and are vigorously debated. 
 The intention of this work is to further investigate the strengths and weaknesses of the multistream field as a complimentary diagnostic of the shapes in the DM web. 
 Multi-stream filed is simply the number of DM streams at every point of Eulerian space.  Thus it is an odd positive integer at a given point (\citealt{Arnold1982}, see also \citealt{Shandarin1989} and \citealt{Hidding2014}). We estimated it  on a regular mesh of a chosen resolution from the tessellation of of the simulation particles in Lagrangian space and the particle coordinates at a chosen time \cite{Shandarin2012}.
 The external boundaries of the cold DM web are the caustics in the density field which are clearly seen in
@@ -182,12 +187,13 @@ We also discuss the spatial distribution of the dark matter haloes along the per
 \section{The simulation}
 \label{sec:simulation}
 
-In this analysis, we use cosmological N-body simulations generated by the tree-PM code {GADGET-2}    (\citealt{Springel2005} and \citealt{Springel2001}). 
+In this analysis, we use cosmological N-body simulations generated by the tree-PM code {GADGET-2}    (\citealt{Springel2005c} and \citealt{Springel2001}). 
 The periodic side lengths $L$, number of particles $N_p$, masses of each particle $m_p$ and the gravitational softening length $\epsilon$ for the two simulations are tabulated in \autoref{tab:Simulations}. Initial conditions at redshift of $z_{ini}= 80$ are generated by {MUSIC} \citep{Hahn2011a} with the transfer function from \cite{Eisenstein1998a}. We adopt the $\Lambda$CDM cosmological model with cosmological parameters $\Omega_{m}= 0.276$, $\Omega_{\Lambda}= 0.724$, the Hubble parameter, $h = 0.703$, the power spectrum normalization, $\sigma_8 = 0.811$ and the spectral index $n_s= 0.961$. 
 
 \begin{table}
+\centering
   \caption{Parameters for the simulation boxes: Side length $L$, number of particles $N_p$, mass of each particle $m_p$, and the gravitational softening length $\epsilon$ for the GADGET simulations are shown.}
-\begin{tabular}{l|c|c|c| }
+\begin{tabular}{|l|c|c|c| }
 \hline
 $L$ & $N_p$ & $m_p$ & $\epsilon$  \\  \hline
 $100 h^{-1} Mpc$ & $128^3$      & $ 3.65 \times 10^{10} h^{-1} M_{\odot}$  & $20 h^{-1} kpc$\\ \hline
@@ -204,11 +210,11 @@ Two halo finders are also used to identify potential haloes with 20 or more part
 \subsection{Multi-stream field at $z=0$}
 \label{sec:multiCalc}
 
-\begin{figure} 
-\centering\includegraphics[width=16cm]{Chapter4/Source_v2/fig1.pdf} 
-\caption{3D rendering of the multistream field: the cosmic web structure of a $ 50 h^{-1} \text{Mpc} \times 50 h^{-1} \text{Mpc} \times 50 h^{-1} \text{Mpc}$ slice in a simulation box of side length $100 h^{-1}$ Mpc and $128^3$ particles. The multistream field is calculated at 8 times the native resolution. void(black) is a percolating structure with $n_{str} = 1$. Regions $n_{str} \geq 17$ show a filamentary structure (gray) and the bright spots at the intersections of the filaments are regions with $n_{str} \geq 100$. }
-\label{fig:full}
-\end{figure}
+% \begin{figure} 
+% \centering\includegraphics[width=16cm]{Chapter4/Source_v2/fig1.pdf} 
+% \caption{3D rendering of the multistream field: the cosmic web structure of a $ 50 h^{-1} \text{Mpc} \times 50 h^{-1} \text{Mpc} \times 50 h^{-1} \text{Mpc}$ slice in a simulation box of side length $100 h^{-1}$ Mpc and $128^3$ particles. The multistream field is calculated at 8 times the native resolution. void(black) is a percolating structure with $n_{str} = 1$. Regions $n_{str} \geq 17$ show a filamentary structure (gray) and the bright spots at the intersections of the filaments are regions with $n_{str} \geq 100$. }
+% \label{fig:full}
+% \end{figure}
 
 % \bf changed to \bf --- check if it's alright. 
 The multistream field objectively characterizes the level of non-linearity in the cosmic web. The `number-of-streams' field or $n_{str}({\bf x})$ is computed from the Lagrangian sub-manifold ${\bf x}({\bf q})$, which is a continuous three-dimensional sheet in a six-dimensional  $({\bf q}, {\bf x})$ space. In this paper, we utilize the tessellation implementation by \cite{Shandarin2012} to calculate the multistream flow field on the GADGET-2 snapshot at $z=0$. This implementation only requires initial and final coordinates of the dark matter particles. 
@@ -219,7 +225,7 @@ The first non-linear DM structures that reach non-perturbative stage of gravitat
 crossing of a caustic never returns in  a single-streaming state. Therefore the {\it local} condition $n_{str}({\bf r}_{\rm f.e.}) \geq 3$
 (where  ${\bf r}_{\rm f.e.}$ is the position of the fluid element) is  sufficient for the fluid element to be bound to the DM web.
 
-All particles that have fallen into a wall will never return to any single-streaming regions, therefore they can be labeled as gravitationally bound to pancakes/walls. The surface contours of higher $n_{str}$ are embedded within the walls. \autoref{fig:full} shows a filamentary structure of the multistream web at $n_{str} \geq 17$. The figure also shows regions around local maxima of the multistream field, which are generally located at the intersections of filaments.    
+All particles that have fallen into a wall will never return to any single-streaming regions, therefore they can be labeled as gravitationally bound to pancakes/walls. The surface contours of higher $n_{str}$ are embedded within the walls. \autoref{fig:full_3d} shows a filamentary structure of the multistream web at $n_{str} \geq 17$. The figure also shows regions around local maxima of the multistream field, usually located at the intersections of filaments.    
 
 
 The multistream field can be computed at arbitrary resolutions of diagnostic grids. The parameter `refinement factor' denotes the ratio of separation of the particles in Lagrangian grid, $l_l$, to side length of diagnostic grid $l_d$. In a simulation of $128^3$ particles, for instance, multistream field computed on a diagnostic grid of size $256^3$ would have a refinement factor of $l_l/l_d = 2$. 
@@ -245,6 +251,7 @@ Gravitational instability results in movement of the collision-less fluid partic
 For simulation box with $128^3$ particles, $n_{str} = 1$ regions have a large volume fraction of $VF_V \approx 93$ per cent regardless of the value of refinement factor (shown in \autoref{tab:VoidStat}). Multi-stream web structure in the simulation with higher mass resolution ($N_p = 256^3$) is better enhanced, and the single streaming void occupies around $90$ per cent of the volume. \autoref{fig:voidFace} shows the single streaming voids occupying large volume of the simulation with $128^3$ particles at refinement factor of 4. 
 
 \begin{table}
+\centering
   \caption{Volume fraction $VF_V$ of the voids, total number of isolated voids $N_V$ and the filling fraction of the largest void  $FF_1/VF_V$ at different refinement factors $l_l/l_d$. The filling fractions of the largest void at each refinement factor show that most of the $n_{str} = 1 $ region is almost entirely a single percolating structure.}
 \begin{tabular}{|r|r|r|r|r| }
 \hline
@@ -557,8 +564,9 @@ There are no variations in the volume fractions of the cosmic web components cla
 
 
 \begin{table}
+\centering
 \caption{Volume fraction (in per cent) of $n_{str}$ thresholds for cosmic web structures as defined by \protect\cite{Ramachandra2015}. Multi-stream field is calculated at 1, 2, 4, and 8 times the native simulation resolution of $64^3$ grids. Small slice of $ 50 h^{-1} \text{Mpc} \times 50 h^{-1} \text{Mpc} \times 50 h^{-1} \text{Mpc} $ is chosen for the analysis.}
-\begin{tabular}{|l|l|l|l|l}
+\begin{tabular}{|l|l|l|l|l|}
 \hline
 Global thresholds  & $64^3$   & $128^3$   & $256^3$  & $512^3$ \\  \hline
 $n_{str} = 1$ (Void)     &    90.87   & 90.92  & 90.94 & 90.94 \\ \hline
@@ -588,10 +596,11 @@ In our analysis in Section \ref{sec:haloDetection}, we only concentrate on halo 
 
 
 \begin{table}
+\centering
   \caption{Volume fraction of criteria based on $n_{str}$ and $\lambda$s of ${\bf H}(-n_{str})$ calculated at various resolutions. We chose a smaller slice of $ 50 h^{-1} \text{Mpc} \times 50 h^{-1} \text{Mpc} \times 50 h^{-1} \text{Mpc} $ i.e., half the volume of the original GADGET simulation box. The refinement factors are the multiplication factors of 1, 2, 4 and 8 times of the native resolution ($64^3$) of the simulation grid along each axis. Eigenvalues of the Hessian of the field are local geometric parameters. The void is globally defined as $n_{str} = 1$ and the multistream web structure as $n_{str} > 1$.}
 
 
-\begin{tabular}{|l|l|l|l|l}
+\begin{tabular}{|l|l|l|l|l|}
 \hline
 Global/local conditions & $64^3$   & $128^3$   & $256^3$  & $512^3$  \\  \hline
 $n_{str} = 1$ (Void)     &    90.87   & 90.92  & 90.94 & 90.94 \\ \hline
@@ -867,7 +876,7 @@ The fraction of haloes in the non-excursion set are shown at various $n_{str}$ t
 \end{figure}
 
 
-For multistream values lower than the percolation threshold of $n_{str} = 17$ (from percolation transition analysis from Section \ref{sec:percolation}), a large number of AHF-, FOF- and $\lambda_3$-haloes are seen to be embedded in the excursion set ( middle and bottom panel in \autoref{fig:HaloFilAll}). In the excursion set, majority of the haloes are embedded in structures disconnected with largest filament, until about $n_{str} = 11$. The percolating structure fills higher volumes of the excursion set with decreasing $n_{str}$ threshold. Below the threshold of $n_{str} = 9$, majority of the haloes belong to the single percolating structure (shown for the simulation with $N_p=128^3$ in \autoref{fig:FinderCompare3}, similar spatial distribution of Subfind haloes \citealt{Springel2001a} in the multistream regions is shown by \citealt{Aragon-Calvo2016b}) and at $n_{str} = 3$, all the haloes are attached to the web.  
+For multistream values lower than the percolation threshold of $n_{str} = 17$ (from percolation transition analysis from Section \ref{sec:percolation}), a large number of AHF-, FOF- and $\lambda_3$-haloes are seen to be embedded in the excursion set ( middle and bottom panel in \autoref{fig:HaloFilAll}). In the excursion set, majority of the haloes are embedded in structures disconnected with largest filament, until about $n_{str} = 11$. The percolating structure fills higher volumes of the excursion set with decreasing $n_{str}$ threshold. Below the threshold of $n_{str} = 9$, majority of the haloes belong to the single percolating structure (shown for the simulation with $N_p=128^3$ in \autoref{fig:FinderCompare3}, similar spatial distribution of Subfind haloes \citealt{Springel2001a} in the multistream regions is shown by \citealt{Aragon-Calvo2016}) and at $n_{str} = 3$, all the haloes are attached to the web.  
 
 At $n_{str} = 3$, the ratio $f_1 / f_{ES}$ is almost close to unity (see \autoref{fig:HaloFilNst}). Most halo candidates from all three algorithms are at least in contact with the large percolating cosmic web. Due to the threshold on $n_{str}$ in our halo detection method, the $\lambda_3$-haloes are not only in contact, but completely within this structure. 
 
@@ -907,7 +916,7 @@ Global connectivities in the cosmic web is slightly different for multistream fi
 Since the $n_{str}$ field in this study is calculated on regular grids, the boudaries of the structures are not exactly traced. Outlining foldings in the Lagrangian sub-manifolds exactly as shown in \autoref{fig:NstrCaust} or in the {\it flip-flop} calculations shown in \cite{Shandarin2016} give point datasets which are considerably more difficult to analyze. However, recent advancements in computational topology - such as the adaptation of the watershed transforms (using SpineWeb -\citealt{Aragon-Calvo2008} and Morse theory (using DisPerSe - \citealt{Sousbie2011e} and Felix - \citealt{Shivshankar2015a}) to inherently discrete datasets may be useful in the topological analyses of flip-flop fields and caustics.
 
 
-The multistream field is a scalar function of Eulerian coordinates. We have analysed functional variation of the $-n_{str}(\bf{x})$ field using Hessian eigenvalues. The Hessian analysis is generally done for inherently continuous fields, For example, Hessian analysis has been previously studied for smoothed density fields (see \citealt{Sousbie2008a}, \citealt{Aragon-Calvo2007}, \citealt{Aragon-Calvo2010}, \citealt{Cautun2014a} etc.), gravitational potential and velocity shear tensor (\citealt{Hoffman2012a}, \citealt{Libeskind2013}, \citealt{Hahn2007}, \citealt{Forero-Romero2009a}, \citealt{Hoffman2012a} and \citealt{Cautun2014a}). Although the multistream field has discrete values by definition, it may be considered smooth for numerical analysis at the scale of grid length of the field. The resulting Hessian eigenvalues characterize the geometry in a four-dimensional hyper-space of ($-n_{str}, x, y, z$). The boundary of a region with $\lambda_1 \geq \lambda_2 \geq \lambda_3 > 0$ is a closed convex contour in this hyper-space, and thus it's projection onto the three-dimensional Lagrangian space is also closed and convex. 
+The multistream field is a scalar function of Eulerian coordinates. We have analysed functional variation of the $-n_{str}(\bf{x})$ field using Hessian eigenvalues. The Hessian analysis is generally done for inherently continuous fields, For example, Hessian analysis has been previously studied for smoothed density fields (see \citealt{Sousbie2008c}, \citealt{Aragon-Calvo2007}, \citealt{Aragon-Calvo2010}, \citealt{Cautun2014a} etc.), gravitational potential and velocity shear tensor (\citealt{Hoffman2012a}, \citealt{Libeskind2013}, \citealt{Hahn2007}, \citealt{Forero-Romero2009a}, \citealt{Hoffman2012a} and \citealt{Cautun2014a}). Although the multistream field has discrete values by definition, it may be considered smooth for numerical analysis at the scale of grid length of the field. The resulting Hessian eigenvalues characterize the geometry in a four-dimensional hyper-space of ($-n_{str}, x, y, z$). The boundary of a region with $\lambda_1 \geq \lambda_2 \geq \lambda_3 > 0$ is a closed convex contour in this hyper-space, and thus it's projection onto the three-dimensional Lagrangian space is also closed and convex. 
 
 \begin{comment}
 

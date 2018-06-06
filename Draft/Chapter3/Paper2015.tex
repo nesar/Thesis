@@ -70,9 +70,13 @@ methods: numerical -- cosmology: theory -- dark matter -- large-scale structure 
 \end{keywords}
 \end{comment}
 
-\chapter{Multi-stream portrait of the Cosmic web}
+\chapter{Multi-stream portrait of the Cosmic web}\label{chapter3}
 
-\section{Introduction} \label{sec:intro}
+
+In this chapter, we report the results of the first study of the multi-stream environment of dark matter haloes in cosmological N-body simulations in the $\Lambda$CDM cosmology. We arrive at heuristic parameters for delineating walls, filaments and haloes in the multi-stream web, while single streaming regions are simply devoid of gravitational collapse, i.e., are voids. The results in the chapter were first discussed in \cite{Ramachandra2015}. 
+
+
+\section{Brief introduction} \label{sec:intro}
 
 
 
@@ -111,8 +115,8 @@ because fields allow to use a variety of mathematical techniques not available f
 However this step can be done by a variety of methods some as simple as cloud-in-cell (CIC), or more complicated as smoothed-particle hydrodynamics (SPH), 
 or using Voronoi and Delaunay tessellations
 as in the Delaunay Tessellation Field Estimator (DTFE) method (~\citealt{Weygaert2009}, \citealt{Cautun2014a}).  
-Recently a new method called a discrete persistent structure extractor (DisPerSE \citealt{Sousbie2011a},  \citealt{Sousbie2011b} allowing to identify haloes and other components of the web directly from the particles 
-has been designed.  This method can be applied to the galaxy catalogues, for instance \citet{Sousbie2011b} applied it to SDSS catalogue and extracted the filaments (which are made available online).
+Recently a new method called a discrete persistent structure extractor (DisPerSE \citealt{Sousbie2011f},  \citealt{Sousbie2011e} allowing to identify haloes and other components of the web directly from the particles 
+has been designed.  This method can be applied to the galaxy catalogues, for instance \citet{Sousbie2011e} applied it to SDSS catalogue and extracted the filaments (which are made available online).
 
 An obvious advantage of methods based on particle coordinates, both based on the density field and directly on particle coordinates, is their applicability to redshift catalogues. 
 The redshift catalogues like SDSS and 2dF provide only two angular coordinates and distances in redshift space. 
@@ -144,7 +148,7 @@ additional useful information about the evolution and morphology of the  web.
 One of them is a multi-stream field in Eulerian space, which will be the focus of this paper. 
 Another example is the flip-flop field in Lagrangian space. In cosmological context it was first used in the ZA.
 \citet{Vogelsberger2011} used it in a study of multi-stream structure of galaxy size haloes.
-\citet{Shandarin2014} applied it for identifying subhaloes  in dark matter haloes.
+\citet{Shandarin2014a} applied it for identifying subhaloes  in dark matter haloes.
 A similar although somewhat simplistic realization of this idea has been revealed in the ORIGAMI method
 used for the analysis of the web ( \citealt{Falck2012},  \citealt{Falck2015} ).
  Although these fields cannot be used directly on observational data because the full phase-space information
@@ -166,7 +170,7 @@ In order to compute the multi-stream field we will use the tessellation scheme d
 \label{sec:simulation}
 
 
-We have utilized the data from cosmological N-body simulations by Gadget-2 \citep{Springel2005} for 100 $h^{-1}$ Mpc  and 200 $h^{-1}$ Mpc box 
+We have utilized the data from cosmological N-body simulations by Gadget-2 \citep{Springel2005c} for 100 $h^{-1}$ Mpc  and 200 $h^{-1}$ Mpc box 
 sizes with $128^3$, $256^3$ and $512^3$ grids. Each particle is between  $10^9 - 10^{12} M_{\odot}$. 
 The initial conditions and cosmological parameters are consistent with the Planck cosmology. We utilize the initial Lagrangian box and do a three-dimensional mapping onto corresponding evolved simulations. In addition, for local multi-stream analyses around haloes, we have utilized halo catalogues for each of these simulation boxes. These haloes are detected using FOF method considering objects with more than 20 particles found at linking length, $ b= 0.2$.  
 %-------------------------------------------------------------------------------------------------------------------------------
@@ -314,6 +318,7 @@ and $128^{3}$, $256^{3}$, $512^{3}$ grids ( with refinement factor of 1). Mass f
 \end{figure}
 
 \begin{table}
+\centering
   \caption{Comparison of the approximate power law dependences of curve fits in Fig. \ref{fig:Vfr_all} and Fig. \ref{fig:Mfr_all}. Power law relations for volume fraction $f_{vol}(n_{str})$ and mass fractions $f_{mass} (n_{str}) $ as a function of number of streams at $n_{str} \geq 5$ are shown (amplitudes are not shown). The boxes of size 100 $h^{-1}$ Mpc on  $128^{3}$ grids and, 200 $h^{-1}$ Mpc on  $256^{3}$ grids have same  $L/N = 0.78 h^{-1}$ Mpc. Similarly, $L/N = 0.39 h^{-1}$ Mpc for boxes of size 100 $h^{-1}$ Mpc on  $256^{3}$ grids and, 200 $h^{-1}$ Mpc on  $512^{3}$ grids.}
 \begin{tabular}{|l|r|r|r|r|}
 \hline
@@ -328,6 +333,7 @@ $f_{mass} (n_{str}) $   Vs. $n_{str}$            & $-1.1$   & $-1.2$   & $-1.4$ 
 
 
  \begin{table}
+ \centering
   \caption{Comparison of the volume and mass fractions of the void ($n_{str} = 1$) regions of the cosmic web for various simulation boxes at refinement factor of 1. Mean density is the ratio of mass fraction to the volume fraction. It is given in units of the mean density of the universe. The boxes of size 100 $h^{-1}$ Mpc on  $128^{3}$ grids and, 200 $h^{-1}$ Mpc on  $256^{3}$ grids have same  $L/N = 0.78 h^{-1}$ Mpc. Similarly, $L/N = 0.39 h^{-1}$ Mpc for boxes of size 100 $h^{-1}$ Mpc on  $256^{3}$ grids and, 200 $h^{-1}$ Mpc on  $512^{3}$ grids.}
 \begin{tabular}{|l|r|r|r|r|}
 \hline
@@ -342,6 +348,7 @@ Mean density                    & $0.27$ & $0.40$    & $0.59$        & $0.80$   
 
 
  \begin{table}
+ \centering
   \caption{Comparison of the volume and mass fractions of the void ($n_{str} = 1$) regions of the cosmic web for a simulation box at different refinement factors. Mean density is the ratio of mass fraction to the volume fraction. All the multi-streams for simulation box of length 100 $h^{-1}$ Mpc on raw resolution of $128^{3}$ grids ($ L/N = 0.78 h^{-1}$) }
 \begin{tabular}{|l|r|r|r|}
 \hline
@@ -620,6 +627,7 @@ The above critical values for transition from walls to filaments and from filame
 for  the simulation with $L/N = 0.78 h^{-1}$ Mpc. This technique can be also applied to simulations with different $L/N$ ratio and multi-stream grid of different refinement factors but the classification based on the threshold applied locally will remain only a very crude estimator. A more sophisticated morphological analysis will require non-local geometric and topological methods, which is beyond the scope of this paper.
  
  \begin{table*}
+ \centering
   \caption{Comparison of the volume and mass fraction of the elements of the cosmic web between our analysis and \citet{Falck2015}. $ L/N = 0.78 h^{-1}$ Mpc for simulations used in both techniques. We use a refinement factor of 8 for the multi-stream grid. The mean density is given in units of the mean density of the universe. }
 \begin{tabular}{|l|r|r|r|r|r|r|r|r|}
 \hline

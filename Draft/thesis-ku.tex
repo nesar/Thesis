@@ -11,7 +11,10 @@
 \renewcommand{\sfdefault}{lmss}
 \renewcommand{\ttdefault}{lmtt}
 \usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
+% \usepackage[utf8]{inputenc}  -- Commented out due to 1.305 inputspec issue
+
+% \usepackage[T1,T2A]{fontenc}
+
 \usepackage{listings}
 \usepackage{geometry}
 \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
@@ -136,11 +139,11 @@
 \usepackage{booktabs}
 
 % Set the title and author info
-\title{Please Read the Abstract}
+\title{Dark matter web in the Universe}
 \author{Nesar Ramachandra}
 
 
-\dept{Department of People who read Abstracts}
+\dept{Department of Physics and Astronomy}
 \degreetitle{Doctor of Philosophy}
 \papertype{Dissertation} %capitalization is important here
 \committee{Sergei Shandarin}{Hume Feldman}{Barbary Anthony-Twarog}{Mikhail Medvedev}{Suzanne Shontz}
@@ -160,9 +163,11 @@
 %% The following is OPTIONAL. Remove all 3 of the next 3 lines
 %% to leave dates blank. If dates are included, then both dates 
 %% must be included.
-\@printd@testrue
-\datedefended{October 02, 2018}
-\dateapproved{October 03, 2018}
+
+
+% \@printd@testrue
+% \datedefended{July 20, 2018}
+% \dateapproved{July 20, 2018}
 
 \@ifundefined{showcaptionsetup}{}{%
  \PassOptionsToPackage{caption=false}{subfig}}
@@ -179,30 +184,30 @@
 
 
 % 2015 Paper
-We report the results of the first study of the multi-stream environment of dark matter haloes in cosmological N-body simulations
-in the $\Lambda$CDM cosmology. The full dynamical state of  dark matter can be described as a three-dimensional sub-manifold
-in six-dimensional phase space - the dark matter sheet. In our study we use a Lagrangian sub-manifold ${\bf x} = {\bf x}({\bf q},t)$ 
-(where {\bf x} and {\bf q} are co-moving Eulerian and Lagrangian coordinates respectively), which 
-is dynamically  equivalent to the dark matter sheet but is more convenient for numerical analysis.
-Our major results can be summarized as follows. At the resolution of the simulation i.e. without additional
-smoothing, the cosmic web represents a hierarchical structure: each halo is embedded in the filamentary framework of the web predominantly 
-at the filament crossings, 
-and each filament is embedded in the wall like fabric of the web at the wall crossings. 
-Locally, each halo or sub-halo is a peak in the number of streams field. The number of streams in the neighbouring  
-filaments is higher than in the neighbouring walls. The walls are regions where number of streams
- is equal to three or a few. Voids are uniquely defined by the local condition requiring to be a single-stream flow region.
-  The shells of streams 
- around haloes are  quite thin and the closest void region is typically within one and a half FOF radius 
- from the center of the halo.
+% We report the results of the first study of the multi-stream environment of dark matter haloes in cosmological N-body simulations
+% in the $\Lambda$CDM cosmology. The full dynamical state of  dark matter can be described as a three-dimensional sub-manifold
+% in six-dimensional phase space - the dark matter sheet. In our study we use a Lagrangian sub-manifold ${\bf x} = {\bf x}({\bf q},t)$ 
+% (where {\bf x} and {\bf q} are co-moving Eulerian and Lagrangian coordinates respectively), which 
+% is dynamically  equivalent to the dark matter sheet but is more convenient for numerical analysis.
+% Our major results can be summarized as follows. At the resolution of the simulation i.e. without additional
+% smoothing, the cosmic web represents a hierarchical structure: each halo is embedded in the filamentary framework of the web predominantly 
+% at the filament crossings, 
+% and each filament is embedded in the wall like fabric of the web at the wall crossings. 
+% Locally, each halo or sub-halo is a peak in the number of streams field. The number of streams in the neighbouring  
+% filaments is higher than in the neighbouring walls. The walls are regions where number of streams
+%  is equal to three or a few. Voids are uniquely defined by the local condition requiring to be a single-stream flow region.
+%   The shells of streams 
+%  around haloes are  quite thin and the closest void region is typically within one and a half FOF radius 
+%  from the center of the halo.
 
 % 2017 Paper_b
-Mysterious dark matter constitutes about 85\% of all mass in the Universe. Clustering of dark matter plays the dominant role in the formation of all observed structures on scales from a fraction to a few hundreds of Mega-parsecs. Galaxies play a role of lights illuminating these structures so they can be observed. The observations in the last several decades have unveiled opulent geometry of these structures currently known as the cosmic web. Haloes are the highest concentrations of dark matter and host luminous galaxies. Currently the most accurate modeling of dark matter haloes is achieved in cosmological N-body simulations. Identifying the haloes from the distribution of particles in N-body simulations is one of the problems attracting both considerable interest and efforts. We propose a novel framework for detecting potential dark matter haloes using the field unique for dark matter  -- multistream field. The multistream field emerges at the nonlinear stage of the growth of perturbations because the dark matter is collisionless. Counting the number of velocity streams in gravitational collapses supplements our knowledge of spatial clustering. We assume that the virialized haloes have convex boundaries. Closed and convex regions of the multistream field are hence isolated by imposing a positivity condition on all three eigenvalues of the Hessian estimated on the smoothed multistream field. In a single-scale analysis of high multistream field resolution and low softening length, the halo substructures with local multistream maxima are isolated as individual halo sites.
+
 
 
 % 2017 Paper_a
-Topological connections in the single-streaming voids and multistreaming filaments and walls reveal a cosmic web structure different from traditional mass density fields. A single void structure not only percolates the multistream field in all the directions, but also occupies over 99 per cent of all the single-streaming regions. Sub-grid analyses on scales smaller than simulation resolution reveal tiny pockets of voids that are isolated by membranes of the structure. For the multistreaming excursion sets, the percolating structure is significantly  thinner than the filaments in over-density excursion approach.  
-
-Hessian eigenvalues of the multistream field are used as local geometrical indicators of dark matter structures. Single-streaming regions have most of the zero eigenvalues. Parameter-free conditions on the eigenvalues in the multistream region may be used to delineate primitive geometries with concavities corresponding to filaments, walls and haloes.
+% Topological connections in the single-streaming voids and multistreaming filaments and walls reveal a cosmic web structure different from traditional mass density fields. A single void structure not only percolates the multistream field in all the directions, but also occupies over 99 per cent of all the single-streaming regions. Sub-grid analyses on scales smaller than simulation resolution reveal tiny pockets of voids that are isolated by membranes of the structure. For the multistreaming excursion sets, the percolating structure is significantly  thinner than the filaments in over-density excursion approach.  
+% 
+% Hessian eigenvalues of the multistream field are used as local geometrical indicators of dark matter structures. Single-streaming regions have most of the zero eigenvalues. Parameter-free conditions on the eigenvalues in the multistream region may be used to delineate primitive geometries with concavities corresponding to filaments, walls and haloes.
 
 
 
@@ -220,9 +225,10 @@ Hessian eigenvalues of the multistream field are used as local geometrical indic
 % \end{minipage}
 
 
+Galaxies play a role of lights illuminating these structures so they can be observed. The observations in the last several decades have unveiled opulent geometry of these structures currently known as the cosmic web. Haloes are the highest concentrations of dark matter and host luminous galaxies. Currently the most accurate modeling of dark matter haloes is achieved in cosmological N-body simulations. 
 
 % 2018 Paper
-The cosmic web is one of the most striking features of the distribution of galaxies and dark matter on the largest scales in the Universe. It is composed of dense regions packed full of galaxies, long filamentary bridges, flattened sheets and vast low density voids. The study of the cosmic web has focused primarily on the identification of such features, and on understanding the environmental effects on galaxy formation and halo assembly. As such, a variety of different methods have been devised to classify the cosmic web -- depending on the data at hand, be it numerical simulations, large sky surveys or other. In this paper we bring twelve of these methods together and apply them to the same data set in order to understand how they compare. In general these cosmic web classifiers have been designed with different cosmological goals in mind, and to study different questions. Therefore one would not {\it a priori} expect agreement between different techniques however, many of these methods do converge on the identification of specific features. In this paper we study the agreements and disparities of the different methods. For example, each method finds that knots inhabit higher density regions than filaments, etc. and that voids have the lowest densities. For a given web environment, we find substantial overlap in the density range assigned by each web classification scheme. We also compare classifications on a halo-by-halo basis; for example, we find that 9 of 12 methods classify around a third of group-mass haloes (i.e. $M_{\rm halo}\sim10^{13.5}h^{-1}M_{\odot}$) as being in filaments. Lastly, so that any future cosmic web classification scheme can be compared to the 12 methods used here, we have made all the data used in this paper public.
+The cosmic web is one of the most striking features of the distribution of galaxies and dark matter on the largest scales in the Universe. It is composed of dense regions packed full of galaxies, long filamentary bridges, flattened sheets and vast low density voids. The study of the cosmic web has focused primarily on the identification of such features, and on understanding the environmental effects on galaxy formation and halo assembly. As such, a variety of different methods have been devised to classify the cosmic web -- depending on the data at hand, be it numerical simulations, large sky surveys or other. 
 
 
 % \begin{minipage}[t]{1\columnwidth}%
@@ -240,7 +246,7 @@ The cosmic web is one of the most striking features of the distribution of galax
 %%if you want a "quote" environment for acknowledgements,
 %% use acknowledgements instead of acknowledgementslong
 
-I would like to thank mum, dad, profs, committee members, officemates, friends, exes, uncles, aunts, grandpa, grandma, grandma's dogs, neighbors, neighbors' dogs who made this thesis possible. 
+So many people to thank here --- 
 
 \end{acknowledgementslong}
 
@@ -272,7 +278,7 @@ I would like to thank mum, dad, profs, committee members, officemates, friends, 
 
 \bibliographystyle{apalike2}
 %\bibliography{Biblio/allcites}
-\bibliography{Biblio/library}
+\bibliography{Biblio/library3}
 
 
 \appendix

@@ -1,12 +1,76 @@
 
 \chapter{General Introduction}
+% % % : Large Scale distribution of matter in the Universe
+
+\section{Cosmic web studies: Past, present and future}
+% From Paper2017a
+
+Large scale structures with  highly anisotropic shapes were first theoretically predicted by Zeldovich approximation (hereafter ZA) \citep{Zeldovich1970}. The model based on ZA suggested that the eigenvalues of the deformation tensor dictate the shapes of the {\it collapsed} structures at the beginning non-linear stage of gravitational instability (\citealt{Arnold1982}, see also \citealt{Shandarin1989} and \citealt{Hidding2014}). These structures were found to be crudely  characterised as two-, one- and zero- dimensional  which actually meant that three characteristic scales of each structure ($L_1\ge L_2\ge L_3$) are approximately related as  $L_1^{(p)} \approx L_2^{(p)} \gg L_3^{(p)}$ or $L_1^{(f)} \gg L_2^{(f)} \approx L_3^{(f)}$ or $L_1^{(h)} \approx L_2^{(h)}  \approx L_3^{(h)} $ respectively.  In addition it implied that $L_1^{(p)} \approx L_1^{(f)}$ and $L_3^{(p)} \approx L_2^{(f)} \approx L_1^{(h)}$.\footnote{The multi-scale character of the cosmic web was not discussed until 1990s.} At present these generic types of structures are referred to as  walls/pancakes/sheets/membranes, filaments and haloes. Although the accuracy of the Zeldovich approximation deteriorates from pancakes to  filaments and especially to halos on qualitative level  there are no more types of  structures. Altogether these structures contain the most of mass in the universe nevertheless they occupy  very little space. The most of space is almost empty  and is referred to as voids.
+
+\cite{Klypin1983a} (firstly reported  in \citealt{Shandarin1983}) were the first to identify a `three dimensional web structure' in the N-body simulation of the hot dark matter scenario. The simulation with $32^3$ particles used Cloud-in-Cell (CIC) technique on equal mesh revealed  that the gravitationally bound clumps of mass -- haloes in the present-day terminology --  were linked by the web of filamentary enhancements of density which spanned throughout the entire simulation box with the side of about 150$h^{-1}$Mpc in co-moving space. In addition \cite{Klypin1983a}  suggested that pancakes must be considerably less dense than the filaments since they were not detected in the simulation. These  results were quickly confirmed by \cite{Centrella1983} and \cite{Frenk1983}. In addition \cite{Centrella1983} who ran the simulation on similar mesh but with 27 times more particles also detected pancakes at $\rho/\bar{\rho} = 2$ level. At present this picture is widely accepted, and is referred to as the `cosmic web' (\citealt{Bond1996} and \citealt{Weygaert2008c}). 
+
+Galactic distributions in redshift surveys have also revealed distinct geometries and topologies of the cosmic web. One of the first indications of the connection of the clusters of galaxies by filaments was demonstrated by \cite{Gregory1978} who discovered a conspicuous chain of galaxies between Coma and A1367 clusters using a sample of 238 galaxies. Later  this result was confirmed by \cite{Lapparent1986} who used a significantly greater redshift catalogue of 1100 galaxies of the same region. \cite{Zeldovich1982} compared the percolation properties of the redshift catalogue of 866 local galaxies provided by J. Huchra with three theoretical distribution of particle in space: a Poisson distribution, the  hierarchical model by \cite{Soneira1978} and the particle distribution obtained from N-body simulation by \cite{Klypin1983a}.  They found that the both the galaxy sample and the density field obtained in N-body simulation percolated at considerably smaller filling factors  than  the Poisson distribution. On the other hand the  hierarchical model percolated at higher filling factors  than  the Poisson distribution. Further studies confirmed that the galaxies and the particles in the hot dark matter  model are arranged in the web-like structures \cite{Zeldovich1982}, \cite{Shandarin1983}, \cite{Shandarin1983b}, \cite{Shandarin1984}. This result was confirmed in more detailed analysis by \cite{Einasto1984}. \cite{Melott1983b} also found similar percolation properties in the mass distribution in the N-body simulation of a CDM model.
+ 
+Thus by the  early 1990s it was clearly demonstrated that the web like structure is a generic type for a wide range of initial conditions in both two-(\citealt{Melott1990}, \citealt{Beacom1991}) and three- dimensional \citep{Melott1993} cosmological N-body simulations. However it also was demonstrated that the quantitative parameters of the web structures depend on the initial power spectrum. Remarkably the simulations also showed that  adding small scale perturbations does not ruin the large scale structures if the slope of the power spectrum is negative in both two- and three- dimensional simulations.
+
+All aspects of these studies have been experiencing great advancements in  three decades passed since the discovery and first studies of the geometry and topology  of the large-scale structures. The galaxy redshift catalogues have grown by thousands of times (by surveys such as Sloan Digital Sky Survey (SDSS) \citealt{Tegmark2003} and \citealt{Albareti2016} and the 2MASS Redshift Survey \citealt{Huchra2012}), the sizes of cosmological N-body simulations (modern large scale simulations like Millennium \citealt{Springel2005b} and Q-Continuum \citealt{Heitmann2015}) by more than a million times. The number of various methods for identifying  structures has also grown practically from  one method\footnote{FOF was used for the topological studies via percolation technique and identifying super clusters of galaxies (\citealt{Zeldovich1982}, \citealt{Shandarin1983}, \citealt{Shandarin1983b} on the one hand and for identifying halos \citealt{Davis1985} on the other.}  to several dozens (\citealt{Colberg2008}, \citealt{Knebe2011a}, \citealt{Onions2012}, \citealt{Knebe2013} and references therein). Measuring or quantifying  the structures always has  been a difficult problem and many sophisticated  techniques both mathematically and computationally have been proposed and investigated (see reviews by \citealt{Weygaert2008c}, \citealt{Weygaert2008}).
+
+\begin{comment}
+
+Most of structure finders are halo finders only and most of them are stemmed from three types suggested long ago.
+One of them is the SO (Spherical Over-density) halo finder that defines halos  as spherical regions whose mass density 
+exceeds the mean density by a specified factor \citep{Press1974}. 
+Another is the FOF  (Friends-of-Friends) halo finder describing haloes  as the groups of particles separated less than 
+a specified linking length often chosen as 0.2 times the mean particle separation \citep{Davis1985}.
+Finally the DENMAX (DENsity MAXimum) halo finder assumes that the halos are the peaks of the density  fields
+ and thus selects the particles concentrated in the vicinity of the density maxima \citep{Bertschinger1991}.
+One of the common features of these  techniques is that all three are density based in one form or another.  
+And all of them depend on free parameters that are chosen chiefly on the `merits principle' \citep{Forero-Romero2009a} 
+rather than on physics.   Over the years all three kinds of the halo finders have been experiencing various modifications and
+improvements.  A few examples from a long list of these modifications may include: (i) more accurate sophisticated 
+techniques of generation  the density field from the particle positions, 
+(ii) adaptive methods controlling the linking length in methods using FOF, 
+(iii) hybrid halo finders,  
+(iv) adaptive methods for searching the positions of density maxima,
+(v) additional physical principles like excluding particle that are not gravitationally bound to the haloes, 
+(vi) generalization of FOF and DENMAX techniques to six-dimensional phase space,
+and many others.
+A nice summary discussing  these developments as well as describing a few new suggestions is given 
+in four comparison project papers quoted above.
+
+In addition to the refinements and generalizations of these basic methods a few new techniques have been
+developed for identifying haloes and structures with other geometries like filaments and walls.
+\end{comment}
 
 
-\section{Large Scale structure}
 
-\section{Observation history}
+Cosmic web structures have been characterized using several geometrical and topological indicators such as genus curves (\cite{Gott1986}). In an attempt to characterize the shapes of  individual regions in the excursion sets of the density field, \cite{Sahni1998} suggested to use partial Minkowski functionals. They developed the method labelled SURFGEN and applied it to CIC density field obtained in N-body simulations 
+(\citealt{Sathyaprakash1998}, \citealt{Sheth2003}, \citealt{Shandarin2004}). \cite{Aragon-Calvo2007} have developed the multi-scale MMF (Multi-scale Morphology Filter) detection technique based on the signs of three eigenvalues of the Hessian computed for  a set of replicas of the density field filtered on different scales. Similar multi-scale approaches to identifying structures is adopted in NEXUS and its extensions to velocity shear, divergence, and tidal fields \cite{Cautun2013}. More recently, persistence and Morse-Smale complexes in the density fields are analysed by \cite{Sousbie2011f}, \cite{Sousbie2011e} and \cite{Shivshankar2015a} to detect multi-scale morphology of the cosmic web.
+
+% ---------------------------------------------------------------------
+
+%   ADDED paragraph 2.1  -- more required -- make connection
+There is also an increasing interest in the measures for detecting filaments in large astronomical surveys. Topology in the large scale structure was analysed by Betti Numbers for Gaussian fields \citep{Park2013} and SDSS-III Baryon Oscillation Spectroscopic Survey \citep{Parihar2014}. \cite{Sousbie2008c} detected skeleton of filaments of the SDSS and compared to the corresponding galaxy distribution. In smoothed density of mock galaxy distribution, \cite{Bond2010a} studied the projection of eigenvalues. The Hessian eigenvector corresponding to the largest eigenvalue is used by \cite{Bond2010b} to trace individual filaments in N-body simulations and the SDSS redshift survey data. Majority of the above analyses, however, ignore the dynamical information from the velocity field.
+
+%   Newly ADDED paragraph 2.7/2.8
+
+
+%In addition, \cite{Falck2015b} demonstrated that the particles with multistreams also percolate, albeit with a different resolution dependence. 
+
+%Astronomers generally refer to large regions devoid of galaxies to be voids. 
+On the other hand, detection of voids and study of their morphological properties are done via numerous methods too. Traditional detection of void regions using just the particle coordinates differ based on the various methods used to identify them (see comparison of void finders in \citealt{Colberg2008} and references therein). Some methods involve using under-density thresholds. \cite{Blumenthal1992} proposed that the mean density in voids is $\delta = -0.8$ by applying linear theory argument. Similar threshold was used by \cite{Colberg2005} to identify voids. Under-dense excursion set approach was used by \cite{Shandarin2006} to identify percolating voids. \cite{Sheth2003b} used the excursion set formalism to develop an analytical model for the distribution voids in hierarchical structure formation (also see the excursion set approaches applied to voids by \citealt{Paranjape2012}, \citealt{Jennings2013} and \citealt{Achitouv2015}). Voids are also detected by isolating regions around local minima of density fields. For instance, the watershed transform is used by WVF-\cite{Platen2007},  ZOBOV-\cite{Neyrinck2008} and VIDE-\cite{Sutter2015} for segmentation of under-dense regions. 
+
+
+The unfiltered density field was generated using DTFE-Delaunay Tessellation Field Estimator (\citealt{Schaap2000}, \citealt{Weygaert2009a} and \citealt{Cautun2011b}) by applying it to the particle coordinates. Earlier it was shown that DTFE is superior to CIC techniques (\citealt{Schaap2007} and \citealt{Weygaert2009a}) in generation of the density field with high spatial resolution. In a new approach to the analysis of the shapes of the large-scale structures, \cite{Sousbie2011f} introduced DIScrete Persistent Structure Extractor ({DisPerSE}) based on Morse-smale complex. By implementing it on realistic cosmological simulations and observed redshift catalogues \cite{Sousbie2011e} found that DisPerSE traces very well the observed filaments, walls and voids.
+
+An additional dimension to the scope of the structure shapes is related to the question whether the density distribution (regardless of it form: continuous or discrete) is the only physical diagnostic of the cosmic web shapes or not. If not, then whether it is the best of all or not. And even if it is the best, then whether the other fields or distributions can provide a valuable contribution to understanding the shapes of the cosmic web or not. The answer to the latter question seems to be positive. In fact there are examples of attempts to bring new players into the field. For instance \cite{Hahn2007} and \cite{Forero-Romero2009a} studied the relation between the geometry of structures and the Hessian of the gravitational potential. \cite{Shandarin2011} demonstrated that the study of the multistream field reveals some features of the structures that cannot be easily seen in the density field. This has become even more evident when \cite{Shandarin2012} and \cite{Abel2012} showed that the full dynamical information in the form of three-dimensional  sub-manifold in six-dimensional phase space can be easily obtained from the  initial and final coordinates of the particles in DM simulations. \cite{Hahn2015a} showed that this method provides extremely accurate estimates of the cosmic velocity fields and its derivatives. It has been shown that the multistream field provides a physical definition of voids in N-body DM simulations by the local condition $n_{str} = 1$ (\citealt{Shandarin2012} and \citealt{Ramachandra2015}). \cite{Falck2012} proposed the {ORIGAMI} method of assigning particles to  structures based on the number of axes along which particle crossing has occurred. Void, wall, filament, and halo particles are particles that have been crossed along 0, 1, 2, and 3 orthogonal axes, respectively. \cite{Shandarin2016} identify the void particles as the ones that do not undergo any {\it flip-flop} through the evolution. Each of above definitions completely independent of any free parameters, with small differences in the physical implication.
+
+
+
+% \section{Observation history}
 
 \section{Significance and Impact of the Cosmic Web}
+% From Paper2018
 Understanding the nature of the cosmic web is important for a variety of reasons. Quantitative measures of the cosmic web 
 may provide information about the dynamics of gravitational structure formation, the background cosmological model, the 
 nature of dark matter and ultimately the formation and evolution of galaxies. Since the cosmic web defines the fundamental spatial organization of matter and galaxies on scales of one to tens of Megaparsecs, its structure probes a wide variety of scales, form the linear to the nonlinear regime. This suggests that quantification of the cosmic web at these scales should provide a significant amount of 
@@ -19,54 +83,43 @@ cosmic web are to a large extent dependent on the nature of dark matter and dark
 is directly dependent on the rules of gravity, each of the relevant cosmological variables will leave its imprint on the 
 structure, geometry and topology of the cosmic web and the relative importance of the structural elements of the 
 web, i.e. of filaments, walls, cluster nodes and voids. A telling illustration of this is the fact that  void regions of the cosmic web offer one of the cleanest probes and measures of dark energy as well as tests of gravity and General Relativity. Their structure and shape, as well as mutual alignment, are direct 
-reflections of dark energy \citep{Parklee2007,Platen2008,Leepark2009,Lavaux2010,Lavaux2012,Bos2012,Sutter2014a,Pisani2015}. Given that the measurement of cosmological parameters depends on the observer's web environment \citep[e.g.][]{Wojtak2014}, one of our 
+reflections of dark energy \citep{Park2007,Platen2008a,Lavaux2010,Lavaux2012,Bos2012,Sutter2014a,Pisani2015}. Given that the measurement of cosmological parameters depends on the observer's web environment \citep[e.g.][]{Wojtak2014}, one of our 
 main objectives is to develop means of exploiting our measures of filament structure and dynamics, and the connectivity 
 characteristics of the weblike network, towards extracting such cosmological information. 
 
 Perhaps the most prominent interest in developing more objective and quantitative measures of large-scale cosmic web 
 environments concerns the environmental influence on the formation and evolution of galaxies, and the dark matter 
-halos in which they form \citep[see e.g.][]{Hahn2007b,Hahnphd2009,Cautun2014}. The canonical example of such 
+halos in which they form \citep[see e.g.][]{Hahn2007b, Cautun2014a}. The canonical example of such 
 an influence is that of the origin of the rotation of galaxies: the same tidal forces responsible for the torquing of collapsing 
 protogalactic halos \citep{Hoyle1951,Peebles1969,Doroshkevich1970} are also directing the anisotropic contraction of matter in 
 the surroundings. We may therefore expect to find an alignment between galaxy orientations and large scale filamentary 
-structure, which indeed currently is an active subject of investigation \citep[e.g.][]{Aragon2007a,Leepen2000,Jones2010,Codis2012,Tempel2012,2013MNRAS.428.2489L,
-tempel2013,Trowland2013,Trowlandphd2013,Aragon2014,2016MNRAS.457..695P,Hirv2017,2017MNRAS.464.4666G}. Some studies even claim this implies an instrumental 
+structure, which indeed currently is an active subject of investigation \citep[e.g.][]{Aragon-Calvo2007,Leepen2000,Jones2010,Codis2012,
+tempel2013,Trowland2013,Hirv2017}. Some studies even claim this implies an instrumental 
 role of filamentary and other weblike environments in determining 
 the morphology of galaxies \citep[see e.g.][for a short review]{Pichon2016}. Indeed, the direct impact of the structure and 
 connectivity of filamentary web on the star formation activity of forming galaxies has been convincingly demonstrated 
-by \citet[][see also \citealt{2009ApJ...703..785D,2015MNRAS.449.2087D,2015MNRAS.454..637G,aragon2016}]{Dekel2008}. Such studies point out the instrumental importance of the filaments as transport conduits of cold 
+by \citet[][see also \citealt{2015MNRAS.449.2087D,2015MNRAS.454..637G,Aragon-Calvo2016}]{Dekel2009b}. Such studies point out the instrumental importance of the filaments as transport conduits of cold 
 gas on to the forming galaxies, and hence the implications of the topology of the network in determining the evolution and 
 final nature. Such claims are supported by a range of observational findings, of which the morphology-density relation 
 \citep{Dressler1980} is best known as relating intrinsic galaxy properties with the cosmic environment in which the 
 galaxies are embedded \citep[see e.g.][]{Kuutma2017}. A final example of a possible influence of the cosmic web on the nature of 
 galaxies concerns a more recent finding that has lead to a vigorous activity in seeking to understand it. The satellite galaxy 
 systems around the Galaxy and M31 have been found to be flattened. It might be that their orientation points at a direct influence 
-of the surrounding large scale structures \citep[see][]{Ibata2013,Cautun2015,2015MNRAS.452.1052L,Forero-Romero2015,Gonzalez2016}, for example a reflection of local filament or local sheet.
+of the surrounding large scale structures \citep[see][]{Ibata2013,Cautun2015,Forero-Romero2014,Gonzalez2016}, for example a reflection of local filament or local sheet.
 
 
-\section{Cosmic fields: Characterizing non-linear growth of Cosmic structure}
-% Taken from Comprehensive essay
-% /home/nes/MEGA/Google_drive/KU courses/Fall2016/CompreEssay/Compre1/draft_compre_clean.tex
+\section{This thesis}
+
+The mysterious dark matter that constitutes about 85\% of all mass in the Universe. Clustering of dark matter plays the dominant role in the formation of all observed structures on scales from a fraction to a few hundreds of Mega-parsecs. On these large scales, the dark matter distribution is broadly classified into voids, walls, filaments and haloes. Although this characterization is deeply enrooted in dynamical framework by Zeldovich Approximation \cite{Zeldovich1970}, vast majority of the current classification schemes employ techniques based on static portrait of the web -- like the clustering information of dark matter particles (density thresholds, linking lengths etc.), structural features (eigenvalue analyses, connectivities etc.). In this thesis we demonstrate a novel approach to dynamical understanding of the cosmic web features -- fundamentally based on Zeldovich Approximation, and it's direct consequence of multistreaming phenomenon.   
+
+However, it has to be noted and stressed that almost all the results here pertain to dark matter structures, not baryonic matter distribution of galaxies, stars or gas. While clustering of galaxies is positively correlated with dark matter concentrations, the difference in their dynamics is vast. Perhaps the most important difference in the context of this thesis is the difference of collisional cross-sections. Dark matter particles are collisionless in N-body simulations, hence display multiple velocity streams. The motion of cold gas resembles that of dark matter only until the first singularity arises. However, streams of gas cannot penetrate through one another, causing layers of neighboring gas layers to collide and result in shock waves. On galacitc scales, the gas dynamics is further complicated by processes like radiative cooling and heating, supernova feedback, star formation and more. 
 
 
-The most fundamental attributes of particles in the N-body simulations are their position and velocity co-ordinates, and their masses. Due to the lack of numerical tools for direct analysis these raw data, fields such as mass density $\rho(\mathbf{x}, t)$, velocity $\mathbf{v}(\mathbf{x}, t)$ or gravitational potential $\phi(\mathbf{x}, t)$ fields are often computed numerically. Mass density fields were calculated using Cloud-in-Cell (CIC) algorithm (cf. \citealt{Hockney1988}), which is numerically equivalent to counting the number of particles on each cell of a regular grid. Alternatively, the density field also generated on irregular grids by applying Delaunay (For example, \citealt{Icke1991} and the Delaunay Tessellation Field Estimator (DTFE) by \citealt{Schaap2000} and \citealt{Weygaert2009a}) or Voronoi tessellations (See \citealt{Schaap2000} and references therein) to the particle coordinates. Another parameter `linking length', using distances between nearest neighbouring particles, was used for percolation analyses and identifying super-clusters of galaxies ( \citealt{Zeldovich1982}, \citealt{Shandarin1983} and \citealt{Shandarin1983b}) for identifying halos \citealt{Davis1985} in the cosmological simulations. Left panel in \autoref{fig:cosmicfields} shows some of the popular fields/parameters that use particle mass and positions. It has to be noted that the density fields or linking-lengths are not dynamical descriptions that invoke the initial field of density fluctuations or the velocity of the particles. 
+\subsection{Chapter Organization}
 
 
-\begin{figure*}
-\begin{minipage}[t]{0.99\linewidth}
- \centering\includegraphics[height=8.5cm]{Chapter1/Plots/fig0.pdf} 
-\end{minipage}\hfill
-\captionsetup{font={small,stretch=1}}
-\caption{Classification of some of the fields/parameters used in cosmological analyses. Some fields utilise position co-ordinates only whereas others use the full phase-space information. In addition, the fields may be defined on a regular grid, or may be defined on an unstructured grid (For instance, flip-flop is a number-valued field defined on each dark matter particle). Fields like mass density and multi-streams can be defined on either grids, depending on the numerical technique. List is obviously not exhaustive- velocity and potential fields are not included, and discussions of correlation functions are excluded as well.}
-\label{fig:cosmicfields}
-\end{figure*}
+This thesis is a comprehensive collection of various cosmic structure analyses in the context of Lagrangian submanifold -- from topological studies of voids, to environmental investigation of dark matter haloes. In Chapter \ref{chapter2}, we give a brief overview of topics related to rest of the thesis -- including Zeldovich Approximation. Lagrangian submanifold and multistream fields. Chapter \ref{chapter3} approaches to quantify thresholds based on multistreams with the visible dark matter structures and Chapter \ref{chapter3b} compares this approach with a variety of current structure finding algorithms. The next two chapters deal with deeper understading of topological and geometrical feautres detected in multistream field (in Chapter \ref{chapter4}) and a new approach of detecting dark matter haloes that is independent of heuristic parameters (in Chapter \ref{chapter5}). Concluding Chapter \ref{chapter6} highlights future avenue of similar studies on the Lagrangian sub-manifold -- including detection of caustic surfaces and halo substructure analysis using flip-flop fields. 
 
 
-An obvious advantage of methods based on particle coordinates, both on structured and unstructured grids, is their applicability to redshift catalogues. The redshift catalogues like SDSS and 2dF provide only two angular coordinates and distances in redshift space. But cosmological N-body dark matter simulations provide the full dynamical information in six-dimensional phase space. This additional information is very valuable providing a greater opportunity for understanding the physics of the web and developing a better theory of the web.
 
 
-The velocity fields in the simulations of collision-less cold dark matter particles can become multi-valued under the action of gravity. This phenomenon was first discussed by \cite{Zeldovich1970}, where he predicted the formation of non-linear structures (also see \citealt{Shandarin1989} for discussion on formation of multi-stream). The primordial oblate structures were later known as `Zel'dovich pancakes'. These pancakes grow from initial perturbations in a continuous mass distribution, where the velocities are single-valued (also referred to as single-stream) everywhere in the configuration space. Multiple values in the velocity field $\mathbf{v} (\mathbf{x},t)$ or `multi-streams' can also be seen in the dynamically equivalent Lagrangian sub-manifold - $(\mathbf{q}, \mathbf{x})$, where $\mathbf{x}$ and $\mathbf{q}$ are co-moving Eulerian and Lagrangian co-ordinates respectively. \cite{Shandarin2011} and \cite{Abel2012b} studied this $ \mathbf{q} \mapsto \mathbf{x}$ mapping in N-body simulations to quantify the number of streams using phase-space tessellations. \cite{Shandarin2011} define a multi-stream field $n_{str}(\mathbf{x})$ as a field taking discrete values that are equal to the number of streams at every evaluation point in configuration space. Ordered sign-reversal of each elementary volume element in the Lagrangian sub-manifold was measured by \cite{Shandarin2014a}. Their {\it flip-flop} field $n_{ff}(\mathbf{q})$ in Lagrangian space demonstrates a very rich sub-structure of the cosmic web, especially in a halo environment. 
-
-Fields computed from a complete dynamical information (either $(\mathbf{q}, \mathbf{x})$ or $(\mathbf{p}, \mathbf{q})$) could provide valuable contributions to our understanding of the cosmic structure. \cite{Falck2012} have recently delineated archetypal web structures by counting the number of foldings in the sub-manifold for each dark matter particle along different directions. Another study by \cite{Ramachandra2016a} explored some of the global topological and local geometrical properties of the web in the context of multi-streaming. The applications of these analyses is certainly not limited to diagnostic tools; the multi-streaming phenomenon can be used in improving N-body simulations \citep{Hahn2013}, and studying galaxy evolution and star formation as well \citep{Aragon-Calvo2016b}. 
-
-\section{Chapter Organization}
