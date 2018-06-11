@@ -145,7 +145,7 @@ in the large-scale motion overlap  which increases the web complexity further.
 
 Using the full six-dimensional information allows one to generate new fields which  provide 
 additional useful information about the evolution and morphology of the  web. 
-One of them is a multi-stream field in Eulerian space, which will be the focus of this paper. 
+One of them is a multi-stream field in Eulerian space, which will be the focus of this chapter. 
 Another example is the flip-flop field in Lagrangian space. In cosmological context it was first used in the ZA.
 \citet{Vogelsberger2011} used it in a study of multi-stream structure of galaxy size haloes.
 \citet{Shandarin2014a} applied it for identifying subhaloes  in dark matter haloes.
@@ -185,7 +185,7 @@ vertices of the cube. Mass is assumed to be uniformly distributed within each te
 intact at all times. The tetrahedra of the tessellation change their shapes and volumes, the latter are used for
 computing the densities of the tetrahedra. Despite the complicated deformations experienced by the three-dimensional
 sub-manifold tessellated by the tetrahedra, it remains continuous. Projected on three-dimensional configuration space, the tetrahedra
-may form complicated structures. The number of streams at a chosen point {\bf x} is simply the number of tetrahedra that contain the point. The diagnostic points are computationally convenient to choose on a regular grid which can be significantly finer than the original grid in Lagrangian space. The ratio of separation of particles on the initial unperturbed grid to the separation distance of points in the diagnostic grid  $l_{\rm part}/l_{\rm dg} $ will be referred to as the refinement factor in the rest of the paper.
+may form complicated structures. The number of streams at a chosen point {\bf x} is simply the number of tetrahedra that contain the point. The diagnostic points are computationally convenient to choose on a regular grid which can be significantly finer than the original grid in Lagrangian space. The ratio of separation of particles on the initial unperturbed grid to the separation distance of points in the diagnostic grid  $l_{\rm part}/l_{\rm dg} $ will be referred to as the refinement factor in the rest of the chapter.
 
 Number of streams are odd-valued in the entire configuration space, except in a set of points of measure zero where caustics are formed.  
  A single-stream flow implies that the tetrahedra do not overlap in the corresponding region and thus defined as a void region.
@@ -370,7 +370,7 @@ Mean density                    & $0.59$ & $0.47$    & $0.35$        \\ \hline
 Multi-stream field can be easily computed for a small Eulerian box with higher refinement factor. This can be utilized to analyse the phase-space behaviour inside and around haloes. In this section, 
 we have used the halo coordinates identified by the FOF method, and selected Eulerian boxes around it. A reasonable  correspondence between FOF halo centres and local maxima of multi-stream field is visually examined in Fig. \ref{fig:full}. 
 
-Since each multi-stream region is surrounded by lower number of streams, the walls sandwich filaments within themselves (Fig. \ref{fig:4view}). The filaments are embedded with haloes at various intersections. These high-streaming haloes are completely covered by relatively low-stream filaments and hence surrounded by walls too. This result differs considerably from the several void finder methods, which find existence of haloes within  void regions (See \citealt{Colberg2008} and references therein). By our classification, we distinguish configuration space of the simulation box as void and non-void or web regions. Further, we have made an attempt to classify the web into walls, filaments and haloes based on multi-stream thresholds. This classification based on number of stream threshold provides only a very crude description of visual impression from the richness, complexity and fundamentally multi-scale character of the web. The heuristic numbers we use in this paper are by no means universal, but may provide limited use in the discussion of these particular simulations.
+Since each multi-stream region is surrounded by lower number of streams, the walls sandwich filaments within themselves (Fig. \ref{fig:4view}). The filaments are embedded with haloes at various intersections. These high-streaming haloes are completely covered by relatively low-stream filaments and hence surrounded by walls too. This result differs considerably from the several void finder methods, which find existence of haloes within  void regions (See \citealt{Colberg2008} and references therein). By our classification, we distinguish configuration space of the simulation box as void and non-void or web regions. Further, we have made an attempt to classify the web into walls, filaments and haloes based on multi-stream thresholds. This classification based on number of stream threshold provides only a very crude description of visual impression from the richness, complexity and fundamentally multi-scale character of the web. The heuristic numbers we use in this chapter are by no means universal, but may provide limited use in the discussion of these particular simulations.
 
 \begin{figure}
 \centering
@@ -569,7 +569,7 @@ Statistical analysis of FOF haloes in Fig. \ref{fig:minmax128} and \ref{fig:minm
 
 
 \section{Summary}
-In this paper, we explore for the first time, the multi-stream environment of dark matter haloes in cosmological N-body simulations.
+In this chapter, we explore for the first time, the multi-stream environment of dark matter haloes in cosmological N-body simulations.
 %We study the multi-stream field computed in N-body simulations in $\Lambda$CDM cosmology at $z=0$.
 The visualization and quantitative characterization of generic non-linear fields in three-dimensional space represent a serious
 challenge from both conceptual and computational points of view. The complexity of the problem requires diverse tools
@@ -624,7 +624,7 @@ In this study we introduced an empirical statistical criteria which very crudely
 We have found empirically that  in  the studied simulation the transition from wall points to filament points takes place approximately at $ 5 \le n_{str} \lesssim 15$. Using the virial over-density threshold of 200 in Eq.~\ref{eq:den}, we have also estimated that the haloes correspond to the regions with $n_{str} \gtrsim 90$.
 Thus, the transition from filament to haloes takes place in the range $ 17 \le n_{str} \lesssim 90$.
 The above critical values for transition from walls to filaments and from filaments to haloes were shown to be approximately correct
-for  the simulation with $L/N = 0.78 h^{-1}$ Mpc. This technique can be also applied to simulations with different $L/N$ ratio and multi-stream grid of different refinement factors but the classification based on the threshold applied locally will remain only a very crude estimator. A more sophisticated morphological analysis will require non-local geometric and topological methods, which is beyond the scope of this paper.
+for  the simulation with $L/N = 0.78 h^{-1}$ Mpc. This technique can be also applied to simulations with different $L/N$ ratio and multi-stream grid of different refinement factors but the classification based on the threshold applied locally will remain only a very crude estimator. A more sophisticated morphological analysis will require non-local geometric and topological methods, which is discussed in Chapters \ref{chapter4} and \ref{chapter5}.  
  
  \begin{table*}
  \centering
