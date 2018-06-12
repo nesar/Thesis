@@ -359,8 +359,12 @@ geometric segments using information theory. \cite{Leclercq2016} have  previousl
 
 
 \begin{figure*}
+\begin{minipage}[t]{.99\linewidth}
+
  \mbox{\hskip -1.27truecm\includegraphics[width=1.1\textwidth]{Chapter3b/FIGS/fig0v2-200Mpc-512}}
  \vspace{-0.6cm}
+\end{minipage}\hfill
+
  \caption{ A thin slice through the cosmological simulation used for comparing the web identification methods. The left panel shows the density field in a $2\hmpc$ slice with darker colors corresponding to higher density regions. The red lines show the $\delta=0$ contours (dividing over and under dense regions, with respect to the mean) and are reproduced in the right panel (and in \autoref{fig:env_slice_a} as black lines). The right panel shows the positions of haloes in a $10\hmpc$ slice, where symbol sizes are scaled by halo mass. This same slice will be used to showcase the web identification methods in \autoref{fig:env_slice_a} and \autoref{fig:env_slice_b} as well as the level of agreement across web finders in \autoref{fig:halo_agree}. }
  \label{fig:den_slice}
 \end{figure*}
@@ -477,13 +481,19 @@ The following section describes each method as well as the practical details in 
 
 
 \begin{figure*}
+\begin{minipage}[t]{.99\linewidth}
+
  \includegraphics[width=\textwidth]{Chapter3b/FIGS/fig1v4a.eps}
  \vspace{-.4cm}
+ \end{minipage}\hfill
+
  \caption{Visual comparison of environments as detected by the different cosmic web finders. All panels show a thin, $2\hmpc$ thick slice, where the various colors indicate: knots (red), filaments (blue), walls (green) and voids (white). Each panel has a set of solid lines which indicate the $\delta=0$ contours (see the density distribution in \autoref{fig:den_slice}). The simulation is purposefully coarse grained with cells of size 2$h^{-1}$Mpc, as it is on this scale that the methods returned a classification.}
  \label{fig:env_slice_a}
 \end{figure*}
 
 \begin{figure*}
+\begin{minipage}[t]{.99\linewidth}
+
  \includegraphics[width=\textwidth]{Chapter3b/FIGS/fig1v4b.eps}
  \vspace{-.4cm}
  \caption{Same as \autoref{fig:env_slice_a} but for the three methods that  identify only filaments.}
@@ -493,6 +503,7 @@ The following section describes each method as well as the practical details in 
 %\begin{figure*}
  \includegraphics[width=\textwidth]{Chapter3b/FIGS/fig2-200Mpc-512}
  \vspace{-1.cm}
+ \end{minipage}\hfill
  \caption{Comparison of the density contrast, $1+\delta$, PDF as a function of environment for the different cosmic web finders. The panels show the density PDF for: knots (top-left), filaments (top-right), sheets (bottom-left) and voids (bottom-right). The vertical arrows indicate the median of each distribution. Each PDF is normalized to unity and thus does not correspond to the volume filling fraction.}
  \label{fig:den_PDF}
 \end{figure*}
@@ -557,8 +568,12 @@ We begin our analysis by performing a visual comparison of the various web finde
 \end{itemize} 
 
 \begin{figure*}
+\begin{minipage}[t]{.99\linewidth}
+
  \includegraphics[width=\textwidth]{Chapter3b/FIGS/vff-mff}
  \vspace{-.7cm}
+ \end{minipage}\hfill
+
  \caption{ The mass and volume filling fraction of knots (top-left), filaments (top-right), sheets (bottom-left) and voids (bottom-right) as identified by the various cosmic web finders. These quantities were computed using a regular grid with a cell spacing of $2\hmpc$. The solid line shows the mean filling fraction, i.e. a slope of unity, where the volume filling fraction equals the mass filling fraction. Namely, points above this line lie in under-densities, points below it in over-densities. }
  \label{fig:vff_mff}
 \end{figure*}
@@ -590,15 +605,23 @@ The cosmic web classification is layered: knots are embedded in filaments, which
 We continue the cosmic web finder's comparison with a study of the volume and mass filling fractions that are ascribed to a specific cosmic web type. These quantities are shown in \autoref{fig:vff_mff} for knots, filaments, sheets and voids. The mass fraction is found by summing up the particles in all the cells with the same cosmic web type and dividing by the total number of particles in the simulation. The volume fraction is found by counting all the cells with the same cosmic web type and dividing by the total number of cells. Note that for these tests we have a 100$^3$ grid with (2$\hmpc)^3$ cells.
  
 \begin{figure*}
+\begin{minipage}[t]{.99\linewidth}
+
  \includegraphics[width=\textwidth]{Chapter3b/FIGS/fig3v2-option1}
  \vspace{-1.cm}
+ \end{minipage}\hfill
+
  \caption{ Comparison of the halo mass function as a function of environment for the various cosmic web finders. The panels show the mass function for: knots (top-left), filaments (top-right), sheets (bottom-left) and voids (bottom-right). The black solid line shows the total halo mass function. }
  \label{fig:HMF}
 \end{figure*}
 
 \begin{figure*}
+\begin{minipage}[t]{.99\linewidth}
+
  \includegraphics[width=\textwidth]{Chapter3b/FIGS/haloagree_v2-200Mpc-512}
  \vspace{-.4cm}
+ \end{minipage}\hfill
+
  \caption{The level of agreement, on a halo by halo basis, in assigning a web classification to a given halo. For each halo in a given mass bin, we ask how many methods have assigned it the same web type. We plot the fraction of these haloes as a function of halo mass for the four web environments: knots (top-left), filaments (top-right), sheets (bottom-left) and voids (bottom-right). Each line shows the fraction of haloes at fixed halo mass that were assigned by N methods to that environment, with N from 0 (no assignments) to 10 (all methods agree). Note that not all methods identify all web types, so that the maximum number of agreements varies with web type: 6 for knots, 12 for filaments, 9 for sheets and 10 voids.}
   \label{fig:halo_agree}
 \end{figure*}
@@ -606,8 +629,12 @@ We continue the cosmic web finder's comparison with a study of the volume and ma
 
 
 \begin{figure*}
+\begin{minipage}[t]{.99\linewidth}
+
  \includegraphics[width=\textwidth]{Chapter3b/FIGS/haloagree_dotplot.eps}
  \vspace{-.4cm}
+ \end{minipage}\hfill
+
  \caption{A visualization of the agreement across methods regarding a specific halo's classification shown in the same 10$h^{-1}$Mpc thick slice as in Figs.~\ref{fig:den_slice}--~\ref{fig:env_slice_b}. Not all web types are identified by each method, so for each panel the various colors indicate a different number of agreements. In the ``Knot haloes'' panel, a halo is plotted in black if 5--6 methods agree, blue if 3--4 methods agree and red if 1--2 methods agree that a halo is in a knot. In the ``Filament haloes'' panel colors represent: black if 9--12 methods agree, blue if 4--8 methods agree and red if 1--3 methods agree that a halo is in a filament. For ``Sheet haloes'' the colors represent: black if 7--9 methods agree, blue if 4--6 methods agree and red if 1--3 methods agree that a halo is in a sheet. For the ``Void haloes'' the colors represent: black if 7--10 methods agree, blue if 4--6 methods agree and red if 1--3 methods agree that a halo is in a void. In all panels, haloes not assigned that web classification are shown in grey. }
   \label{fig:halo_agree_dot}
 \end{figure*}
