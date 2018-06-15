@@ -177,7 +177,7 @@ as well thus the velocity divergence on the fluid element would not help.
 
 %\hl{A }
 
-The rest of the paper is organized as follows: we describe the cosmological simulations in Section \ref{sec:simulation}. Some of the important features of the multistream field are described in Section \ref{sec:multiCalc}. Topology of the single-streaming voids is discussed in \ref{sec:voids} and that of the multistream structure is investigated using percolation theory in Section \ref{sec:percolation}. . Discussion of the local geometry of multistream field using Hessian matrices is done in Section \ref{sec:hessian}. 
+The rest of the chapter is organized as follows: we describe the cosmological simulations in Section \ref{sec:simulation}. Some of the important features of the multistream field are described in Section \ref{sec:multiCalc}. Topology of the single-streaming voids is discussed in \ref{sec:voids} and that of the multistream structure is investigated using percolation theory in Section \ref{sec:percolation}. . Discussion of the local geometry of multistream field using Hessian matrices is done in Section \ref{sec:hessian}. 
 
 \begin{comment}
 In Section \ref{sec:haloDetection}, we prescribe a framework to identify dark matter haloes using Hessian eigenvalues in the multistream field. We also discuss a few properties of the haloes and comparison with AHF and FOF algorithms. 
@@ -217,7 +217,7 @@ Two halo finders are also used to identify potential haloes with 20 or more part
 % \end{figure}
 
 % \bf changed to \bf --- check if it's alright. 
-The multistream field objectively characterizes the level of non-linearity in the cosmic web. The `number-of-streams' field or $n_{str}({\bf x})$ is computed from the Lagrangian sub-manifold ${\bf x}({\bf q})$, which is a continuous three-dimensional sheet in a six-dimensional  $({\bf q}, {\bf x})$ space. In this paper, we utilize the tessellation implementation by \cite{Shandarin2012} to calculate the multistream flow field on the GADGET-2 snapshot at $z=0$. This implementation only requires initial and final coordinates of the dark matter particles. 
+The multistream field objectively characterizes the level of non-linearity in the cosmic web. The `number-of-streams' field or $n_{str}({\bf x})$ is computed from the Lagrangian sub-manifold ${\bf x}({\bf q})$, which is a continuous three-dimensional sheet in a six-dimensional  $({\bf q}, {\bf x})$ space. In this chapter, we utilize the tessellation implementation by \cite{Shandarin2012} to calculate the multistream flow field on the GADGET-2 snapshot at $z=0$. This implementation only requires initial and final coordinates of the dark matter particles. 
 
 The $n_{str}(\bf{x})$ values are mostly odd-numbered since each folding in the Lagrangian sub-manifold results in an increase of $n_{str}$ by 2. Exception to this are only at caustics - which have volume measure zero, then the $n_{str}$ is even-valued number. The particles in $n_{str} = 1$ have not experienced orbit crossings and thus these regions are unambiguously identified as void \citep{Shandarin2012}. Foldings in the Lagrangian sub-manifold generally occur one-by-one. For example, a contour of $n_{str} = 7$ will be within a region of $n_{str} \leq 5$. Hence the multistream field commonly has nesting shells, i.e., $ 3 \supseteq  5 \supseteq  7 \supseteq  9 \supseteq  11 \ldots$. Some of the important features of the multistream field are discussed in Appendix \ref{appendix:nstream}.  
 
@@ -352,7 +352,7 @@ The nature of the transition in mass density field is similar to that in multist
 
 
 The excursion volume fraction of the multistream web structure is limited to a small fraction of  less than 10 per cent since rest of the volume is void. The excursion set volume fraction increases with decreasing number-of-streams and reaches it's maximum at $n_{str} = 3$.  At this limit the filling fraction $f_1/f_{ES}$ is still less than unity, about 95 per cent. These two peculiar properties of the multistream field explain the shape of the percolation curves in \autoref{fig:PercTh}.
-Since the multistream flow field is a discrete data field, the percolation transition is seen to occurs at a particular value of $n_{str}$ rather than a large range of values. For $n_{str} = 17$, the largest structure in the excursion set occupies more than half the volume of the entire excursion set. At this multistream threshold, the largest segment starts spanning large volume of the simulation box (as observed in the left panel of \autoref{fig:HaloFil}). The volume fraction of the excursion set at this percolation transition is $f_{ES}^{(p)} = 0.75$ per cent for simulation with $256^3$ particles. 
+Since the multistream flow field is a discrete data field, the percolation transition is seen to occur at a particular value of $n_{str}$ rather than a large range of values. For $n_{str} = 17$, the largest structure in the excursion set occupies more than half the volume of the entire excursion set. At this multistream threshold, the largest segment starts spanning large volume of the simulation box (as observed in the left panel of \autoref{fig:HaloFil}). The volume fraction of the excursion set at this percolation transition is $f_{ES}^{(p)} = 0.75$ per cent for simulation with $256^3$ particles. 
 
 The percolation transition at $n_{str} = 17$ could be used as a criterion for detecting filaments in the cosmic web. Since the largest $n_{str} \geq 17$ region occupies more than 50 per cent of the excursion set, it is essentially the `backbone' of the cosmic web \citep{Shandarin2010b}. Heuristic analysis as discussed by \cite{Ramachandra2015} also arrived at the same threshold for identifying filaments. That analysis was based on a multistreams variation in halo environments, hence a local value. From our percolation analysis, we see that it is also justified globally. 
 
@@ -514,7 +514,7 @@ nstr > 3:  3.81702706218
 \end{comment}
 
 
-Smoother multistream fields result in less noisy PDFs of the Hessian eigenvalues. For instance, the volume fraction of regions with positive curvature (i.e. $\lambda_3 > 0$) is $2.4\%$, $2.3\%$ and $2.5\%$ for scales $0.20 h^{-1} \text{ Mpc}$, $0.39 h^{-1} \text{ Mpc}$, $0.78 h^{-1} \text{ Mpc}$ respectively. Further analysis of smoothed positive definite regions is relevant in determining halo boundaries, and will be extensively discussed in the next paper. 
+Smoother multistream fields result in less noisy PDFs of the Hessian eigenvalues. For instance, the volume fraction of regions with positive curvature (i.e. $\lambda_3 > 0$) is $2.4\%$, $2.3\%$ and $2.5\%$ for scales $0.20 h^{-1} \text{ Mpc}$, $0.39 h^{-1} \text{ Mpc}$, $0.78 h^{-1} \text{ Mpc}$ respectively. Further analysis of smoothed positive definite regions is relevant in determining halo boundaries, and will be extensively discussed in the next chapter. 
 
 %at multistream smoothing scale are smoother of the half the side length of diagnostic grid , $0.5 \times l_d = 0.20 h^{-1} \text{ Mpc}$ is noisier than in the scales of $l_d$ and $2 \times l_d$. However, at every scale, the PDF peaks at $0$.  
 \begin{comment}

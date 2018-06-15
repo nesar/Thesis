@@ -246,17 +246,17 @@ For a multi-stream field calculated on a simulation box of size $100 h^{-1}$ Mpc
 \begin{figure}
  \centering\includegraphics[width=18.5cm]{Chapter3/Source_v2/fig1.pdf} 
 \caption{The cosmic web structure in a slice of  $30 h^{-1} \text{Mpc} \times 100 h^{-1} \text{Mpc} \times 100 h^{-1} \text{Mpc}$ in a simulation box of size $100 h^{-1}$ Mpc and $128^3$ particles. Regions with 17 or more streams (blue) form a filamentary structure. The haloes determined by FOF (red) are predominantly embedded in the intersections of the filaments.}
-\label{fig:full}
+\label{fig:1full}
 \end{figure}
 
-The filamentary structure of regions with 17 or more streams (denoted as 17+ ) is shown for a slice of simulation box of size $100 h^{-1}$  Mpc and $128^3$  particles in Fig. \ref{fig:full}. It has to be noted that all the regions with 17+ streams are regions with 3+ streams. Thus, the filaments are just interior
-parts  of walls with higher $n_{str}$. These are visually observed mostly at the intersections of walls. Further, at the intersections of multiple filaments, there are regions with locally maximum number of streams, signifying the most dense regions in the simulations i.e. the dark matter haloes as Fig. \ref{fig:4view}
+The filamentary structure of regions with 17 or more streams (denoted as 17+ ) is shown for a slice of simulation box of size $100 h^{-1}$  Mpc and $128^3$  particles in Figure \ref{fig:1full}. It has to be noted that all the regions with 17+ streams are regions with 3+ streams. Thus, the filaments are just interior
+parts  of walls with higher $n_{str}$. These are visually observed mostly at the intersections of walls. Further, at the intersections of multiple filaments, there are regions with locally maximum number of streams, signifying the most dense regions in the simulations i.e. the dark matter haloes as Figure \ref{fig:4view}
 illustrates.
-By superimposing the positions from the FOF-halo catalog, it is visually confirmed that the FOF haloes reasonably coincide with these high-streaming intersections, as Fig. \ref{fig:full} illustrates.
+By superimposing the positions from the FOF-halo catalog, it is visually confirmed that the FOF haloes reasonably coincide with these high-streaming intersections, as Figure \ref{fig:1full} illustrates.
 
 \subsection{Volume and mass fractions}
 
-The single-stream flow, which corresponds to the void, occupies majority of volume of the simulation box (Fig. \ref{fig:m_v_fr}). As mentioned in Section \ref{sec:global}, higher multi-streaming flow regions are nested inside the lower streaming regions. Thus the volume occupied by higher number of streams monotonically decreases with the number of streams. This relation is approximately found to be a power law. For the box of size $L =100 ~h^{-1}$ Mpc and $N = 128^3$ particles ($L/N = 0.78 ~h^{-1}$ Mpc), the volume fraction corresponding to each value of number of streams, $ f_{vol}(n_{str})$ in the multi-stream field calculated with refinement factor of 8 (i.e. the multi-stream field
+The single-stream flow, which corresponds to the void, occupies majority of volume of the simulation box (Figure \ref{fig:1m_v_fr}). As mentioned in Section \ref{sec:global}, higher multi-streaming flow regions are nested inside the lower streaming regions. Thus the volume occupied by higher number of streams monotonically decreases with the number of streams. This relation is approximately found to be a power law. For the box of size $L =100 ~h^{-1}$ Mpc and $N = 128^3$ particles ($L/N = 0.78 ~h^{-1}$ Mpc), the volume fraction corresponding to each value of number of streams, $ f_{vol}(n_{str})$ in the multi-stream field calculated with refinement factor of 8 (i.e. the multi-stream field
 was computed on 1024$^3$ grid as described in \cite{Shandarin2012}) is 
 \begin{equation}
 \label{eq:fr_vol}
@@ -276,26 +276,26 @@ This is also a good fit for the range of number of streams $n_{str} \ge 5 $. For
 {\bar{\rho}(n_{str}) \over \langle{\rho}\rangle} = 0.89  n_{str}^{1.2} ,
 \end{equation}
 where $\langle\rho\rangle$ is the mean density of the universe.
-This also quantifies our previous claim that very high multi-streams correspond to the most dense areas in the Universe, i.e. the condensed haloes. The common over-density threshold of 200 using virial equilibrium corresponds to roughly 90 streams in  Fig. ~\ref{fig:m_v_fr} and Eq. ~\ref{eq:den}.
+This also quantifies our previous claim that very high multi-streams correspond to the most dense areas in the Universe, i.e. the condensed haloes. The common over-density threshold of 200 using virial equilibrium corresponds to roughly 90 streams in  Figures ~\ref{fig:1m_v_fr} and Eq. ~\ref{eq:den}.
 
 \begin{figure}
 \begin{minipage}[t]{.99\linewidth}
   \centering\includegraphics[width=10.cm]{Chapter3/Source_v2/fig2} 
 \end{minipage}\hfill
 \caption{Volume and mass fraction of each stream, mean density of each stream in a box of size 100 $h^{-1}$ Mpc and  $128^3$ particles. Exact values of fractions, density and their curve fit for the range $n_{str} \ge 5 $ from Eq.~\ref{eq:fr_vol}, Eq.~\ref{eq:fr_mass} and Eq.~\ref{eq:den} are shown. Multi-streams are calculated with refinement factor of 8. The void ($n_{str} = 1$) occupies 93$\%$ of the volume and 55$\%$ of the mass. }
-\label{fig:m_v_fr}
+\label{fig:1m_v_fr}
 \end{figure}
 
-Comparing the volume fractions of various simulation boxes in Fig. ~\ref{fig:Vfr_all} and corresponding power law dependences in Table ~\ref{tab:Compare_Slopes} (also, specifically for the volume fraction of voids in Table ~\ref{tab:Compare_LN}), we find that the profile is similar for boxes with
+Comparing the volume fractions of various simulation boxes in Figure ~\ref{fig:1Vfr_all} and corresponding power law dependences in Table ~\ref{tab:Compare_Slopes} (also, specifically for the volume fraction of voids in Table ~\ref{tab:Compare_LN}), we find that the profile is similar for boxes with
 same inter-particle resolution; i.e., equal box length to grid size ratio( For e.g., $L/N = 0.78$ $h^{-1}$ Mpc for the simulation box of 100 $h^{-1}$ Mpc - $128^3$ particles and 200 $h^{-1}$ Mpc - $256^{3}$ particles). The box with minimum inter-particle resolution in the data, hence the best raw resolution ( $L/N = 0.19$ $h^{-1}$ Mpc for 100 $h^{-1}$ Mpc, $512^3$ particles), has higher volume fraction for each multi-stream compared to lower resolution boxes. Additionally, it has a more non-linear stage advanced over time resulting from the initial small scale perturbations. The advancement of  non-linearity manifests itself in higher number of streams. Box with the least raw inter-particle resolution ($L/N = 1.56 $  $h^{-1}$ Mpc for 200 $h^{-1}$ Mpc, $128^3$ particles), occupies lower volumes than other boxes for each $n_{str}$. It is also prone to noise at very high streaming regions.
 
 One of the advantages of using tessellation is the freedom to compute densities at very high resolutions (\cite{Abel2012}, \cite{Shandarin2012}). We remind that the parameter `refinement factor' denotes the ratio of separation of the particles to the separation distance of points in the diagnostic grid as defined in Sec. 3. High refinement factors are extensively used in understanding stream behavior not only in the halo environment, but inside the halo too (Section ~\ref{sec:local}). The volume fractions of resulting number of streams are
 %normalized by multi-stream field resolution (i.e. dividing by the cube of refinement factor) are %
 similar for all refinement factors as
-shown in bottom of the Fig. ~\ref{fig:Vfr_all} and in Table ~\ref{tab:Compare_ref}. % Hence our triangulation algorithm is universal in the sense that it is independent of the refinement factors used in tessellating the box.   
+shown in bottom of the Figure ~\ref{fig:1Vfr_all} and in Table ~\ref{tab:Compare_ref}. % Hence our triangulation algorithm is universal in the sense that it is independent of the refinement factors used in tessellating the box.   
 Multi-stream fields calculated on low refinement factors are more noisy at high number of streams.
 
-With same refinement factors, the mass fractions exhibit similar pattern for same $L/N$ as well (Fig.~\ref{fig:Mfr_all}). The simulation box with highest inter-particle distance (thus least mass resolution) has more mass particles in single streaming region, as tabulated in Table~\ref{tab:Compare_LN}, but decreases steeply thereafter (Table ~\ref{tab:Compare_Slopes}). Unlike the volume fraction, the behavior of mass fraction has a systematic variation across different refinement factors. The mass fractions given in Table ~\ref{tab:Compare_ref} show that the single-streaming regions in the multi-stream fields with refinement factors 1 and 2 have higher mass fraction than in the fields with refinement factor of 8. Decreasing the resolution from refinement factor of 8 to 1 effectively introduces smoothing of the structure. This results in growth of mass fraction in voids ($n_{str} = 1$) and decreasing it in the web ($n_{str} > 1$). The multi-stream field is more robust as one can see in Fig.~\ref{fig:Vfr_all}. and \ref{fig:Mfr_all}. In addition, the less refined multi-stream grids are prone to noise at high $n_{str}$ as usual.
+With same refinement factors, the mass fractions exhibit similar pattern for same $L/N$ as well (Figure ~\ref{fig:Mfr_all}). The simulation box with highest inter-particle distance (thus least mass resolution) has more mass particles in single streaming region, as tabulated in Table~\ref{tab:Compare_LN}, but decreases steeply thereafter (Table ~\ref{tab:Compare_Slopes}). Unlike the volume fraction, the behavior of mass fraction has a systematic variation across different refinement factors. The mass fractions given in Table ~\ref{tab:Compare_ref} show that the single-streaming regions in the multi-stream fields with refinement factors 1 and 2 have higher mass fraction than in the fields with refinement factor of 8. Decreasing the resolution from refinement factor of 8 to 1 effectively introduces smoothing of the structure. This results in growth of mass fraction in voids ($n_{str} = 1$) and decreasing it in the web ($n_{str} > 1$). The multi-stream field is more robust as one can see in Figure ~\ref{fig:1Vfr_all}. and \ref{fig:Mfr_all}. In addition, the less refined multi-stream grids are prone to noise at high $n_{str}$ as usual.
 \begin{figure}
 \begin{minipage}[t]{.99\linewidth}
  \centering\includegraphics[width=10.cm]{Chapter3/Source_v2/fig3a} 
@@ -303,7 +303,7 @@ With same refinement factors, the mass fractions exhibit similar pattern for sam
 \end{minipage}\hfill
 \caption{Top: Volume fraction distribution of streams in 6 simulation boxes of size 100 $h^{-1}$ Mpc, 200 $h^{-1}$ Mpc 
 and $128^{3}$, $256^{3}$, $512^{3}$ grids (with refinement factor of 1). Volume fractions are similar for simulation boxes with same inter-particle resolution. Slopes of the curve fits are shown in Table ~\ref{tab:Compare_Slopes}. Bottom: Volume fraction distribution for different refinement factors for 100 $h^{-1}$ Mpc, $128^{3}$ box. A considerably smoother volume fraction distribution is obtained at high number of streams in multi-stream fields with high refinement factor. }
-\label{fig:Vfr_all}
+\label{fig:1Vfr_all}
 \end{figure}
 
 \begin{figure}
@@ -319,7 +319,7 @@ and $128^{3}$, $256^{3}$, $512^{3}$ grids ( with refinement factor of 1). Mass f
 
 \begin{table}
 \centering
-  \caption{Comparison of the approximate power law dependences of curve fits in Fig. \ref{fig:Vfr_all} and Fig. \ref{fig:Mfr_all}. Power law relations for volume fraction $f_{vol}(n_{str})$ and mass fractions $f_{mass} (n_{str}) $ as a function of number of streams at $n_{str} \geq 5$ are shown (amplitudes are not shown). The boxes of size 100 $h^{-1}$ Mpc on  $128^{3}$ grids and, 200 $h^{-1}$ Mpc on  $256^{3}$ grids have same  $L/N = 0.78 h^{-1}$ Mpc. Similarly, $L/N = 0.39 h^{-1}$ Mpc for boxes of size 100 $h^{-1}$ Mpc on  $256^{3}$ grids and, 200 $h^{-1}$ Mpc on  $512^{3}$ grids.}
+  \caption{Comparison of the approximate power law dependences of curve fits in Figure \ref{fig:1Vfr_all} and Figure \ref{fig:Mfr_all}. Power law relations for volume fraction $f_{vol}(n_{str})$ and mass fractions $f_{mass} (n_{str}) $ as a function of number of streams at $n_{str} \geq 5$ are shown (amplitudes are not shown). The boxes of size 100 $h^{-1}$ Mpc on  $128^{3}$ grids and, 200 $h^{-1}$ Mpc on  $256^{3}$ grids have same  $L/N = 0.78 h^{-1}$ Mpc. Similarly, $L/N = 0.39 h^{-1}$ Mpc for boxes of size 100 $h^{-1}$ Mpc on  $256^{3}$ grids and, 200 $h^{-1}$ Mpc on  $512^{3}$ grids.}
 \begin{tabular}{|l|r|r|r|r|}
 \hline
 %\multicolumn{1}{|c|}{} & \multicolumn{4}{l|}{Multi-stream analysis (This work)} & \multicolumn{4}{c|}{ORIGAMI \citep{Falck_Neyrinck:14}}    \\ \hline
@@ -368,9 +368,9 @@ Mean density                    & $0.59$ & $0.47$    & $0.35$        \\ \hline
 \label{sec:local}
 
 Multi-stream field can be easily computed for a small Eulerian box with higher refinement factor. This can be utilized to analyze the phase-space behavior inside and around haloes. In this section, 
-we have used the halo coordinates identified by the FOF method, and selected Eulerian boxes around it. A reasonable  correspondence between FOF halo centers and local maxima of multi-stream field is visually examined in Fig. \ref{fig:full}. 
+we have used the halo coordinates identified by the FOF method, and selected Eulerian boxes around it. A reasonable  correspondence between FOF halo centers and local maxima of multi-stream field is visually examined in Figure \ref{fig:1full}. 
 
-Since each multi-stream region is surrounded by lower number of streams, the walls sandwich filaments within themselves (Fig. \ref{fig:4view}). The filaments are embedded with haloes at various intersections. These high-streaming haloes are completely covered by relatively low-stream filaments and hence surrounded by walls too. This result differs considerably from the several void finder methods, which find existence of haloes within  void regions (See \citealt{Colberg2008} and references therein). By our classification, we distinguish configuration space of the simulation box as void and non-void or web regions. Further, we have made an attempt to classify the web into walls, filaments and haloes based on multi-stream thresholds. This classification based on number of stream threshold provides only a very crude description of visual impression from the richness, complexity and fundamentally multi-scale character of the web. The heuristic numbers we use in this chapter are by no means universal, but may provide limited use in the discussion of these particular simulations.
+Since each multi-stream region is surrounded by lower number of streams, the walls sandwich filaments within themselves (Figure \ref{fig:4view}). The filaments are embedded with haloes at various intersections. These high-streaming haloes are completely covered by relatively low-stream filaments and hence surrounded by walls too. This result differs considerably from the several void finder methods, which find existence of haloes within  void regions (See \citealt{Colberg2008} and references therein). By our classification, we distinguish configuration space of the simulation box as void and non-void or web regions. Further, we have made an attempt to classify the web into walls, filaments and haloes based on multi-stream thresholds. This classification based on number of stream threshold provides only a very crude description of visual impression from the richness, complexity and fundamentally multi-scale character of the web. The heuristic numbers we use in this chapter are by no means universal, but may provide limited use in the discussion of these particular simulations.
 
 \begin{figure}
 \centering
@@ -392,7 +392,7 @@ Bottom left and right:  Closer look at the highly non-linear region reveals that
 \label{fig:4view}
 \end{figure}
 
-Visual inspection of Fig. \ref{fig:4view} reveals that the multi-stream environment of a halo is a highly intricate. Though the haloes are surrounded by filaments and walls, it can be surprisingly close to the voids in particular directions. Filaments 
+Visual inspection of Figure \ref{fig:4view} reveals that the multi-stream environment of a halo is a highly intricate. Though the haloes are surrounded by filaments and walls, it can be surprisingly close to the voids in particular directions. Filaments 
 defined by the multi-steam field are  quite elongated, but the cross-sections are not circular or elliptical, and moreover, they branch-out and intersect at several regions. Finally, the  haloes defined by contours of the multi-steam field look neither spherical nor ellipsoidal. 
 We use a simple geometrical technique of projecting the number of streams onto a diagnostic spherical surface around 
 a haloes to visualize and quantify their environments.  
@@ -407,7 +407,7 @@ and compute the number of streams  at these points. By increasing the radius of 
 3+, 5+, ..., where $n+$ corresponds to $n$ or higher number of streams. 
 
  
-The geometry of a filament can be crudely approximated by a cylinder and that of a wall by a sheet with a small constant thickness 'd'. Upon intersecting with the spherical surface, these geometries occupy certain cross-sectional area, $Area_{c/s}$, on the sphere (See Fig. ~\ref{fig:model}). The ratio of this area to the surface area of the sphere  is given by \autoref{eq:model} and \autoref{eq:model2},
+The geometry of a filament can be crudely approximated by a cylinder and that of a wall by a sheet with a small constant thickness 'd'. Upon intersecting with the spherical surface, these geometries occupy certain cross-sectional area, $Area_{c/s}$, on the sphere (See Figure ~\ref{fig:model}). The ratio of this area to the surface area of the sphere  is given by \autoref{eq:model} and \autoref{eq:model2},
 % --- COMMENTED -- some thesis latex issue with sub-equations -- gonna write separately. 
 % \begin{subequations} \label{eq:model}
 % \begin{align}
@@ -447,11 +447,11 @@ The fractions of points on the surface of the sphere by multiple number of inter
 For the diagnostic spheres of different radii, the  scaling of multi-streams at the intersections is calculated. By checking the 
 variation in the fraction of area occupied, we associate the number of streams with wall or halo. 
 
-Each of the Mollweide projections in Fig. ~\ref{fig:3} - ~\ref{fig:4322} shows projection of the multi-stream field on to the 
+Each of the Mollweide projections in Figures ~\ref{fig:3} - ~\ref{fig:4322} shows projection of the multi-stream field on to the 
 spherical surface, and provide useful insight into the multi-stream structure around a halo. %\citet{Rieder:2013} shows similar projections for %density of dark matter around haloes. 
 In a Mollweide projections, each filament stemmed from the halo looks as a compact patch. If the physical area of the cross 
 section of the filament remains approximately constant, then the size of the patch on the Mollweide projection would decrease with the increasing radius of the diagnostic sphere. The cross section of a wall with the diagnostic sphere has a well known
-`S'-shape (similar to the ecliptic plane in the galactic coordinates) and the width decreases with the growth of the diagnostic sphere. Both patterns are clearly seen in  Fig. ~\ref{fig:3} - ~\ref{fig:4322}.
+`S'-shape (similar to the ecliptic plane in the galactic coordinates) and the width decreases with the growth of the diagnostic sphere. Both patterns are clearly seen in  Figures ~\ref{fig:3} - ~\ref{fig:4322}.
 
 
 \subsection{Voids, filaments and walls around haloes}
@@ -460,13 +460,13 @@ From the technique described  above, we arrive at quantitative thresholds for th
 $n_{str} \ge 3$. We stress that this method is only a practical tool in arriving at heuristic thresholds of cosmic web structures. The analysis done here are for the simulation box of 100 $h^{-1}$ Mpc, 128$^3$ particles, with refinement factor of 8.
 
 %For the non-linear regions, the volume fraction of flows with 3 or higher streams is greatest. 
-The scaling of fraction of points with 3+ streams is closest to $r^{-1}$, where $r$ is the radius of the diagnostic sphere around the halo (Fig. ~\ref{fig:3} - ~\ref{fig:4322}; top figures). Since $r^{-1}$ variation is geometrically identical to that of a wall, it is identified as a flow region with 3+ stream flow. In this simulation the volume fraction of the web is dominated by 3-stream flows: $f_{vol}(3) \approx 0.04$ while
+The scaling of fraction of points with 3+ streams is closest to $r^{-1}$, where $r$ is the radius of the diagnostic sphere around the halo (Figures ~\ref{fig:3} - ~\ref{fig:4322}; top figures). Since $r^{-1}$ variation is geometrically identical to that of a wall, it is identified as a flow region with 3+ stream flow. In this simulation the volume fraction of the web is dominated by 3-stream flows: $f_{vol}(3) \approx 0.04$ while
 $\sum_5^{\infty} f_{vol}(n_{str}) \approx 0.02$.  
 
 The deviation from the exact slope is expected, since assuming the filaments and walls as uniform cylinders 
 and planes is rather crude. In the simulation, the filaments and walls have a far more complicated structure, where they branch out, and do not correspond to regular geometrical shapes. Detailed explanations for deviations are illustrated using Mollweide projections in the next section. 
 
-Variation of multi-streams regions of 5+ to 17+ streams steadily changes from $r^{-1}$ to $r^{-2}$. This smooth transition implies that finding an exact cut-off of $n_{str}$ for  a filament is possible neither $n_{str}$ threshold nor by density. At 17+ stream regions scaling is closest to $r^{-2}$, the approximate filamentary geometry. In fact, $n_{str} = 19+$ regions also exhibit similar variation in spherical projections, but our choice of the threshold based on the lowest $n_{str}$ value that scales close to $r^{-2}$. Again, unlike the threshold for voids and walls, the threshold for filaments and haloes are not unambiguous. Our seemingly arbitrary choice of definition of filaments as regions with 17+ streams (in Section \ref{sec:global}, Fig. \ref{fig:full} and Fig. \ref{fig:4view}) was motivated by this observation. 
+Variation of multi-streams regions of 5+ to 17+ streams steadily changes from $r^{-1}$ to $r^{-2}$. This smooth transition implies that finding an exact cut-off of $n_{str}$ for  a filament is possible neither $n_{str}$ threshold nor by density. At 17+ stream regions scaling is closest to $r^{-2}$, the approximate filamentary geometry. In fact, $n_{str} = 19+$ regions also exhibit similar variation in spherical projections, but our choice of the threshold based on the lowest $n_{str}$ value that scales close to $r^{-2}$. Again, unlike the threshold for voids and walls, the threshold for filaments and haloes are not unambiguous. Our seemingly arbitrary choice of definition of filaments as regions with 17+ streams (in Section \ref{sec:global}, Figures \ref{fig:1full} and Figures \ref{fig:4view}) was motivated by this observation. 
 Thus projections on a diagnostic sphere is a convenient tool for classifying regions in the simulation as belonging to void, wall, filament or a halo. 
 
 \begin{figure}
@@ -510,25 +510,25 @@ seen from 2 to 5 times the halo radius. }
 \label{fig:4322}
 \end{figure}
 
-For illustrations, we have picked 4 haloes from different mass ranges: $3.7 \times 10^{14}M_{\odot} $,  $5.0 \times 10^{13} M_{\odot} $ , $7.0 \times 10^{12} M_{\odot} $ and $1.1 \times 10^{12} M_{\odot} $ from the simulation box of 100 $h^{-1}$ Mpc length and $128^3$ particles. Multi-stream field with a high refinement factor of 8 is calculated for a greater resolution on scales of the halo volume. Diagnostic spheres of radii 0.1 $h^{-1}$ Mpc to 5 $h^{-1}$ Mpc are drawn for each of these haloes (Fig. ~\ref{fig:3} - ~\ref{fig:4322}; bottom figures), with the multi-stream field projected onto the surface. In the Mollweide projections of these spheres, the white space refers to single-stream voids. For the largest halo (Fig. ~\ref{fig:3}) with FOF radii 1.2 $h^{-1}$ Mpc, the voids already appear in sphere of radius 1.5 $h^{-1}$ Mpc and in the smaller haloes (Fig. \ref{fig:4322}) it appears as early as 0.5 $h^{-1}$ Mpc.  
+For illustrations, we have picked 4 haloes from different mass ranges: $3.7 \times 10^{14}M_{\odot} $,  $5.0 \times 10^{13} M_{\odot} $ , $7.0 \times 10^{12} M_{\odot} $ and $1.1 \times 10^{12} M_{\odot} $ from the simulation box of 100 $h^{-1}$ Mpc length and $128^3$ particles. Multi-stream field with a high refinement factor of 8 is calculated for a greater resolution on scales of the halo volume. Diagnostic spheres of radii 0.1 $h^{-1}$ Mpc to 5 $h^{-1}$ Mpc are drawn for each of these haloes (Figures ~\ref{fig:3} - ~\ref{fig:4322}; bottom figures), with the multi-stream field projected onto the surface. In the Mollweide projections of these spheres, the white space refers to single-stream voids. For the largest halo (Figures ~\ref{fig:3}) with FOF radii 1.2 $h^{-1}$ Mpc, the voids already appear in sphere of radius 1.5 $h^{-1}$ Mpc and in the smaller haloes (Figure \ref{fig:4322}) it appears as early as 0.5 $h^{-1}$ Mpc.  
 
-Up to 1 $h^{-1}$ Mpc from halo center of the largest halo, the surfaces are uniformly covered with high number of streams (red, 17+). This shows that the most non-linear regions are close to centers of haloes. A similar trend is seen for the halo of radius 0.7 $h^{-1}$ Mpc (Fig. ~\ref{fig:79}). However, for smaller haloes (Fig. \ref{fig:706} and \ref{fig:4322}) lower number of streams (even the wall forming 3+ streams; blue) start occupying the spherical surface at radii lesser than FOF-radius. In the case of the smallest halo of $1.1 \times 10^{12} M_{\odot} $ mass, the 17+ streams are seen at scales as low as 0.1 $h^{-1}$ Mpc. The distribution of multi-streams on the surface seems do not have a symmetry of any kind , signifying a complex morphology of the web in the vicinity of the haloes. Regions with 5+ to 15+ streams form structures intermediary to filament-like and wall-like behavior, as seen by scaling of fraction of total points on the space with distance from halo center.
+Up to 1 $h^{-1}$ Mpc from halo center of the largest halo, the surfaces are uniformly covered with high number of streams (red, 17+). This shows that the most non-linear regions are close to centers of haloes. A similar trend is seen for the halo of radius 0.7 $h^{-1}$ Mpc (Figures ~\ref{fig:79}). However, for smaller haloes (Figures \ref{fig:706} and \ref{fig:4322}) lower number of streams (even the wall forming 3+ streams; blue) start occupying the spherical surface at radii lesser than FOF-radius. In the case of the smallest halo of $1.1 \times 10^{12} M_{\odot} $ mass, the 17+ streams are seen at scales as low as 0.1 $h^{-1}$ Mpc. The distribution of multi-streams on the surface seems do not have a symmetry of any kind , signifying a complex morphology of the web in the vicinity of the haloes. Regions with 5+ to 15+ streams form structures intermediary to filament-like and wall-like behavior, as seen by scaling of fraction of total points on the space with distance from halo center.
 
 Halo environment at distance over twice the FOF radius reveals interesting morphological features. The walls intersect the sphere, and in the 
 Mollweide projections, appear like a thin strip. 
-We also note that a filament oriented tangentially to the diagnostic surface may occasionally appear as a strip too (like in Fig. ~\ref{fig:79}, 
-see the corresponding discrepancy in fraction of streams), but upon inspecting the spheres at various radii, we can clearly identify the persisting line-like structures, and they correspond to the walls. Similarly, a filament is projected as a compact patch structure, which occurs due to an intersection of a cylinder-like geometry with the spherical surfaces. It is clearly observed at the distance of 4 - 5 $h^{-1}$ Mpc in Fig. \ref{fig:3} and in between 0.5 - 5.0 $h^{-1}$ Mpc in Fig. \ref{fig:706}.
+We also note that a filament oriented tangentially to the diagnostic surface may occasionally appear as a strip too (like in Figure ~\ref{fig:79}, 
+see the corresponding discrepancy in fraction of streams), but upon inspecting the spheres at various radii, we can clearly identify the persisting line-like structures, and they correspond to the walls. Similarly, a filament is projected as a compact patch structure, which occurs due to an intersection of a cylinder-like geometry with the spherical surfaces. It is clearly observed at the distance of 4 - 5 $h^{-1}$ Mpc in Figure \ref{fig:3} and in between 0.5 - 5.0 $h^{-1}$ Mpc in Figure \ref{fig:706}.
 	
 Hence we conclude that the 3+ stream regions constitute predominantly walls and the regions with 17+ streams correspond mostly to filaments. The higher $n_{str}$ shells must be surrounded by the layers with lower $n_{str}$. Thus, the filaments are within the walls, and do not exist independently.  
 We remind that the radius of diagnostic sphere varies from 0.1 - 5 $h^{-1}$ Mpc, whereas the Mollweide projections shown here are of the same size. Hence the walls and filaments appear more narrow and smaller in larger spheres due to zooming-out effects. 
- In some cases (Fig. \ref{fig:79}, ~\ref{fig:4322}), the Mollweide projections display the walls  and filaments as a complicated network 
+ In some cases (Figures \ref{fig:79}, ~\ref{fig:4322}), the Mollweide projections display the walls  and filaments as a complicated network 
  with patches of high number of streams. 
 
-The high peak shown by the curves corresponding to the numbers of streams from 11+ to 17+  in the top panel of Fig. ~\ref{fig:4322}
-is mostly due to the presence of another halo nearby ( seen at bottom of Mollweide projection of 1 - 2 $h^{-1}$ Mpc). Fig. \ref{fig:79} also has a deviation from usual scaling, and this due to the intricate shape of 17+ stream filament, which appears to be branching out after 1 $h^{-1}$ Mpc. 
+The high peak shown by the curves corresponding to the numbers of streams from 11+ to 17+  in the top panel of Figure ~\ref{fig:4322}
+is mostly due to the presence of another halo nearby ( seen at bottom of Mollweide projection of 1 - 2 $h^{-1}$ Mpc). Figure \ref{fig:79} also has a deviation from usual scaling, and this due to the intricate shape of 17+ stream filament, which appears to be branching out after 1 $h^{-1}$ Mpc. 
 
 Generally the transitions from haloes to filaments then to walls and finally to voids appear to be rather smooth.
-However occasionally sharp features as the one seen in Fig. ~\ref{fig:4322} may emerge when the diagnostic sphere hits a neighboring halo.
+However occasionally sharp features as the one seen in Figure ~\ref{fig:4322} may emerge when the diagnostic sphere hits a neighboring halo.
 
 % \begin{figure}
 % \begin{minipage}[t]{.99\linewidth}
@@ -558,9 +558,9 @@ However occasionally sharp features as the one seen in Fig. ~\ref{fig:4322} may 
 \label{fig:minmax512}
 \end{figure}
 
-The friends-of-friends analysis identifies haloes as spherical structures. The distribution of multi-streams projected onto these surfaces of the FOF haloes can be utilized for a statistical analysis of the haloes (Fig. \ref{fig:minmax128} and \ref{fig:minmax512}). We have utilized FOF catalogs of haloes more than 20 particles found at linking length $ b= 0.2$.  The $n_{str}$ ranging from as low as 1 to higher than 10$^3$ are seen on the halo surfaces. Haloes which have the minimum $n_{str} = 1$ are in contact with the void. However, if the maximum $n_{str}$ is also 1, then the halo is completely within the void. In calculations with low refinement factor of 1, only 7.3$\%$ (for  $L/N = 0.78 \,h^{-1}$) and 6.5$\%$ (for  $L/N = 0.19 \,h^{-1}$) of the haloes are completely within single streaming voids. This is solely due to low resolution of multi-stream field, since none of the FOF haloes are found in high resolution multi-stream calculations on both $L/N = 0.78 \,h^{-1}$ and $L/N = 0.19 \,h^{-1}$ boxes. At high refinement factors, none of the haloes are entirely embedded in a region with just one multi-stream value (i.e., max($n_{str}$) = min($n_{str}$), along the dotted-red lines in Fig. \ref{fig:minmax128} and \ref{fig:minmax512}). However, there are significant number of haloes whose FOF surfaces are in contact with the void region: in calculations with refinement factor of 8, 62$\%$ of the haloes in $L/N = 0.78 \,h^{-1}$ and 34$\%$ of the haloes in $L/N = 0.19 \,h^{-1}$ are in contact with void on their FOF radii. Rest of the haloes are completely within non-void regions.
+The friends-of-friends analysis identifies haloes as spherical structures. The distribution of multi-streams projected onto these surfaces of the FOF haloes can be utilized for a statistical analysis of the haloes (Figures \ref{fig:minmax128} and \ref{fig:minmax512}). We have utilized FOF catalogs of haloes more than 20 particles found at linking length $ b= 0.2$.  The $n_{str}$ ranging from as low as 1 to higher than 10$^3$ are seen on the halo surfaces. Haloes which have the minimum $n_{str} = 1$ are in contact with the void. However, if the maximum $n_{str}$ is also 1, then the halo is completely within the void. In calculations with low refinement factor of 1, only 7.3$\%$ (for  $L/N = 0.78 \,h^{-1}$) and 6.5$\%$ (for  $L/N = 0.19 \,h^{-1}$) of the haloes are completely within single streaming voids. This is solely due to low resolution of multi-stream field, since none of the FOF haloes are found in high resolution multi-stream calculations on both $L/N = 0.78 \,h^{-1}$ and $L/N = 0.19 \,h^{-1}$ boxes. At high refinement factors, none of the haloes are entirely embedded in a region with just one multi-stream value (i.e., max($n_{str}$) = min($n_{str}$), along the dotted-red lines in Figures \ref{fig:minmax128} and \ref{fig:minmax512}). However, there are significant number of haloes whose FOF surfaces are in contact with the void region: in calculations with refinement factor of 8, 62$\%$ of the haloes in $L/N = 0.78 \,h^{-1}$ and 34$\%$ of the haloes in $L/N = 0.19 \,h^{-1}$ are in contact with void on their FOF radii. Rest of the haloes are completely within non-void regions.
 
-Statistical analysis of FOF haloes in Fig. \ref{fig:minmax128} and \ref{fig:minmax512} show that massive haloes tend to have low min($n_{str}$) and high max($n_{str}$), hence a very diverse multi-stream environment on their spherical surface. The heuristic  multi-stream threshold for haloes mentioned in Section \ref{sec:global} results in virialized haloes with a constant $n_{str}$ value. These halo surfaces far from sphere (see Fig. \ref{fig:4view}), whereas, the FOF surfaces are spherical and have a large range of number of streams on their surfaces. The probability distribution function of number of FOF haloes has an approximately exponential tail monotonically decreasing with with min($n_{str}$). 
+Statistical analysis of FOF haloes in Figures \ref{fig:minmax128} and \ref{fig:minmax512} show that massive haloes tend to have low min($n_{str}$) and high max($n_{str}$), hence a very diverse multi-stream environment on their spherical surface. The heuristic  multi-stream threshold for haloes mentioned in Section \ref{sec:global} results in virialized haloes with a constant $n_{str}$ value. These halo surfaces far from sphere (see Figures \ref{fig:4view}), whereas, the FOF surfaces are spherical and have a large range of number of streams on their surfaces. The probability distribution function of number of FOF haloes has an approximately exponential tail monotonically decreasing with with min($n_{str}$). 
 
 
 %The probability distribution function of the number of streams on the diagnostic sphere of the FOF radius is shown in  \hl{Fig. \ref{fig:minmax128} Text to be changed}. It is computed  from a sample of 10 haloes in four mass ranges. As expected, the highest number of streams is observed in the vicinity of the most massive haloes. 
@@ -569,7 +569,7 @@ Statistical analysis of FOF haloes in Fig. \ref{fig:minmax128} and \ref{fig:minm
 
 
 \section{Summary}
-In this chapter, we explore for the first time, the multi-stream environment of dark matter haloes in cosmological N-body simulations.
+In this chapter, we discuss the results of the first study of the multi-stream environment of dark matter haloes in cosmological N-body simulations.
 %We study the multi-stream field computed in N-body simulations in $\Lambda$CDM cosmology at $z=0$.
 The visualization and quantitative characterization of generic non-linear fields in three-dimensional space represent a serious
 challenge from both conceptual and computational points of view. The complexity of the problem requires diverse tools
