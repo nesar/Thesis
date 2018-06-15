@@ -111,7 +111,7 @@ The individual methods and the comparison study are tabulated in \cite{Libeskind
 
 
 \section{Overview of Cosmic components}
-\label{section:intro}
+\label{section:6intro}
 On Megaparsec scales the matter and galaxy distribution is not uniform, but defines an intricate multi-scale inter-connected network 
 which is known as the \emph{cosmic web}. It represents the fundamental spatial organization of 
 matter on scales of a few up to a hundred Megaparsec. Galaxies, intergalactic gas and dark matter arrange themselves in a salient wispy 
@@ -276,10 +276,10 @@ from a discrete set of points, provided by either an $N$-body simulation or a ga
 In the spirit of previous structure finder comparison projects~\citep[][etc.]{Colberg2008,Knebe2011a}, we present a comparison of cosmic web identification codes and philosophies. However, our comparison differs significantly from e.g. the seminal Santa Barbara comparison project \citep{1999ApJ...525..554F} or other tests of codes which purport to model the same physical process \citep[e.g.][]{2012MNRAS.423.1726S,Knebe2013}. Instead, the methods compared here were developed for very different purposes, to be applied to different kinds of data and with different goals in mind. Some of the methods are based on treating galaxies (haloes) as points; while others were developed to be applied to density or velocity fields. Furthermore, unlike halo finders seeking collapsed or bound objects, there is no robust analytical theory \cite[such as the spherical top hat collapse model of][]{1999MNRAS.308..119S} which we may use as a guide for how we expect different cosmic web finders to behave. Therefore, we enter into this comparison fully expecting large disagreements between the methods examined.
 
 \subsection{Outline}
-This chapter is laid out as follows: in Section \ref{section:methods} we group the different methods into ``families'' that follow broadly similar approaches. In Section \ref{section:simulation}, we present the test dataset that has been used as the basis for our comparison. In Section \ref{section:methods}, we review each method that has taken part in the comparison. In Section \ref{sec:results}, we describe the results of the comparison and the final section summarizes our results and drawn conclusions.
+This chapter is laid out as follows: in Section \ref{section:6methods} we group the different methods into ``families'' that follow broadly similar approaches. In Section \ref{section:6simulation}, we present the test dataset that has been used as the basis for our comparison. In Section \ref{section:6methods}, we review each method that has taken part in the comparison. In Section \ref{sec:6results}, we describe the results of the comparison and the final section summarizes our results and drawn conclusions.
 
 \section{Web Identification Methods: \ \ \ Classification}
-\label{section:methods}
+\label{section:6methods}
 
 %\input{webmethods}
 
@@ -442,7 +442,7 @@ in the evolving structure. Claxon states that these singularities trace the skel
 \end{itemize}
 \section{Test data:  Simulation and Data set}
 % \input{simulationtestdata.tex}
-\label{section:simulation}
+\label{section:6simulation}
 
 Each of the participants applied their web identification methods to the same Gadget-2~\citep{Springel2005c} dark matter only $N$-body simulation, with a box size of 200 $\hmpc$ and $512^3$ particles. The $\Lambda$CDM cosmological parameters are taken from Planck \citep{2014A&A...571A..16P}: $h=0.68$, $\Omega_M = 0.31$, $\Omega_\Lambda = 0.69$, $n_s = 0.96$, and $\sigma_8 = 0.82$. Haloes in the simulation are identified using a standard FOF algorithm \citep{Davis1985}, with a linking length of $b=0.2$ and a minimum of 20 particles per halo. \autoref{fig:den_slice} shows a thin slice through the density field and the halo population of this simulation.
 
@@ -549,7 +549,7 @@ DisPerSE  &--&0.239&0.373&0.388&--&0.621&0.254&0.125&--&0.797& 0.158 &  0.044\\
 
 
 \section{Comparison and Results}
-\label{sec:results}
+\label{sec:6results}
 
 Here we present a visual and quantitative comparison of the different methods. We focus on comparing general features of the cosmic web: mass and volume filling fractions, density distributions and halo mass functions in each environment. As already mentioned, all methods were applied to the same simulation and they all used, depending on the method, either the dark matter particle distribution or the FOF halo catalog.
 

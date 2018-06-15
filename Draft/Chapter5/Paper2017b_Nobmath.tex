@@ -75,11 +75,11 @@ methods: numerical -- cosmology: theory -- dark matter -- large-scale structure 
 \chapter{Dark matter haloes: a multistream view}\label{chapter5}
 
 
-Identifying the haloes from the distribution of particles in N-body simulations is one of the problems attracting both considerable interest and efforts. In this chapter, we propose a novel framework for detecting potential dark matter haloes using the field unique for dark matter  -- multistream field. The current status of halo finding techniques are summarized in Section \ref{sec:intro}. A review of the DM particle clustering in a one-dimensional dimensional universe is made in Section \ref{sec:HaloFormation}, and the concept of multistream field is extended to higher dimensions. The multistream field is computed on the cosmological simulations described in Section \ref{sec:ch5_simulation}. The halo identification framework in this field is described in Section \ref{sec:haloDetection}. This algorithm isolates convex regions of the multistream field using Hessian eigenvalues, each enclosing a local multistream maximum. Without employing any non-local thresholds that several halo finders generally use, these convex multistream regions are identified as potential halo sites. We also illustrate the significance of multistream refinement and softening scales in finding sub-haloes. However, this chapter does not focus on adaptive multi-scale analyses for substructure studies. A few properties of the multistream haloes are discussed in Section \ref{sub:HaloProperties}, and comparison of these haloes with AHF and FOF algorithms is done in Section \ref{sub:compareHalo}. We also discuss the spatial distribution of the dark matter haloes along the percolating web structure.
+Identifying the haloes from the distribution of particles in N-body simulations is one of the problems attracting both considerable interest and efforts. In this chapter, we propose a novel framework for detecting potential dark matter haloes using the field unique for dark matter  -- multistream field. The current status of halo finding techniques are summarized in Section \ref{sec:5intro}. A review of the DM particle clustering in a one-dimensional dimensional universe is made in Section \ref{sec:HaloFormation}, and the concept of multistream field is extended to higher dimensions. The multistream field is computed on the cosmological simulations described in Section \ref{sec:ch5_simulation}. The halo identification framework in this field is described in Section \ref{sec:haloDetection}. This algorithm isolates convex regions of the multistream field using Hessian eigenvalues, each enclosing a local multistream maximum. Without employing any non-local thresholds that several halo finders generally use, these convex multistream regions are identified as potential halo sites. We also illustrate the significance of multistream refinement and softening scales in finding sub-haloes. However, this chapter does not focus on adaptive multi-scale analyses for substructure studies. A few properties of the multistream haloes are discussed in Section \ref{sub:HaloProperties}, and comparison of these haloes with AHF and FOF algorithms is done in Section \ref{sub:compareHalo}. We also discuss the spatial distribution of the dark matter haloes along the percolating web structure.
 
 
 \section{Overview of halo finders} 
-\label{sec:intro}
+\label{sec:5intro}
 
 The web-like distribution of matter initially revealed by redshift surveys (with less than 300 galaxies by \citealt{Gregory1978} and around 1000 galaxies by \citealt{Lapparent1986}) and numerical modeling (using N-body simulations of around 30000 particles by \citealt{Shandarin1983} and \citealt{Klypin1983a}) pioneered morphological investigations of the cosmic web structures (see \citealt{Bond1996}, also reviews by \citealt{Shandarin1989} and \citealt{Weygaert2008}). Detailed mapping of the Universe has crossed three million objects today, by catalogs such as the Sloan Digital Sky Survey (SDSS; \citealt{Albareti2016}). The upcoming Large Synoptic Survey Telescope (LSST; \citealt{lsst2009}) is expected to probe the nature of dark matter using several billion galaxies. On the other hand, cosmological simulations have improved immensely in several aspects -- numerical techniques, parallelization schemes, inclusion of various physical processes, volume and resolution (some of these developments are summarized in \cite{Bertschinger1998} and \cite{Bagla1997}. Modern state-of-the-art simulations like the Illustris Project \cite{Vogelsberger2014}, the EAGLE project \cite{Schaye2015} and Q-Continuum \cite{Heitmann2015} use more than a billion dark matter particles. Finally, the ever improving data analysis techniques have resulted in new and sophisticated density estimators, geometrical and topological indicators. A plethora of algorithms for identifying and characterizing dark matter structures have emerged in last two decades (a summary on cosmological data analysis is highlighted in \citealt{Weygaert2009a}). Considering all these improvements, it is worth noting that the proto-structures detected in the modern simulations are qualitatively similar to the quasi-linear description of clustering by Zel'dovich Approximation (ZA; \citealt{Zeldovich1970}). Location and properties of these structures, i.e., the voids, walls, filaments and haloes maybe inconsistent across different structure finding algorithms, but that is primarily due to varied definitions. 
 
@@ -180,7 +180,7 @@ The emphasis of this chapter is to demonstrate the use of multistream field in i
 
 
 
-Multistream field $n_{str}(\mathbf{x})$ is calculated on the GADGET-2 snapshots at $z=0$ using the tessellation scheme by \cite{Shandarin2012}. The multistream field can be computed at the native resolution of the Lagrangian grid of the simulation, i.e., at refinement factor of $l_l/l_d = 1$ (where $l_l$ is the inter-particle separation in Lagrangian grid and $l_d$ is the side length resolution of diagnostic grid). Arbitrarily high refinement factors can be utilized in computing multistream fields as well, for example  $l_l/l_d = 8$ for the halo multistream environment shown in \autoref{fig:full}. For analysis of full simulation boxes, we restrict $l_l/l_d$ to $1$ and $2$. 
+Multistream field $n_{str}(\mathbf{x})$ is calculated on the GADGET-2 snapshots at $z=0$ using the tessellation scheme by \cite{Shandarin2012}. The multistream field can be computed at the native resolution of the Lagrangian grid of the simulation, i.e., at refinement factor of $l_l/l_d = 1$ (where $l_l$ is the inter-particle separation in Lagrangian grid and $l_d$ is the side length resolution of diagnostic grid). Arbitrarily high refinement factors can be utilized in computing multistream fields as well, for example  $l_l/l_d = 8$ for the halo multistream environment shown in \autoref{fig:3full}. For analysis of full simulation boxes, we restrict $l_l/l_d$ to $1$ and $2$. 
 
 Two halo finders are also used to identify potential haloes with 20 or more particles at $z= 0$: a classic Friends-of-Friends method (FOF-\citealt{Davis1985}) using a popular linking length, $ b= 0.2$ (e.g. \citealt{Frenk1988} and \citealt{Lacey1994}) and the Adaptive Mesh Investigations of Galaxy Assembly (AMIGA halo finder or AHF-\citealt{Knollmann2009a}, \citealt{Gill2004a}). Halo catalog from these halo finders are used to compare with our implementation of halo detection in the multistream field. The haloes candidates from AHF and FOF algorithms are hereafter referred to as AHF-haloes and FOF-haloes respectively.
 
@@ -221,7 +221,7 @@ Of the three geometries that are characterized by the eigenvalue conditions, we 
 
 
 \subsection{Halo finder algorithm}
-\label{subsec:technique}
+\label{subsec:5technique}
 
 
 
@@ -396,7 +396,7 @@ Median      & $17$   & $3$   \\ \hline
 
 An important feature of our halo detection method is that the detected $\lambda_3$-haloes do not have a global threshold on $n_{str}$ or mass density values. The local conditions may be more suited in identifying haloes in multistream fields, since the multistream environments around haloes are very diverse. For instance, regions with $n_{str} \geq 25$ are tubular around one of the the large haloes in \autoref{fig:l3Nst}. Even the region with more than $75$ streams does not enclose a convex multistream region. Whereas, for $n_{str} \geq 200$ the region is convex and the particles detected by our method reside mostly within. We detect closed regions in the multistream field as long as they are not in void, and have at least three foldings in the Lagrangian sub-manifold.
 
-However, the $\lambda_3$-halo boundary is different from any constant multistream contour. That is, from the function $n_{str}(\mathbf{x})$, convex regions in the four-dimensional function space $(-n_{str}, x, y, z)$ are projected onto three-dimensional co-ordinate space using eigenvalues. This is different from projecting `iso-multistream' slice onto three-dimensional co-ordinate space. Appendix \ref{appendix:Eigen} illustrates the difference in the two approaches for a one-dimensional function. 
+However, the $\lambda_3$-halo boundary is different from any constant multistream contour. That is, from the function $n_{str}(\mathbf{x})$, convex regions in the four-dimensional function space $(-n_{str}, x, y, z)$ are projected onto three-dimensional co-ordinate space using eigenvalues. This is different from projecting `iso-multistream' slice onto three-dimensional co-ordinate space. Appendix \ref{appendix:bEigen} illustrates the difference in the two approaches for a one-dimensional function. 
 
 
 The multistream field usually has concentric shells in the regions of successive gravitational collapses (as explained in Section \ref{sec:HaloFormation} and Appendix in \citealt{Ramachandra2017}). In a specific scenario  of \autoref{fig:l3Nst}, regions of lower number-of-streams ($n_{str} = 25$ and lower) is are tubular and have regions of higher $n_{str}$ inside ($n_{str} = 200$ and higher) that is closed. However, this transition from concavity to convexity of the multistream field does not occur at a constant value of $n_{str}$ throughout the field. Instead, it is a local geometrical change that occurs at $\lambda_3 = 0$. For the $\lambda_3$-haloes in our simulation ($N_p = 128^3$), minimum of multistream values $n_{str}^{low}(H_i)$ within each halo has a range of values shown in \autoref{tab:minmaxstr} and \autoref{fig:minmaxstr} -- this varies between $ 3 \leq n_{str}^{low}(H_i) \leq 459$. Hence a global condition on $n_{str}$ does not guarantee that the region is convex. 
@@ -489,7 +489,7 @@ In contrast to the AHF and FOF algorithms, our halo method directly detects a cl
 
 
 Haloes from the three finders in \autoref{fig:FinderCompare3} 
-also show other differences in the halo boundaries. While all the AHF-haloes are spherical by definition, the FOF-haloes are irregular. The boundaries of the $\lambda_3$ haloes are not spherical either, but are more compact than FOF-haloes and in addition they are convex surfaces by design. At some junctions of the filaments, FOF identifies a large region as belonging to single halo, whereas AHF and our algorithm detect multiple isolated haloes. Each isolated $\lambda_3$-halo region enclose one maximum of multistream field, thus guaranteeing that multiple haloes are always resolved. On the other hand, a linking length cut-off or a constant threshold on scalar fields may enclose regions with multiple local maxima ( For one-dimensional fields, an illustration of this is shown in Appendix \ref{appendix:Eigen}). 
+also show other differences in the halo boundaries. While all the AHF-haloes are spherical by definition, the FOF-haloes are irregular. The boundaries of the $\lambda_3$ haloes are not spherical either, but are more compact than FOF-haloes and in addition they are convex surfaces by design. At some junctions of the filaments, FOF identifies a large region as belonging to single halo, whereas AHF and our algorithm detect multiple isolated haloes. Each isolated $\lambda_3$-halo region enclose one maximum of multistream field, thus guaranteeing that multiple haloes are always resolved. On the other hand, a linking length cut-off or a constant threshold on scalar fields may enclose regions with multiple local maxima ( For one-dimensional fields, an illustration of this is shown in Appendix \ref{appendix:bEigen}). 
  
  
  
@@ -540,7 +540,7 @@ At $n_{str} = 3$, the filling fraction $f_1 / f_{ES}$ is almost close to unity \
 
 
 \section{Discussion}
-\label{sec:discussion}
+\label{sec:5discussion}
 
 
 
@@ -572,7 +572,7 @@ Dark matter haloes, being localized structures, are uniquely convenient for our 
 
 
 \section{Summary}
-\label{sec:summary}
+\label{sec:5summary}
 
 We studied certain geometrical of the multistream field in the context of halo formation. Findings from our analysis are summarized as follows: 
 
