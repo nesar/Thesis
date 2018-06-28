@@ -83,7 +83,7 @@
 
 \newcommand\@committeesignatures{
 \parbox{2.5in}{
-\begin{center}
+\begin{flushright}
 \vskip 1.5em
 \hrulefill \\
 {\small \@committeea, Chairperson} \\
@@ -108,7 +108,7 @@
 {\small \@committeee} \\
 \fi% 
 %http://physics.wm.edu/~norman/latexhints/conditional_macros.html
-\end{center}
+\end{flushright}
 }
 }
 
@@ -172,7 +172,7 @@
     \thispagestyle{empty}
   \null\vfill
   \begin{center}
-    { \Large {\bfseries {\@title}} \par}
+    { \Huge {\bfseries {\@title}} \par}
   \vskip 1.5em%
     {By \par}%
     \vskip 1.5em%
@@ -185,7 +185,7 @@ in partial fulfillment of the requirements for the degree of \par%
  \par
   \end{center}
   \begin{flushright}
-  \makebox[2in]{Committee members} \@committeesignatures  \\%
+  \makebox[2in]{} \@committeesignatures  \\%
   \vskip 1.5em\par%
   Date defended:\d@ted@fended
   \end{flushright}
@@ -200,7 +200,7 @@ in partial fulfillment of the requirements for the degree of \par%
     The {\@papertype} Committee for {\@author} certifies \par
     that this is the approved version of the following \MakeLowercase{\@papertype} : \par
     \vfill
-    {\@title} \par
+    {  \large \@title} \par
     \vfill
   \end{center}
   \begin{flushright}
@@ -211,9 +211,9 @@ in partial fulfillment of the requirements for the degree of \par%
   \end{flushright}
     
   \vskip 3.5em\par
-  \begin{center}   
+  \begin{flushright}   
     Date approved: \d@te@ppr
-  \end{center}
+  \end{flushright}
   %%%copy clean-up code from original report.cls
   \setcounter{footnote}{0}%
   \global\let\thanks\relax
