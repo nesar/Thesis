@@ -14,11 +14,11 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Statistics of the Hessian eigenvalues in the halo candidates\relax }}{95}{table.caption.43}
 \contentsline {table}{\numberline {5.2}{\ignorespaces Number of $\lambda _3$-haloes identified at smoothing of $n_{str}(\mathbf {x})$ at different scales.\relax }}{97}{table.caption.45}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Local maxima and minima of $n_{str}$ in each of 4492 haloes. The highest $n_{str}$ values in the interior of haloes span over a large range of values. Low values of $n_{str}$ in haloes, which are generally near halo boundaries, have a median of 3.\relax }}{101}{table.caption.49}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Local maxima and minima of $n_{str}$ in each of 4492 haloes. The highest $n_{str}$ values in the interior of haloes span over a large range of values. Low values of $n_{str}$ in haloes, which are generally near halo boundaries, have a median of 3.\relax }}{102}{table.caption.49}
 \contentsline {table}{\numberline {5.4}{\ignorespaces Number of haloes, $N_H$ detected by the three halo finder algorithms in the two simulations of $L = 100 h^{-1} \text {Mpc}$ with different mass resolutions. Values shown for $\lambda _3$-haloes are done in the multistream fields with refinement factor of 2, and smoothing scale equal to the diagnostic grid size.\relax }}{104}{table.caption.51}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces An overview of the methods compared in this study.\relax }}{126}{table.caption.57}
-\contentsline {table}{\numberline {6.2}{\ignorespaces The fraction of the volume, total mass and mass in haloes (with $M_{\rm halo} > 10^{11}h^{-1}M_{\odot }$) in each web environment for each method. Note that two methods (MST and FINE) identify filaments in the halo (not particle) distribution and do not provide an environment characterization of individual volume elements. MST assigns all haloes not ascribed to a filament as being in voids.\relax }}{135}{table.caption.61}
+\contentsline {table}{\numberline {6.1}{\ignorespaces An overview of the methods compared in this study.\relax }}{127}{table.caption.57}
+\contentsline {table}{\numberline {6.2}{\ignorespaces The fraction of the volume, total mass and mass in haloes (with $M_{\rm halo} > 10^{11}h^{-1}M_{\odot }$) in each web environment for each method. Note that two methods (MST and FINE) identify filaments in the halo (not particle) distribution and do not provide an environment characterization of individual volume elements. MST assigns all haloes not ascribed to a filament as being in voids.\relax }}{137}{table.caption.61}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
